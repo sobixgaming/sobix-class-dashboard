@@ -1,4 +1,4 @@
-const classColors={"Death Knight":"#c41e3a","Demon Hunter":"#a330c9",Druid:"#ff7c0a",Evoker:"#33937f",Hunter:"#aad372",Mage:"#3fc7eb",Monk:"#00ff98",Paladin:"#f48cba",Priest:"#fff",Rogue:"#fff468",Shaman:"#0070dd",Warlock:"#8788ee",Warrior:"#c69b6d"};
+const classColors={"Death Knight":"#c41e3a",Todesritter:"#c41e3a","Demon Hunter":"#a330c9","Dämonenjäger":"#a330c9",Druid:"#ff7c0a",Druide:"#ff7c0a",Evoker:"#33937f",Rufer:"#33937f",Hunter:"#aad372","Jäger":"#aad372",Mage:"#3fc7eb",Magier:"#3fc7eb",Monk:"#00ff98","Mönch":"#00ff98",Paladin:"#f48cba",Priest:"#fff",Priester:"#fff",Rogue:"#fff468",Schurke:"#fff468",Shaman:"#0070dd",Schamane:"#0070dd",Warlock:"#8788ee",Hexenmeister:"#8788ee",Warrior:"#c69b6d",Krieger:"#c69b6d"};
 const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const data=await fetch("data/dashboard.json",{cache:"no-store"}).then(r=>r.json());
 const live=Boolean(data.generatedAt);
