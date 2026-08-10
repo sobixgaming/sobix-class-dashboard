@@ -165,11 +165,11 @@ async function loadCharacter(entry) {
     equipment: equippedItems,
     talentGroups: talentGroups(specializations),
     talentImportCode: talentImportCode(specializations),
-    talentImage: entry.talentImage ?? null,
+    wowheadTalentUrl: entry.wowheadTalentUrl ?? "https://www.wowhead.com/talent-calc",
     gear: rio.gear ?? null,
     scores,
     mythicPlusRanks: rio.mythic_plus_ranks ?? {},
-    bestRuns: (rio.mythic_plus_best_runs ?? []).slice(0, 5).map(run => ({
+    bestRuns: (rio.mythic_plus_best_runs ?? []).sort((a, b) => Number(b.score ?? 0) - Number(a.score ?? 0)).slice(0, 8).map(run => ({
       dungeon: run.dungeon ?? run.short_name ?? "Dungeon",
       shortName: run.short_name ?? null,
       level: run.mythic_level ?? null,

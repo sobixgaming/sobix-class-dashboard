@@ -49,7 +49,7 @@ function raidBlock(character){
 
 function runBlock(character){
   if(!character.bestRuns?.length)return `<p class="empty">Beste Runs erscheinen nach der nächsten Datenaktualisierung.</p>`;
-  return character.bestRuns.slice(0,3).map(run=>`<a class="run-row" href="${esc(run.url||character.profileUrl||character.armoryUrl)}" target="_blank" rel="noreferrer"><span><b>+${esc(run.level??"–")}</b> ${esc(run.shortName||run.dungeon)}</span><strong>${formatNumber(run.score)} · ${formatTime(run.clearTimeMs)}</strong></a>`).join("");
+  return [...character.bestRuns].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,8).map((run,index)=>`<a class="run-row" href="${esc(run.url||character.profileUrl||character.armoryUrl)}" target="_blank" rel="noreferrer"><span><i>${index+1}</i><b>+${esc(run.level??"–")}</b> ${esc(run.shortName||run.dungeon)}</span><strong>${formatNumber(run.score)} · ${formatTime(run.clearTimeMs)}</strong></a>`).join("");
 }
 
 function equipmentBlock(character){
@@ -65,9 +65,10 @@ function talentBlock(character){
   const definitions=[["hero","Hero-Talente"],["specialization","Spezialisierungsbaum"],["class","Klassenbaum"],["other","Weitere gewählte Talente"]];
   const available=definitions.filter(([key])=>groups[key]?.length);
   const importCode=character.talentImportCode;
-  if(character.talentImage)return `<div class="talent-window"><img src="${esc(character.talentImage)}" alt="Talentbaum von ${esc(character.name)}" loading="lazy"></div>${importCode?`<div class="import-code"><code>${esc(importCode)}</code><button type="button" data-copy-code="${esc(importCode)}">Code kopieren</button></div>`:`<p class="empty">Talent-Importcode wird eingeblendet, sobald Blizzard ihn über die API liefert.</p>`}`;
-  if(!available.length)return `<a class="build-link" href="${esc(character.armoryUrl)}" target="_blank" rel="noreferrer">Build im Arsenal öffnen ↗</a>`;
-  return `<details class="talent-details"><summary>Gewählte Talente anzeigen</summary><div class="talent-trees">${available.map(([key,label])=>`<div class="talent-tree"><h5>${label}</h5>${groups[key].map(talent=>`<span><i></i>${esc(talent.name)}${talent.rank>1?` <b>${talent.rank}</b>`:""}</span>`).join("")}</div>`).join("")}</div></details>${importCode?`<div class="import-code"><code>${esc(importCode)}</code><button type="button" data-copy-code="${esc(importCode)}">Code kopieren</button></div>`:""}`;
+  const calculator=character.wowheadTalentUrl||"https://www.wowhead.com/talent-calc";
+  const columns=available.slice(0,3);
+  const preview=columns.length?`<a class="talent-calculator" href="${esc(calculator)}" target="_blank" rel="noreferrer" aria-label="Talent-Build von ${esc(character.name)} im Wowhead Talent Calculator öffnen"><div class="calculator-head"><span>WOWHEAD TALENT CALCULATOR</span><b>${esc(character.className)} · ${esc(character.specName)}</b></div><div class="calculator-trees">${columns.map(([key,label])=>`<div class="calculator-tree"><strong>${esc(label)}</strong><div class="talent-nodes">${groups[key].slice(0,18).map((talent,index)=>`<span class="talent-node ${index%5===2?"major":""}" title="${esc(talent.name)}"><i></i>${talent.rank>1?`<b>${talent.rank}</b>`:""}</span>`).join("")}</div></div>`).join("")}</div><div class="calculator-open">Build mit Import-Code auf Wowhead öffnen ↗</div></a>`:`<a class="build-link" href="${esc(calculator)}" target="_blank" rel="noreferrer">Wowhead Talent Calculator öffnen ↗</a>`;
+  return `${preview}${importCode?`<div class="import-code"><code>${esc(importCode)}</code><button type="button" data-copy-code="${esc(importCode)}">Code kopieren</button></div>`:`<p class="empty">Talent-Importcode wird bei der nächsten Blizzard-Aktualisierung ergänzt.</p>`}`;
 }
 
 document.querySelector("#featured").innerHTML=primary.map((character,index)=>{
