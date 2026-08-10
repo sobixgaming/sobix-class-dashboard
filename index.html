@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WoW Klassen-, M+- und Raid-Dashboard von Sobixgaming">
+  <title>Sobix Class Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div><p class="eyebrow">WORLD OF WARCRAFT · RETAIL · EU-EREDAR</p><h1>Sobix Class Dashboard</h1><p class="lead">Alle Klassen. Zwei Endgame-Pfade. Eine klare Übersicht.</p></div>
+    <div id="updated" class="updated">Noch keine Live-Daten</div>
+  </header>
+  <main>
+    <section id="summary" class="summary"></section>
+    <section><div class="section-head"><div><p class="eyebrow">ROSTER</p><h2>Charaktere</h2></div><span class="legend"><i></i> Maximalstufe</span></div><div id="characters" class="character-grid"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">MYTHIC+</p><h2>Score-Anteile</h2></div><span class="hint">Anteil am Gesamt-Score, nicht Spielzeit</span></div><div class="split"><article class="panel"><h3>Klassen</h3><div id="class-shares"></div></article><article class="panel"><h3>Spezialisierungen</h3><div id="spec-shares"></div></article></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">RAID</p><h2>Spielanteile</h2></div></div><article id="raid-note" class="notice"></article></section>
+    <section><div class="section-head"><div><p class="eyebrow">ARCHIV</p><h2>Saisonbestwerte</h2></div></div><div id="seasons" class="season-grid"></div></section>
+    <section id="errors-section" hidden><div class="section-head"><h2>Datenfehler</h2></div><div id="errors" class="notice error"></div></section>
+  </main>
+  <footer>Daten: Blizzard Profile API & Raider.IO · automatisch aktualisiert über GitHub Actions</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
