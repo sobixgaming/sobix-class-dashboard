@@ -61,13 +61,11 @@ function equipmentBlock(character){
 }
 
 function talentBlock(character){
-  const groups=character.talentGroups||{};
-  const definitions=[["hero","Hero-Talente"],["specialization","Spezialisierungsbaum"],["class","Klassenbaum"],["other","Weitere gewählte Talente"]];
-  const available=definitions.filter(([key])=>groups[key]?.length);
+  const selected=character.selectedTalents||[];
   const importCode=character.talentImportCode;
   const calculator=character.wowheadTalentUrl||"https://www.wowhead.com/talent-calc";
-  const columns=available.slice(0,3);
-  const preview=columns.length?`<a class="talent-calculator" href="${esc(calculator)}" target="_blank" rel="noreferrer" aria-label="Talent-Build von ${esc(character.name)} im Wowhead Talent Calculator öffnen"><div class="calculator-head"><span>WOWHEAD TALENT CALCULATOR</span><b>${esc(character.className)} · ${esc(character.specName)}</b></div><div class="calculator-trees">${columns.map(([key,label])=>`<div class="calculator-tree"><strong>${esc(label)}</strong><div class="talent-nodes">${groups[key].slice(0,18).map((talent,index)=>`<span class="talent-node ${index%5===2?"major":""}" title="${esc(talent.name)}"><i></i>${talent.rank>1?`<b>${talent.rank}</b>`:""}</span>`).join("")}</div></div>`).join("")}</div><div class="calculator-open">Build mit Import-Code auf Wowhead öffnen ↗</div></a>`:`<a class="build-link" href="${esc(calculator)}" target="_blank" rel="noreferrer">Wowhead Talent Calculator öffnen ↗</a>`;
+  const groups=[["Hero-Talente",selected.filter(talent=>talent.hero)],["Klassen- & Spezialisierungstalente",selected.filter(talent=>!talent.hero)]];
+  const preview=selected.length?`<div class="talent-loadout"><div class="loadout-head"><div><span>RAIDER.IO LOADOUT</span><b>${esc(character.className)} · ${esc(character.specName)}</b></div><a href="${esc(calculator)}" target="_blank" rel="noreferrer">Auf Wowhead öffnen ↗</a></div><div class="loadout-groups">${groups.filter(([,talents])=>talents.length).map(([label,talents])=>`<section class="loadout-group"><h5>${label}</h5><div class="talent-icon-grid">${talents.sort((a,b)=>(b.row-a.row)||(a.column-b.column)).map(talent=>`<span class="selected-talent ${talent.important?"important":""}" title="${esc(talent.name)}${talent.rank>1?` · Rang ${talent.rank}`:""}">${talent.icon?`<img src="${esc(talent.icon)}" alt="${esc(talent.name)}" loading="lazy">`:`<i></i>`}${talent.rank>1?`<b>${talent.rank}</b>`:""}</span>`).join("")}</div></section>`).join("")}</div></div>`:`<a class="build-link" href="${esc(calculator)}" target="_blank" rel="noreferrer">Wowhead Talent Calculator öffnen ↗</a>`;
   return `${preview}${importCode?`<div class="import-code"><code>${esc(importCode)}</code><button type="button" data-copy-code="${esc(importCode)}">Code kopieren</button></div>`:`<p class="empty">Talent-Importcode wird bei der nächsten Blizzard-Aktualisierung ergänzt.</p>`}`;
 }
 
@@ -87,15 +85,25 @@ document.querySelector("#featured").innerHTML=primary.map((character,index)=>{
   </article>`;
 }).join("");
 
-function bars(items,{absolute=false}={}){
+function pie(items,{absolute=false}={}){
   const visible=(items||[]).filter(item=>absolute?item.score>0:item.percent>0);
-  return visible.length?visible.map(item=>`<div class="bar-row"><span>${esc(item.label)}</span><div class="bar"><i style="width:${absolute?Math.max(2,item.percent):Math.max(2,item.percent)}%"></i></div><b>${absolute?formatNumber(item.score):`${esc(item.percent)}%`}</b></div>`).join(""):`<div class="empty">Noch keine M+-Daten.</div>`;
+  if(!visible.length)return `<div class="empty">Noch keine M+-Daten.</div>`;
+  let offset=0;
+  const enriched=visible.map((item,index)=>{
+    const character=byName(item.character)||roster.find(entry=>entry.className===item.className)||roster.find(entry=>entry.specName===item.label)||byName(item.label);
+    const percent=Number(item.percent||0);
+    const segment={...item,character,percent,start:offset,end:offset+percent,segmentColor:color(character)||["#ffbd3d","#5ed9ed","#b06cff"][index%3]};
+    offset+=percent;
+    return segment;
+  });
+  const gradient=enriched.map(item=>`${item.segmentColor} ${item.start}% ${item.end}%`).join(",");
+  return `<div class="pie-layout"><div class="pie-chart" style="background:conic-gradient(${gradient})"><div><strong>${absolute?formatNumber(visible.reduce((sum,item)=>sum+Number(item.score||0),0)):"100%"}</strong><span>${absolute?"Gesamt-Score":"Anteile"}</span></div></div><div class="pie-legend">${enriched.map(item=>`<div style="--slice:${item.segmentColor}">${item.character?.classIcon?`<img src="${esc(item.character.classIcon)}" alt="${esc(item.character.className)}">`:`<i></i>`}<span><b>${esc(item.label)}</b>${item.className&&item.className!==item.label?`<small>${esc(item.className)}</small>`:""}</span><strong>${absolute?formatNumber(item.score):`${esc(item.percent)}%`}</strong></div>`).join("")}</div></div>`;
 }
-document.querySelector("#class-shares").innerHTML=bars(data.mythicPlus?.classShares);
-document.querySelector("#spec-shares").innerHTML=bars(data.mythicPlus?.specShares);
+document.querySelector("#class-shares").innerHTML=pie(data.mythicPlus?.classShares);
+document.querySelector("#spec-shares").innerHTML=pie(data.mythicPlus?.specShares);
 const scoreTotal=roster.reduce((sum,character)=>sum+currentScore(character),0);
-const characterScores=roster.map(character=>({label:character.name,score:currentScore(character),percent:scoreTotal?currentScore(character)/scoreTotal*100:0})).sort((a,b)=>b.score-a.score);
-document.querySelector("#character-scores").innerHTML=bars(characterScores,{absolute:true});
+const characterScores=roster.map(character=>({label:character.name,character:character.name,className:character.className,score:currentScore(character),percent:scoreTotal?currentScore(character)/scoreTotal*100:0})).sort((a,b)=>b.score-a.score);
+document.querySelector("#character-scores").innerHTML=pie(characterScores,{absolute:true});
 
 const otherCharacters=roster.filter(character=>!ranked.includes(character));
 document.querySelector("#characters").innerHTML=otherCharacters.map(character=>`<a class="character ${character.level>=data.maxLevel?"max":""}" style="--class:${color(character)}" href="${esc(character.armoryUrl||character.profileUrl)}" target="_blank" rel="noreferrer">

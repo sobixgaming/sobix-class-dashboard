@@ -62,6 +62,25 @@ function talentImportCode(value) {
   return result;
 }
 
+function selectedTalents(loadout) {
+  return (loadout?.loadout ?? []).map(selection => {
+    const node = selection.node ?? {};
+    const entry = node.entries?.[selection.entryIndex ?? 0] ?? node.entries?.[0];
+    const spell = entry?.spell;
+    if (!spell?.name) return null;
+    return {
+      id: spell.id ?? null,
+      name: spell.name,
+      icon: spell.icon ? `https://render.worldofwarcraft.com/eu/icons/56/${spell.icon}.jpg` : null,
+      rank: Number(selection.rank ?? 1),
+      hero: Number(node.subTreeId ?? 0) > 0,
+      important: Boolean(node.important),
+      row: Number(node.row ?? 0),
+      column: Number(node.col ?? 0)
+    };
+  }).filter(Boolean);
+}
+
 const classMediaCache = new Map();
 async function classIcon(classId, authHeaders) {
   if (!classId) return null;
@@ -100,7 +119,7 @@ async function loadCharacter(entry) {
     region: config.region,
     realm: config.realm,
     name: entry.name,
-    fields: "gear,mythic_plus_scores_by_season:current,previous,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
+    fields: "gear,talents,mythic_plus_scores_by_season:current,previous,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
   });
   const historyRioUrl = new URL(rioUrl);
   historyRioUrl.searchParams.set("fields", "mythic_plus_scores_by_season:season-tww-3");
@@ -164,7 +183,8 @@ async function loadCharacter(entry) {
     media: { avatar: asset(media, "avatar"), inset: asset(media, "inset"), render: asset(media, "main-raw") },
     equipment: equippedItems,
     talentGroups: talentGroups(specializations),
-    talentImportCode: talentImportCode(specializations),
+    selectedTalents: selectedTalents(rio.talentLoadout),
+    talentImportCode: rio.talentLoadout?.loadout_text ?? talentImportCode(specializations),
     wowheadTalentUrl: entry.wowheadTalentUrl ?? "https://www.wowhead.com/talent-calc",
     gear: rio.gear ?? null,
     scores,
@@ -198,11 +218,14 @@ function shares(key) {
     const current = character.scores.find(score => score.season === "current") ?? character.scores[0];
     const value = Number(current?.scores?.all ?? 0);
     const label = character[key] || "Unbekannt";
-    totals.set(label, (totals.get(label) ?? 0) + value);
+    const identity = key === "specName" ? `${character.className}::${label}` : label;
+    const old = totals.get(identity) ?? { score: 0, label, className: character.className, character: character.name };
+    old.score += value;
+    totals.set(identity, old);
   }
-  const sum = [...totals.values()].reduce((a, b) => a + b, 0);
-  return [...totals.entries()]
-    .map(([label, score]) => ({ label, score: Math.round(score), percent: sum ? Number((score / sum * 100).toFixed(1)) : 0 }))
+  const sum = [...totals.values()].reduce((total, item) => total + item.score, 0);
+  return [...totals.values()]
+    .map(item => ({ ...item, score: Math.round(item.score), percent: sum ? Number((item.score / sum * 100).toFixed(1)) : 0 }))
     .sort((a, b) => b.score - a.score);
 }
 
@@ -247,6 +270,14 @@ seasons["season-tww-3"].raids ??= {};
 seasons["season-tww-3"].raids["manaforge-omega"] ??= {
   raid: "Manaforge Omega", summary: "8/8 M", normalKilled: 8, heroicKilled: 8, mythicKilled: 8, totalBosses: 8, character: "Waterpoof"
 };
+
+seasons["season-mn-1"] ??= { bestMythicPlus: null, raids: {}, highlights: [] };
+seasons["season-mn-1"].highlights ??= [];
+for (const trophy of config.trophies.filter(entry => entry.season === "Midnight Season 1")) {
+  if (!seasons["season-mn-1"].highlights.some(highlight => highlight.achievement === trophy.achievement)) {
+    seasons["season-mn-1"].highlights.push({ achievement: trophy.achievement, character: trophy.character });
+  }
+}
 
 const output = {
   generatedAt: new Date().toISOString(),
