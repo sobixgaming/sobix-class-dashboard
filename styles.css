@@ -7,7 +7,7 @@ button,input,code{font-family:Arial,Helvetica,sans-serif}
 .hero,main,footer{width:min(1320px,calc(100% - 40px));margin:auto}
 .hero{min-height:330px;display:flex;align-items:center;justify-content:space-between;gap:32px;border-bottom:1px solid var(--line)}
 .hero-brand{display:flex;align-items:center;gap:26px;min-width:0}.brand-logo{width:clamp(130px,15vw,205px);height:auto;flex:0 0 auto;filter:drop-shadow(0 15px 24px rgba(0,0,0,.55)) drop-shadow(0 0 16px rgba(0,216,205,.16))}
-h1{font-size:clamp(40px,5.7vw,76px);line-height:.95;letter-spacing:-.055em;margin:12px 0 24px;max-width:920px;background:linear-gradient(100deg,#33937f 0%,#73d8c2 38%,#fff 78%);-webkit-background-clip:text;background-clip:text;color:transparent}h1 span{white-space:nowrap}
+h1{font-size:clamp(40px,5.7vw,76px);line-height:.95;letter-spacing:-.055em;margin:12px 0 24px;max-width:920px}h1 a{display:inline-block;background:linear-gradient(100deg,#33937f 0%,#73d8c2 38%,#fff 78%);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none;filter:drop-shadow(0 0 0 transparent);transition:filter .2s ease}h1 a:hover{filter:drop-shadow(0 0 12px rgba(115,216,194,.38))}
 h2{font-size:34px;letter-spacing:-.04em;margin:4px 0}
 h3{margin:0}
 h4{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 12px}
@@ -179,7 +179,7 @@ body{background-attachment:scroll;background-size:auto 100vh}
 .summary,.character-grid,.season-grid{grid-template-columns:1fr}
 .trophy-shelf,.talent-trees{grid-template-columns:1fr}
 .section-head{align-items:flex-start;flex-direction:column}
-.hero-brand{gap:12px}.brand-logo{width:88px}h1{font-size:clamp(32px,10vw,48px)}h1 span{white-space:normal}
+.hero-brand{gap:12px}.brand-logo{width:88px}h1{font-size:clamp(32px,10vw,48px)}
 .featured-visual{height:340px}
 .featured-content{padding:0 16px 20px}
 .featured-title{left:18px}
