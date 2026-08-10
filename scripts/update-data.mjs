@@ -89,13 +89,16 @@ async function loadCharacter(entry) {
     region: config.region,
     realm: config.realm,
     name: entry.name,
-    fields: "gear,mythic_plus_scores_by_season:current,previous,season-tww-3,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
+    fields: "gear,mythic_plus_scores_by_season:current,previous,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
   });
+  const historyRioUrl = new URL(rioUrl);
+  historyRioUrl.searchParams.set("fields", "mythic_plus_scores_by_season:season-tww-3");
 
   const authHeaders = { Authorization: `Bearer ${accessToken}` };
-  const [profile, rio, media, encounterData] = await Promise.all([
+  const [profile, rio, historyRio, media, encounterData] = await Promise.all([
     json(blizzardUrl, { Authorization: `Bearer ${accessToken}` }),
     json(rioUrl),
+    optionalJson(historyRioUrl),
     optionalJson(`${apiBase}/character-media?${query}`, authHeaders),
     entry.featured ? optionalJson(`${apiBase}/encounters/raids?namespace=profile-${config.region}&locale=en_GB`, authHeaders) : null
   ]);
@@ -132,6 +135,8 @@ async function loadCharacter(entry) {
   }));
 
   const classId = profile.character_class?.id ?? null;
+  const scores = [...(rio.mythic_plus_scores_by_season ?? []), ...(historyRio?.mythic_plus_scores_by_season ?? [])]
+    .filter((score, index, all) => all.findIndex(candidate => candidate.season === score.season) === index);
   return {
     name: profile.name,
     level: profile.level,
@@ -149,7 +154,7 @@ async function loadCharacter(entry) {
     equipment: equippedItems,
     talentGroups: talentGroups(specializations),
     gear: rio.gear ?? null,
-    scores: rio.mythic_plus_scores_by_season ?? [],
+    scores,
     mythicPlusRanks: rio.mythic_plus_ranks ?? {},
     bestRuns: (rio.mythic_plus_best_runs ?? []).slice(0, 5).map(run => ({
       dungeon: run.dungeon ?? run.short_name ?? "Dungeon",
