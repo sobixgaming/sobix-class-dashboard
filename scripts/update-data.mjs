@@ -36,15 +36,47 @@ function currentScore(character) {
   return Number(current?.scores?.all ?? 0);
 }
 
-function talentNames(value) {
-  const names = new Set();
-  const walk = (node, key = "") => {
+function talentGroups(value) {
+  const groups = { hero: new Map(), specialization: new Map(), class: new Map(), other: new Map() };
+  const walk = (node, path = "") => {
     if (!node || typeof node !== "object") return;
-    if (/talent|trait|hero/i.test(key) && typeof node.name === "string") names.add(node.name);
-    for (const [childKey, child] of Object.entries(node)) walk(child, childKey);
+    const talent = node.talent ?? node.trait ?? (/talent|trait/i.test(path) ? node : null);
+    if (talent && typeof talent.name === "string") {
+      const group = /hero/i.test(path) ? "hero" : /class/i.test(path) ? "class" : /spec/i.test(path) ? "specialization" : "other";
+      groups[group].set(talent.name, Number(node.rank ?? node.value ?? 1));
+    }
+    for (const [key, child] of Object.entries(node)) walk(child, `${path}.${key}`);
   };
   walk(value);
-  return [...names].slice(0, 12);
+  return Object.fromEntries(Object.entries(groups).map(([key, talents]) => [key, [...talents].map(([name, rank]) => ({ name, rank }))]));
+}
+
+const classMediaCache = new Map();
+async function classIcon(classId, authHeaders) {
+  if (!classId) return null;
+  if (!classMediaCache.has(classId)) {
+    const url = `https://${config.region}.api.blizzard.com/data/wow/media/playable-class/${classId}?namespace=static-${config.region}&locale=${config.locale}`;
+    classMediaCache.set(classId, optionalJson(url, authHeaders).then(media => asset(media, "icon")));
+  }
+  return classMediaCache.get(classId);
+}
+
+function raidEncounters(value) {
+  const raids = [];
+  for (const expansion of value?.expansions ?? []) {
+    for (const instance of expansion.instances ?? []) {
+      raids.push({
+        name: instance.instance?.name ?? "Raid",
+        modes: (instance.modes ?? []).map(mode => ({
+          difficulty: mode.difficulty?.name ?? "Unbekannt",
+          completed: Number(mode.progress?.completed_count ?? 0),
+          total: Number(mode.progress?.total_count ?? 0),
+          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ name: encounter.encounter?.name ?? "Boss", kills: Number(encounter.completed_count ?? 0) }))
+        }))
+      });
+    }
+  }
+  return raids;
 }
 
 async function loadCharacter(entry) {
@@ -57,14 +89,15 @@ async function loadCharacter(entry) {
     region: config.region,
     realm: config.realm,
     name: entry.name,
-    fields: "gear,mythic_plus_scores_by_season:current,previous,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
+    fields: "gear,mythic_plus_scores_by_season:current,previous,season-tww-3,mythic_plus_ranks,mythic_plus_best_runs,raid_progression"
   });
 
   const authHeaders = { Authorization: `Bearer ${accessToken}` };
-  const [profile, rio, media] = await Promise.all([
+  const [profile, rio, media, encounterData] = await Promise.all([
     json(blizzardUrl, { Authorization: `Bearer ${accessToken}` }),
     json(rioUrl),
-    optionalJson(`${apiBase}/character-media?${query}`, authHeaders)
+    optionalJson(`${apiBase}/character-media?${query}`, authHeaders),
+    entry.featured ? optionalJson(`${apiBase}/encounters/raids?namespace=profile-${config.region}&locale=en_GB`, authHeaders) : null
   ]);
 
   let equipment = null;
@@ -79,11 +112,13 @@ async function loadCharacter(entry) {
   const equippedItems = await Promise.all((equipment?.equipped_items ?? []).map(async item => {
     const itemMedia = item.media?.key?.href ? await optionalJson(item.media.key.href, authHeaders) : null;
     return {
+      id: item.item?.id ?? null,
       slot: item.slot?.name ?? "Ausrüstung",
       name: item.name ?? "Unbekannt",
       itemLevel: item.level?.value ?? null,
       quality: item.quality?.name ?? null,
-      icon: asset(itemMedia, "icon")
+      icon: asset(itemMedia, "icon"),
+      wowheadUrl: item.item?.id ? `https://www.wowhead.com/item=${item.item.id}` : null
     };
   }));
 
@@ -96,10 +131,13 @@ async function loadCharacter(entry) {
     totalBosses: Number(raid.total_bosses ?? 0)
   }));
 
+  const classId = profile.character_class?.id ?? null;
   return {
     name: profile.name,
     level: profile.level,
     className: profile.character_class?.name ?? entry.expectedClass,
+    classId,
+    classIcon: await classIcon(classId, authHeaders),
     specName: profile.active_spec?.name ?? rio.active_spec_name ?? "Unbekannt",
     faction: profile.faction?.name ?? rio.faction ?? null,
     itemLevel: profile.equipped_item_level ?? null,
@@ -109,7 +147,7 @@ async function loadCharacter(entry) {
     featuredRank: entry.rank ?? null,
     media: { avatar: asset(media, "avatar"), inset: asset(media, "inset"), render: asset(media, "main-raw") },
     equipment: equippedItems,
-    talents: talentNames(specializations),
+    talentGroups: talentGroups(specializations),
     gear: rio.gear ?? null,
     scores: rio.mythic_plus_scores_by_season ?? [],
     mythicPlusRanks: rio.mythic_plus_ranks ?? {},
@@ -123,6 +161,7 @@ async function loadCharacter(entry) {
       url: run.url ?? null
     })),
     raids,
+    raidEncounters: raidEncounters(encounterData),
     raidProgression: rio.raid_progression ?? {}
   };
 }
@@ -169,12 +208,22 @@ for (const character of characters) {
       raid: raidSlug,
       summary: raid.summary ?? "–",
       mythicKilled: Number(raid.mythic_bosses_killed ?? 0),
+      heroicKilled: Number(raid.heroic_bosses_killed ?? 0),
+      normalKilled: Number(raid.normal_bosses_killed ?? 0),
       totalBosses: Number(raid.total_bosses ?? 0),
       character: character.name
     };
     const old = seasons[currentSeason].raids[raidSlug];
-    if (!old || candidate.mythicKilled > old.mythicKilled) seasons[currentSeason].raids[raidSlug] = candidate;
+    const candidateRank = candidate.mythicKilled * 1e6 + candidate.heroicKilled * 1e3 + candidate.normalKilled;
+    const oldRank = old ? Number(old.mythicKilled ?? 0) * 1e6 + Number(old.heroicKilled ?? 0) * 1e3 + Number(old.normalKilled ?? 0) : -1;
+    if (!old || candidateRank > oldRank) seasons[currentSeason].raids[raidSlug] = candidate;
   }
+}
+
+seasons["season-tww-3"] ??= { bestMythicPlus: null, raids: {}, highlights: [] };
+seasons["season-tww-3"].highlights ??= [];
+if (!seasons["season-tww-3"].highlights.some(highlight => highlight.achievement === "Cutting Edge: Dimensius, the All-Devouring")) {
+  seasons["season-tww-3"].highlights.push({ achievement: "Cutting Edge: Dimensius, the All-Devouring", character: "Waterpoof" });
 }
 
 const output = {
@@ -182,6 +231,8 @@ const output = {
   region: config.region,
   realm: config.realm,
   maxLevel: config.maxLevel,
+  activeRaidPatch: config.activeRaidPatch,
+  trophies: config.trophies,
   characters: characters.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name, "de")),
   featured: {
     primary: characters.filter(character => character.featured).sort((a, b) => a.featuredRank - b.featuredRank).map(character => character.name),

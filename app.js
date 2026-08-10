@@ -27,18 +27,25 @@ const ranked=[primary[0],primary[1],bronze].filter(Boolean);
 document.querySelector("#podium").innerHTML=ranked.map((character,index)=>{
   const rank=index+1;
   const [label,icon]=medals[rank];
-  const image=character.media?.inset||character.media?.avatar;
+  const image=character.classIcon;
   return `<article class="podium-card rank-${rank}" style="--class:${color(character)}">
     <div class="medal"><span>${icon}</span>${label}</div>
-    ${image?`<img src="${esc(image)}" alt="${esc(character.name)}" loading="lazy">`:`<div class="portrait-fallback">${esc(character.name?.[0])}</div>`}
+    <div class="crest-stage">${image?`<img src="${esc(image)}" alt="${esc(character.className)}-Wappen" loading="lazy">`:`<div class="portrait-fallback">${esc(character.className?.[0])}</div>`}</div>
     <div class="podium-copy"><p>${esc(character.className)} · ${esc(character.specName)}</p><h3>${esc(character.name)}</h3><div><strong>${formatNumber(currentScore(character))}</strong> M+ · iLvl ${esc(character.itemLevel??"–")}</div></div>
   </article>`;
 }).join("");
 
+document.querySelector("#trophies").innerHTML=(data.trophies||[]).map((trophy,index)=>`<article class="trophy"><div class="trophy-cup"><span>★</span></div><p>Cutting Edge</p><h3>${esc(trophy.achievement?.replace(/^Cutting Edge:\s*/,""))}</h3><small>${esc(trophy.season)}${trophy.character?` · ${esc(trophy.character)}`:""}</small><i>${String(index+1).padStart(2,"0")}</i></article>`).join("");
+
 function raidBlock(character){
-  const raids=(character.raids||Object.entries(character.raidProgression||{}).map(([slug,raid])=>({slug,summary:raid.summary,totalBosses:raid.total_bosses,mythicKilled:raid.mythic_bosses_killed}))).slice(0,3);
-  if(!raids.length)return `<p class="empty">Noch kein aktueller Raidfortschritt verfügbar.</p>`;
-  return raids.map(raid=>`<div class="raid-row"><span>${esc(raid.slug?.replaceAll("-"," "))}</span><strong>${esc(raid.summary||`${raid.mythicKilled||0}/${raid.totalBosses||0} M`)}</strong></div>`).join("");
+  const wanted=data.activeRaidPatch?.raids||[];
+  const encounterRaids=character.raidEncounters||[];
+  return wanted.map(name=>{
+    const raid=encounterRaids.find(entry=>entry.name.toLowerCase().includes(name.toLowerCase().replace(/^the\s+/,""))||name.toLowerCase().includes(entry.name.toLowerCase().replace(/^the\s+/,"")));
+    const modes=raid?.modes||[];
+    const value=difficulty=>{const mode=modes.find(entry=>entry.difficulty.toLowerCase().startsWith(difficulty));return mode?`${mode.completed}/${mode.total}`:"–"};
+    return `<div class="raid-progress"><strong>${esc(name)}</strong><div><span>N <b>${value("normal")}</b></span><span>H <b>${value("heroic")}</b></span><span>M <b>${value("mythic")}</b></span></div></div>`;
+  }).join("")||`<p class="empty">Noch kein aktueller Raidfortschritt verfügbar.</p>`;
 }
 
 function runBlock(character){
@@ -48,20 +55,29 @@ function runBlock(character){
 
 function equipmentBlock(character){
   if(!character.equipment?.length)return `<p class="empty">Ausrüstung erscheint nach der nächsten automatischen API-Aktualisierung.</p>`;
-  return character.equipment.map(item=>`<div class="equipment-item" title="${esc(item.slot)}: ${esc(item.name)}">
+  return character.equipment.map(item=>`<a class="equipment-item" href="${esc(item.wowheadUrl||character.armoryUrl)}" target="_blank" rel="noreferrer" title="${esc(item.slot)}: ${esc(item.name)}">
     ${item.icon?`<img src="${esc(item.icon)}" alt="" loading="lazy">`:`<span class="item-placeholder"></span>`}
     <div><small>${esc(item.slot)}</small><strong>${esc(item.name)}</strong><em>iLvl ${esc(item.itemLevel??"–")}</em></div>
-  </div>`).join("");
+  </a>`).join("");
+}
+
+function talentBlock(character){
+  const groups=character.talentGroups||{};
+  const definitions=[["hero","Hero-Talente"],["specialization","Spezialisierungsbaum"],["class","Klassenbaum"],["other","Weitere gewählte Talente"]];
+  const available=definitions.filter(([key])=>groups[key]?.length);
+  if(!available.length)return `<a class="build-link" href="${esc(character.armoryUrl)}" target="_blank" rel="noreferrer">Build im Arsenal öffnen ↗</a>`;
+  return `<div class="talent-trees">${available.map(([key,label])=>`<div class="talent-tree"><h5>${label}</h5>${groups[key].map(talent=>`<span><i></i>${esc(talent.name)}${talent.rank>1?` <b>${talent.rank}</b>`:""}</span>`).join("")}</div>`).join("")}</div>`;
 }
 
 document.querySelector("#featured").innerHTML=primary.map((character,index)=>{
   const render=character.media?.render||character.media?.inset;
-  const talents=character.talents?.length?character.talents.map(talent=>`<span>${esc(talent)}</span>`).join(""):`<a href="${esc(character.armoryUrl)}" target="_blank" rel="noreferrer">Build im Arsenal öffnen ↗</a>`;
-  return `<article class="featured-card" style="--class:${color(character)}">
-    <div class="featured-visual">${render?`<img src="${esc(render)}" alt="${esc(character.name)}" loading="lazy">`:""}<div class="visual-shade"></div><div class="featured-title"><p class="eyebrow">MAIN ${index+1}</p><h3>${esc(character.name)}</h3><p>${esc(character.className)} · ${esc(character.specName)}</p></div></div>
+  const role=index===0?"main":"split";
+  return `<article class="featured-card ${role}" style="--class:${color(character)}">
+    <div class="featured-visual">${render?`<img src="${esc(render)}" alt="${esc(character.name)}" loading="lazy">`:""}<div class="visual-shade"></div><div class="featured-title"><p class="eyebrow">${index===0?"MAIN CHARACTER":"SPLIT-CHARACTER"}</p><h3>${esc(character.name)}</h3><p>${esc(character.className)} · ${esc(character.specName)}</p></div><span class="role-badge">${index===0?"MAIN":"SPLIT"}</span></div>
     <div class="featured-content">
       <div class="stat-strip"><div><strong>${formatNumber(currentScore(character))}</strong><span>M+-Score</span></div><div><strong>${esc(character.itemLevel??"–")}</strong><span>Itemlevel</span></div><div><strong>${esc(character.level)}</strong><span>Stufe</span></div></div>
-      <div class="detail-columns"><div><h4>Hero-Talente & Build</h4><div class="talent-list">${talents}</div></div><div><h4>Raidfortschritt</h4>${raidBlock(character)}</div></div>
+      <div><h4>Talent-Build</h4>${talentBlock(character)}</div>
+      <div class="raid-section"><h4>Raidfortschritt · Patch ${esc(data.activeRaidPatch?.patch||"12.0")}</h4>${raidBlock(character)}</div>
       <div><h4>Beste Mythic+-Runs</h4>${runBlock(character)}</div>
       <div><h4>Ausrüstung</h4><div class="equipment-grid">${equipmentBlock(character)}</div></div>
       <div class="profile-links"><a href="${esc(character.armoryUrl)}" target="_blank" rel="noreferrer">World of Warcraft Arsenal ↗</a><a href="${esc(character.profileUrl||character.armoryUrl)}" target="_blank" rel="noreferrer">Raider.IO ↗</a></div>
@@ -85,5 +101,5 @@ document.querySelector("#characters").innerHTML=otherCharacters.map(character=>`
 </a>`).join("");
 
 const seasons=Object.entries(data.seasons||{}).reverse();
-document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,season])=>{const best=season.bestMythicPlus;const raids=Object.values(season.raids||{}).sort((a,b)=>b.mythicKilled-a.mythicKilled);return `<article class="season"><p class="eyebrow">${esc(name)}</p><div class="season-score">${esc(best?.score??"–")}</div><p>${best?`${esc(best.character)} · ${esc(best.className)} · ${esc(best.specName)}`:"Kein M+-Wert"}</p>${raids.slice(0,3).map(raid=>`<div class="raid-line"><strong>${esc(raid.raid)}</strong><br>${esc(raid.summary)} · ${esc(raid.character)}</div>`).join("")}</article>`}).join(""):`<article class="notice">Saisonwerte erscheinen nach der ersten Aktualisierung.</article>`;
+document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,season])=>{const best=season.bestMythicPlus;const raids=Object.values(season.raids||{}).sort((a,b)=>(b.mythicKilled-a.mythicKilled)||(b.heroicKilled-a.heroicKilled)||(b.normalKilled-a.normalKilled));return `<article class="season"><p class="eyebrow">${esc(name.replace("season-","").toUpperCase())}</p><div class="season-score">${esc(best?.score??"–")}</div><p>${best?`Bester M+-Score · ${esc(best.character)} · ${esc(best.specName)}`:"Kein M+-Wert gespeichert"}</p>${(season.highlights||[]).map(highlight=>`<div class="archive-highlight">★ <strong>${esc(highlight.achievement)}</strong><br>${esc(highlight.character)}</div>`).join("")}${raids.slice(0,4).map(raid=>`<div class="raid-line"><strong>${esc(raid.raid)}</strong><br>N ${esc(raid.normalKilled??"–")} · H ${esc(raid.heroicKilled??"–")} · M ${esc(raid.mythicKilled??"–")} · ${esc(raid.character)}</div>`).join("")}</article>`}).join(""):`<article class="notice">Saisonwerte erscheinen nach der ersten Aktualisierung.</article>`;
 if(data.errors?.length){document.querySelector("#errors-section").hidden=false;document.querySelector("#errors").innerHTML=data.errors.map(error=>`<div><strong>${esc(error.character)}:</strong> ${esc(error.message)}</div>`).join("")}
