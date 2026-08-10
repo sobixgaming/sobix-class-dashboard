@@ -1,7 +1,8 @@
 :root{color-scheme:dark;--bg:#070a0f;--panel:#111722;--panel2:#171f2d;--line:#29364b;--muted:#91a0b7;--text:#f2f6ff;--gold:#ffbd3d;--silver:#b9c7d8;--bronze:#c77c42;--cyan:#5ed9ed;--green:#54df8d;--red:#ff6b72}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 85% 0,#16223b 0,transparent 34rem),radial-gradient(circle at 10% 45%,#101b21 0,transparent 28rem),var(--bg);color:var(--text);font:15px/1.55 Arial,Helvetica,sans-serif}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(180deg,rgba(3,6,12,.38),rgba(3,6,12,.82) 48%,rgba(3,6,12,.94)),linear-gradient(90deg,rgba(5,9,16,.5),transparent 32%,transparent 68%,rgba(5,9,16,.5)),url("assets/midnight-background.webp");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;color:var(--text);font:15px/1.55 Arial,Helvetica,sans-serif}
+body::before{content:"";position:fixed;z-index:-1;inset:0;background:radial-gradient(circle at 78% 8%,rgba(92,45,143,.14),transparent 28rem),linear-gradient(180deg,transparent 0,rgba(7,10,15,.68) 38rem,#070a0f 105rem);pointer-events:none}
 button,input,code{font-family:Arial,Helvetica,sans-serif}
 .hero,main,footer{width:min(1320px,calc(100% - 40px));margin:auto}
 .hero{min-height:330px;display:flex;align-items:center;justify-content:space-between;gap:32px;border-bottom:1px solid var(--line)}
@@ -172,6 +173,7 @@ footer{padding:34px 0 60px}
 .hero{align-items:flex-start;flex-direction:column;justify-content:center}
 }
 @media(max-width:560px){.hero,main,footer{width:min(100% - 24px,1320px)}
+body{background-attachment:scroll;background-size:auto 100vh}
 .summary,.character-grid,.season-grid{grid-template-columns:1fr}
 .trophy-shelf,.talent-trees{grid-template-columns:1fr}
 .section-head{align-items:flex-start;flex-direction:column}
