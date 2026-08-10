@@ -1,13 +1,43 @@
 {
-  "generatedAt": "2026-08-10T20:29:49.559Z",
+  "generatedAt": "2026-08-10T20:46:08.791Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
+  "activeRaidPatch": {
+    "patch": "12.0",
+    "season": "Midnight Season 1",
+    "raids": [
+      "The Voidspire",
+      "The Dreamrift",
+      "March on Quel'Danas"
+    ]
+  },
+  "trophies": [
+    {
+      "achievement": "Cutting Edge: Dimensius, the All-Devouring",
+      "season": "The War Within Season 3",
+      "character": "Waterpoof"
+    },
+    {
+      "achievement": "Cutting Edge: Crown of the Cosmos",
+      "season": "Midnight Season 1"
+    },
+    {
+      "achievement": "Cutting Edge: Chimaerus, the Undreamt God",
+      "season": "Midnight Season 1"
+    },
+    {
+      "achievement": "Cutting Edge: Midnight Falls",
+      "season": "Midnight Season 1"
+    }
+  ],
   "characters": [
     {
       "name": "Bufferrari",
       "level": 90,
       "className": "Rufer",
+      "classId": 13,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_evoker.jpg",
       "specName": "Verheerung",
       "faction": "Horde",
       "itemLevel": 292,
@@ -22,146 +52,989 @@
       },
       "equipment": [
         {
+          "id": 249997,
           "slot": "Kopf",
           "name": "Hornhelm der Schwarzkrallen",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_mail_raidevokermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_mail_raidevokermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249997"
         },
         {
+          "id": 50228,
           "slot": "Hals",
           "name": "Stachelhalsreif aus Ymirheim",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_necklace_22.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_necklace_22.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=50228"
         },
         {
+          "id": 249995,
           "slot": "Schulter",
           "name": "Fanale der Schwarzkrallen",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_mail_raidevokermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_mail_raidevokermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249995"
         },
         {
+          "id": 89193,
           "slot": "Hemd",
           "name": "Kunstvolles Mitgliedshemd",
           "itemLevel": 1,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shirt02_epic.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shirt02_epic.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=89193"
         },
         {
+          "id": 250000,
           "slot": "Brust",
           "name": "Rasereischutz der Schwarzkrallen",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_mail_raidevokermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_mail_raidevokermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250000"
         },
         {
+          "id": 49810,
           "slot": "Taille",
           "name": "Geschmackloser Zombiegürtel",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_69.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_69.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=49810"
         },
         {
+          "id": 249996,
           "slot": "Beine",
           "name": "Beinschützer der Schwarzkrallen",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pant_mail_raidevokermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pant_mail_raidevokermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249996"
         },
         {
+          "id": 268287,
           "slot": "Füße",
           "name": "Stampfer der Grollbestie",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boot_mail_raidshamanmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boot_mail_raidshamanmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=268287"
         },
         {
+          "id": 249304,
           "slot": "Handgelenk",
           "name": "Manschetten des gefallenen Königs",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_mail_raidshamanmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_mail_raidshamanmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249304"
         },
         {
+          "id": 249325,
           "slot": "Hände",
           "name": "Ungebundener Handschutz des Berserkers",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_glove_mail_raidhuntermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_glove_mail_raidhuntermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249325"
         },
         {
+          "id": 193708,
           "slot": "Ring 1",
           "name": "Platinsternenband",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_10_dungeonjewelry_explorer_ring_1_color1.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_10_dungeonjewelry_explorer_ring_1_color1.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=193708"
         },
         {
+          "id": 268290,
           "slot": "Ring 2",
           "name": "Blütenring des Sporenrufers",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_jewelry_rutaani_ring_blue.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_jewelry_rutaani_ring_blue.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=268290"
         },
         {
+          "id": 249343,
           "slot": "Schmuckstück 1",
           "name": "Blick des Alnsehers",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_dreamrift_gazeofthealnseer.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_dreamrift_gazeofthealnseer.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249343"
         },
         {
+          "id": 249346,
           "slot": "Schmuckstück 2",
           "name": "Vaelgors letztes Starren",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_voidspire_int1_voiddragoneye.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_voidspire_int1_voiddragoneye.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249346"
         },
         {
+          "id": 249992,
           "slot": "Rücken",
           "name": "Schleier der Schwarzkrallen",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_cape_mail_raidevokermidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_cape_mail_raidevokermidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249992"
         },
         {
+          "id": 249294,
           "slot": "Waffenhand",
           "name": "Klinge des blinden Urteils",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_sword_1h_raidmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_sword_1h_raidmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249294"
         },
         {
+          "id": 249276,
           "slot": "Schildhand",
           "name": "Grimoire des ewigen Lichts",
           "itemLevel": 298,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_offhand_1h_raidmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_offhand_1h_raidmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249276"
         },
         {
+          "id": 43348,
           "slot": "Wappenrock",
           "name": "Wappenrock des Entdeckers",
           "itemLevel": 1,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_cloth_30.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_cloth_30.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=43348"
         }
       ],
-      "talents": [
-        "Obsidianeifer",
-        "Neutralisierende Hülle",
-        "Geißelnde Flamme",
-        "Erdrutsch",
-        "Obsidianschuppen",
-        "Entgiften",
-        "Natürliche Konvergenz",
-        "Schwere Flügelschläge",
-        "Tiefgrüne Umarmung",
-        "Obsidianbollwerk",
-        "Entflammt",
-        "Scharlachrote Anpassung"
-      ],
+      "talentGroups": {
+        "hero": [
+          {
+            "name": "Raumkrümmung",
+            "rank": 1
+          },
+          {
+            "name": "Temporalexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Chronogabe",
+            "rank": 1
+          },
+          {
+            "name": "Nachklingen",
+            "rank": 1
+          },
+          {
+            "name": "Partikel der Beschleunigung",
+            "rank": 1
+          },
+          {
+            "name": "Adept von Nozdormu",
+            "rank": 1
+          },
+          {
+            "name": "Chronodynamo",
+            "rank": 1
+          },
+          {
+            "name": "Vorrang",
+            "rank": 1
+          },
+          {
+            "name": "Zeitkonvergenz",
+            "rank": 1
+          },
+          {
+            "name": "Instabilitätsmatrix",
+            "rank": 1
+          },
+          {
+            "name": "Übertakten",
+            "rank": 1
+          },
+          {
+            "name": "Goldene Gelegenheit",
+            "rank": 1
+          },
+          {
+            "name": "Nachbild",
+            "rank": 1
+          },
+          {
+            "name": "Chronowächter",
+            "rank": 1
+          },
+          {
+            "name": "Temporalität",
+            "rank": 1
+          },
+          {
+            "name": "Chronoflamme",
+            "rank": 1
+          },
+          {
+            "name": "Form der Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Asche in Bewegung",
+            "rank": 1
+          },
+          {
+            "name": "Erweiterte Lungen",
+            "rank": 1
+          },
+          {
+            "name": "Essenzbrunnen",
+            "rank": 1
+          },
+          {
+            "name": "Verbindung der Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Brennendes Adrenalin",
+            "rank": 1
+          },
+          {
+            "name": "Fulminantes Gebrüll",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingsflamme",
+            "rank": 1
+          },
+          {
+            "name": "Titanische Präzision",
+            "rank": 1
+          },
+          {
+            "name": "Tief ausatmen",
+            "rank": 1
+          },
+          {
+            "name": "Lebensglut",
+            "rank": 1
+          },
+          {
+            "name": "Feuerstrom",
+            "rank": 1
+          },
+          {
+            "name": "Flamme verschlingen",
+            "rank": 1
+          },
+          {
+            "name": "Flammenformer",
+            "rank": 1
+          },
+          {
+            "name": "Bahnbrecher",
+            "rank": 1
+          },
+          {
+            "name": "In Brand setzen",
+            "rank": 1
+          },
+          {
+            "name": "Drakonische Instinkte",
+            "rank": 1
+          },
+          {
+            "name": "Macht des Schwarzen Drachenschwarms",
+            "rank": 1
+          },
+          {
+            "name": "Bombardements",
+            "rank": 1
+          },
+          {
+            "name": "Ansturm",
+            "rank": 1
+          },
+          {
+            "name": "Geschwader befehligen",
+            "rank": 1
+          },
+          {
+            "name": "Rüstungsschmelze",
+            "rank": 1
+          },
+          {
+            "name": "Flügelführer",
+            "rank": 1
+          },
+          {
+            "name": "Unerbittliche Belagerung",
+            "rank": 1
+          },
+          {
+            "name": "Konzentrierte Macht",
+            "rank": 1
+          },
+          {
+            "name": "Gehärtete Schuppen",
+            "rank": 1
+          },
+          {
+            "name": "Erweiterter Kampf",
+            "rank": 1
+          },
+          {
+            "name": "Wirbelströmung",
+            "rank": 1
+          },
+          {
+            "name": "Veredelte Essenz",
+            "rank": 1
+          },
+          {
+            "name": "Geschmeidigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Schuppenkommandant",
+            "rank": 1
+          },
+          {
+            "name": "Massendesintegration",
+            "rank": 1
+          },
+          {
+            "name": "Flinker Flieger",
+            "rank": 1
+          }
+        ],
+        "specialization": [
+          {
+            "name": "Obsidianeifer",
+            "rank": 1
+          },
+          {
+            "name": "Neutralisierende Hülle",
+            "rank": 1
+          },
+          {
+            "name": "Geißelnde Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Echo",
+            "rank": 1
+          },
+          {
+            "name": "Traumatem",
+            "rank": 1
+          },
+          {
+            "name": "Umkehrung",
+            "rank": 1
+          },
+          {
+            "name": "Temporalkomprimierung",
+            "rank": 1
+          },
+          {
+            "name": "Essenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Zurückspulen",
+            "rank": 1
+          },
+          {
+            "name": "Lebensbindung",
+            "rank": 1
+          },
+          {
+            "name": "Essenzeinstimmung",
+            "rank": 1
+          },
+          {
+            "name": "Zeitverschiebung",
+            "rank": 1
+          },
+          {
+            "name": "Unerschütterlich",
+            "rank": 1
+          },
+          {
+            "name": "Goldene Stunde",
+            "rank": 1
+          },
+          {
+            "name": "Zeitanomalie",
+            "rank": 1
+          },
+          {
+            "name": "Klarheit im Geist",
+            "rank": 1
+          },
+          {
+            "name": "Herr über die Zeit",
+            "rank": 1
+          },
+          {
+            "name": "Traumrausch",
+            "rank": 1
+          },
+          {
+            "name": "Nozdormus Lehren",
+            "rank": 1
+          },
+          {
+            "name": "Ruf von Ysera",
+            "rank": 1
+          },
+          {
+            "name": "Stasis",
+            "rank": 1
+          },
+          {
+            "name": "Schonfrist",
+            "rank": 1
+          },
+          {
+            "name": "Flamme des Lebensspenders",
+            "rank": 1
+          },
+          {
+            "name": "Energieschlaufe",
+            "rank": 1
+          },
+          {
+            "name": "Zeit der Not",
+            "rank": 1
+          },
+          {
+            "name": "Erneuernder Atem",
+            "rank": 1
+          },
+          {
+            "name": "Zeitlose Magie",
+            "rank": 1
+          },
+          {
+            "name": "Traumsimulakrum",
+            "rank": 1
+          },
+          {
+            "name": "Geschenk des Titanen",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingsechos",
+            "rank": 1
+          },
+          {
+            "name": "Merithras Segen",
+            "rank": 1
+          },
+          {
+            "name": "Bewahrung",
+            "rank": 1
+          },
+          {
+            "name": "Innere Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Gerade zur rechten Zeit",
+            "rank": 1
+          },
+          {
+            "name": "Lebenskraftheiler",
+            "rank": 1
+          },
+          {
+            "name": "Schwirrende Setzlinge",
+            "rank": 1
+          },
+          {
+            "name": "Euphorisierende Explosion",
+            "rank": 1
+          },
+          {
+            "name": "Feld der Träume",
+            "rank": 1
+          },
+          {
+            "name": "Ouroboros",
+            "rank": 1
+          },
+          {
+            "name": "Temporalkonstrukteur",
+            "rank": 1
+          },
+          {
+            "name": "Temporal geladen",
+            "rank": 1
+          },
+          {
+            "name": "Unbeschwerter Flug",
+            "rank": 1
+          },
+          {
+            "name": "Scheiterhaufen",
+            "rank": 1
+          },
+          {
+            "name": "Rubinessenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Azuressenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Verwüsten",
+            "rank": 1
+          },
+          {
+            "name": "Unterdrücken",
+            "rank": 1
+          },
+          {
+            "name": "Ewigkeitswoge",
+            "rank": 1
+          },
+          {
+            "name": "Drachenwut",
+            "rank": 1
+          },
+          {
+            "name": "Azurfeger",
+            "rank": 1
+          },
+          {
+            "name": "Arkane Intensität",
+            "rank": 1
+          },
+          {
+            "name": "Animosität",
+            "rank": 1
+          },
+          {
+            "name": "Hitzewelle",
+            "rank": 1
+          },
+          {
+            "name": "Gerichtete Aggression",
+            "rank": 1
+          },
+          {
+            "name": "Spanne der Ewigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Ereignishorizont",
+            "rank": 1
+          },
+          {
+            "name": "Katalysieren",
+            "rank": 1
+          },
+          {
+            "name": "Tyrannei",
+            "rank": 1
+          },
+          {
+            "name": "Zerschmetternde Sterne",
+            "rank": 1
+          },
+          {
+            "name": "Feuriger Schub",
+            "rank": 1
+          },
+          {
+            "name": "Onyxvermächtnis",
+            "rank": 1
+          },
+          {
+            "name": "Dominanz des Spruchwirkers",
+            "rank": 1
+          },
+          {
+            "name": "Bevorstehende Zerstörung",
+            "rank": 1
+          },
+          {
+            "name": "Titanischer Zorn",
+            "rank": 1
+          },
+          {
+            "name": "Azurschnelligkeit",
+            "rank": 1
+          },
+          {
+            "name": "Machtzuwachs",
+            "rank": 1
+          },
+          {
+            "name": "Luftangriff",
+            "rank": 1
+          },
+          {
+            "name": "Kausalität",
+            "rank": 1
+          },
+          {
+            "name": "Schillern",
+            "rank": 1
+          },
+          {
+            "name": "Aufsteigender Zorn",
+            "rank": 1
+          },
+          {
+            "name": "Verheerung",
+            "rank": 1
+          },
+          {
+            "name": "Instabilität",
+            "rank": 1
+          },
+          {
+            "name": "Geladener Schlag",
+            "rank": 1
+          },
+          {
+            "name": "Auge der Unendlichkeit",
+            "rank": 1
+          },
+          {
+            "name": "Quell der Magie",
+            "rank": 1
+          },
+          {
+            "name": "Versengende Funken",
+            "rank": 1
+          },
+          {
+            "name": "Irisieren",
+            "rank": 1
+          },
+          {
+            "name": "Teilen und herrschen",
+            "rank": 1
+          },
+          {
+            "name": "Schwarzmacht",
+            "rank": 1
+          },
+          {
+            "name": "Eruption",
+            "rank": 1
+          },
+          {
+            "name": "Abprallender Pyroklast",
+            "rank": 1
+          },
+          {
+            "name": "Schüler von Alexstrasza",
+            "rank": 1
+          },
+          {
+            "name": "Emporstoßen",
+            "rank": 1
+          },
+          {
+            "name": "Atem der Äonen",
+            "rank": 1
+          },
+          {
+            "name": "Trotz dem Schicksal",
+            "rank": 1
+          },
+          {
+            "name": "Zündungsrausch",
+            "rank": 1
+          },
+          {
+            "name": "Kraftnexus",
+            "rank": 1
+          },
+          {
+            "name": "Vulkanismus",
+            "rank": 1
+          },
+          {
+            "name": "Verbesserter Trotz dem Schicksal",
+            "rank": 1
+          },
+          {
+            "name": "Sengende Schuppen",
+            "rank": 1
+          },
+          {
+            "name": "Voraussicht",
+            "rank": 1
+          },
+          {
+            "name": "Tektonischer Lokus",
+            "rank": 1
+          },
+          {
+            "name": "Regeneratives Chitin",
+            "rank": 1
+          },
+          {
+            "name": "Dynamische Verschiebung",
+            "rank": 1
+          },
+          {
+            "name": "Schicksalsspiegel",
+            "rank": 1
+          },
+          {
+            "name": "Angesammelte Macht",
+            "rank": 1
+          },
+          {
+            "name": "Anachronismus",
+            "rank": 1
+          },
+          {
+            "name": "Zuwachs",
+            "rank": 1
+          },
+          {
+            "name": "Zeitsprung",
+            "rank": 1
+          },
+          {
+            "name": "Segen des Infernos",
+            "rank": 1
+          },
+          {
+            "name": "Bebende Erde",
+            "rank": 1
+          },
+          {
+            "name": "Zukunftsplanung",
+            "rank": 1
+          },
+          {
+            "name": "Verflochtene Fäden",
+            "rank": 1
+          },
+          {
+            "name": "Mächtiges Inferno",
+            "rank": 1
+          },
+          {
+            "name": "Duplikat",
+            "rank": 1
+          },
+          {
+            "name": "Verstärkung",
+            "rank": 1
+          },
+          {
+            "name": "Chronoschutz",
+            "rank": 1
+          },
+          {
+            "name": "Weyrnstein verschenken",
+            "rank": 1
+          },
+          {
+            "name": "Drakonische Einstimmungen",
+            "rank": 1
+          }
+        ],
+        "class": [
+          {
+            "name": "Erdrutsch",
+            "rank": 1
+          },
+          {
+            "name": "Obsidianschuppen",
+            "rank": 1
+          },
+          {
+            "name": "Entgiften",
+            "rank": 1
+          },
+          {
+            "name": "Natürliche Konvergenz",
+            "rank": 1
+          },
+          {
+            "name": "Schwere Flügelschläge",
+            "rank": 1
+          },
+          {
+            "name": "Tiefgrüne Umarmung",
+            "rank": 1
+          },
+          {
+            "name": "Obsidianbollwerk",
+            "rank": 1
+          },
+          {
+            "name": "Entflammt",
+            "rank": 1
+          },
+          {
+            "name": "Scharlachrote Anpassung",
+            "rank": 1
+          },
+          {
+            "name": "Inneres Strahlen",
+            "rank": 1
+          },
+          {
+            "name": "Umhauender Feger",
+            "rank": 1
+          },
+          {
+            "name": "Kauterisierende Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Uralte Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Instinktives Arkana",
+            "rank": 1
+          },
+          {
+            "name": "Zeitdruck",
+            "rank": 1
+          },
+          {
+            "name": "Auf den Traum eingestimmt",
+            "rank": 1
+          },
+          {
+            "name": "Angeborene Widerstandsfähigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Drakonisches Vermächtnis",
+            "rank": 1
+          },
+          {
+            "name": "Verlängerter Flug",
+            "rank": 1
+          },
+          {
+            "name": "Ergiebige Blüte",
+            "rank": 1
+          },
+          {
+            "name": "Schmelzofen",
+            "rank": 1
+          },
+          {
+            "name": "Überschwang",
+            "rank": 1
+          },
+          {
+            "name": "Erneuernde Flammen",
+            "rank": 1
+          },
+          {
+            "name": "Allheilmittel",
+            "rank": 1
+          },
+          {
+            "name": "Zeit dehnen",
+            "rank": 1
+          },
+          {
+            "name": "Retten",
+            "rank": 1
+          },
+          {
+            "name": "Üppiges Wachstum",
+            "rank": 1
+          },
+          {
+            "name": "Springende Flammen",
+            "rank": 1
+          },
+          {
+            "name": "Meisterschaft über die Lüfte",
+            "rank": 1
+          },
+          {
+            "name": "Zeitspirale",
+            "rank": 1
+          },
+          {
+            "name": "Zephyr",
+            "rank": 1
+          },
+          {
+            "name": "Rufer",
+            "rank": 1
+          },
+          {
+            "name": "Ausgefahrene Krallen",
+            "rank": 1
+          },
+          {
+            "name": "Regenerative Magie",
+            "rank": 1
+          },
+          {
+            "name": "Zunichte machen",
+            "rank": 1
+          },
+          {
+            "name": "Fokusse des Lebens",
+            "rank": 1
+          },
+          {
+            "name": "Umwerfender Schlag",
+            "rank": 1
+          },
+          {
+            "name": "Tyrannisierendes Brüllen",
+            "rank": 1
+          },
+          {
+            "name": "Übermannen",
+            "rank": 1
+          },
+          {
+            "name": "Schrecken der Lüfte",
+            "rank": 1
+          },
+          {
+            "name": "Schlafwandeln",
+            "rank": 1
+          },
+          {
+            "name": "Angeborene Magie",
+            "rank": 1
+          },
+          {
+            "name": "Quell der Magie",
+            "rank": 1
+          },
+          {
+            "name": "Mächtiges Mana",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingswächter",
+            "rank": 1
+          }
+        ],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-08-10T15:55:47.820Z",
         "updated_at": "2026-08-10T15:55:47.820Z",
@@ -835,8 +1708,8 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 689301,
-          "region": 215314,
+          "world": 689322,
+          "region": 215334,
           "realm": 2901
         },
         "class": {
@@ -845,8 +1718,8 @@
           "realm": 157
         },
         "healer": {
-          "world": 152933,
-          "region": 47906,
+          "world": 152938,
+          "region": 47911,
           "realm": 657
         },
         "class_healer": {
@@ -855,8 +1728,8 @@
           "realm": 6
         },
         "dps": {
-          "world": 606538,
-          "region": 196677,
+          "world": 606552,
+          "region": 196685,
           "realm": 2594
         },
         "class_dps": {
@@ -865,7 +1738,7 @@
           "realm": 188
         },
         "spec_1467": {
-          "world": 8941,
+          "world": 8942,
           "region": 3121,
           "realm": 43
         },
@@ -875,8 +1748,8 @@
           "realm": 6
         },
         "spec_1473": {
-          "world": 38612,
-          "region": 13940,
+          "world": 38613,
+          "region": 13941,
           "realm": 204
         }
       },
@@ -961,6 +1834,754 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [
+        {
+          "name": "Black Temple",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Illidan Stormrage",
+                  "kills": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Onyxia's Lair",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Onyxia",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Onyxia",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aberrus, the Shadowed Crucible",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Kazzara, the Hellforged",
+                  "kills": 1
+                },
+                {
+                  "name": "The Amalgamation Chamber",
+                  "kills": 1
+                },
+                {
+                  "name": "The Forgotten Experiments",
+                  "kills": 1
+                },
+                {
+                  "name": "Assault of the Zaqali",
+                  "kills": 1
+                },
+                {
+                  "name": "Rashok, the Elder",
+                  "kills": 1
+                },
+                {
+                  "name": "The Vigilant Steward, Zskarn",
+                  "kills": 1
+                },
+                {
+                  "name": "Magmorax",
+                  "kills": 1
+                },
+                {
+                  "name": "Echo of Neltharion",
+                  "kills": 1
+                },
+                {
+                  "name": "Scalecommander Sarkareth",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manaforge Omega",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 2
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 2
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 2
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 2
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 2
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 3
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 3
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 1
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Dreamrift",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 7
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Voidspire",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 2
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 1
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 2
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 2
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 6
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 5
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 5
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 4
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 4
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 5
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 6
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 4
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 4
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "March on Quel'Danas",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 1
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 3
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 1
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sporefall",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Rotmire",
+                  "kills": 4
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Rotmire",
+                  "kills": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Dreamrift",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 7
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Voidspire",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 2
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 1
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 2
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 2
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 6
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 5
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 5
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 4
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 4
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 5
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 6
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 4
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 4
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                },
+                {
+                  "name": "Crown of the Cosmos",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "March on Quel'Danas",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 1
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 3
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Belo'ren, Child of Al'ar",
+                  "kills": 1
+                },
+                {
+                  "name": "Midnight Falls",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sporefall",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Rotmire",
+                  "kills": 4
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Rotmire",
+                  "kills": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nerub-ar Palace",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "The Silken Court",
+                  "kills": 1
+                },
+                {
+                  "name": "Queen Ansurek",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Ulgrax the Devourer",
+                  "kills": 1
+                },
+                {
+                  "name": "The Bloodbound Horror",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manaforge Omega",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 2
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 2
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 2
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 2
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 2
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 3
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 3
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 1
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -1000,6 +2621,8 @@
       "name": "Hotserati",
       "level": 90,
       "className": "Druide",
+      "classId": 11,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_druid.jpg",
       "specName": "Wiederherstellung",
       "faction": "Allianz",
       "itemLevel": 229,
@@ -1013,7 +2636,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/123/170437499-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-05-03T16:34:46.781Z",
         "updated_at": "2026-05-03T16:34:46.781Z",
@@ -1488,13 +3116,13 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 4598549,
-          "region": 1595875,
+          "world": 4598659,
+          "region": 1595942,
           "realm": 20838
         },
         "class": {
-          "world": 514419,
-          "region": 183670,
+          "world": 514425,
+          "region": 183673,
           "realm": 2407
         },
         "tank": {
@@ -1508,13 +3136,13 @@
           "realm": 0
         },
         "healer": {
-          "world": 1162194,
-          "region": 391359,
-          "realm": 5287
+          "world": 1162219,
+          "region": 391375,
+          "realm": 5288
         },
         "class_healer": {
-          "world": 257071,
-          "region": 88753,
+          "world": 257074,
+          "region": 88755,
           "realm": 1205
         },
         "dps": {
@@ -1543,8 +3171,8 @@
           "realm": 0
         },
         "spec_105": {
-          "world": 257075,
-          "region": 88753,
+          "world": 257078,
+          "region": 88755,
           "realm": 1205
         }
       },
@@ -1593,6 +3221,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -1632,6 +3261,8 @@
       "name": "Imbanana",
       "level": 90,
       "className": "Priester",
+      "classId": 5,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_priest.jpg",
       "specName": "Disziplin",
       "faction": "Allianz",
       "itemLevel": 246,
@@ -1645,7 +3276,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/137/174938505-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-05-28T09:38:42.969Z",
         "updated_at": "2026-05-28T09:38:42.969Z",
@@ -2239,23 +3875,23 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 3838387,
-          "region": 1324067,
-          "realm": 17552
+          "world": 3838479,
+          "region": 1324141,
+          "realm": 17553
         },
         "class": {
           "world": 221543,
-          "region": 81934,
+          "region": 81935,
           "realm": 1112
         },
         "healer": {
-          "world": 919627,
-          "region": 308663,
+          "world": 919648,
+          "region": 308679,
           "realm": 4255
         },
         "class_healer": {
           "world": 175113,
-          "region": 60256,
+          "region": 60257,
           "realm": 807
         },
         "dps": {
@@ -2269,8 +3905,8 @@
           "realm": 0
         },
         "spec_256": {
-          "world": 123305,
-          "region": 40492,
+          "world": 123304,
+          "region": 40493,
           "realm": 552
         },
         "spec_257": {
@@ -2356,6 +3992,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -2395,6 +4032,8 @@
       "name": "Liezen",
       "level": 90,
       "className": "Mönch",
+      "classId": 10,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_monk.jpg",
       "specName": "Nebelwirker",
       "faction": "Horde",
       "itemLevel": 288,
@@ -2409,139 +4048,948 @@
       },
       "equipment": [
         {
+          "id": 250015,
           "slot": "Kopf",
           "name": "Furchterregendes Antlitz des Auserwählten von Ra-den",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_leather_raidmonkmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_leather_raidmonkmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250015"
         },
         {
+          "id": 50228,
           "slot": "Hals",
           "name": "Stachelhalsreif aus Ymirheim",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_necklace_22.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_necklace_22.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=50228"
         },
         {
+          "id": 251092,
           "slot": "Schulter",
           "name": "Mantel des gefallenen Grunzers",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_leather_dungeonharronir_c_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_leather_dungeonharronir_c_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=251092"
         },
         {
+          "id": 167188,
           "slot": "Hemd",
           "name": "Filigranes scharlachrotes Hemd",
           "itemLevel": 1,
           "quality": "Ungewöhnlich",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shirt_red_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shirt_red_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=167188"
         },
         {
+          "id": 250018,
           "slot": "Brust",
           "name": "Kampfgewänder des Auserwählten von Ra-den",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_leather_raidmonkmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_leather_raidmonkmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250018"
         },
         {
+          "id": 49806,
           "slot": "Taille",
           "name": "Schwarzer Gürtel des Peitschers",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_65.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_65.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=49806"
         },
         {
+          "id": 250014,
           "slot": "Beine",
           "name": "Flinkfeger des Auserwählten von Ra-den",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pant_leather_raidmonkmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pant_leather_raidmonkmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250014"
         },
         {
+          "id": 250017,
           "slot": "Füße",
           "name": "Sturmzermalmer des Auserwählten von Ra-den",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boot_leather_raidmonkmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boot_leather_raidmonkmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250017"
         },
         {
+          "id": 244576,
           "slot": "Handgelenk",
           "name": "Deflektoren des Silbermondagenten",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_leather_questbloodelf_b_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_leather_questbloodelf_b_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=244576"
         },
         {
+          "id": 250016,
           "slot": "Hände",
           "name": "Donnerfäuste des Auserwählten von Ra-den",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_glove_leather_raidmonkmidnight_d_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_glove_leather_raidmonkmidnight_d_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250016"
         },
         {
+          "id": 251115,
           "slot": "Ring 1",
           "name": "Gabelungsband",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_devouring_host_currency2_void.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_devouring_host_currency2_void.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=251115"
         },
         {
+          "id": 49812,
           "slot": "Ring 2",
           "name": "Entwendeter Ehering",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_ring_42.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_ring_42.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=49812"
         },
         {
+          "id": 249343,
           "slot": "Schmuckstück 1",
           "name": "Blick des Alnsehers",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_dreamrift_gazeofthealnseer.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_12_trinket_raid_dreamrift_gazeofthealnseer.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=249343"
         },
         {
+          "id": 250256,
           "slot": "Schmuckstück 2",
           "name": "Herz des Windes",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_10_jewelcrafting3_soulcage_air.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_10_jewelcrafting3_soulcage_air.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=250256"
         },
         {
+          "id": 260312,
           "slot": "Rücken",
           "name": "Tuch des trotzigen Treuhänders",
           "itemLevel": 289,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_cape_plate_dungeonharronir_c_01.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_cape_plate_dungeonharronir_c_01.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=260312"
         },
         {
+          "id": 245770,
           "slot": "Waffenhand",
           "name": "Stock von Aln'hara",
           "itemLevel": 295,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_staff_2h_dungeonharronir_c_02.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_staff_2h_dungeonharronir_c_02.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=245770"
         },
         {
+          "id": 69210,
           "slot": "Wappenrock",
           "name": "Wohlbekannter Gildenwappenrock",
           "itemLevel": 1,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_epicguildtabard.jpg"
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_epicguildtabard.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=69210"
         }
       ],
-      "talents": [
-        "Magie aushebeln",
-        "Entmaterialisieren",
-        "Eminenz",
-        "Beruhigender Nebel",
-        "Tritt der aufgehenden Sonne",
-        "Paralyse",
-        "Flüchtige Nebel",
-        "Tigerrausch",
-        "Flinke Füße",
-        "Anmut des Kranichs",
-        "Beruhigende Präsenz",
-        "Verbesserte Entgiftung"
-      ],
+      "talentGroups": {
+        "hero": [
+          {
+            "name": "Tempelausbildung",
+            "rank": 1
+          },
+          {
+            "name": "Mut des Weißen Tigers",
+            "rank": 1
+          },
+          {
+            "name": "Yu'lons Wissen",
+            "rank": 1
+          },
+          {
+            "name": "Herz der Jadeschlange",
+            "rank": 1
+          },
+          {
+            "name": "Chi-Jis Schnelligkeit",
+            "rank": 1
+          },
+          {
+            "name": "Stärke des Schwarzen Ochsen",
+            "rank": 1
+          },
+          {
+            "name": "Pfad des fallenden Sterns",
+            "rank": 1
+          },
+          {
+            "name": "Yu'lons Avatar",
+            "rank": 1
+          },
+          {
+            "name": "Jade-Refugium",
+            "rank": 1
+          },
+          {
+            "name": "Stampede der Uralten",
+            "rank": 1
+          },
+          {
+            "name": "Innerer Kompass",
+            "rank": 1
+          },
+          {
+            "name": "Fließende Weisheit",
+            "rank": 1
+          },
+          {
+            "name": "Einigkeit im Inneren",
+            "rank": 1
+          },
+          {
+            "name": "Leitung der Erhabenen",
+            "rank": 1
+          },
+          {
+            "name": "Erhabene Leitung",
+            "rank": 1
+          },
+          {
+            "name": "Gleichgewicht wiederherstellen",
+            "rank": 1
+          },
+          {
+            "name": "Stolz von Pandaria",
+            "rank": 1
+          },
+          {
+            "name": "Auge des Veteranen",
+            "rank": 1
+          },
+          {
+            "name": "Präzise Kampfkunst",
+            "rank": 1
+          },
+          {
+            "name": "Prügelei auf dem Schlachtfeld",
+            "rank": 1
+          },
+          {
+            "name": "Kampfhaltung",
+            "rank": 1
+          },
+          {
+            "name": "Einer gegen Viele",
+            "rank": 1
+          },
+          {
+            "name": "Wirbelnder Stahl",
+            "rank": 1
+          },
+          {
+            "name": "In Bereitschaft",
+            "rank": 1
+          },
+          {
+            "name": "Allen Widrigkeiten zum Trotz",
+            "rank": 1
+          },
+          {
+            "name": "Effektives Training",
+            "rank": 1
+          },
+          {
+            "name": "Wachsame Beobachtung",
+            "rank": 1
+          },
+          {
+            "name": "Waffen der Mauer",
+            "rank": 1
+          },
+          {
+            "name": "Weisheit der Mauer",
+            "rank": 1
+          },
+          {
+            "name": "Shado-Pan",
+            "rank": 1
+          },
+          {
+            "name": "Vorteil des Initiatoren",
+            "rank": 1
+          },
+          {
+            "name": "Vorausschauendes Training",
+            "rank": 1
+          }
+        ],
+        "specialization": [
+          {
+            "name": "Magie aushebeln",
+            "rank": 1
+          },
+          {
+            "name": "Entmaterialisieren",
+            "rank": 1
+          },
+          {
+            "name": "Eminenz",
+            "rank": 1
+          },
+          {
+            "name": "Einhüllender Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Donnerfokustee",
+            "rank": 1
+          },
+          {
+            "name": "Neblige Vereinigung",
+            "rank": 1
+          },
+          {
+            "name": "Lebenskokon",
+            "rank": 1
+          },
+          {
+            "name": "Manatee",
+            "rank": 1
+          },
+          {
+            "name": "Stärkende Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Kranichstil",
+            "rank": 1
+          },
+          {
+            "name": "Belebung",
+            "rank": 1
+          },
+          {
+            "name": "Heilendes Elixier",
+            "rank": 1
+          },
+          {
+            "name": "Beruhigende Verschmelzung",
+            "rank": 1
+          },
+          {
+            "name": "Weg des Kranichs",
+            "rank": 1
+          },
+          {
+            "name": "Belebendes Gebräu",
+            "rank": 1
+          },
+          {
+            "name": "Nebel des Lebens",
+            "rank": 1
+          },
+          {
+            "name": "Chi-Ji den Roten Kranich beschwören",
+            "rank": 1
+          },
+          {
+            "name": "Schnelldiffusion",
+            "rank": 1
+          },
+          {
+            "name": "Verpuppung",
+            "rank": 1
+          },
+          {
+            "name": "Nebelhülle",
+            "rank": 1
+          },
+          {
+            "name": "Himmlische Harmonie",
+            "rank": 1
+          },
+          {
+            "name": "Lotusinfusion",
+            "rank": 1
+          },
+          {
+            "name": "Nebelmeer",
+            "rank": 1
+          },
+          {
+            "name": "Gabe der Erhabenen",
+            "rank": 1
+          },
+          {
+            "name": "Morgenhauch",
+            "rank": 1
+          },
+          {
+            "name": "Fokussierter Donner",
+            "rank": 1
+          },
+          {
+            "name": "Sheiluns Gabe",
+            "rank": 1
+          },
+          {
+            "name": "Jadefeuerlehren",
+            "rank": 1
+          },
+          {
+            "name": "Geheimer Aufguss",
+            "rank": 1
+          },
+          {
+            "name": "Schleier des Stolzes",
+            "rank": 1
+          },
+          {
+            "name": "Elixier des Kaisers",
+            "rank": 1
+          },
+          {
+            "name": "Chi-Jis Tanz",
+            "rank": 1
+          },
+          {
+            "name": "Nebellinie",
+            "rank": 1
+          },
+          {
+            "name": "Aufziehender Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Vermächtnis der Weisheit",
+            "rank": 1
+          },
+          {
+            "name": "Nebelwirker",
+            "rank": 1
+          },
+          {
+            "name": "Wiederherstellung",
+            "rank": 1
+          },
+          {
+            "name": "Erfrischung",
+            "rank": 1
+          },
+          {
+            "name": "Weg der Schlange",
+            "rank": 1
+          },
+          {
+            "name": "Lebenszyklus",
+            "rank": 1
+          },
+          {
+            "name": "Zenimpuls",
+            "rank": 1
+          },
+          {
+            "name": "Yu'lon die Jadeschlange beschwören",
+            "rank": 1
+          },
+          {
+            "name": "Tiefe Klarheit",
+            "rank": 1
+          },
+          {
+            "name": "Tanzende Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Jadeband",
+            "rank": 1
+          },
+          {
+            "name": "Tritt des aufziehenden Windes",
+            "rank": 1
+          },
+          {
+            "name": "Nebelspitzen",
+            "rank": 1
+          },
+          {
+            "name": "Geisterquell",
+            "rank": 1
+          },
+          {
+            "name": "Turbofäuste",
+            "rank": 1
+          },
+          {
+            "name": "Prädestination",
+            "rank": 1
+          },
+          {
+            "name": "Anhaltende Paralyse",
+            "rank": 1
+          },
+          {
+            "name": "Furorfäuste",
+            "rank": 1
+          },
+          {
+            "name": "Bewegungsschub",
+            "rank": 1
+          },
+          {
+            "name": "Kämpferische Weisheit",
+            "rank": 1
+          },
+          {
+            "name": "Blitzschnelle Reflexe",
+            "rank": 1
+          },
+          {
+            "name": "Wildheit",
+            "rank": 1
+          },
+          {
+            "name": "Aszendenz",
+            "rank": 1
+          },
+          {
+            "name": "Doppelte Bedrohung",
+            "rank": 1
+          },
+          {
+            "name": "Lehren des Klosters",
+            "rank": 1
+          },
+          {
+            "name": "Glanz der Morgendämmerung",
+            "rank": 1
+          },
+          {
+            "name": "Aufsteigender Stern",
+            "rank": 1
+          },
+          {
+            "name": "Zenit",
+            "rank": 1
+          },
+          {
+            "name": "Treffercombo",
+            "rank": 1
+          },
+          {
+            "name": "Schmetternde Fäuste",
+            "rank": 1
+          },
+          {
+            "name": "Spiritueller Fokus",
+            "rank": 1
+          },
+          {
+            "name": "Combobrecher",
+            "rank": 1
+          },
+          {
+            "name": "Schattenboxtreter",
+            "rank": 1
+          },
+          {
+            "name": "Wirbelnder Drachenschlag",
+            "rank": 1
+          },
+          {
+            "name": "Energieausbruch",
+            "rank": 1
+          },
+          {
+            "name": "Schlagabfolge",
+            "rank": 1
+          },
+          {
+            "name": "Sonnenfeuerspirale",
+            "rank": 1
+          },
+          {
+            "name": "Eins mit dem Wind",
+            "rank": 1
+          },
+          {
+            "name": "Drehender Strudel",
+            "rank": 1
+          },
+          {
+            "name": "Universale Energie",
+            "rank": 1
+          },
+          {
+            "name": "Xuens Schlachtrüstung",
+            "rank": 1
+          },
+          {
+            "name": "Waffe des Windes",
+            "rank": 1
+          },
+          {
+            "name": "Himmelsfeuerferse",
+            "rank": 1
+          },
+          {
+            "name": "Kämpferische Agilität",
+            "rank": 1
+          },
+          {
+            "name": "Tigeraugengebräu",
+            "rank": 1
+          },
+          {
+            "name": "Windläufer",
+            "rank": 1
+          },
+          {
+            "name": "Niuzaos Essenz",
+            "rank": 1
+          },
+          {
+            "name": "Unheimliche Gärung",
+            "rank": 1
+          },
+          {
+            "name": "Fasshieb",
+            "rank": 1
+          },
+          {
+            "name": "Reinigendes Gebräu",
+            "rank": 1
+          },
+          {
+            "name": "Beinarbeit",
+            "rank": 1
+          },
+          {
+            "name": "Kleiner Schluck",
+            "rank": 1
+          },
+          {
+            "name": "Elixier der Entschlossenheit",
+            "rank": 1
+          },
+          {
+            "name": "Schnell wie der fließende Strom",
+            "rank": 1
+          },
+          {
+            "name": "Gabe des Ochsen",
+            "rank": 1
+          },
+          {
+            "name": "Speziallieferung",
+            "rank": 1
+          },
+          {
+            "name": "Geist des Ochsen",
+            "rank": 1
+          },
+          {
+            "name": "Himmlische Infusion",
+            "rank": 1
+          },
+          {
+            "name": "Schlüpfrige Fußarbeit",
+            "rank": 1
+          },
+          {
+            "name": "Feuerodem",
+            "rank": 1
+          },
+          {
+            "name": "Gai Plins kaiserliches Gebräu",
+            "rank": 1
+          },
+          {
+            "name": "Niuzaos Training",
+            "rank": 1
+          },
+          {
+            "name": "Vorgetäuschte Instabilität",
+            "rank": 1
+          },
+          {
+            "name": "Sal'salabims Stärke",
+            "rank": 1
+          },
+          {
+            "name": "Schwarzochsengebräu",
+            "rank": 1
+          },
+          {
+            "name": "Meditativer Zustand",
+            "rank": 1
+          },
+          {
+            "name": "Stirnklatscher",
+            "rank": 1
+          },
+          {
+            "name": "Drachenfeuergebräu",
+            "rank": 1
+          },
+          {
+            "name": "Nehmerqualitäten",
+            "rank": 1
+          },
+          {
+            "name": "Blackout-Combo",
+            "rank": 1
+          },
+          {
+            "name": "Gegenschlag",
+            "rank": 1
+          },
+          {
+            "name": "Explodierendes Fässchen",
+            "rank": 1
+          },
+          {
+            "name": "Lebensflamme",
+            "rank": 1
+          },
+          {
+            "name": "Niuzao den Schwarzen Ochsen beschwören",
+            "rank": 1
+          },
+          {
+            "name": "Sturmbräus letztes Fass",
+            "rank": 1
+          },
+          {
+            "name": "Herz des Ochsen",
+            "rank": 1
+          },
+          {
+            "name": "Bringt Nachschub",
+            "rank": 1
+          },
+          {
+            "name": "Braumeister",
+            "rank": 1
+          }
+        ],
+        "class": [
+          {
+            "name": "Beruhigender Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Tritt der aufgehenden Sonne",
+            "rank": 1
+          },
+          {
+            "name": "Paralyse",
+            "rank": 1
+          },
+          {
+            "name": "Flüchtige Nebel",
+            "rank": 1
+          },
+          {
+            "name": "Tigerrausch",
+            "rank": 1
+          },
+          {
+            "name": "Flinke Füße",
+            "rank": 1
+          },
+          {
+            "name": "Anmut des Kranichs",
+            "rank": 1
+          },
+          {
+            "name": "Beruhigende Präsenz",
+            "rank": 1
+          },
+          {
+            "name": "Verbesserte Entgiftung",
+            "rank": 1
+          },
+          {
+            "name": "Lebhafte Belebung",
+            "rank": 1
+          },
+          {
+            "name": "Chischutz",
+            "rank": 1
+          },
+          {
+            "name": "Beschütze und diene",
+            "rank": 1
+          },
+          {
+            "name": "Chiwelle",
+            "rank": 1
+          },
+          {
+            "name": "Transzendenz",
+            "rank": 1
+          },
+          {
+            "name": "Schnelligkeit",
+            "rank": 1
+          },
+          {
+            "name": "Wildheit von Xuen",
+            "rank": 1
+          },
+          {
+            "name": "Ring des Friedens",
+            "rank": 1
+          },
+          {
+            "name": "Tigerschwanzfeger",
+            "rank": 1
+          },
+          {
+            "name": "Verbesserte Berührung des Todes",
+            "rank": 1
+          },
+          {
+            "name": "Nebelrufer",
+            "rank": 1
+          },
+          {
+            "name": "Yu'lons Anmut",
+            "rank": 1
+          },
+          {
+            "name": "Stärkendes Gebräu",
+            "rank": 1
+          },
+          {
+            "name": "Tanz des Windes",
+            "rank": 1
+          },
+          {
+            "name": "Rettet sie alle",
+            "rank": 1
+          },
+          {
+            "name": "Flinke Kunst",
+            "rank": 1
+          },
+          {
+            "name": "Belebende Klarheit",
+            "rank": 1
+          },
+          {
+            "name": "Jadeinfusion",
+            "rank": 1
+          },
+          {
+            "name": "Geschwinde Stärkung",
+            "rank": 1
+          },
+          {
+            "name": "Chibefähigung",
+            "rank": 1
+          },
+          {
+            "name": "Kämpferinstinkte",
+            "rank": 1
+          },
+          {
+            "name": "Leichter als Luft",
+            "rank": 1
+          },
+          {
+            "name": "Fluss des Chis",
+            "rank": 1
+          },
+          {
+            "name": "Mönch",
+            "rank": 1
+          },
+          {
+            "name": "Magiediffusion",
+            "rank": 1
+          },
+          {
+            "name": "Druckpunkte",
+            "rank": 1
+          },
+          {
+            "name": "Sprunghafte Beweglichkeit",
+            "rank": 1
+          },
+          {
+            "name": "Stilles Refugium",
+            "rank": 1
+          },
+          {
+            "name": "Frieden und Wohlstand",
+            "rank": 1
+          },
+          {
+            "name": "Windlaufen",
+            "rank": 1
+          },
+          {
+            "name": "Entgiftung",
+            "rank": 1
+          },
+          {
+            "name": "Speerhandstoß",
+            "rank": 1
+          },
+          {
+            "name": "Tigerzahn",
+            "rank": 1
+          },
+          {
+            "name": "Unbändige Umleitung",
+            "rank": 1
+          },
+          {
+            "name": "Stärke des Geistes",
+            "rank": 1
+          },
+          {
+            "name": "Zenitstampfen",
+            "rank": 1
+          },
+          {
+            "name": "Tödliche Berührung",
+            "rank": 1
+          },
+          {
+            "name": "Staffeln",
+            "rank": 1
+          },
+          {
+            "name": "Chistoß",
+            "rank": 1
+          },
+          {
+            "name": "Hastiges Provozieren",
+            "rank": 1
+          },
+          {
+            "name": "Chitransfer",
+            "rank": 1
+          },
+          {
+            "name": "Flucht aus der Realität",
+            "rank": 1
+          }
+        ],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-08-06T22:14:32.770Z",
         "updated_at": "2026-08-06T22:14:32.770Z",
@@ -3185,58 +5633,58 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 785944,
-          "region": 250539,
+          "world": 785971,
+          "region": 250558,
           "realm": 3359
         },
         "class": {
-          "world": 90473,
-          "region": 31243,
+          "world": 90475,
+          "region": 31244,
           "realm": 428
         },
         "tank": {
-          "world": 721405,
-          "region": 245176,
-          "realm": 3467
+          "world": 721424,
+          "region": 245197,
+          "realm": 3468
         },
         "class_tank": {
-          "world": 161052,
-          "region": 54831,
+          "world": 161054,
+          "region": 54832,
           "realm": 809
         },
         "healer": {
-          "world": 161288,
-          "region": 50816,
+          "world": 161296,
+          "region": 50821,
           "realm": 695
         },
         "class_healer": {
-          "world": 40714,
-          "region": 14287,
+          "world": 40716,
+          "region": 14288,
           "realm": 196
         },
         "dps": {
-          "world": 2574092,
-          "region": 874488,
+          "world": 2574149,
+          "region": 874531,
           "realm": 11515
         },
         "class_dps": {
-          "world": 87382,
-          "region": 32333,
+          "world": 87384,
+          "region": 32335,
           "realm": 421
         },
         "spec_268": {
-          "world": 161053,
-          "region": 54831,
+          "world": 161055,
+          "region": 54832,
           "realm": 809
         },
         "spec_270": {
-          "world": 40714,
-          "region": 14287,
+          "world": 40716,
+          "region": 14288,
           "realm": 196
         },
         "spec_269": {
-          "world": 87382,
-          "region": 32333,
+          "world": 87384,
+          "region": 32335,
           "realm": 421
         }
       },
@@ -3321,6 +5769,3756 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [
+        {
+          "name": "Mogu'shan Vaults",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "The Stone Guard",
+                  "kills": 20
+                },
+                {
+                  "name": "Feng the Accursed",
+                  "kills": 18
+                },
+                {
+                  "name": "Gara'jal the Spiritbinder",
+                  "kills": 20
+                },
+                {
+                  "name": "The Spirit Kings",
+                  "kills": 16
+                },
+                {
+                  "name": "Elegon",
+                  "kills": 14
+                },
+                {
+                  "name": "Will of the Emperor",
+                  "kills": 16
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "The Stone Guard",
+                  "kills": 7
+                },
+                {
+                  "name": "Feng the Accursed",
+                  "kills": 7
+                },
+                {
+                  "name": "Gara'jal the Spiritbinder",
+                  "kills": 7
+                },
+                {
+                  "name": "The Spirit Kings",
+                  "kills": 7
+                },
+                {
+                  "name": "Elegon",
+                  "kills": 5
+                },
+                {
+                  "name": "Will of the Emperor",
+                  "kills": 6
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 1,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "The Stone Guard",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player (Heroic)",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "The Stone Guard",
+                  "kills": 4
+                },
+                {
+                  "name": "Feng the Accursed",
+                  "kills": 4
+                },
+                {
+                  "name": "Gara'jal the Spiritbinder",
+                  "kills": 4
+                },
+                {
+                  "name": "The Spirit Kings",
+                  "kills": 4
+                },
+                {
+                  "name": "Elegon",
+                  "kills": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heart of Fear",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperial Vizier Zor'lok",
+                  "kills": 8
+                },
+                {
+                  "name": "Blade Lord Ta'yak",
+                  "kills": 12
+                },
+                {
+                  "name": "Garalon",
+                  "kills": 10
+                },
+                {
+                  "name": "Wind Lord Mel'jarak",
+                  "kills": 10
+                },
+                {
+                  "name": "Amber-Shaper Un'sok",
+                  "kills": 10
+                },
+                {
+                  "name": "Grand Empress Shek'zeer",
+                  "kills": 10
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player",
+              "completed": 4,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperial Vizier Zor'lok",
+                  "kills": 3
+                },
+                {
+                  "name": "Blade Lord Ta'yak",
+                  "kills": 2
+                },
+                {
+                  "name": "Garalon",
+                  "kills": 1
+                },
+                {
+                  "name": "Wind Lord Mel'jarak",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperial Vizier Zor'lok",
+                  "kills": 1
+                },
+                {
+                  "name": "Blade Lord Ta'yak",
+                  "kills": 1
+                },
+                {
+                  "name": "Garalon",
+                  "kills": 1
+                },
+                {
+                  "name": "Wind Lord Mel'jarak",
+                  "kills": 1
+                },
+                {
+                  "name": "Amber-Shaper Un'sok",
+                  "kills": 1
+                },
+                {
+                  "name": "Grand Empress Shek'zeer",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 3,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Garalon",
+                  "kills": 1
+                },
+                {
+                  "name": "Wind Lord Mel'jarak",
+                  "kills": 1
+                },
+                {
+                  "name": "Amber-Shaper Un'sok",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Terrace of Endless Spring",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 4,
+              "total": 4,
+              "bosses": [
+                {
+                  "name": "Protectors of the Endless",
+                  "kills": 22
+                },
+                {
+                  "name": "Tsulong",
+                  "kills": 20
+                },
+                {
+                  "name": "Lei Shi",
+                  "kills": 22
+                },
+                {
+                  "name": "Sha of Fear",
+                  "kills": 24
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player",
+              "completed": 4,
+              "total": 4,
+              "bosses": [
+                {
+                  "name": "Protectors of the Endless",
+                  "kills": 6
+                },
+                {
+                  "name": "Tsulong",
+                  "kills": 5
+                },
+                {
+                  "name": "Lei Shi",
+                  "kills": 5
+                },
+                {
+                  "name": "Sha of Fear",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 4,
+              "total": 4,
+              "bosses": [
+                {
+                  "name": "Protectors of the Endless",
+                  "kills": 1
+                },
+                {
+                  "name": "Tsulong",
+                  "kills": 1
+                },
+                {
+                  "name": "Lei Shi",
+                  "kills": 1
+                },
+                {
+                  "name": "Sha of Fear",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player (Heroic)",
+              "completed": 4,
+              "total": 4,
+              "bosses": [
+                {
+                  "name": "Protectors of the Endless",
+                  "kills": 1
+                },
+                {
+                  "name": "Tsulong",
+                  "kills": 1
+                },
+                {
+                  "name": "Lei Shi",
+                  "kills": 1
+                },
+                {
+                  "name": "Sha of Fear",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Throne of Thunder",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 12,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Jin'rokh the Breaker",
+                  "kills": 20
+                },
+                {
+                  "name": "Horridon",
+                  "kills": 20
+                },
+                {
+                  "name": "Council of Elders",
+                  "kills": 22
+                },
+                {
+                  "name": "Tortos",
+                  "kills": 18
+                },
+                {
+                  "name": "Megaera",
+                  "kills": 20
+                },
+                {
+                  "name": "Ji-Kun",
+                  "kills": 18
+                },
+                {
+                  "name": "Durumu the Forgotten",
+                  "kills": 20
+                },
+                {
+                  "name": "Primordius",
+                  "kills": 14
+                },
+                {
+                  "name": "Dark Animus",
+                  "kills": 12
+                },
+                {
+                  "name": "Iron Qon",
+                  "kills": 16
+                },
+                {
+                  "name": "Twin Empyreans",
+                  "kills": 18
+                },
+                {
+                  "name": "Lei Shen",
+                  "kills": 18
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player",
+              "completed": 3,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Jin'rokh the Breaker",
+                  "kills": 8
+                },
+                {
+                  "name": "Horridon",
+                  "kills": 4
+                },
+                {
+                  "name": "Council of Elders",
+                  "kills": 4
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player",
+              "completed": 12,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Jin'rokh the Breaker",
+                  "kills": 1
+                },
+                {
+                  "name": "Horridon",
+                  "kills": 1
+                },
+                {
+                  "name": "Council of Elders",
+                  "kills": 1
+                },
+                {
+                  "name": "Tortos",
+                  "kills": 1
+                },
+                {
+                  "name": "Megaera",
+                  "kills": 1
+                },
+                {
+                  "name": "Ji-Kun",
+                  "kills": 1
+                },
+                {
+                  "name": "Durumu the Forgotten",
+                  "kills": 1
+                },
+                {
+                  "name": "Primordius",
+                  "kills": 1
+                },
+                {
+                  "name": "Dark Animus",
+                  "kills": 1
+                },
+                {
+                  "name": "Iron Qon",
+                  "kills": 1
+                },
+                {
+                  "name": "Twin Empyreans",
+                  "kills": 1
+                },
+                {
+                  "name": "Lei Shen",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player (Heroic)",
+              "completed": 13,
+              "total": 13,
+              "bosses": [
+                {
+                  "name": "Jin'rokh the Breaker",
+                  "kills": 2
+                },
+                {
+                  "name": "Horridon",
+                  "kills": 2
+                },
+                {
+                  "name": "Council of Elders",
+                  "kills": 2
+                },
+                {
+                  "name": "Tortos",
+                  "kills": 2
+                },
+                {
+                  "name": "Megaera",
+                  "kills": 2
+                },
+                {
+                  "name": "Ji-Kun",
+                  "kills": 2
+                },
+                {
+                  "name": "Durumu the Forgotten",
+                  "kills": 2
+                },
+                {
+                  "name": "Primordius",
+                  "kills": 2
+                },
+                {
+                  "name": "Dark Animus",
+                  "kills": 2
+                },
+                {
+                  "name": "Iron Qon",
+                  "kills": 2
+                },
+                {
+                  "name": "Twin Empyreans",
+                  "kills": 2
+                },
+                {
+                  "name": "Lei Shen",
+                  "kills": 2
+                },
+                {
+                  "name": "Ra-den",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Siege of Orgrimmar",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 13,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 16
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 18
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 16
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 16
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 10
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 10
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 8
+                },
+                {
+                  "name": "General Nazgrim",
+                  "kills": 8
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 10
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 6
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 6
+                },
+                {
+                  "name": "Siegecrafter Blackfuse",
+                  "kills": 10
+                },
+                {
+                  "name": "Paragons of the Klaxxi",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player",
+              "completed": 10,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 12
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 13
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 11
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 11
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 10
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 10
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 7
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 10
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 10
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 9
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 14,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 1
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 1
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 1
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 1
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 1
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 1
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 1
+                },
+                {
+                  "name": "General Nazgrim",
+                  "kills": 1
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 1
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 1
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 1
+                },
+                {
+                  "name": "Siegecrafter Blackfuse",
+                  "kills": 1
+                },
+                {
+                  "name": "Paragons of the Klaxxi",
+                  "kills": 1
+                },
+                {
+                  "name": "Garrosh Hellscream",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 14,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 21
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 21
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 18
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 19
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 17
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 17
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 14
+                },
+                {
+                  "name": "General Nazgrim",
+                  "kills": 12
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 12
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 10
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 8
+                },
+                {
+                  "name": "Siegecrafter Blackfuse",
+                  "kills": 7
+                },
+                {
+                  "name": "Paragons of the Klaxxi",
+                  "kills": 8
+                },
+                {
+                  "name": "Garrosh Hellscream",
+                  "kills": 13
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 10,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 12
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 13
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 11
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 11
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 10
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 10
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 7
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 10
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 10
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 9
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 14,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Immerseus",
+                  "kills": 1
+                },
+                {
+                  "name": "The Fallen Protectors",
+                  "kills": 1
+                },
+                {
+                  "name": "Norushen",
+                  "kills": 1
+                },
+                {
+                  "name": "Sha of Pride",
+                  "kills": 1
+                },
+                {
+                  "name": "Galakras",
+                  "kills": 1
+                },
+                {
+                  "name": "Iron Juggernaut",
+                  "kills": 1
+                },
+                {
+                  "name": "Kor'kron Dark Shaman",
+                  "kills": 1
+                },
+                {
+                  "name": "General Nazgrim",
+                  "kills": 1
+                },
+                {
+                  "name": "Malkorok",
+                  "kills": 1
+                },
+                {
+                  "name": "Spoils of Pandaria",
+                  "kills": 1
+                },
+                {
+                  "name": "Thok the Bloodthirsty",
+                  "kills": 1
+                },
+                {
+                  "name": "Siegecrafter Blackfuse",
+                  "kills": 1
+                },
+                {
+                  "name": "Paragons of the Klaxxi",
+                  "kills": 1
+                },
+                {
+                  "name": "Garrosh Hellscream",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackwing Lair",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "Razorgore the Untamed",
+                  "kills": 1
+                },
+                {
+                  "name": "Nefarian",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Magtheridon's Lair",
+          "modes": [
+            {
+              "difficulty": "25 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Magtheridon",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Battle for Mount Hyjal",
+          "modes": [
+            {
+              "difficulty": "25 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Archimonde",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Black Temple",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Illidan Stormrage",
+                  "kills": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Obsidian Sanctum",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Sartharion",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ulduar",
+          "modes": [
+            {
+              "difficulty": "25 Player",
+              "completed": 14,
+              "total": 14,
+              "bosses": [
+                {
+                  "name": "Flame Leviathan",
+                  "kills": 1
+                },
+                {
+                  "name": "Ignis the Furnace Master",
+                  "kills": 1
+                },
+                {
+                  "name": "Razorscale",
+                  "kills": 1
+                },
+                {
+                  "name": "XT-002 Deconstructor",
+                  "kills": 1
+                },
+                {
+                  "name": "The Assembly of Iron",
+                  "kills": 1
+                },
+                {
+                  "name": "Kologarn",
+                  "kills": 1
+                },
+                {
+                  "name": "Auriaya",
+                  "kills": 1
+                },
+                {
+                  "name": "Hodir",
+                  "kills": 1
+                },
+                {
+                  "name": "Thorim",
+                  "kills": 1
+                },
+                {
+                  "name": "Freya",
+                  "kills": 1
+                },
+                {
+                  "name": "Mimiron",
+                  "kills": 1
+                },
+                {
+                  "name": "General Vezax",
+                  "kills": 1
+                },
+                {
+                  "name": "Yogg-Saron",
+                  "kills": 1
+                },
+                {
+                  "name": "Algalon the Observer",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Trial of the Crusader",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 5,
+              "total": 5,
+              "bosses": [
+                {
+                  "name": "The Northrend Beasts",
+                  "kills": 1
+                },
+                {
+                  "name": "Lord Jaraxxus",
+                  "kills": 1
+                },
+                {
+                  "name": "Champions of the Alliance",
+                  "kills": 1
+                },
+                {
+                  "name": "Twin Val'kyr",
+                  "kills": 1
+                },
+                {
+                  "name": "Anub'arak",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 5,
+              "total": 5,
+              "bosses": [
+                {
+                  "name": "The Northrend Beasts",
+                  "kills": 1
+                },
+                {
+                  "name": "Lord Jaraxxus",
+                  "kills": 1
+                },
+                {
+                  "name": "Champions of the Alliance",
+                  "kills": 1
+                },
+                {
+                  "name": "Twin Val'kyr",
+                  "kills": 1
+                },
+                {
+                  "name": "Anub'arak",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Onyxia's Lair",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Onyxia",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Onyxia",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Icecrown Citadel",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 12,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Lord Marrowgar",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Deathwhisper",
+                  "kills": 2
+                },
+                {
+                  "name": "Icecrown Gunship Battle",
+                  "kills": 2
+                },
+                {
+                  "name": "Deathbringer Saurfang",
+                  "kills": 2
+                },
+                {
+                  "name": "Festergut",
+                  "kills": 2
+                },
+                {
+                  "name": "Rotface",
+                  "kills": 2
+                },
+                {
+                  "name": "Professor Putricide",
+                  "kills": 2
+                },
+                {
+                  "name": "Blood Prince Council",
+                  "kills": 2
+                },
+                {
+                  "name": "Blood-Queen Lana'thel",
+                  "kills": 2
+                },
+                {
+                  "name": "Valithria Dreamwalker",
+                  "kills": 2
+                },
+                {
+                  "name": "Sindragosa",
+                  "kills": 2
+                },
+                {
+                  "name": "The Lich King",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player",
+              "completed": 1,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Lord Marrowgar",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 10,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Lord Marrowgar",
+                  "kills": 1
+                },
+                {
+                  "name": "Lady Deathwhisper",
+                  "kills": 1
+                },
+                {
+                  "name": "Icecrown Gunship Battle",
+                  "kills": 1
+                },
+                {
+                  "name": "Deathbringer Saurfang",
+                  "kills": 1
+                },
+                {
+                  "name": "Festergut",
+                  "kills": 1
+                },
+                {
+                  "name": "Rotface",
+                  "kills": 1
+                },
+                {
+                  "name": "Professor Putricide",
+                  "kills": 1
+                },
+                {
+                  "name": "Blood Prince Council",
+                  "kills": 1
+                },
+                {
+                  "name": "Blood-Queen Lana'thel",
+                  "kills": 1
+                },
+                {
+                  "name": "Valithria Dreamwalker",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player (Heroic)",
+              "completed": 12,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Lord Marrowgar",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Deathwhisper",
+                  "kills": 2
+                },
+                {
+                  "name": "Icecrown Gunship Battle",
+                  "kills": 2
+                },
+                {
+                  "name": "Deathbringer Saurfang",
+                  "kills": 2
+                },
+                {
+                  "name": "Festergut",
+                  "kills": 2
+                },
+                {
+                  "name": "Rotface",
+                  "kills": 2
+                },
+                {
+                  "name": "Professor Putricide",
+                  "kills": 2
+                },
+                {
+                  "name": "Blood Prince Council",
+                  "kills": 2
+                },
+                {
+                  "name": "Blood-Queen Lana'thel",
+                  "kills": 2
+                },
+                {
+                  "name": "Valithria Dreamwalker",
+                  "kills": 2
+                },
+                {
+                  "name": "Sindragosa",
+                  "kills": 2
+                },
+                {
+                  "name": "The Lich King",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Ruby Sanctum",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Halion",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Bastion of Twilight",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 4,
+              "total": 4,
+              "bosses": [
+                {
+                  "name": "Halfus Wyrmbreaker",
+                  "kills": 1
+                },
+                {
+                  "name": "Theralion and Valiona",
+                  "kills": 1
+                },
+                {
+                  "name": "Ascendant Council",
+                  "kills": 1
+                },
+                {
+                  "name": "Cho'gall",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "25 Player (Heroic)",
+              "completed": 5,
+              "total": 5,
+              "bosses": [
+                {
+                  "name": "Halfus Wyrmbreaker",
+                  "kills": 1
+                },
+                {
+                  "name": "Theralion and Valiona",
+                  "kills": 1
+                },
+                {
+                  "name": "Ascendant Council",
+                  "kills": 1
+                },
+                {
+                  "name": "Cho'gall",
+                  "kills": 1
+                },
+                {
+                  "name": "Sinestra",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackwing Descent",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 6,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Omnotron Defense System",
+                  "kills": 3
+                },
+                {
+                  "name": "Magmaw",
+                  "kills": 1
+                },
+                {
+                  "name": "Atramedes",
+                  "kills": 1
+                },
+                {
+                  "name": "Chimaeron",
+                  "kills": 1
+                },
+                {
+                  "name": "Maloriak",
+                  "kills": 1
+                },
+                {
+                  "name": "Nefarian's End",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Omnotron Defense System",
+                  "kills": 1
+                },
+                {
+                  "name": "Magmaw",
+                  "kills": 1
+                },
+                {
+                  "name": "Atramedes",
+                  "kills": 1
+                },
+                {
+                  "name": "Chimaeron",
+                  "kills": 1
+                },
+                {
+                  "name": "Maloriak",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Throne of the Four Winds",
+          "modes": [
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "The Conclave of Wind",
+                  "kills": 1
+                },
+                {
+                  "name": "Al'Akir",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Firelands",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Beth'tilac",
+                  "kills": 1
+                },
+                {
+                  "name": "Lord Rhyolith",
+                  "kills": 1
+                },
+                {
+                  "name": "Alysrazor",
+                  "kills": 1
+                },
+                {
+                  "name": "Shannox",
+                  "kills": 1
+                },
+                {
+                  "name": "Baleroc, the Gatekeeper",
+                  "kills": 1
+                },
+                {
+                  "name": "Majordomo Staghelm",
+                  "kills": 1
+                },
+                {
+                  "name": "Ragnaros",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "10 Player (Heroic)",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Beth'tilac",
+                  "kills": 1
+                },
+                {
+                  "name": "Lord Rhyolith",
+                  "kills": 1
+                },
+                {
+                  "name": "Alysrazor",
+                  "kills": 1
+                },
+                {
+                  "name": "Shannox",
+                  "kills": 1
+                },
+                {
+                  "name": "Baleroc, the Gatekeeper",
+                  "kills": 1
+                },
+                {
+                  "name": "Majordomo Staghelm",
+                  "kills": 1
+                },
+                {
+                  "name": "Ragnaros",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dragon Soul",
+          "modes": [
+            {
+              "difficulty": "10 Player",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Morchok",
+                  "kills": 2
+                },
+                {
+                  "name": "Warlord Zon'ozz",
+                  "kills": 2
+                },
+                {
+                  "name": "Yor'sahj the Unsleeping",
+                  "kills": 2
+                },
+                {
+                  "name": "Hagara the Stormbinder",
+                  "kills": 2
+                },
+                {
+                  "name": "Ultraxion",
+                  "kills": 2
+                },
+                {
+                  "name": "Warmaster Blackhorn",
+                  "kills": 2
+                },
+                {
+                  "name": "Spine of Deathwing",
+                  "kills": 1
+                },
+                {
+                  "name": "Madness of Deathwing",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Highmaul",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 6,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Kargath Bladefist",
+                  "kills": 4
+                },
+                {
+                  "name": "The Butcher",
+                  "kills": 3
+                },
+                {
+                  "name": "Brackenspore",
+                  "kills": 3
+                },
+                {
+                  "name": "Twin Ogron",
+                  "kills": 1
+                },
+                {
+                  "name": "Ko'ragh",
+                  "kills": 2
+                },
+                {
+                  "name": "Imperator Mar'gok",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Kargath Bladefist",
+                  "kills": 2
+                },
+                {
+                  "name": "The Butcher",
+                  "kills": 3
+                },
+                {
+                  "name": "Tectus",
+                  "kills": 2
+                },
+                {
+                  "name": "Brackenspore",
+                  "kills": 3
+                },
+                {
+                  "name": "Twin Ogron",
+                  "kills": 2
+                },
+                {
+                  "name": "Ko'ragh",
+                  "kills": 2
+                },
+                {
+                  "name": "Imperator Mar'gok",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Kargath Bladefist",
+                  "kills": 5
+                },
+                {
+                  "name": "The Butcher",
+                  "kills": 5
+                },
+                {
+                  "name": "Tectus",
+                  "kills": 4
+                },
+                {
+                  "name": "Brackenspore",
+                  "kills": 4
+                },
+                {
+                  "name": "Twin Ogron",
+                  "kills": 2
+                },
+                {
+                  "name": "Ko'ragh",
+                  "kills": 2
+                },
+                {
+                  "name": "Imperator Mar'gok",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 1,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Kargath Bladefist",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackrock Foundry",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 10,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Oregorger",
+                  "kills": 6
+                },
+                {
+                  "name": "Hans'gar and Franzok",
+                  "kills": 6
+                },
+                {
+                  "name": "Beastlord Darmac",
+                  "kills": 7
+                },
+                {
+                  "name": "Gruul",
+                  "kills": 6
+                },
+                {
+                  "name": "Flamebender Ka'graz",
+                  "kills": 7
+                },
+                {
+                  "name": "Operator Thogar",
+                  "kills": 6
+                },
+                {
+                  "name": "The Blast Furnace",
+                  "kills": 6
+                },
+                {
+                  "name": "Kromog",
+                  "kills": 7
+                },
+                {
+                  "name": "The Iron Maidens",
+                  "kills": 5
+                },
+                {
+                  "name": "Blackhand",
+                  "kills": 6
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 4,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Hans'gar and Franzok",
+                  "kills": 2
+                },
+                {
+                  "name": "Gruul",
+                  "kills": 1
+                },
+                {
+                  "name": "Flamebender Ka'graz",
+                  "kills": 1
+                },
+                {
+                  "name": "Kromog",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 10,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Oregorger",
+                  "kills": 2
+                },
+                {
+                  "name": "Hans'gar and Franzok",
+                  "kills": 3
+                },
+                {
+                  "name": "Beastlord Darmac",
+                  "kills": 2
+                },
+                {
+                  "name": "Gruul",
+                  "kills": 2
+                },
+                {
+                  "name": "Flamebender Ka'graz",
+                  "kills": 3
+                },
+                {
+                  "name": "Operator Thogar",
+                  "kills": 2
+                },
+                {
+                  "name": "The Blast Furnace",
+                  "kills": 1
+                },
+                {
+                  "name": "Kromog",
+                  "kills": 3
+                },
+                {
+                  "name": "The Iron Maidens",
+                  "kills": 2
+                },
+                {
+                  "name": "Blackhand",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hellfire Citadel",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 9,
+              "total": 13,
+              "bosses": [
+                {
+                  "name": "Hellfire Assault",
+                  "kills": 2
+                },
+                {
+                  "name": "Iron Reaver",
+                  "kills": 2
+                },
+                {
+                  "name": "Kormrok",
+                  "kills": 1
+                },
+                {
+                  "name": "Hellfire High Council",
+                  "kills": 2
+                },
+                {
+                  "name": "Kilrogg Deadeye",
+                  "kills": 1
+                },
+                {
+                  "name": "Gorefiend",
+                  "kills": 1
+                },
+                {
+                  "name": "Fel Lord Zakuun",
+                  "kills": 1
+                },
+                {
+                  "name": "Xhul'horac",
+                  "kills": 1
+                },
+                {
+                  "name": "Archimonde",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 13,
+              "total": 13,
+              "bosses": [
+                {
+                  "name": "Hellfire Assault",
+                  "kills": 7
+                },
+                {
+                  "name": "Iron Reaver",
+                  "kills": 8
+                },
+                {
+                  "name": "Kormrok",
+                  "kills": 8
+                },
+                {
+                  "name": "Hellfire High Council",
+                  "kills": 6
+                },
+                {
+                  "name": "Kilrogg Deadeye",
+                  "kills": 6
+                },
+                {
+                  "name": "Gorefiend",
+                  "kills": 5
+                },
+                {
+                  "name": "Shadow-Lord Iskar",
+                  "kills": 2
+                },
+                {
+                  "name": "Socrethar the Eternal",
+                  "kills": 4
+                },
+                {
+                  "name": "Fel Lord Zakuun",
+                  "kills": 2
+                },
+                {
+                  "name": "Xhul'horac",
+                  "kills": 2
+                },
+                {
+                  "name": "Tyrant Velhari",
+                  "kills": 1
+                },
+                {
+                  "name": "Mannoroth",
+                  "kills": 3
+                },
+                {
+                  "name": "Archimonde",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 9,
+              "total": 13,
+              "bosses": [
+                {
+                  "name": "Hellfire Assault",
+                  "kills": 2
+                },
+                {
+                  "name": "Iron Reaver",
+                  "kills": 2
+                },
+                {
+                  "name": "Kormrok",
+                  "kills": 1
+                },
+                {
+                  "name": "Hellfire High Council",
+                  "kills": 1
+                },
+                {
+                  "name": "Kilrogg Deadeye",
+                  "kills": 1
+                },
+                {
+                  "name": "Gorefiend",
+                  "kills": 1
+                },
+                {
+                  "name": "Shadow-Lord Iskar",
+                  "kills": 1
+                },
+                {
+                  "name": "Socrethar the Eternal",
+                  "kills": 1
+                },
+                {
+                  "name": "Fel Lord Zakuun",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Emerald Nightmare",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Nythendra",
+                  "kills": 3
+                },
+                {
+                  "name": "Il'gynoth, Heart of Corruption",
+                  "kills": 4
+                },
+                {
+                  "name": "Elerethe Renferal",
+                  "kills": 3
+                },
+                {
+                  "name": "Ursoc",
+                  "kills": 3
+                },
+                {
+                  "name": "Dragons of Nightmare",
+                  "kills": 3
+                },
+                {
+                  "name": "Cenarius",
+                  "kills": 3
+                },
+                {
+                  "name": "Xavius",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 7,
+              "total": 7,
+              "bosses": [
+                {
+                  "name": "Nythendra",
+                  "kills": 2
+                },
+                {
+                  "name": "Il'gynoth, Heart of Corruption",
+                  "kills": 2
+                },
+                {
+                  "name": "Elerethe Renferal",
+                  "kills": 2
+                },
+                {
+                  "name": "Ursoc",
+                  "kills": 2
+                },
+                {
+                  "name": "Dragons of Nightmare",
+                  "kills": 2
+                },
+                {
+                  "name": "Cenarius",
+                  "kills": 2
+                },
+                {
+                  "name": "Xavius",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Trial of Valor",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 2,
+              "total": 3,
+              "bosses": [
+                {
+                  "name": "Odyn",
+                  "kills": 1
+                },
+                {
+                  "name": "Helya",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Nighthold",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 10,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Skorpyron",
+                  "kills": 1
+                },
+                {
+                  "name": "Chronomatic Anomaly",
+                  "kills": 1
+                },
+                {
+                  "name": "Trilliax",
+                  "kills": 1
+                },
+                {
+                  "name": "Spellblade Aluriel",
+                  "kills": 1
+                },
+                {
+                  "name": "Tichondrius",
+                  "kills": 1
+                },
+                {
+                  "name": "Krosus",
+                  "kills": 1
+                },
+                {
+                  "name": "High Botanist Tel'arn",
+                  "kills": 1
+                },
+                {
+                  "name": "Star Augur Etraeus",
+                  "kills": 1
+                },
+                {
+                  "name": "Grand Magistrix Elisande",
+                  "kills": 1
+                },
+                {
+                  "name": "Gul'dan",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 10,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Skorpyron",
+                  "kills": 2
+                },
+                {
+                  "name": "Chronomatic Anomaly",
+                  "kills": 2
+                },
+                {
+                  "name": "Trilliax",
+                  "kills": 2
+                },
+                {
+                  "name": "Spellblade Aluriel",
+                  "kills": 1
+                },
+                {
+                  "name": "Tichondrius",
+                  "kills": 1
+                },
+                {
+                  "name": "Krosus",
+                  "kills": 1
+                },
+                {
+                  "name": "High Botanist Tel'arn",
+                  "kills": 1
+                },
+                {
+                  "name": "Star Augur Etraeus",
+                  "kills": 1
+                },
+                {
+                  "name": "Grand Magistrix Elisande",
+                  "kills": 1
+                },
+                {
+                  "name": "Gul'dan",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tomb of Sargeras",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Goroth",
+                  "kills": 2
+                },
+                {
+                  "name": "Demonic Inquisition",
+                  "kills": 1
+                },
+                {
+                  "name": "Harjatan",
+                  "kills": 2
+                },
+                {
+                  "name": "Sisters of the Moon",
+                  "kills": 1
+                },
+                {
+                  "name": "Mistress Sassz'ine",
+                  "kills": 1
+                },
+                {
+                  "name": "The Desolate Host",
+                  "kills": 1
+                },
+                {
+                  "name": "Maiden of Vigilance",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen Avatar",
+                  "kills": 2
+                },
+                {
+                  "name": "Kil'jaeden",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Goroth",
+                  "kills": 5
+                },
+                {
+                  "name": "Demonic Inquisition",
+                  "kills": 4
+                },
+                {
+                  "name": "Harjatan",
+                  "kills": 5
+                },
+                {
+                  "name": "Sisters of the Moon",
+                  "kills": 4
+                },
+                {
+                  "name": "Mistress Sassz'ine",
+                  "kills": 4
+                },
+                {
+                  "name": "The Desolate Host",
+                  "kills": 3
+                },
+                {
+                  "name": "Maiden of Vigilance",
+                  "kills": 4
+                },
+                {
+                  "name": "Fallen Avatar",
+                  "kills": 4
+                },
+                {
+                  "name": "Kil'jaeden",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 5,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Goroth",
+                  "kills": 2
+                },
+                {
+                  "name": "Demonic Inquisition",
+                  "kills": 2
+                },
+                {
+                  "name": "Harjatan",
+                  "kills": 2
+                },
+                {
+                  "name": "Sisters of the Moon",
+                  "kills": 1
+                },
+                {
+                  "name": "Mistress Sassz'ine",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Antorus, the Burning Throne",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 10,
+              "total": 11,
+              "bosses": [
+                {
+                  "name": "Felhounds of Sargeras",
+                  "kills": 1
+                },
+                {
+                  "name": "Antoran High Command",
+                  "kills": 2
+                },
+                {
+                  "name": "Portal Keeper Hasabel",
+                  "kills": 1
+                },
+                {
+                  "name": "Eonar the Life-Binder",
+                  "kills": 2
+                },
+                {
+                  "name": "Imonar the Soulhunter",
+                  "kills": 1
+                },
+                {
+                  "name": "Kin'garoth",
+                  "kills": 1
+                },
+                {
+                  "name": "The Coven of Shivarra",
+                  "kills": 1
+                },
+                {
+                  "name": "Varimathras",
+                  "kills": 2
+                },
+                {
+                  "name": "Aggramar",
+                  "kills": 1
+                },
+                {
+                  "name": "Argus the Unmaker",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 11,
+              "total": 11,
+              "bosses": [
+                {
+                  "name": "Garothi Worldbreaker",
+                  "kills": 19
+                },
+                {
+                  "name": "Felhounds of Sargeras",
+                  "kills": 19
+                },
+                {
+                  "name": "Antoran High Command",
+                  "kills": 20
+                },
+                {
+                  "name": "Portal Keeper Hasabel",
+                  "kills": 18
+                },
+                {
+                  "name": "Eonar the Life-Binder",
+                  "kills": 19
+                },
+                {
+                  "name": "Imonar the Soulhunter",
+                  "kills": 18
+                },
+                {
+                  "name": "Kin'garoth",
+                  "kills": 15
+                },
+                {
+                  "name": "The Coven of Shivarra",
+                  "kills": 11
+                },
+                {
+                  "name": "Varimathras",
+                  "kills": 12
+                },
+                {
+                  "name": "Aggramar",
+                  "kills": 13
+                },
+                {
+                  "name": "Argus the Unmaker",
+                  "kills": 15
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 11,
+              "total": 11,
+              "bosses": [
+                {
+                  "name": "Garothi Worldbreaker",
+                  "kills": 16
+                },
+                {
+                  "name": "Felhounds of Sargeras",
+                  "kills": 17
+                },
+                {
+                  "name": "Antoran High Command",
+                  "kills": 13
+                },
+                {
+                  "name": "Portal Keeper Hasabel",
+                  "kills": 13
+                },
+                {
+                  "name": "Eonar the Life-Binder",
+                  "kills": 16
+                },
+                {
+                  "name": "Imonar the Soulhunter",
+                  "kills": 11
+                },
+                {
+                  "name": "Kin'garoth",
+                  "kills": 9
+                },
+                {
+                  "name": "The Coven of Shivarra",
+                  "kills": 5
+                },
+                {
+                  "name": "Varimathras",
+                  "kills": 10
+                },
+                {
+                  "name": "Aggramar",
+                  "kills": 8
+                },
+                {
+                  "name": "Argus the Unmaker",
+                  "kills": 8
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 11,
+              "total": 11,
+              "bosses": [
+                {
+                  "name": "Garothi Worldbreaker",
+                  "kills": 8
+                },
+                {
+                  "name": "Felhounds of Sargeras",
+                  "kills": 8
+                },
+                {
+                  "name": "Antoran High Command",
+                  "kills": 6
+                },
+                {
+                  "name": "Portal Keeper Hasabel",
+                  "kills": 5
+                },
+                {
+                  "name": "Eonar the Life-Binder",
+                  "kills": 3
+                },
+                {
+                  "name": "Imonar the Soulhunter",
+                  "kills": 4
+                },
+                {
+                  "name": "Kin'garoth",
+                  "kills": 4
+                },
+                {
+                  "name": "The Coven of Shivarra",
+                  "kills": 4
+                },
+                {
+                  "name": "Varimathras",
+                  "kills": 4
+                },
+                {
+                  "name": "Aggramar",
+                  "kills": 5
+                },
+                {
+                  "name": "Argus the Unmaker",
+                  "kills": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Uldir",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Taloc",
+                  "kills": 1
+                },
+                {
+                  "name": "MOTHER",
+                  "kills": 1
+                },
+                {
+                  "name": "Fetid Devourer",
+                  "kills": 1
+                },
+                {
+                  "name": "Zek'voz, Herald of N'Zoth",
+                  "kills": 1
+                },
+                {
+                  "name": "Vectis",
+                  "kills": 1
+                },
+                {
+                  "name": "Zul, Reborn",
+                  "kills": 1
+                },
+                {
+                  "name": "Mythrax the Unraveler",
+                  "kills": 1
+                },
+                {
+                  "name": "G'huun",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Taloc",
+                  "kills": 2
+                },
+                {
+                  "name": "MOTHER",
+                  "kills": 3
+                },
+                {
+                  "name": "Fetid Devourer",
+                  "kills": 3
+                },
+                {
+                  "name": "Zek'voz, Herald of N'Zoth",
+                  "kills": 2
+                },
+                {
+                  "name": "Vectis",
+                  "kills": 2
+                },
+                {
+                  "name": "Zul, Reborn",
+                  "kills": 2
+                },
+                {
+                  "name": "Mythrax the Unraveler",
+                  "kills": 4
+                },
+                {
+                  "name": "G'huun",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Taloc",
+                  "kills": 8
+                },
+                {
+                  "name": "MOTHER",
+                  "kills": 8
+                },
+                {
+                  "name": "Fetid Devourer",
+                  "kills": 8
+                },
+                {
+                  "name": "Zek'voz, Herald of N'Zoth",
+                  "kills": 8
+                },
+                {
+                  "name": "Vectis",
+                  "kills": 8
+                },
+                {
+                  "name": "Zul, Reborn",
+                  "kills": 3
+                },
+                {
+                  "name": "Mythrax the Unraveler",
+                  "kills": 4
+                },
+                {
+                  "name": "G'huun",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Taloc",
+                  "kills": 4
+                },
+                {
+                  "name": "MOTHER",
+                  "kills": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Battle of Dazar'alor",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Champion of the Light",
+                  "kills": 1
+                },
+                {
+                  "name": "Grong, the Jungle Lord",
+                  "kills": 1
+                },
+                {
+                  "name": "Jadefire Masters",
+                  "kills": 1
+                },
+                {
+                  "name": "Opulence",
+                  "kills": 2
+                },
+                {
+                  "name": "Conclave of the Chosen",
+                  "kills": 1
+                },
+                {
+                  "name": "King Rastakhan",
+                  "kills": 1
+                },
+                {
+                  "name": "High Tinker Mekkatorque",
+                  "kills": 2
+                },
+                {
+                  "name": "Stormwall Blockade",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Jaina Proudmoore",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Champion of the Light",
+                  "kills": 3
+                },
+                {
+                  "name": "Grong, the Jungle Lord",
+                  "kills": 2
+                },
+                {
+                  "name": "Jadefire Masters",
+                  "kills": 2
+                },
+                {
+                  "name": "Opulence",
+                  "kills": 2
+                },
+                {
+                  "name": "Conclave of the Chosen",
+                  "kills": 2
+                },
+                {
+                  "name": "King Rastakhan",
+                  "kills": 2
+                },
+                {
+                  "name": "High Tinker Mekkatorque",
+                  "kills": 2
+                },
+                {
+                  "name": "Stormwall Blockade",
+                  "kills": 1
+                },
+                {
+                  "name": "Lady Jaina Proudmoore",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Champion of the Light",
+                  "kills": 8
+                },
+                {
+                  "name": "Grong, the Jungle Lord",
+                  "kills": 9
+                },
+                {
+                  "name": "Jadefire Masters",
+                  "kills": 6
+                },
+                {
+                  "name": "Opulence",
+                  "kills": 7
+                },
+                {
+                  "name": "Conclave of the Chosen",
+                  "kills": 4
+                },
+                {
+                  "name": "King Rastakhan",
+                  "kills": 4
+                },
+                {
+                  "name": "High Tinker Mekkatorque",
+                  "kills": 3
+                },
+                {
+                  "name": "Stormwall Blockade",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Jaina Proudmoore",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 3,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Champion of the Light",
+                  "kills": 7
+                },
+                {
+                  "name": "Grong, the Jungle Lord",
+                  "kills": 5
+                },
+                {
+                  "name": "Jadefire Masters",
+                  "kills": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Crucible of Storms",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 2,
+              "total": 2,
+              "bosses": [
+                {
+                  "name": "The Restless Cabal",
+                  "kills": 1
+                },
+                {
+                  "name": "Uu'nat, Harbinger of the Void",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Eternal Palace",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 6,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Abyssal Commander Sivara",
+                  "kills": 1
+                },
+                {
+                  "name": "Lady Ashvane",
+                  "kills": 2
+                },
+                {
+                  "name": "Orgozoa",
+                  "kills": 1
+                },
+                {
+                  "name": "The Queen's Court",
+                  "kills": 1
+                },
+                {
+                  "name": "Za'qul, Harbinger of Ny'alotha",
+                  "kills": 1
+                },
+                {
+                  "name": "Queen Azshara",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Abyssal Commander Sivara",
+                  "kills": 4
+                },
+                {
+                  "name": "Blackwater Behemoth",
+                  "kills": 4
+                },
+                {
+                  "name": "Radiance of Azshara",
+                  "kills": 6
+                },
+                {
+                  "name": "Lady Ashvane",
+                  "kills": 5
+                },
+                {
+                  "name": "Orgozoa",
+                  "kills": 3
+                },
+                {
+                  "name": "The Queen's Court",
+                  "kills": 3
+                },
+                {
+                  "name": "Za'qul, Harbinger of Ny'alotha",
+                  "kills": 3
+                },
+                {
+                  "name": "Queen Azshara",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Abyssal Commander Sivara",
+                  "kills": 13
+                },
+                {
+                  "name": "Blackwater Behemoth",
+                  "kills": 14
+                },
+                {
+                  "name": "Radiance of Azshara",
+                  "kills": 14
+                },
+                {
+                  "name": "Lady Ashvane",
+                  "kills": 14
+                },
+                {
+                  "name": "Orgozoa",
+                  "kills": 14
+                },
+                {
+                  "name": "The Queen's Court",
+                  "kills": 12
+                },
+                {
+                  "name": "Za'qul, Harbinger of Ny'alotha",
+                  "kills": 11
+                },
+                {
+                  "name": "Queen Azshara",
+                  "kills": 11
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 6,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Abyssal Commander Sivara",
+                  "kills": 9
+                },
+                {
+                  "name": "Blackwater Behemoth",
+                  "kills": 8
+                },
+                {
+                  "name": "Radiance of Azshara",
+                  "kills": 10
+                },
+                {
+                  "name": "Lady Ashvane",
+                  "kills": 7
+                },
+                {
+                  "name": "Orgozoa",
+                  "kills": 3
+                },
+                {
+                  "name": "The Queen's Court",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ny'alotha, the Waking City",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 6,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Wrathion, the Black Emperor",
+                  "kills": 1
+                },
+                {
+                  "name": "Maut",
+                  "kills": 1
+                },
+                {
+                  "name": "The Prophet Skitra",
+                  "kills": 1
+                },
+                {
+                  "name": "The Hivemind",
+                  "kills": 1
+                },
+                {
+                  "name": "Vexiona",
+                  "kills": 1
+                },
+                {
+                  "name": "Ra-den the Despoiled",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 12,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Wrathion, the Black Emperor",
+                  "kills": 11
+                },
+                {
+                  "name": "Maut",
+                  "kills": 10
+                },
+                {
+                  "name": "The Prophet Skitra",
+                  "kills": 12
+                },
+                {
+                  "name": "Dark Inquisitor Xanesh",
+                  "kills": 7
+                },
+                {
+                  "name": "The Hivemind",
+                  "kills": 8
+                },
+                {
+                  "name": "Shad'har the Insatiable",
+                  "kills": 6
+                },
+                {
+                  "name": "Drest'agath",
+                  "kills": 6
+                },
+                {
+                  "name": "Il'gynoth, Corruption Reborn",
+                  "kills": 6
+                },
+                {
+                  "name": "Vexiona",
+                  "kills": 5
+                },
+                {
+                  "name": "Ra-den the Despoiled",
+                  "kills": 8
+                },
+                {
+                  "name": "Carapace of N'Zoth",
+                  "kills": 6
+                },
+                {
+                  "name": "N'Zoth the Corruptor",
+                  "kills": 5
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 4,
+              "total": 12,
+              "bosses": [
+                {
+                  "name": "Wrathion, the Black Emperor",
+                  "kills": 6
+                },
+                {
+                  "name": "Maut",
+                  "kills": 4
+                },
+                {
+                  "name": "The Prophet Skitra",
+                  "kills": 4
+                },
+                {
+                  "name": "The Hivemind",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Castle Nathria",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 3,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Shriekwing",
+                  "kills": 1
+                },
+                {
+                  "name": "Sludgefist",
+                  "kills": 1
+                },
+                {
+                  "name": "Stone Legion Generals",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 9,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Shriekwing",
+                  "kills": 2
+                },
+                {
+                  "name": "Huntsman Altimor",
+                  "kills": 2
+                },
+                {
+                  "name": "Sun King's Salvation",
+                  "kills": 2
+                },
+                {
+                  "name": "Artificer Xy'mox",
+                  "kills": 1
+                },
+                {
+                  "name": "Hungering Destroyer",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Inerva Darkvein",
+                  "kills": 2
+                },
+                {
+                  "name": "The Council of Blood",
+                  "kills": 1
+                },
+                {
+                  "name": "Sludgefist",
+                  "kills": 1
+                },
+                {
+                  "name": "Stone Legion Generals",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 10,
+              "total": 10,
+              "bosses": [
+                {
+                  "name": "Shriekwing",
+                  "kills": 2
+                },
+                {
+                  "name": "Huntsman Altimor",
+                  "kills": 2
+                },
+                {
+                  "name": "Sun King's Salvation",
+                  "kills": 3
+                },
+                {
+                  "name": "Artificer Xy'mox",
+                  "kills": 1
+                },
+                {
+                  "name": "Hungering Destroyer",
+                  "kills": 2
+                },
+                {
+                  "name": "Lady Inerva Darkvein",
+                  "kills": 2
+                },
+                {
+                  "name": "The Council of Blood",
+                  "kills": 1
+                },
+                {
+                  "name": "Sludgefist",
+                  "kills": 1
+                },
+                {
+                  "name": "Stone Legion Generals",
+                  "kills": 1
+                },
+                {
+                  "name": "Sire Denathrius",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vault of the Incarnates",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Terros",
+                  "kills": 1
+                },
+                {
+                  "name": "Sennarth, the Cold Breath",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aberrus, the Shadowed Crucible",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 4,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "The Vigilant Steward, Zskarn",
+                  "kills": 1
+                },
+                {
+                  "name": "Magmorax",
+                  "kills": 1
+                },
+                {
+                  "name": "Echo of Neltharion",
+                  "kills": 1
+                },
+                {
+                  "name": "Scalecommander Sarkareth",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 5,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Kazzara, the Hellforged",
+                  "kills": 1
+                },
+                {
+                  "name": "The Amalgamation Chamber",
+                  "kills": 2
+                },
+                {
+                  "name": "The Forgotten Experiments",
+                  "kills": 2
+                },
+                {
+                  "name": "Assault of the Zaqali",
+                  "kills": 1
+                },
+                {
+                  "name": "Rashok, the Elder",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Kazzara, the Hellforged",
+                  "kills": 5
+                },
+                {
+                  "name": "The Amalgamation Chamber",
+                  "kills": 6
+                },
+                {
+                  "name": "The Forgotten Experiments",
+                  "kills": 6
+                },
+                {
+                  "name": "Assault of the Zaqali",
+                  "kills": 5
+                },
+                {
+                  "name": "Rashok, the Elder",
+                  "kills": 5
+                },
+                {
+                  "name": "The Vigilant Steward, Zskarn",
+                  "kills": 4
+                },
+                {
+                  "name": "Magmorax",
+                  "kills": 4
+                },
+                {
+                  "name": "Echo of Neltharion",
+                  "kills": 4
+                },
+                {
+                  "name": "Scalecommander Sarkareth",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Amirdrassil, the Dream's Hope",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Gnarlroot",
+                  "kills": 2
+                },
+                {
+                  "name": "Igira the Cruel",
+                  "kills": 2
+                },
+                {
+                  "name": "Volcoross",
+                  "kills": 3
+                },
+                {
+                  "name": "Council of Dreams",
+                  "kills": 1
+                },
+                {
+                  "name": "Larodar, Keeper of the Flame",
+                  "kills": 2
+                },
+                {
+                  "name": "Nymue, Weaver of the Cycle",
+                  "kills": 1
+                },
+                {
+                  "name": "Smolderon",
+                  "kills": 2
+                },
+                {
+                  "name": "Tindral Sageswift, Seer of the Flame",
+                  "kills": 2
+                },
+                {
+                  "name": "Fyrakk the Blazing",
+                  "kills": 2
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 4,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Gnarlroot",
+                  "kills": 2
+                },
+                {
+                  "name": "Igira the Cruel",
+                  "kills": 1
+                },
+                {
+                  "name": "Volcoross",
+                  "kills": 1
+                },
+                {
+                  "name": "Larodar, Keeper of the Flame",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 9,
+              "total": 9,
+              "bosses": [
+                {
+                  "name": "Gnarlroot",
+                  "kills": 4
+                },
+                {
+                  "name": "Igira the Cruel",
+                  "kills": 3
+                },
+                {
+                  "name": "Volcoross",
+                  "kills": 2
+                },
+                {
+                  "name": "Council of Dreams",
+                  "kills": 1
+                },
+                {
+                  "name": "Larodar, Keeper of the Flame",
+                  "kills": 2
+                },
+                {
+                  "name": "Nymue, Weaver of the Cycle",
+                  "kills": 2
+                },
+                {
+                  "name": "Smolderon",
+                  "kills": 1
+                },
+                {
+                  "name": "Tindral Sageswift, Seer of the Flame",
+                  "kills": 1
+                },
+                {
+                  "name": "Fyrakk the Blazing",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manaforge Omega",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 7,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 1
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 1
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 1
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 1
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 1
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 1
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 2
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 2
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 2
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 1
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 1
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 1
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Dreamrift",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Voidspire",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 1
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 1
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 1
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 3,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Dreamrift",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 1,
+              "total": 1,
+              "bosses": [
+                {
+                  "name": "Chimaerus the Undreamt God",
+                  "kills": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Voidspire",
+          "modes": [
+            {
+              "difficulty": "Normal",
+              "completed": 5,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 1
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 1
+                },
+                {
+                  "name": "Vaelgor & Ezzorak",
+                  "kills": 1
+                },
+                {
+                  "name": "Lightblinded Vanguard",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 3,
+              "total": 6,
+              "bosses": [
+                {
+                  "name": "Imperator Averzian",
+                  "kills": 1
+                },
+                {
+                  "name": "Vorasius",
+                  "kills": 2
+                },
+                {
+                  "name": "Fallen-King Salhadaar",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nerub-ar Palace",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 1,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Ulgrax the Devourer",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Ulgrax the Devourer",
+                  "kills": 3
+                },
+                {
+                  "name": "The Bloodbound Horror",
+                  "kills": 3
+                },
+                {
+                  "name": "Sikran, Captain of the Sureki",
+                  "kills": 3
+                },
+                {
+                  "name": "Rasha'nan",
+                  "kills": 3
+                },
+                {
+                  "name": "Broodtwister Ovi'nax",
+                  "kills": 3
+                },
+                {
+                  "name": "Nexus-Princess Ky'veza",
+                  "kills": 3
+                },
+                {
+                  "name": "The Silken Court",
+                  "kills": 2
+                },
+                {
+                  "name": "Queen Ansurek",
+                  "kills": 3
+                }
+              ]
+            },
+            {
+              "difficulty": "Heroic",
+              "completed": 4,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Ulgrax the Devourer",
+                  "kills": 2
+                },
+                {
+                  "name": "The Bloodbound Horror",
+                  "kills": 2
+                },
+                {
+                  "name": "Sikran, Captain of the Sureki",
+                  "kills": 2
+                },
+                {
+                  "name": "Rasha'nan",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manaforge Omega",
+          "modes": [
+            {
+              "difficulty": "Heroic",
+              "completed": 7,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 1
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 1
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 1
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 1
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 1
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 1
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 1
+                }
+              ]
+            },
+            {
+              "difficulty": "Mythic",
+              "completed": 8,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Plexus Sentinel",
+                  "kills": 2
+                },
+                {
+                  "name": "Loom'ithar",
+                  "kills": 2
+                },
+                {
+                  "name": "Soulbinder Naazindhri",
+                  "kills": 2
+                },
+                {
+                  "name": "Forgeweaver Araz",
+                  "kills": 1
+                },
+                {
+                  "name": "The Soul Hunters",
+                  "kills": 1
+                },
+                {
+                  "name": "Fractillus",
+                  "kills": 1
+                },
+                {
+                  "name": "Nexus-King Salhadaar",
+                  "kills": 2
+                },
+                {
+                  "name": "Dimensius, the All-Devouring",
+                  "kills": 2
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -3360,6 +9558,8 @@
       "name": "Paindotcom",
       "level": 90,
       "className": "Hexenmeister",
+      "classId": 9,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_warlock.jpg",
       "specName": "Gebrechen",
       "faction": "Allianz",
       "itemLevel": 282,
@@ -3373,7 +9573,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/187/169318075-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-05-31T10:06:03.183Z",
         "updated_at": "2026-05-31T10:06:03.183Z",
@@ -4069,8 +10274,8 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 1284569,
-          "region": 413191,
+          "world": 1284587,
+          "region": 413206,
           "realm": 5615
         },
         "class": {
@@ -4079,8 +10284,8 @@
           "realm": 420
         },
         "dps": {
-          "world": 793760,
-          "region": 255780,
+          "world": 793770,
+          "region": 255787,
           "realm": 3418
         },
         "class_dps": {
@@ -4185,6 +10390,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -4224,6 +10430,8 @@
       "name": "Sunhappens",
       "level": 90,
       "className": "Paladin",
+      "classId": 2,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_paladin.jpg",
       "specName": "Heilig",
       "faction": "Horde",
       "itemLevel": 261,
@@ -4237,7 +10445,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/159/172609695-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-08-07T08:15:35.460Z",
         "updated_at": "2026-08-07T08:15:35.460Z",
@@ -4853,13 +11066,13 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 3470243,
-          "region": 1196576,
-          "realm": 15997
+          "world": 3470326,
+          "region": 1196637,
+          "realm": 16000
         },
         "class": {
-          "world": 440791,
-          "region": 143191,
+          "world": 440803,
+          "region": 143201,
           "realm": 1882
         },
         "tank": {
@@ -4873,13 +11086,13 @@
           "realm": 0
         },
         "healer": {
-          "world": 810204,
-          "region": 272424,
-          "realm": 3811
+          "world": 810228,
+          "region": 272443,
+          "realm": 3812
         },
         "class_healer": {
-          "world": 116372,
-          "region": 38098,
+          "world": 116380,
+          "region": 38103,
           "realm": 555
         },
         "dps": {
@@ -4893,8 +11106,8 @@
           "realm": 0
         },
         "spec_65": {
-          "world": 116372,
-          "region": 38098,
+          "world": 116380,
+          "region": 38103,
           "realm": 555
         },
         "spec_66": {
@@ -4989,6 +11202,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -5028,6 +11242,8 @@
       "name": "Waterpoof",
       "level": 90,
       "className": "Schamane",
+      "classId": 7,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_shaman.jpg",
       "specName": "Wiederherstellung",
       "faction": "Horde",
       "itemLevel": 173,
@@ -5041,7 +11257,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/183/168561591-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-07-18T19:28:20.320Z",
         "updated_at": "2026-07-18T19:28:20.320Z",
@@ -5733,6 +11954,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -5772,6 +11994,8 @@
       "name": "Babutcher",
       "level": 87,
       "className": "Todesritter",
+      "classId": 6,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/spell_deathknight_classicon.jpg",
       "specName": "Blut",
       "faction": "Horde",
       "itemLevel": 152,
@@ -5785,7 +12009,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/252/170306044-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-08-10T15:55:47.853Z",
         "updated_at": "2026-08-10T15:55:47.853Z",
@@ -6460,6 +12689,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -6499,6 +12729,8 @@
       "name": "Gotdilf",
       "level": 80,
       "className": "Dämonenjäger",
+      "classId": 12,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_demonhunter.jpg",
       "specName": "Verschlinger",
       "faction": "Allianz",
       "itemLevel": 128,
@@ -6512,7 +12744,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/136/169433736-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-01-23T06:19:13.390Z",
         "updated_at": "2026-01-23T06:19:13.390Z",
@@ -7311,6 +13548,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -7350,6 +13588,8 @@
       "name": "Jillkuice",
       "level": 80,
       "className": "Jäger",
+      "classId": 3,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_hunter.jpg",
       "specName": "Tierherrschaft",
       "faction": "Horde",
       "itemLevel": 124,
@@ -7363,7 +13603,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/13/168743181-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-03-03T13:00:27.725Z",
         "updated_at": "2026-03-03T13:00:27.725Z",
@@ -8149,6 +14394,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -8188,6 +14434,8 @@
       "name": "Mátteagle",
       "level": 80,
       "className": "Krieger",
+      "classId": 1,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_warrior.jpg",
       "specName": "Furor",
       "faction": "Horde",
       "itemLevel": 116,
@@ -8201,7 +14449,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/199/168243399-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2026-03-13T07:51:57.897Z",
         "updated_at": "2026-03-13T07:51:57.897Z",
@@ -8976,6 +15229,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -9015,6 +15269,8 @@
       "name": "Zerfoxn",
       "level": 80,
       "className": "Schurke",
+      "classId": 4,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_rogue.jpg",
       "specName": "Gesetzlosigkeit",
       "faction": "Horde",
       "itemLevel": 645,
@@ -9028,7 +15284,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/150/175032214-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2025-08-28T13:23:00.633Z",
         "updated_at": "2025-08-28T13:23:00.633Z",
@@ -9535,6 +15796,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -9574,6 +15836,8 @@
       "name": "Honkytonky",
       "level": 70,
       "className": "Magier",
+      "classId": 8,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/classicon_mage.jpg",
       "specName": "Arkan",
       "faction": "Allianz",
       "itemLevel": 75,
@@ -9587,7 +15851,12 @@
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/29/169245213-main-raw.png"
       },
       "equipment": [],
-      "talents": [],
+      "talentGroups": {
+        "hero": [],
+        "specialization": [],
+        "class": [],
+        "other": []
+      },
       "gear": {
         "created_at": "2025-11-07T10:05:19.436Z",
         "updated_at": "2025-11-07T10:05:19.436Z",
@@ -10179,6 +16448,7 @@
           "totalBosses": 9
         }
       ],
+      "raidEncounters": [],
       "raidProgression": {
         "the-tidebound-grotto": {
           "summary": "",
@@ -10384,6 +16654,8 @@
           "raid": "sporefall",
           "summary": "1/1 M",
           "mythicKilled": 1,
+          "heroicKilled": 1,
+          "normalKilled": 0,
           "totalBosses": 1,
           "character": "Bufferrari"
         },
@@ -10391,10 +16663,22 @@
           "raid": "tier-mn-1",
           "summary": "9/9 M",
           "mythicKilled": 9,
+          "heroicKilled": 9,
+          "normalKilled": 9,
           "totalBosses": 9,
           "character": "Bufferrari"
         }
       }
+    },
+    "season-tww-3": {
+      "bestMythicPlus": null,
+      "raids": {},
+      "highlights": [
+        {
+          "achievement": "Cutting Edge: Dimensius, the All-Devouring",
+          "character": "Waterpoof"
+        }
+      ]
     }
   },
   "errors": []
