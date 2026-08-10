@@ -41,6 +41,7 @@ jobs:
           mkdir _site
           cp index.html styles.css app.js _site/
           cp -R data _site/data
+          [ ! -d assets ] || cp -R assets _site/assets
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
@@ -56,4 +57,3 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

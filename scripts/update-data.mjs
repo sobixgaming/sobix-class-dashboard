@@ -51,6 +51,17 @@ function talentGroups(value) {
   return Object.fromEntries(Object.entries(groups).map(([key, talents]) => [key, [...talents].map(([name, rank]) => ({ name, rank }))]));
 }
 
+function talentImportCode(value) {
+  let result = null;
+  const walk = (node, key = "") => {
+    if (result || node == null) return;
+    if (typeof node === "string" && /(?:loadout|talent).*code|code.*(?:loadout|talent)/i.test(key) && node.length > 20) { result = node; return; }
+    if (typeof node === "object") for (const [childKey, child] of Object.entries(node)) walk(child, childKey);
+  };
+  walk(value);
+  return result;
+}
+
 const classMediaCache = new Map();
 async function classIcon(classId, authHeaders) {
   if (!classId) return null;
@@ -143,7 +154,7 @@ async function loadCharacter(entry) {
     className: profile.character_class?.name ?? entry.expectedClass,
     classId,
     classIcon: await classIcon(classId, authHeaders),
-    specName: profile.active_spec?.name ?? rio.active_spec_name ?? "Unbekannt",
+    specName: entry.preferredSpec ?? profile.active_spec?.name ?? rio.active_spec_name ?? "Unbekannt",
     faction: profile.faction?.name ?? rio.faction ?? null,
     itemLevel: profile.equipped_item_level ?? null,
     profileUrl: rio.profile_url ?? null,
@@ -153,6 +164,8 @@ async function loadCharacter(entry) {
     media: { avatar: asset(media, "avatar"), inset: asset(media, "inset"), render: asset(media, "main-raw") },
     equipment: equippedItems,
     talentGroups: talentGroups(specializations),
+    talentImportCode: talentImportCode(specializations),
+    talentImage: entry.talentImage ?? null,
     gear: rio.gear ?? null,
     scores,
     mythicPlusRanks: rio.mythic_plus_ranks ?? {},
@@ -230,6 +243,10 @@ seasons["season-tww-3"].highlights ??= [];
 if (!seasons["season-tww-3"].highlights.some(highlight => highlight.achievement === "Cutting Edge: Dimensius, the All-Devouring")) {
   seasons["season-tww-3"].highlights.push({ achievement: "Cutting Edge: Dimensius, the All-Devouring", character: "Waterpoof" });
 }
+seasons["season-tww-3"].raids ??= {};
+seasons["season-tww-3"].raids["manaforge-omega"] ??= {
+  raid: "Manaforge Omega", summary: "8/8 M", normalKilled: 8, heroicKilled: 8, mythicKilled: 8, totalBosses: 8, character: "Waterpoof"
+};
 
 const output = {
   generatedAt: new Date().toISOString(),
