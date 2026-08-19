@@ -6,6 +6,12 @@
 html{scroll-behavior:smooth}
 body{margin:0;background-color:var(--bg);background-image:linear-gradient(180deg,rgba(3,6,12,.38),rgba(3,6,12,.82) 48%,rgba(3,6,12,.94)),linear-gradient(90deg,rgba(5,9,16,.5),transparent 32%,transparent 68%,rgba(5,9,16,.5)),url("assets/midnight-background.webp");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;color:var(--text);font:15px/1.55 Arial,Helvetica,sans-serif}
 body::before{content:"";position:fixed;z-index:-1;inset:0;background:radial-gradient(circle at 78% 8%,rgba(92,45,143,.14),transparent 28rem),linear-gradient(180deg,transparent 0,rgba(7,10,15,.68) 38rem,#070a0f 105rem);pointer-events:none}
+body{padding-top:54px}
+.site-nav{position:fixed;z-index:100;inset:0 0 auto;height:54px;border-bottom:1px solid rgba(94,217,237,.2);background:rgba(6,10,17,.88);backdrop-filter:blur(18px);box-shadow:0 10px 30px rgba(0,0,0,.22)}
+.site-nav>div{width:min(1320px,calc(100% - 40px));height:100%;margin:auto;display:flex;align-items:center;justify-content:center;gap:5px}
+.site-nav a{padding:8px 12px;border-radius:999px;color:var(--muted);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap;transition:color .2s ease,background .2s ease}
+.site-nav a:hover,.site-nav a:focus-visible{color:var(--text);background:rgba(94,217,237,.1);outline:none}
+main section[id]{scroll-margin-top:72px}
 button,input,code{font-family:Arial,Helvetica,sans-serif}
 .hero,main,footer{width:min(1320px,calc(100% - 40px));margin:auto}
 .hero{min-height:330px;display:flex;align-items:center;justify-content:space-between;gap:32px;border-bottom:1px solid var(--line)}
@@ -19,6 +25,14 @@ h4{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
 .lead a{color:var(--cyan);font-weight:800;text-decoration:none;border-bottom:1px solid rgba(94,217,237,.45);transition:color .2s ease,border-color .2s ease,text-shadow .2s ease}
 .lead a:hover{color:#baf7ff;border-color:#baf7ff;text-shadow:0 0 12px rgba(94,217,237,.45)}
 .updated{border:1px solid var(--line);padding:12px 16px;border-radius:999px;white-space:nowrap;background:#0b111b}
+.data-status{display:grid;grid-template-columns:1fr 1fr;width:min(440px,100%);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(7,13,22,.82);backdrop-filter:blur(12px)}
+.status-item{display:grid;padding:11px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.status-item:nth-child(2n){border-right:0}.status-item:nth-last-child(-n+2){border-bottom:0}
+.status-item span{color:var(--muted);font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.status-item strong{font-size:12px}.status-item strong.online{color:var(--green)}.status-item strong.offline{color:var(--red)}
+.status-item i{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor}
+.status-loading,.status-error{grid-column:1/-1;padding:18px;color:var(--muted)}
+.status-error{display:grid;color:var(--red)}.status-error span{color:var(--muted)}
 main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .metric,.panel,.character,.season,.notice,.featured-card,.podium-card,.trophy{background:linear-gradient(145deg,rgba(23,32,47,.96),rgba(12,17,26,.97));border:1px solid var(--line);border-radius:20px}
@@ -62,6 +76,14 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .live-runs>a{display:grid;grid-template-columns:25px 1fr;gap:8px;align-items:center;padding:7px 0;border-top:1px solid rgba(94,217,237,.12);color:var(--text);text-decoration:none}
 .live-runs>a i{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(94,217,237,.12);color:var(--cyan);font-size:10px;font-style:normal;font-weight:900}
 .live-runs>a span{display:grid}.live-runs>a small{color:var(--muted)}
+.weekly-progress{position:relative;margin-top:16px;padding:20px;border:1px solid rgba(255,189,61,.22);border-radius:17px;background:rgba(5,11,18,.68)}
+.weekly-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:14px}.weekly-head h3{font-size:22px}.weekly-head>span{color:var(--muted);font-size:12px}
+.weekly-grid{display:grid;grid-template-columns:.75fr .75fr 1.5fr;gap:10px}
+.weekly-grid>article{display:flex;min-height:108px;flex-direction:column;justify-content:center;padding:15px;border:1px solid var(--line);border-radius:13px;background:#080e17}
+.weekly-grid>article>span{color:var(--muted);font-size:10px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.weekly-grid>article>strong{color:var(--gold);font-size:32px;line-height:1.15}.weekly-grid>article>small{color:var(--muted)}
+.weekly-raid-row{display:grid;grid-template-columns:minmax(130px,1fr) repeat(3,auto);gap:7px;align-items:center;margin-top:8px}
+.weekly-raid-row>strong{color:var(--class)}.weekly-raid-row>span{padding:5px 8px;border-radius:7px;background:#050a11;font-size:11px;font-weight:900}
 @keyframes livePulse{50%{opacity:.35;transform:scale(.72)}}
 @keyframes mainNameShine{to{background-position:-240% 0}}
 @keyframes goldBorderSweep{to{--gold-angle:360deg}}
@@ -192,8 +214,18 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .character .level{margin-top:8px;color:var(--muted);font-size:12px}
 .open-link{color:var(--muted);font-size:20px}
 .notice{padding:24px;color:var(--muted)}
+.loading-state{grid-column:1/-1;min-height:150px;display:grid;place-items:center;border:1px solid var(--line);border-radius:18px;color:var(--muted);background:linear-gradient(100deg,rgba(17,23,34,.72) 25%,rgba(40,52,70,.78) 45%,rgba(17,23,34,.72) 65%);background-size:220% 100%;animation:loadingShimmer 1.5s linear infinite}
+.image-fallback{object-fit:cover!important;filter:none!important;background:#111722}
+.data-failed .loading-state{animation:none;border-color:#59292e;color:#ffc0c4;background:rgba(30,12,16,.72)}
+@keyframes loadingShimmer{to{background-position:-220% 0}}
 .notice strong{color:var(--text)}
 .season-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.season-timeline{position:relative;padding-top:38px}
+.season-timeline::before{content:"";position:absolute;left:5%;right:5%;top:14px;height:2px;background:linear-gradient(90deg,var(--gold),var(--cyan),#6d7890);box-shadow:0 0 14px rgba(94,217,237,.28)}
+.season-timeline>.season{position:relative}
+.season-timeline>.season::before{content:"";position:absolute;top:-33px;left:28px;width:13px;height:13px;border:3px solid #09101a;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(255,189,61,.18),0 0 18px var(--gold)}
+.season-timeline>.season:nth-of-type(2)::before{background:var(--cyan);box-shadow:0 0 0 3px rgba(94,217,237,.18),0 0 18px var(--cyan)}
+.season-timeline>.season:nth-of-type(n+3)::before{background:#79869b;box-shadow:0 0 0 3px rgba(121,134,155,.18),0 0 18px #79869b}
 .season{padding:22px}
 .season-score{font-size:34px;font-weight:800;color:var(--gold)}
 .archive-person{display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:center;margin:13px 0;padding:10px;border:1px solid var(--line);border-radius:12px;background:#0b111b}
@@ -215,13 +247,13 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .raid-line{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
 .error{border-color:#59292e;color:#ffc0c4}
 footer{padding:34px 0 60px}
-@media(max-width:1080px){.current-progress-grid{grid-template-columns:1fr 1fr}.live-runs{grid-column:1/-1}
+@media(max-width:1080px){.hero{flex-direction:column;align-items:flex-start;justify-content:center}.data-status{width:100%}.current-progress-grid{grid-template-columns:1fr 1fr}.live-runs{grid-column:1/-1}
 .featured-grid{grid-template-columns:1fr}
 .trophy-shelf{grid-template-columns:repeat(2,1fr)}
 .split.three{grid-template-columns:1fr 1fr}
 .character-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:800px){.current-progress-grid{grid-template-columns:1fr}.live-runs{grid-column:auto}.current-progress-card>header{flex-direction:column}
+@media(max-width:800px){.site-nav>div{justify-content:flex-start;overflow-x:auto;scrollbar-width:none}.site-nav>div::-webkit-scrollbar{display:none}.weekly-grid{grid-template-columns:1fr 1fr}.weekly-raids{grid-column:1/-1}.current-progress-grid{grid-template-columns:1fr}.live-runs{grid-column:auto}.current-progress-card>header{flex-direction:column}
 .summary{grid-template-columns:repeat(2,1fr)}
 .podium{grid-template-columns:1fr}
 .podium-card,.podium-card.rank-1{min-height:180px;order:initial}
@@ -231,7 +263,7 @@ footer{padding:34px 0 60px}
 .hero{align-items:flex-start;flex-direction:column;justify-content:center}
 .hero-brand{align-items:flex-start}.brand-logo{width:125px}
 }
-@media(max-width:560px){.current-progress-card{padding:20px}.live-difficulties{flex-wrap:wrap}
+@media(max-width:560px){body{padding-top:50px}.site-nav{height:50px}.site-nav>div{width:calc(100% - 16px)}.site-nav a{padding:7px 10px}.data-status{grid-template-columns:1fr}.status-item,.status-item:nth-child(2n),.status-item:nth-last-child(-n+2){border-right:0;border-bottom:1px solid var(--line)}.status-item:last-child{border-bottom:0}.weekly-head{align-items:flex-start;flex-direction:column}.weekly-grid{grid-template-columns:1fr}.weekly-raids{grid-column:auto}.weekly-raid-row{grid-template-columns:1fr repeat(3,auto)}.season-timeline{padding-top:0;padding-left:27px}.season-timeline::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto}.season-timeline>.season::before,.season-timeline>.season:nth-of-type(2)::before,.season-timeline>.season:nth-of-type(n+3)::before{top:25px;left:-26px}.current-progress-card{padding:20px}.live-difficulties{flex-wrap:wrap}
 .hero,main,footer{width:min(100% - 24px,1320px)}
 body{background-attachment:scroll;background-size:auto 100vh}
 .summary,.character-grid,.season-grid{grid-template-columns:1fr}
@@ -245,4 +277,4 @@ body{background-attachment:scroll;background-size:auto 100vh}
 .profile-links{flex-direction:column}
 main section{padding:46px 0}
 }
-@media(prefers-reduced-motion:reduce){.trophy::before,.trophy h3,.current-progress-card::before,.podium-card::before,.live-glow,.live-dot,.current-main-link strong,.podium-title{animation:none}}
+@media(prefers-reduced-motion:reduce){.trophy::before,.trophy h3,.current-progress-card::before,.podium-card::before,.live-glow,.live-dot,.current-main-link strong,.podium-title,.loading-state{animation:none}}
