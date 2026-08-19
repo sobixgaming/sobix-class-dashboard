@@ -34,7 +34,9 @@ document.querySelector("#podium").innerHTML=ranked.map((character,index)=>{
   </article>`;
 }).join("");
 
-document.querySelector("#trophies").innerHTML=(data.trophies||[]).map((trophy,index)=>{const character=byName(trophy.character);return `<article class="trophy" style="--class:${color(character)}"><div class="trophy-cup"><span>★</span></div><p>Cutting Edge</p><h3>${esc(trophy.achievement?.replace(/^Cutting Edge:\s*/,""))}</h3><div class="trophy-owner">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="">`:""}<strong>${esc(trophy.character||"–")}</strong></div><small>${esc(trophy.season)} · Patch ${esc(trophy.patch||"–")}</small><i>${String(index+1).padStart(2,"0")}</i></article>`}).join("");
+const trophySeasonOrder={"Midnight Season 2":300,"Midnight Season 1":200,"TWW Season 3":100,"The War Within Season 3":100};
+const sortedTrophies=(data.trophies||[]).map((trophy,index)=>({...trophy,sourceIndex:index})).sort((a,b)=>(trophySeasonOrder[b.season]??0)-(trophySeasonOrder[a.season]??0)||a.sourceIndex-b.sourceIndex);
+document.querySelector("#trophies").innerHTML=sortedTrophies.map((trophy,index)=>{const character=byName(trophy.character);return `<article class="trophy" style="--class:${color(character)}"><div class="trophy-cup"><span>★</span></div><p>Cutting Edge</p><h3>${esc(trophy.achievement?.replace(/^Cutting Edge:\s*/,""))}</h3><div class="trophy-owner">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="">`:""}<strong>${esc(trophy.character||"–")}</strong></div><small>${esc(trophy.season)} · Patch ${esc(trophy.patch||"–")}</small><i>${String(index+1).padStart(2,"0")}</i></article>`}).join("");
 
 function raidBlock(character){
   const wanted=data.activeRaidPatch?.raids||[];
@@ -117,7 +119,18 @@ const seasonMeta={
 };
 const seasons=Object.entries(data.seasons||{}).sort(([a],[b])=>(seasonMeta[b]?.order??0)-(seasonMeta[a]?.order??0));
 const raidBadges=raid=>`<div class="raid-badges"><span class="normal">N <b>${esc(raid.normalKilled??0)}/${esc(raid.totalBosses??0)}</b></span><span class="heroic">H <b>${esc(raid.heroicKilled??0)}/${esc(raid.totalBosses??0)}</b></span><span class="mythic">M <b>${esc(raid.mythicKilled??0)}/${esc(raid.totalBosses??0)}</b></span></div>`;
-document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,season])=>{const best=season.bestMythicPlus;const raids=Object.values(season.raids||{}).sort((a,b)=>(b.mythicKilled-a.mythicKilled)||(b.heroicKilled-a.heroicKilled)||(b.normalKilled-a.normalKilled));const bestRaid=raids[0];const scoreCharacter=byName(best?.character);const raidCharacter=byName(bestRaid?.character);return `<article class="season"><p class="eyebrow">${esc(seasonMeta[name]?.label||name.replace("season-","").toUpperCase())}</p><div class="archive-person" style="--class:${color(scoreCharacter)}">${scoreCharacter?.classIcon?`<img src="${esc(scoreCharacter.classIcon)}" alt="">`:""}<div><small>Bester M+-Score</small><strong>${esc(best?.character||"–")}</strong><span>${esc(best?.score??"–")} Punkte</span></div></div><div class="archive-person" style="--class:${color(raidCharacter)}">${raidCharacter?.classIcon?`<img src="${esc(raidCharacter.classIcon)}" alt="">`:""}<div><small>Höchster Raidfortschritt</small><strong>${esc(bestRaid?.character||"–")}</strong><span>${esc(bestRaid?.raid||"Kein Raid gespeichert")}</span></div></div>${bestRaid?raidBadges(bestRaid):""}${(season.highlights||[]).map(highlight=>`<div class="archive-highlight"><span class="ce">CE</span><strong>${esc(highlight.achievement)}</strong><small>${esc(highlight.character)}</small></div>`).join("")}</article>`}).join(""):`<article class="notice">Saisonwerte erscheinen nach der ersten Aktualisierung.</article>`;
+document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,season])=>{
+  const best=season.bestMythicPlus;
+  const raids=Object.values(season.raids||{});
+  const scoreCharacter=byName(best?.character);
+  return `<article class="season">
+    <p class="eyebrow">${esc(seasonMeta[name]?.label||name.replace("season-","").toUpperCase())}</p>
+    <div class="archive-person" style="--class:${color(scoreCharacter)}">${scoreCharacter?.classIcon?`<img src="${esc(scoreCharacter.classIcon)}" alt="">`:""}<div><small>Bester M+-Score</small><strong>${esc(best?.character||"–")}</strong><span>${esc(best?.score??"–")} Punkte</span></div></div>
+    <div class="archive-raids">${raids.map(raid=>{const raidCharacter=byName(raid.character);return `<section class="archive-raid" style="--class:${color(raidCharacter)}"><div class="archive-raid-head">${raidCharacter?.classIcon?`<img src="${esc(raidCharacter.classIcon)}" alt="">`:""}<div><small>Raidfortschritt · ${esc(raid.character||"–")}</small><strong>${esc(raid.raid||"Unbekannter Raid")}</strong></div></div>${raidBadges(raid)}</section>`}).join("")||'<p class="empty">Kein Raid gespeichert.</p>'}</div>
+    ${(season.highlights||[]).map(highlight=>`<div class="archive-highlight"><span class="ce">CE</span><strong>${esc(highlight.achievement)}</strong><small>${esc(highlight.character)}</small></div>`).join("")}
+  </article>`;
+}).join(""):`<article class="notice">Saisonwerte erscheinen nach der ersten Aktualisierung.</article>`;
+
 if(data.errors?.length){document.querySelector("#errors-section").hidden=false;document.querySelector("#errors").innerHTML=data.errors.map(error=>`<div><strong>${esc(error.character)}:</strong> ${esc(error.message)}</div>`).join("")}
 
 document.addEventListener("click",async event=>{const button=event.target.closest("[data-copy-code]");if(!button)return;try{await navigator.clipboard.writeText(button.dataset.copyCode);const old=button.textContent;button.textContent="Kopiert";setTimeout(()=>button.textContent=old,1400)}catch{button.textContent="Kopieren nicht möglich"}});
