@@ -36,6 +36,49 @@ function currentScore(character) {
   return Number(current?.scores?.all ?? 0);
 }
 
+const weeklyTimeZone = "Europe/Berlin";
+function zonedParts(date, timeZone = weeklyTimeZone) {
+  return Object.fromEntries(new Intl.DateTimeFormat("en-CA", {
+    timeZone, year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23", weekday: "short"
+  }).formatToParts(date).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+}
+function zonedLocalToUtc({ year, month, day, hour = 0, minute = 0 }, timeZone = weeklyTimeZone) {
+  let guess = Date.UTC(year, month - 1, day, hour, minute);
+  for (let index = 0; index < 2; index += 1) {
+    const parts = zonedParts(new Date(guess), timeZone);
+    const represented = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day), Number(parts.hour), Number(parts.minute), Number(parts.second));
+    guess += Date.UTC(year, month - 1, day, hour, minute) - represented;
+  }
+  return new Date(guess);
+}
+function weeklyResetWindow(now = new Date()) {
+  const parts = zonedParts(now);
+  const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const currentDay = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+  let resetDay = new Date(currentDay - ((weekdays.indexOf(parts.weekday) - 3 + 7) % 7) * 86400000);
+  let resetAt = zonedLocalToUtc({ year: resetDay.getUTCFullYear(), month: resetDay.getUTCMonth() + 1, day: resetDay.getUTCDate(), hour: 6 });
+  if (now < resetAt) {
+    resetDay = new Date(resetDay.getTime() - 7 * 86400000);
+    resetAt = zonedLocalToUtc({ year: resetDay.getUTCFullYear(), month: resetDay.getUTCMonth() + 1, day: resetDay.getUTCDate(), hour: 6 });
+  }
+  const nextDay = new Date(resetDay.getTime() + 7 * 86400000);
+  const nextResetAt = zonedLocalToUtc({ year: nextDay.getUTCFullYear(), month: nextDay.getUTCMonth() + 1, day: nextDay.getUTCDate(), hour: 6 });
+  return { resetAt, nextResetAt };
+}
+function mapRun(run) {
+  return {
+    dungeon: run.dungeon ?? run.short_name ?? "Dungeon",
+    shortName: run.short_name ?? null,
+    level: run.mythic_level ?? null,
+    score: run.score ?? null,
+    upgrades: run.num_keystone_upgrades ?? null,
+    clearTimeMs: run.clear_time_ms ?? null,
+    completedAt: run.completed_at ?? null,
+    url: run.url ?? null
+  };
+}
+
 function talentGroups(value) {
   const groups = { hero: new Map(), specialization: new Map(), class: new Map(), other: new Map() };
   const walk = (node, path = "") => {
@@ -123,12 +166,15 @@ async function loadCharacter(entry) {
   });
   const historyRioUrl = new URL(rioUrl);
   historyRioUrl.searchParams.set("fields", "mythic_plus_scores_by_season:season-tww-3");
+  const weeklyRioUrl = new URL(rioUrl);
+  weeklyRioUrl.searchParams.set("fields", "mythic_plus_recent_runs,mythic_plus_weekly_highest_level_runs");
 
   const authHeaders = { Authorization: `Bearer ${accessToken}` };
-  const [profile, rio, historyRio, media, encounterData] = await Promise.all([
+  const [profile, rio, historyRio, weeklyRio, media, encounterData] = await Promise.all([
     json(blizzardUrl, { Authorization: `Bearer ${accessToken}` }),
     json(rioUrl),
     optionalJson(historyRioUrl),
+    entry.featured ? optionalJson(weeklyRioUrl) : null,
     optionalJson(`${apiBase}/character-media?${query}`, authHeaders),
     entry.featured ? optionalJson(`${apiBase}/encounters/raids?namespace=profile-${config.region}&locale=en_GB`, authHeaders) : null
   ]);
@@ -189,15 +235,10 @@ async function loadCharacter(entry) {
     gear: rio.gear ?? null,
     scores,
     mythicPlusRanks: rio.mythic_plus_ranks ?? {},
-    bestRuns: (rio.mythic_plus_best_runs ?? []).sort((a, b) => Number(b.score ?? 0) - Number(a.score ?? 0)).slice(0, 8).map(run => ({
-      dungeon: run.dungeon ?? run.short_name ?? "Dungeon",
-      shortName: run.short_name ?? null,
-      level: run.mythic_level ?? null,
-      score: run.score ?? null,
-      upgrades: run.num_keystone_upgrades ?? null,
-      clearTimeMs: run.clear_time_ms ?? null,
-      url: run.url ?? null
-    })),
+    bestRuns: (rio.mythic_plus_best_runs ?? []).sort((a, b) => Number(b.score ?? 0) - Number(a.score ?? 0)).slice(0, 8).map(mapRun),
+    recentRuns: (weeklyRio?.mythic_plus_recent_runs ?? []).map(mapRun),
+    weeklyHighestRuns: (weeklyRio?.mythic_plus_weekly_highest_level_runs ?? []).map(mapRun),
+    weeklyRunsAvailable: Boolean(weeklyRio),
     raids,
     raidEncounters: raidEncounters(encounterData),
     raidProgression: rio.raid_progression ?? {}
@@ -296,6 +337,51 @@ for (const trophy of config.trophies.filter(entry => entry.season === "Midnight 
   }
 }
 
+const { resetAt, nextResetAt } = weeklyResetWindow();
+const featuredMain = characters.filter(character => character.featured).sort((a, b) => a.featuredRank - b.featuredRank)[0] ?? characters[0];
+const resetKey = resetAt.toISOString();
+const runCandidates = [...(featuredMain?.recentRuns ?? []), ...(featuredMain?.weeklyHighestRuns ?? [])]
+  .filter((run, index, all) => all.findIndex(candidate => (candidate.url && candidate.url === run.url) || (!candidate.url && candidate.dungeon === run.dungeon && candidate.level === run.level && candidate.completedAt === run.completedAt)) === index)
+  .filter(run => !run.completedAt || new Date(run.completedAt) >= resetAt)
+  .sort((a, b) => Number(b.level ?? 0) - Number(a.level ?? 0) || Number(b.score ?? 0) - Number(a.score ?? 0));
+const timedDungeonNames = new Set(runCandidates.filter(run => Number(run.upgrades ?? 0) > 0).map(run => run.shortName ?? run.dungeon));
+
+function raidKillSnapshot(character) {
+  const snapshot = {};
+  for (const raid of character?.raidEncounters ?? []) {
+    snapshot[raid.name] = {};
+    for (const mode of raid.modes ?? []) {
+      snapshot[raid.name][mode.difficulty] = Object.fromEntries((mode.bosses ?? []).map(boss => [boss.name, Number(boss.kills ?? 0)]));
+    }
+  }
+  return snapshot;
+}
+const currentRaidSnapshot = raidKillSnapshot(featuredMain);
+const previousWeek = previous.weeklyProgress;
+const raidBaseline = previousWeek?.resetKey === resetKey ? (previousWeek.raidBaseline ?? currentRaidSnapshot) : currentRaidSnapshot;
+const weeklyRaidBosses = [];
+for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) {
+  const difficulties = {};
+  for (const [difficulty, bosses] of Object.entries(modes)) {
+    difficulties[difficulty] = Object.entries(bosses).filter(([bossName, kills]) => Number(kills) > Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)).length;
+  }
+  if (Object.values(difficulties).some(value => value > 0) || (config.activeRaidPatch?.raids ?? []).some(name => raidName.toLowerCase().includes(name.toLowerCase().replace(/^the\s+/, "")))) {
+    weeklyRaidBosses.push({ raid: raidName, difficulties });
+  }
+}
+const weeklyProgress = {
+  resetKey,
+  resetAt: resetAt.toISOString(),
+  nextResetAt: nextResetAt.toISOString(),
+  character: featuredMain?.name ?? null,
+  available: Boolean(featuredMain?.weeklyRunsAvailable),
+  bestKeys: runCandidates.slice(0, 5),
+  highestKey: Math.max(0, ...runCandidates.map(run => Number(run.level ?? 0))),
+  timedDungeons: timedDungeonNames.size,
+  raidBosses: weeklyRaidBosses,
+  raidBaseline
+};
+
 const output = {
   generatedAt: new Date().toISOString(),
   region: config.region,
@@ -303,6 +389,12 @@ const output = {
   maxLevel: config.maxLevel,
   activeRaidPatch: config.activeRaidPatch,
   activeSeasonKey: currentSeason,
+  apiStatus: {
+    blizzard: { online: true },
+    raiderIO: { online: characters.length > 0 },
+    nextUpdateAt: new Date(Date.now() + 6 * 60 * 60 * 1000).toISOString()
+  },
+  weeklyProgress,
   trophies: config.trophies,
   characters: characters.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name, "de")),
   featured: {
