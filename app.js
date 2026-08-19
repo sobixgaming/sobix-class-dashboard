@@ -26,8 +26,8 @@ const formatDate=value=>value?new Intl.DateTimeFormat("de-DE",{dateStyle:"medium
 const live=Boolean(data.generatedAt);
 
 function nextUpdateDate(){
-  let next=new Date(data.apiStatus?.nextUpdateAt||new Date(data.generatedAt).getTime()+6*60*60*1000);
-  while(next<=new Date())next=new Date(next.getTime()+6*60*60*1000);
+  let next=new Date(data.apiStatus?.nextUpdateAt||new Date(data.generatedAt).getTime()+60*60*1000);
+  while(next<=new Date())next=new Date(next.getTime()+60*60*1000);
   return next;
 }
 function until(value){
