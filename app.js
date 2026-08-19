@@ -42,8 +42,8 @@ function renderDataStatus(){
   document.querySelector("#data-status").innerHTML=`
     <div class="status-item"><span>Letzte Aktualisierung</span><strong>${formatDate(data.generatedAt)}</strong></div>
     <div class="status-item"><span>Blizzard API</span><strong class="${blizzard?"online":"offline"}"><i></i>${blizzard?"online":"nicht verfügbar"}</strong></div>
-    <div class="status-item"><span>Raider.IO</span><strong class="${raider?"online":"offline"}"><i></i>${raider?"online":"nicht verfügbar"}</strong></div>
-    <div class="status-item"><span>Nächstes Update</span><strong>in ${until(nextUpdateDate())}</strong></div>`;
+    <div class="status-item"><span>Nächstes Update</span><strong>in ${until(nextUpdateDate())}</strong></div>
+    <div class="status-item"><span>Raider.IO</span><strong class="${raider?"online":"offline"}"><i></i>${raider?"online":"nicht verfügbar"}</strong></div>`;
 }
 renderDataStatus();
 setInterval(renderDataStatus,60000);
@@ -160,9 +160,9 @@ document.querySelector("#characters").innerHTML=otherCharacters.map(character=>`
 </a>`).join("");
 
 const seasonMeta={
-  "season-mn-2":{label:"Midnight Season 2",order:300},
-  "season-mn-1":{label:"Midnight Season 1",order:200},
-  "season-tww-3":{label:"The War Within Season 3",order:100}
+  "season-mn-2":{label:"Midnight Season 2",expansion:"Midnight",order:300},
+  "season-mn-1":{label:"Midnight Season 1",expansion:"Midnight",order:200},
+  "season-tww-3":{label:"The War Within Season 3",expansion:"The War Within",order:100}
 };
 const activeSeasonKey=data.activeSeasonKey||({"Midnight Season 2":"season-mn-2","Midnight Season 1":"season-mn-1","The War Within Season 3":"season-tww-3","TWW Season 3":"season-tww-3"}[data.activeRaidPatch?.season]);
 const seasons=Object.entries(data.seasons||{}).filter(([name])=>name!==activeSeasonKey).sort(([a],[b])=>(seasonMeta[b]?.order??0)-(seasonMeta[a]?.order??0));
@@ -171,7 +171,7 @@ document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,s
   const best=season.bestMythicPlus;
   const raids=Object.values(season.raids||{});
   const scoreCharacter=byName(best?.character);
-  return `<article class="season">
+  return `<article class="season"><span class="timeline-point" tabindex="0" aria-label="${esc(seasonMeta[name]?.expansion||seasonMeta[name]?.label||name)}" data-label="${esc(seasonMeta[name]?.expansion||seasonMeta[name]?.label||name)}"></span>
     <p class="eyebrow">${esc(seasonMeta[name]?.label||name.replace("season-","").toUpperCase())}</p>
     <div class="archive-person" style="--class:${color(scoreCharacter)}">${scoreCharacter?.classIcon?`<img src="${esc(scoreCharacter.classIcon)}" alt="">`:""}<div><small>Bester M+-Score</small><strong>${esc(best?.character||"–")}</strong><span>${esc(best?.score??"–")} Punkte</span></div></div>
     <div class="archive-raids">${raids.map(raid=>{const raidCharacter=byName(raid.character);return `<section class="archive-raid" style="--class:${color(raidCharacter)}"><div class="archive-raid-head">${raidCharacter?.classIcon?`<img src="${esc(raidCharacter.classIcon)}" alt="">`:""}<div><small>Raidfortschritt · ${esc(raid.character||"–")}</small><strong>${esc(raid.raid||"Unbekannter Raid")}</strong></div></div>${raidBadges(raid)}</section>`}).join("")||'<p class="empty">Kein Raid gespeichert.</p>'}</div>
