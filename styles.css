@@ -31,7 +31,7 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .live-glow{position:absolute;width:420px;height:420px;right:-150px;top:-220px;border-radius:50%;background:radial-gradient(circle,rgba(94,217,237,.22),transparent 68%);animation:liveDrift 7s ease-in-out infinite alternate;pointer-events:none}
 .current-progress-card>header{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:24px}
 .current-progress-card>header h2{font-size:clamp(30px,4vw,48px);margin:2px 0}
-.current-progress-card>header p:not(.eyebrow){margin:0;color:var(--muted)}\n.current-main-name{display:flex;align-items:center;gap:11px;margin-top:14px}\n.current-main-name img{width:42px;height:42px;border-radius:50%;box-shadow:0 0 16px color-mix(in srgb,var(--class) 65%,transparent)}\n.current-main-name span{display:grid}.current-main-name small{color:var(--gold);font-size:9px;font-weight:900;letter-spacing:.15em}.current-main-name strong{color:var(--class);font-size:24px;line-height:1.05}
+.current-progress-card>header p:not(.eyebrow){margin:0;color:var(--muted)}\n.current-main-link{display:inline-flex;align-items:center;gap:10px;width:max-content;margin-top:16px;padding:8px 13px 8px 8px;border:1px solid color-mix(in srgb,var(--class) 50%,transparent);border-radius:999px;background:rgba(5,12,18,.72);color:var(--text);text-decoration:none;box-shadow:0 0 18px color-mix(in srgb,var(--class) 15%,transparent);transition:transform .2s ease,border-color .2s ease}\n.current-main-link:hover{transform:translateY(-2px);border-color:var(--class)}\n.current-main-link img{width:40px;height:40px;object-fit:cover;border-radius:50%;box-shadow:0 0 17px color-mix(in srgb,var(--class) 70%,transparent)}\n.current-main-link span{font-size:16px;font-weight:800;color:var(--text)}\n.current-main-link strong{font-size:24px;line-height:1;background:linear-gradient(100deg,var(--class) 0%,#a8fff0 42%,var(--class) 72%,#eafffa 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 7px color-mix(in srgb,var(--class) 45%,transparent));animation:mainNameShine 3s linear infinite}\n.current-main-link i{color:var(--class);font-style:normal;font-weight:900}
 .live-dot{display:inline-block;width:8px;height:8px;margin-right:4px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green);animation:livePulse 1.4s ease-in-out infinite}
 .patch-badge{padding:9px 13px;border:1px solid rgba(94,217,237,.55);border-radius:999px;background:rgba(94,217,237,.1);color:var(--cyan);font-size:12px;letter-spacing:.12em;white-space:nowrap}
 .current-progress-grid{position:relative;display:grid;grid-template-columns:.75fr 1.15fr 1.1fr;gap:14px}
@@ -50,7 +50,7 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .live-runs>a{display:grid;grid-template-columns:25px 1fr;gap:8px;align-items:center;padding:7px 0;border-top:1px solid rgba(94,217,237,.12);color:var(--text);text-decoration:none}
 .live-runs>a i{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(94,217,237,.12);color:var(--cyan);font-size:10px;font-style:normal;font-weight:900}
 .live-runs>a span{display:grid}.live-runs>a small{color:var(--muted)}
-@keyframes livePulse{50%{opacity:.35;transform:scale(.72)}}
+@keyframes livePulse{50%{opacity:.35;transform:scale(.72)}}\n@keyframes mainNameShine{to{background-position:-240% 0}}
 @keyframes goldBorderSweep{to{--gold-angle:360deg}}
 @keyframes liveDrift{to{transform:translate(-90px,70px) scale(1.12)}}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
@@ -221,4 +221,4 @@ body{background-attachment:scroll;background-size:auto 100vh}
 .profile-links{flex-direction:column}
 main section{padding:46px 0}
 }
-@media(prefers-reduced-motion:reduce){.trophy,.trophy::before,.current-progress-card::before,.live-glow,.live-dot{animation:none}}
+@media(prefers-reduced-motion:reduce){.trophy,.trophy::before,.current-progress-card::before,.live-glow,.live-dot,.current-main-link strong{animation:none}}
