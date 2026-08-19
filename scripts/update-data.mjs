@@ -402,7 +402,7 @@ const output = {
   apiStatus: {
     blizzard: { online: true },
     raiderIO: { online: characters.length > 0 },
-    nextUpdateAt: new Date(Date.now() + 60 * 60 * 1000).toISOString()
+    nextUpdateAt: new Date(Math.ceil(Date.now() / (60 * 60 * 1000)) * 60 * 60 * 1000).toISOString()
   },
   weeklyProgress,
   trophies: config.trophies,
