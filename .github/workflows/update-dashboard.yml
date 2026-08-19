@@ -3,9 +3,7 @@ name: Update and deploy dashboard
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 * * * *"
-    # Weekly reset: 06:00 Europe/Berlin (04:00 UTC summer / 05:00 UTC winter)
-    - cron: "0 4,5 * * 3"
+    - cron: "0 * * * *"
   push:
     branches: [main]
 
