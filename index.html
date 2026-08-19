@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="WoW Klassen-, M+- und Raid-Dashboard von Sobixgaming">
   <title>Sobix @WorldOfWarcraft</title>
-  <link rel="stylesheet" href="styles.css?v=20260819-10">
+  <link rel="stylesheet" href="styles.css?v=20260819-11">
 </head>
-<body>
+<body class="loading">
+  <nav class="site-nav" aria-label="Dashboard-Navigation"><div><a href="#hall-of-fame">Hall of Fame</a><a href="#aktuelle-season">Aktuelle Season</a><a href="#podest">Podest</a><a href="#main-characters">Main Characters</a><a href="#weitere-charaktere">Weitere Charaktere</a><a href="#archiv">Archiv</a></div></nav>
   <header class="hero">
     <div class="hero-brand"><img class="brand-logo" src="assets/sobix-logo.png" alt="Sobix Logo"><div><p class="eyebrow">WORLD OF WARCRAFT MIDNIGHT PATCH 12.1</p><h1><span>Willkommen</span></h1><p class="lead">auf meinem Gaming Dashboard für World of Warcraft. Hier findet ihr alles zu meinen Charakteren und Erfolgen.<br>Folgt mir gerne auf <a href="https://twitch.tv/sobix_live" target="_blank" rel="noreferrer">Twitch.tv/Sobix_Live</a> ich freue mich immer über neue Zuschauer.</p></div></div>
-    <div id="updated" class="updated">Noch keine Live-Daten</div>
+    <aside id="data-status" class="data-status" aria-live="polite"><span class="status-loading">Datenstatus wird geladen …</span></aside>
   </header>
   <main>
-    <section class="trophy-section"><div class="section-head"><div><p class="eyebrow">HALL OF FAME</p><h2>Cutting-Edge-Trophäen</h2></div><span class="hint">Dauerhafte Erfolge über alle Seasons</span></div><div id="trophies" class="trophy-shelf"></div></section>
-    <section id="current-progress-section" class="current-progress-section"><div id="current-progress"></div></section>
-    <section class="podium-section"><div class="section-head"><div><p class="eyebrow">TOP 3 MYTHIC+</p><h2 class="podium-title">Podest</h2></div><span class="hint">Automatisch nach aktuellem M+-Score sortiert</span></div><div id="podium" class="podium"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">MAIN CHARACTERS</p><h2>Bufferrari & Liezen</h2></div><span class="legend"><i></i> Automatisch aktualisiert</span></div><div id="featured" class="featured-grid"></div></section>
+    <section id="hall-of-fame" class="trophy-section"><div class="section-head"><div><p class="eyebrow">HALL OF FAME</p><h2>Cutting-Edge-Trophäen</h2></div><span class="hint">Dauerhafte Erfolge über alle Seasons</span></div><div id="trophies" class="trophy-shelf"><div class="loading-state">Trophäen werden geladen …</div></div></section>
+    <section id="aktuelle-season" class="current-progress-section"><div id="current-progress"><div class="loading-state">Aktuelle Season wird geladen …</div></div></section>
+    <section id="podest" class="podium-section"><div class="section-head"><div><p class="eyebrow">TOP 3 MYTHIC+</p><h2 class="podium-title">Podest</h2></div><span class="hint">Automatisch nach aktuellem M+-Score sortiert</span></div><div id="podium" class="podium"><div class="loading-state">Podest wird geladen …</div></div></section>
+    <section id="main-characters"><div class="section-head"><div><p class="eyebrow">MAIN CHARACTERS</p><h2>Bufferrari & Liezen</h2></div><span class="legend"><i></i> Automatisch aktualisiert</span></div><div id="featured" class="featured-grid"><div class="loading-state">Main Characters werden geladen …</div></div></section>
     <section><div class="section-head"><div><p class="eyebrow">MYTHIC+</p><h2>Score-Verteilung</h2></div><span class="hint">Anteil am Gesamt-Score, nicht Spielzeit</span></div><div class="split three"><article class="panel"><h3>Klassen</h3><div id="class-shares"></div></article><article class="panel"><h3>Spezialisierungen</h3><div id="spec-shares"></div></article><article class="panel"><h3>Charakter-Scores</h3><div id="character-scores"></div></article></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">ROSTER</p><h2>Weitere Charaktere</h2></div><span class="legend"><i></i> Maximalstufe</span></div><div id="characters" class="character-grid compact"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">ARCHIV</p><h2>Season Verlauf</h2></div></div><div id="seasons" class="season-grid"></div></section>
+    <section id="weitere-charaktere"><div class="section-head"><div><p class="eyebrow">ROSTER</p><h2>Weitere Charaktere</h2></div><span class="legend"><i></i> Maximalstufe</span></div><div id="characters" class="character-grid compact"><div class="loading-state">Charaktere werden geladen …</div></div></section>
+    <section id="archiv"><div class="section-head"><div><p class="eyebrow">ARCHIV</p><h2>Season Verlauf</h2></div></div><div id="seasons" class="season-grid season-timeline"><div class="loading-state">Archiv wird geladen …</div></div></section>
     <section id="errors-section" hidden><div class="section-head"><h2>Datenfehler</h2></div><div id="errors" class="notice error"></div></section>
   </main>
   <footer>Daten: Blizzard Profile API & Raider.IO · automatisch aktualisiert über GitHub Actions</footer>
-  <script type="module" src="app.js?v=20260819-6"></script>
+  <script type="module" src="app.js?v=20260819-7"></script>
 </body>
 </html>
