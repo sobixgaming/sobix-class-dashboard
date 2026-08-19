@@ -11,15 +11,7 @@ const formatTime=ms=>ms?`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60
 const live=Boolean(data.generatedAt);
 
 document.querySelector("#updated").textContent=live?`Stand ${new Intl.DateTimeFormat("de-DE",{dateStyle:"medium",timeStyle:"short"}).format(new Date(data.generatedAt))}`:"Live-Daten noch nicht geladen";
-const maxCount=roster.filter(character=>character.level>=data.maxLevel).length;
-const highestScoreCharacter=[...roster].sort((a,b)=>currentScore(b)-currentScore(a))[0];
 const mainCharacter=byName(data.featured?.primary?.[0]||"Bufferrari")||roster[0];
-const identity=character=>`<span class="metric-identity" style="--class:${color(character)}">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="">`:""}<b>${esc(character?.name||"–")}</b></span>`;
-document.querySelector("#summary").innerHTML=`
-  <article class="metric focus"><span>Aktueller Main</span>${identity(mainCharacter)}<small>${esc(mainCharacter?.className)} · ${esc(mainCharacter?.specName)}</small></article>
-  <article class="metric focus"><span>Höchster M+-Score</span>${identity(highestScoreCharacter)}<small>${formatNumber(currentScore(highestScoreCharacter))} Punkte · ${esc(highestScoreCharacter?.className)}</small></article>
-  <article class="metric focus"><span>Charaktere auf Maximalstufe</span><strong>${maxCount}</strong><small>von ${roster.length} Charakteren auf Stufe ${esc(data.maxLevel)}</small></article>`;
-
 const primary=(data.featured?.primary||["Bufferrari","Liezen"]).map(byName).filter(Boolean);
 const ranked=[...roster].sort((a,b)=>currentScore(b)-currentScore(a)).slice(0,3);
 
@@ -66,7 +58,7 @@ function renderCurrentProgress(character){
   const raidMarkup=raids.map(({name,raid})=>`<article class="live-raid"><div><span>AKTUELLER RAID</span><strong>${esc(name)}</strong><small>${esc(character?.name||"–")}</small></div><div class="live-difficulties"><span class="normal">N <b>${esc(raid?.normalKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="heroic">H <b>${esc(raid?.heroicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="mythic">M <b>${esc(raid?.mythicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span></div></article>`).join("");
   const runs=[...(character?.bestRuns||[])].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,3);
   const runsMarkup=runs.length?runs.map((run,index)=>`<a href="${esc(run.url||character.profileUrl)}" target="_blank" rel="noreferrer"><i>${index+1}</i><span><b>+${esc(run.level??"–")} ${esc(run.shortName||run.dungeon)}</b><small>${formatNumber(run.score)} Punkte · ${formatTime(run.clearTimeMs)}</small></span></a>`).join(""):`<p class="empty">Die aktuellen M+-Runs werden automatisch ergänzt.</p>`;
-  document.querySelector("#current-progress").innerHTML=`<article class="current-progress-card" style="--class:${color(character)}"><div class="live-glow"></div><header><div><p class="eyebrow"><span class="live-dot"></span> AKTUELLE SEASON</p><h2>${esc(seasonLabel)}</h2><p>Live-Fortschritt von ${esc(character?.name||"–")} · automatisch aktualisiert</p></div><strong class="patch-badge">PATCH ${esc(patch)}</strong></header><div class="current-progress-grid"><div class="live-score"><span>MYTHIC+ SCORE</span><strong>${formatNumber(currentScore(character))}</strong><small>Aktueller Season-Wert</small></div><div class="live-raids">${raidMarkup}</div><div class="live-runs"><h3>Beste aktuelle Runs</h3>${runsMarkup}</div></div></article>`;
+  document.querySelector("#current-progress").innerHTML=`<article class="current-progress-card" style="--class:${color(character)}"><div class="live-glow"></div><header><div><p class="eyebrow"><span class="live-dot"></span> AKTUELLE SEASON</p><h2>${esc(seasonLabel)}</h2><p>Raid- und Mythic+-Fortschritt · automatisch aktualisiert</p><div class="current-main-name">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="">`:""}<span><small>AKTUELLER MAIN</small><strong>${esc(character?.name||"–")}</strong></span></div></div><strong class="patch-badge">PATCH ${esc(patch)}</strong></header><div class="current-progress-grid"><div class="live-score"><span>MYTHIC+ SCORE</span><strong>${formatNumber(currentScore(character))}</strong><small>Aktueller Season-Wert</small></div><div class="live-raids">${raidMarkup}</div><div class="live-runs"><h3>Beste aktuelle Runs</h3>${runsMarkup}</div></div></article>`;
 }
 renderCurrentProgress(mainCharacter);
 
