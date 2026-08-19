@@ -54,6 +54,22 @@ function runBlock(character){
   return [...character.bestRuns].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,8).map((run,index)=>`<a class="run-row" href="${esc(run.url||character.profileUrl||character.armoryUrl)}" target="_blank" rel="noreferrer"><span><i>${index+1}</i><b>+${esc(run.level??"–")}</b> ${esc(run.shortName||run.dungeon)}</span><strong>${formatNumber(run.score)} · ${formatTime(run.clearTimeMs)}</strong></a>`).join("");
 }
 
+function renderCurrentProgress(character){
+  const seasonLabel=data.activeRaidPatch?.season||"Aktuelle Season";
+  const patch=data.activeRaidPatch?.patch||"–";
+  const wantedRaids=data.activeRaidPatch?.raids||[];
+  const raids=wantedRaids.map(name=>{
+    const wanted=name.toLowerCase().replace(/^the\\s+/,"").replace(/[^a-z0-9]+/g,"-");
+    const raid=(character?.raids||[]).find(entry=>entry.slug===wanted||entry.slug?.includes(wanted)||wanted.includes(entry.slug));
+    return {name,raid};
+  });
+  const raidMarkup=raids.map(({name,raid})=>`<article class="live-raid"><div><span>AKTUELLER RAID</span><strong>${esc(name)}</strong><small>${esc(character?.name||"–")}</small></div><div class="live-difficulties"><span class="normal">N <b>${esc(raid?.normalKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="heroic">H <b>${esc(raid?.heroicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="mythic">M <b>${esc(raid?.mythicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span></div></article>`).join("");
+  const runs=[...(character?.bestRuns||[])].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,3);
+  const runsMarkup=runs.length?runs.map((run,index)=>`<a href="${esc(run.url||character.profileUrl)}" target="_blank" rel="noreferrer"><i>${index+1}</i><span><b>+${esc(run.level??"–")} ${esc(run.shortName||run.dungeon)}</b><small>${formatNumber(run.score)} Punkte · ${formatTime(run.clearTimeMs)}</small></span></a>`).join(""):`<p class="empty">Die aktuellen M+-Runs werden automatisch ergänzt.</p>`;
+  document.querySelector("#current-progress").innerHTML=`<article class="current-progress-card" style="--class:${color(character)}"><div class="live-glow"></div><header><div><p class="eyebrow"><span class="live-dot"></span> AKTUELLE SEASON</p><h2>${esc(seasonLabel)}</h2><p>Live-Fortschritt von ${esc(character?.name||"–")} · automatisch aktualisiert</p></div><strong class="patch-badge">PATCH ${esc(patch)}</strong></header><div class="current-progress-grid"><div class="live-score"><span>MYTHIC+ SCORE</span><strong>${formatNumber(currentScore(character))}</strong><small>Aktueller Season-Wert</small></div><div class="live-raids">${raidMarkup}</div><div class="live-runs"><h3>Beste aktuelle Runs</h3>${runsMarkup}</div></div></article>`;
+}
+renderCurrentProgress(mainCharacter);
+
 function equipmentBlock(character){
   if(!character.equipment?.length)return `<p class="empty">Ausrüstung erscheint nach der nächsten automatischen API-Aktualisierung.</p>`;
   return character.equipment.map(item=>`<a class="equipment-item" href="${esc(item.wowheadUrl||character.armoryUrl)}" target="_blank" rel="noreferrer" title="${esc(item.slot)}: ${esc(item.name)}">
@@ -117,7 +133,8 @@ const seasonMeta={
   "season-mn-1":{label:"Midnight Season 1",order:200},
   "season-tww-3":{label:"The War Within Season 3",order:100}
 };
-const seasons=Object.entries(data.seasons||{}).sort(([a],[b])=>(seasonMeta[b]?.order??0)-(seasonMeta[a]?.order??0));
+const activeSeasonKey=data.activeSeasonKey||({"Midnight Season 2":"season-mn-2","Midnight Season 1":"season-mn-1","The War Within Season 3":"season-tww-3","TWW Season 3":"season-tww-3"}[data.activeRaidPatch?.season]);
+const seasons=Object.entries(data.seasons||{}).filter(([name])=>name!==activeSeasonKey).sort(([a],[b])=>(seasonMeta[b]?.order??0)-(seasonMeta[a]?.order??0));
 const raidBadges=raid=>`<div class="raid-badges"><span class="normal">N <b>${esc(raid.normalKilled??0)}/${esc(raid.totalBosses??0)}</b></span><span class="heroic">H <b>${esc(raid.heroicKilled??0)}/${esc(raid.totalBosses??0)}</b></span><span class="mythic">M <b>${esc(raid.mythicKilled??0)}/${esc(raid.totalBosses??0)}</b></span></div>`;
 document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,season])=>{
   const best=season.bestMythicPlus;
