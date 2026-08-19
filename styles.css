@@ -223,9 +223,12 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .season-timeline{position:relative;padding-top:38px}
 .season-timeline::before{content:"";position:absolute;left:5%;right:5%;top:14px;height:2px;background:linear-gradient(90deg,var(--gold),var(--cyan),#6d7890);box-shadow:0 0 14px rgba(94,217,237,.28)}
 .season-timeline>.season{position:relative}
-.season-timeline>.season::before{content:"";position:absolute;top:-33px;left:28px;width:13px;height:13px;border:3px solid #09101a;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(255,189,61,.18),0 0 18px var(--gold)}
-.season-timeline>.season:nth-of-type(2)::before{background:var(--cyan);box-shadow:0 0 0 3px rgba(94,217,237,.18),0 0 18px var(--cyan)}
-.season-timeline>.season:nth-of-type(n+3)::before{background:#79869b;box-shadow:0 0 0 3px rgba(121,134,155,.18),0 0 18px #79869b}
+.timeline-point{position:absolute;z-index:3;top:-33px;left:28px;width:19px;height:19px;border:3px solid #09101a;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(255,189,61,.18),0 0 18px var(--gold);cursor:help}
+.season-timeline>.season:nth-of-type(2) .timeline-point{background:var(--cyan);box-shadow:0 0 0 3px rgba(94,217,237,.18),0 0 18px var(--cyan)}
+.season-timeline>.season:nth-of-type(n+3) .timeline-point{background:#79869b;box-shadow:0 0 0 3px rgba(121,134,155,.18),0 0 18px #79869b}
+.timeline-point::after{content:attr(data-label);position:absolute;left:50%;bottom:calc(100% + 12px);width:max-content;max-width:190px;padding:7px 10px;border:1px solid color-mix(in srgb,currentColor 45%,var(--line));border-radius:9px;background:rgba(6,11,18,.96);color:var(--text);font-size:11px;font-weight:850;letter-spacing:.04em;box-shadow:0 10px 28px rgba(0,0,0,.4);opacity:0;transform:translate(-50%,5px);transition:opacity .18s ease,transform .18s ease;pointer-events:none}
+.timeline-point:hover::after,.timeline-point:focus-visible::after{opacity:1;transform:translate(-50%,0)}
+.timeline-point:focus-visible{outline:2px solid var(--text);outline-offset:4px}
 .season{padding:22px}
 .season-score{font-size:34px;font-weight:800;color:var(--gold)}
 .archive-person{display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:center;margin:13px 0;padding:10px;border:1px solid var(--line);border-radius:12px;background:#0b111b}
@@ -263,7 +266,7 @@ footer{padding:34px 0 60px}
 .hero{align-items:flex-start;flex-direction:column;justify-content:center}
 .hero-brand{align-items:flex-start}.brand-logo{width:125px}
 }
-@media(max-width:560px){body{padding-top:50px}.site-nav{height:50px}.site-nav>div{width:calc(100% - 16px)}.site-nav a{padding:7px 10px}.data-status{grid-template-columns:1fr}.status-item,.status-item:nth-child(2n),.status-item:nth-last-child(-n+2){border-right:0;border-bottom:1px solid var(--line)}.status-item:last-child{border-bottom:0}.weekly-head{align-items:flex-start;flex-direction:column}.weekly-grid{grid-template-columns:1fr}.weekly-raids{grid-column:auto}.weekly-raid-row{grid-template-columns:1fr repeat(3,auto)}.season-timeline{padding-top:0;padding-left:27px}.season-timeline::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto}.season-timeline>.season::before,.season-timeline>.season:nth-of-type(2)::before,.season-timeline>.season:nth-of-type(n+3)::before{top:25px;left:-26px}.current-progress-card{padding:20px}.live-difficulties{flex-wrap:wrap}
+@media(max-width:560px){body{padding-top:50px}.site-nav{height:50px}.site-nav>div{width:calc(100% - 16px)}.site-nav a{padding:7px 10px}.data-status{grid-template-columns:1fr}.status-item,.status-item:nth-child(2n),.status-item:nth-last-child(-n+2){border-right:0;border-bottom:1px solid var(--line)}.status-item:last-child{border-bottom:0}.weekly-head{align-items:flex-start;flex-direction:column}.weekly-grid{grid-template-columns:1fr}.weekly-raids{grid-column:auto}.weekly-raid-row{grid-template-columns:1fr repeat(3,auto)}.season-timeline{padding-top:0;padding-left:27px}.season-timeline::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto}.timeline-point,.season-timeline>.season:nth-of-type(2) .timeline-point,.season-timeline>.season:nth-of-type(n+3) .timeline-point{top:25px;left:-26px}.timeline-point::after{left:calc(100% + 12px);bottom:50%;transform:translate(5px,50%)}.timeline-point:hover::after,.timeline-point:focus-visible::after{transform:translate(0,50%)}.current-progress-card{padding:20px}.live-difficulties{flex-wrap:wrap}
 .hero,main,footer{width:min(100% - 24px,1320px)}
 body{background-attachment:scroll;background-size:auto 100vh}
 .summary,.character-grid,.season-grid{grid-template-columns:1fr}
