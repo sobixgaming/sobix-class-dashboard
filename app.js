@@ -1,16 +1,52 @@
 const classColors={"Death Knight":"#c41e3a",Todesritter:"#c41e3a","Demon Hunter":"#a330c9","Dämonenjäger":"#a330c9",Druid:"#ff7c0a",Druide:"#ff7c0a",Evoker:"#33937f",Rufer:"#33937f",Hunter:"#aad372","Jäger":"#aad372",Mage:"#3fc7eb",Magier:"#3fc7eb",Monk:"#00ff98","Mönch":"#00ff98",Paladin:"#f48cba",Priest:"#fff",Priester:"#fff",Rogue:"#fff468",Schurke:"#fff468",Shaman:"#0070dd",Schamane:"#0070dd",Warlock:"#8788ee",Hexenmeister:"#8788ee",Warrior:"#c69b6d",Krieger:"#c69b6d"};
 const medals={1:["GOLD","🥇"],2:["SILBER","🥈"],3:["BRONZE","🥉"]};
 const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const data=await fetch("data/dashboard.json",{cache:"no-store"}).then(r=>r.json());
+const fallbackSvg=`data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#23334b"/><stop offset="1" stop-color="#0b111b"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#g)"/><path d="M20 45c2-9 22-9 24 0M32 31a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" fill="#91a0b7"/></svg>')}`;
+document.addEventListener("error",event=>{const image=event.target;if(!(image instanceof HTMLImageElement)||image.dataset.fallback)return;image.dataset.fallback="true";image.src=fallbackSvg;image.classList.add("image-fallback")},true);
+
+let data;
+try{
+  const response=await fetch("data/dashboard.json",{cache:"no-store"});
+  if(!response.ok)throw new Error(`Dashboard-Daten konnten nicht geladen werden (HTTP ${response.status}).`);
+  data=await response.json();
+}catch(error){
+  document.body.classList.remove("loading");
+  document.body.classList.add("data-failed");
+  document.querySelector("#data-status").innerHTML=`<div class="status-error"><strong>Daten momentan nicht verfügbar</strong><span>${esc(error.message)}</span></div>`;
+  document.querySelectorAll(".loading-state").forEach(element=>element.textContent="Daten konnten nicht geladen werden. Bitte später erneut versuchen.");
+  throw error;
+}
 const roster=data.characters?.length?data.characters:[];
 const byName=name=>roster.find(character=>character.name===name);
 const currentScore=character=>Number((character?.scores?.find(score=>score.season==="current")??character?.scores?.[0])?.scores?.all??0);
 const color=character=>classColors[character?.className]||"#8795aa";
 const formatNumber=value=>new Intl.NumberFormat("de-DE",{maximumFractionDigits:0}).format(Number(value||0));
 const formatTime=ms=>ms?`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,"0")} min`:"–";
+const formatDate=value=>value?new Intl.DateTimeFormat("de-DE",{dateStyle:"medium",timeStyle:"short",timeZone:"Europe/Berlin"}).format(new Date(value)):"–";
 const live=Boolean(data.generatedAt);
 
-document.querySelector("#updated").textContent=live?`Stand ${new Intl.DateTimeFormat("de-DE",{dateStyle:"medium",timeStyle:"short"}).format(new Date(data.generatedAt))}`:"Live-Daten noch nicht geladen";
+function nextUpdateDate(){
+  let next=new Date(data.apiStatus?.nextUpdateAt||new Date(data.generatedAt).getTime()+6*60*60*1000);
+  while(next<=new Date())next=new Date(next.getTime()+6*60*60*1000);
+  return next;
+}
+function until(value){
+  const minutes=Math.max(0,Math.ceil((value-new Date())/60000));
+  if(minutes<60)return `${minutes} Min.`;
+  const hours=Math.floor(minutes/60),rest=minutes%60;
+  return rest?`${hours} Std. ${rest} Min.`:`${hours} Std.`;
+}
+function renderDataStatus(){
+  const blizzard=data.apiStatus?.blizzard?.online!==false&&live;
+  const raider=data.apiStatus?.raiderIO?.online!==false&&live;
+  document.querySelector("#data-status").innerHTML=`
+    <div class="status-item"><span>Letzte Aktualisierung</span><strong>${formatDate(data.generatedAt)}</strong></div>
+    <div class="status-item"><span>Blizzard API</span><strong class="${blizzard?"online":"offline"}"><i></i>${blizzard?"online":"nicht verfügbar"}</strong></div>
+    <div class="status-item"><span>Raider.IO</span><strong class="${raider?"online":"offline"}"><i></i>${raider?"online":"nicht verfügbar"}</strong></div>
+    <div class="status-item"><span>Nächstes Update</span><strong>in ${until(nextUpdateDate())}</strong></div>`;
+}
+renderDataStatus();
+setInterval(renderDataStatus,60000);
 const mainCharacter=byName(data.featured?.primary?.[0]||"Bufferrari")||roster[0];
 const primary=(data.featured?.primary||["Bufferrari","Liezen"]).map(byName).filter(Boolean);
 const ranked=[...roster].sort((a,b)=>currentScore(b)-currentScore(a)).slice(0,3);
@@ -56,9 +92,12 @@ function renderCurrentProgress(character){
     return {name,raid};
   });
   const raidMarkup=raids.map(({name,raid})=>`<article class="live-raid"><div><span>AKTUELLER RAID</span><strong>${esc(name)}</strong><small>${esc(character?.name||"–")}</small></div><div class="live-difficulties"><span class="normal">N <b>${esc(raid?.normalKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="heroic">H <b>${esc(raid?.heroicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span><span class="mythic">M <b>${esc(raid?.mythicKilled??0)}/${esc(raid?.totalBosses??"–")}</b></span></div></article>`).join("");
-  const runs=[...(character?.bestRuns||[])].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,3);
-  const runsMarkup=runs.length?runs.map((run,index)=>`<a href="${esc(run.url||character.profileUrl)}" target="_blank" rel="noreferrer"><i>${index+1}</i><span><b>+${esc(run.level??"–")} ${esc(run.shortName||run.dungeon)}</b><small>${formatNumber(run.score)} Punkte · ${formatTime(run.clearTimeMs)}</small></span></a>`).join(""):`<p class="empty">Die aktuellen M+-Runs werden automatisch ergänzt.</p>`;
-  document.querySelector("#current-progress").innerHTML=`<article class="current-progress-card" style="--class:${color(character)}"><div class="live-glow"></div><header><div><p class="eyebrow"><span class="live-dot"></span> AKTUELLE SEASON</p><h2>${esc(seasonLabel)}</h2><p>Raid- und Mythic+-Fortschritt · automatisch aktualisiert</p><a class="current-main-link" href="${esc(character?.armoryUrl||character?.profileUrl||"#")}" target="_blank" rel="noreferrer">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="${esc(character.className||"Evoker")}-Logo">`:""}<span>Main:</span><strong>${esc(character?.name||"–")}</strong><i>↗</i></a></div><strong class="patch-badge">PATCH ${esc(patch)}</strong></header><div class="current-progress-grid"><div class="live-score"><span>MYTHIC+ SCORE</span><strong>${formatNumber(currentScore(character))}</strong><small>Aktueller Season-Wert</small></div><div class="live-raids">${raidMarkup}</div><div class="live-runs"><h3>Beste aktuelle Runs</h3>${runsMarkup}</div></div></article>`;
+  const weekly=data.weeklyProgress;
+  const weeklyKeys=weekly?.bestKeys||[];
+  const runsMarkup=weeklyKeys.length?weeklyKeys.slice(0,5).map((run,index)=>`<a href="${esc(run.url||character?.profileUrl||"#")}" target="_blank" rel="noreferrer"><i>${index+1}</i><span><b>+${esc(run.level??"–")} ${esc(run.shortName||run.dungeon)}</b><small>${formatNumber(run.score)} Punkte · ${formatTime(run.clearTimeMs)}</small></span></a>`).join(""):`<p class="empty">${weekly?.available?"Diese Woche wurden noch keine Keys erfasst.":"Wochenruns werden bei der nächsten Raider.IO-Aktualisierung ergänzt."}</p>`;
+  const difficultyValue=(difficulties,name)=>Object.entries(difficulties||{}).find(([key])=>key.toLowerCase().startsWith(name))?.[1]??0;
+  const weeklyRaids=(weekly?.raidBosses||[]).map(raid=>`<div class="weekly-raid-row"><strong>${esc(raid.raid)}</strong><span class="normal">N <b>${difficultyValue(raid.difficulties,"normal")}</b></span><span class="heroic">H <b>${difficultyValue(raid.difficulties,"heroic")}</b></span><span class="mythic">M <b>${difficultyValue(raid.difficulties,"mythic")}</b></span></div>`).join("")||`<p class="empty">Noch keine Raidboss-Kills in dieser Resetwoche.</p>`;
+  document.querySelector("#current-progress").innerHTML=`<article class="current-progress-card" style="--class:${color(character)}"><div class="live-glow"></div><header><div><p class="eyebrow"><span class="live-dot"></span> AKTUELLE SEASON</p><h2>${esc(seasonLabel)}</h2><p>Raid- und Mythic+-Fortschritt · automatisch aktualisiert</p><a class="current-main-link" href="${esc(character?.armoryUrl||character?.profileUrl||"#")}" target="_blank" rel="noreferrer">${character?.classIcon?`<img src="${esc(character.classIcon)}" alt="${esc(character.className||"Evoker")}-Logo">`:""}<span>Main:</span><strong>${esc(character?.name||"–")}</strong><i>↗</i></a></div><strong class="patch-badge">PATCH ${esc(patch)}</strong></header><div class="current-progress-grid"><div class="live-score"><span>MYTHIC+ SCORE</span><strong>${formatNumber(currentScore(character))}</strong><small>Aktueller Season-Wert</small></div><div class="live-raids">${raidMarkup}</div><div class="live-runs"><h3>Beste Keys dieser Woche</h3>${runsMarkup}</div></div><section class="weekly-progress"><div class="weekly-head"><div><p class="eyebrow">WOCHENFORTSCHRITT</p><h3>Resetwoche</h3></div><span>Mittwoch 06:00 Uhr · Reset ${formatDate(weekly?.resetAt)}</span></div><div class="weekly-grid"><article><span>Höchster abgeschlossener Key</span><strong>${weekly?.highestKey?"+".concat(esc(weekly.highestKey)):"–"}</strong></article><article><span>Getimte Dungeons</span><strong>${esc(weekly?.timedDungeons??0)}</strong><small>unterschiedliche Dungeons</small></article><article class="weekly-raids"><span>Raidbosse diese Woche</span>${weeklyRaids}</article></div></section></article>`;
 }
 renderCurrentProgress(mainCharacter);
 
@@ -140,6 +179,9 @@ document.querySelector("#seasons").innerHTML=seasons.length?seasons.map(([name,s
   </article>`;
 }).join(""):`<article class="notice">Saisonwerte erscheinen nach der ersten Aktualisierung.</article>`;
 
-if(data.errors?.length){document.querySelector("#errors-section").hidden=false;document.querySelector("#errors").innerHTML=data.errors.map(error=>`<div><strong>${esc(error.character)}:</strong> ${esc(error.message)}</div>`).join("")}
+if(data.errors?.length){document.querySelector("#errors-section").hidden=false;document.querySelector("#errors").innerHTML=`<p>Einige Charakterdaten konnten nicht aktualisiert werden. Die zuletzt verfügbaren Bereiche bleiben sichtbar.</p>${data.errors.map(error=>`<div><strong>${esc(error.character)}:</strong> ${esc(error.message)}</div>`).join("")}`}
 
+document.querySelectorAll("img").forEach(image=>{image.decoding="async";if(!image.closest(".hero"))image.loading="lazy"});
+document.body.classList.remove("loading");
+document.body.classList.add("loaded");
 document.addEventListener("click",async event=>{const button=event.target.closest("[data-copy-code]");if(!button)return;try{await navigator.clipboard.writeText(button.dataset.copyCode);const old=button.textContent;button.textContent="Kopiert";setTimeout(()=>button.textContent=old,1400)}catch{button.textContent="Kopieren nicht möglich"}});
