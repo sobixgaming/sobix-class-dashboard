@@ -346,7 +346,7 @@ const runCandidates = [...(featuredMain?.recentRuns ?? []), ...(featuredMain?.we
   .sort((a, b) => Number(b.level ?? 0) - Number(a.level ?? 0) || Number(b.score ?? 0) - Number(a.score ?? 0));
 const timedDungeonNames = new Set(runCandidates.filter(run => Number(run.upgrades ?? 0) > 0).map(run => run.shortName ?? run.dungeon));
 
-const raidIdentity = value => String(value ?? "").toLowerCase().replace(/^the\s+/, "").replace(/[^a-z0-9]+/g, "");
+const raidIdentity = value => String(value ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "").replace(/^the/, "");
 function raidKillSnapshot(character) {
   const snapshot = {};
   for (const raid of character?.raidEncounters ?? []) {
