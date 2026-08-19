@@ -59,7 +59,7 @@ function renderCurrentProgress(character){
   const patch=data.activeRaidPatch?.patch||"–";
   const wantedRaids=data.activeRaidPatch?.raids||[];
   const raids=wantedRaids.map(name=>{
-    const wanted=name.toLowerCase().replace(/^the\\s+/,"").replace(/[^a-z0-9]+/g,"-");
+    const wanted=name.toLowerCase().replace(/^the\s+/,"").replace(/[^a-z0-9]+/g,"-");
     const raid=(character?.raids||[]).find(entry=>entry.slug===wanted||entry.slug?.includes(wanted)||wanted.includes(entry.slug));
     return {name,raid};
   });
