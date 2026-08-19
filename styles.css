@@ -154,6 +154,13 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .archive-person small,.archive-person span{color:var(--muted)}
 .archive-person strong{color:var(--class);font-size:17px}
 .raid-badges{display:flex;gap:7px;margin:12px 0}
+.archive-raids{display:grid;gap:10px;margin:14px 0}
+.archive-raid{padding:12px;border:1px solid var(--line);border-radius:12px;background:#0b111b}
+.archive-raid-head{display:grid;grid-template-columns:34px 1fr;gap:9px;align-items:center}
+.archive-raid-head img{width:34px;height:34px;border-radius:50%;box-shadow:0 0 10px color-mix(in srgb,var(--class) 45%,transparent)}
+.archive-raid-head div{display:grid}
+.archive-raid-head small{color:var(--muted)}
+.archive-raid-head strong{color:var(--class);font-size:15px}
 .archive-highlight{display:grid;grid-template-columns:auto 1fr;gap:4px 9px;align-items:center;margin:12px 0;padding:12px;border:1px solid rgba(255,158,50,.7);border-radius:11px;background:rgba(255,123,28,.09);color:#ffb35f;box-shadow:0 0 20px rgba(255,123,28,.12)}
 .archive-highlight .ce{grid-row:1/3;font-size:18px;font-weight:950;text-shadow:0 0 10px #ff7b1c}
 .archive-highlight small{color:var(--muted)}
