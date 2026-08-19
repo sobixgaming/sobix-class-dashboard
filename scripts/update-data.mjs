@@ -346,6 +346,7 @@ const runCandidates = [...(featuredMain?.recentRuns ?? []), ...(featuredMain?.we
   .sort((a, b) => Number(b.level ?? 0) - Number(a.level ?? 0) || Number(b.score ?? 0) - Number(a.score ?? 0));
 const timedDungeonNames = new Set(runCandidates.filter(run => Number(run.upgrades ?? 0) > 0).map(run => run.shortName ?? run.dungeon));
 
+const raidIdentity = value => String(value ?? "").toLowerCase().replace(/^the\s+/, "").replace(/[^a-z0-9]+/g, "");
 function raidKillSnapshot(character) {
   const snapshot = {};
   for (const raid of character?.raidEncounters ?? []) {
@@ -354,20 +355,29 @@ function raidKillSnapshot(character) {
       snapshot[raid.name][mode.difficulty] = Object.fromEntries((mode.bosses ?? []).map(boss => [boss.name, Number(boss.kills ?? 0)]));
     }
   }
+  for (const raid of character?.raids ?? []) {
+    if (snapshot[raid.slug]) continue;
+    snapshot[raid.slug] = {
+      Normal: { "__progress": Number(raid.normalKilled ?? 0) },
+      Heroic: { "__progress": Number(raid.heroicKilled ?? 0) },
+      Mythic: { "__progress": Number(raid.mythicKilled ?? 0) }
+    };
+  }
   return snapshot;
 }
 const currentRaidSnapshot = raidKillSnapshot(featuredMain);
 const previousWeek = previous.weeklyProgress;
-const raidBaseline = previousWeek?.resetKey === resetKey ? (previousWeek.raidBaseline ?? currentRaidSnapshot) : currentRaidSnapshot;
+const raidBaseline = structuredClone(previousWeek?.resetKey === resetKey ? (previousWeek.raidBaseline ?? {}) : {});
+for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) raidBaseline[raidName] ??= structuredClone(modes);
 const weeklyRaidBosses = [];
 for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) {
+  const configuredName = (config.activeRaidPatch?.raids ?? []).find(name => raidIdentity(name) === raidIdentity(raidName));
+  if (!configuredName) continue;
   const difficulties = {};
   for (const [difficulty, bosses] of Object.entries(modes)) {
-    difficulties[difficulty] = Object.entries(bosses).filter(([bossName, kills]) => Number(kills) > Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)).length;
+    difficulties[difficulty] = Object.entries(bosses).reduce((sum, [bossName, kills]) => sum + Math.max(0, Number(kills) - Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)), 0);
   }
-  if (Object.values(difficulties).some(value => value > 0) || (config.activeRaidPatch?.raids ?? []).some(name => raidName.toLowerCase().includes(name.toLowerCase().replace(/^the\s+/, "")))) {
-    weeklyRaidBosses.push({ raid: raidName, difficulties });
-  }
+  weeklyRaidBosses.push({ raid: configuredName, difficulties });
 }
 const weeklyProgress = {
   resetKey,
