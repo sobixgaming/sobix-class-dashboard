@@ -82,6 +82,7 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 @keyframes trophyGlow{to{border-color:#fff0a2;box-shadow:inset 0 0 38px rgba(255,189,61,.18),0 0 34px rgba(255,189,61,.25)}}
 @keyframes trophySweep{to{transform:rotate(360deg)}}
 .legend i{display:inline-block;width:9px;height:9px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green);margin-right:7px}
+.podium-title{display:inline-block;background:linear-gradient(100deg,#b87408 0%,#ffbd3d 28%,#fff2a8 46%,#ffbd3d 64%,#b87408 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 8px rgba(255,189,61,.38));animation:mainNameShine 3s linear infinite}
 .podium-section{padding:46px 0}
 .podium{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .podium-card{position:relative;min-height:180px;overflow:hidden;border-color:color-mix(in srgb,var(--class) 50%,var(--line));box-shadow:inset 0 3px 0 var(--class)}
@@ -235,4 +236,4 @@ body{background-attachment:scroll;background-size:auto 100vh}
 .profile-links{flex-direction:column}
 main section{padding:46px 0}
 }
-@media(prefers-reduced-motion:reduce){.trophy,.trophy::before,.current-progress-card::before,.live-glow,.live-dot,.current-main-link strong{animation:none}}
+@media(prefers-reduced-motion:reduce){.trophy,.trophy::before,.current-progress-card::before,.live-glow,.live-dot,.current-main-link strong,.podium-title{animation:none}}
