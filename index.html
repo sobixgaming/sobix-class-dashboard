@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="WoW Klassen-, M+- und Raid-Dashboard von Sobixgaming">
   <title>Sobix @WorldOfWarcraft</title>
-  <link rel="stylesheet" href="styles.css?v=20260819-2">
+  <link rel="stylesheet" href="styles.css?v=20260819-3">
 </head>
 <body>
   <header class="hero">
-    <div class="hero-brand"><img class="brand-logo" src="assets/sobix-logo.png" alt="Sobix Logo"><div><p class="eyebrow">WORLD OF WARCRAFT MIDNIGHT PATCH 12.0.7</p><h1><a href="https://twitch.tv/sobix_live" target="_blank" rel="noreferrer">Sobix</a></h1><p class="lead">Willkommen auf meinem Gaming Dashboard für World of Warcraft. Hier findet ihr alles zu meinen Charakteren und Erfolgen. Folgt mir gerne auf Twitch.tv für mehr Infos.</p></div></div>
+    <div class="hero-brand"><img class="brand-logo" src="assets/sobix-logo.png" alt="Sobix Logo"><div><p class="eyebrow">WORLD OF WARCRAFT MIDNIGHT PATCH 12.1</p><h1><a href="https://twitch.tv/sobix_live" target="_blank" rel="noreferrer">Sobix</a></h1><p class="lead">Willkommen auf meinem Gaming Dashboard für World of Warcraft. Hier findet ihr alles zu meinen Charakteren und Erfolgen. Folgt mir gerne auf Twitch.tv für mehr Infos.</p></div></div>
     <div id="updated" class="updated">Noch keine Live-Daten</div>
   </header>
   <main>
     <section class="trophy-section"><div class="section-head"><div><p class="eyebrow">HALL OF FAME</p><h2>Cutting-Edge-Trophäen</h2></div><span class="hint">Dauerhafte Erfolge über alle Seasons</span></div><div id="trophies" class="trophy-shelf"></div></section>
     <section id="summary" class="summary"></section>
+    <section id="current-progress-section" class="current-progress-section"><div id="current-progress"></div></section>
     <section class="podium-section"><div class="section-head"><div><p class="eyebrow">TOP 3 MYTHIC+</p><h2>Dein Podium</h2></div><span class="hint">Automatisch nach aktuellem M+-Score sortiert</span></div><div id="podium" class="podium"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">MAIN CHARACTERS</p><h2>Bufferrari & Liezen</h2></div><span class="legend"><i></i> Automatisch aktualisiert</span></div><div id="featured" class="featured-grid"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">MYTHIC+</p><h2>Score-Verteilung</h2></div><span class="hint">Anteil am Gesamt-Score, nicht Spielzeit</span></div><div class="split three"><article class="panel"><h3>Klassen</h3><div id="class-shares"></div></article><article class="panel"><h3>Spezialisierungen</h3><div id="spec-shares"></div></article><article class="panel"><h3>Charakter-Scores</h3><div id="character-scores"></div></article></div></section>
@@ -23,6 +24,6 @@
     <section id="errors-section" hidden><div class="section-head"><h2>Datenfehler</h2></div><div id="errors" class="notice error"></div></section>
   </main>
   <footer>Daten: Blizzard Profile API & Raider.IO · automatisch aktualisiert über GitHub Actions</footer>
-  <script type="module" src="app.js?v=20260819-2"></script>
+  <script type="module" src="app.js?v=20260819-3"></script>
 </body>
 </html>
