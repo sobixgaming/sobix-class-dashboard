@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T16:02:00.154Z",
+  "generatedAt": "2026-08-19T17:54:12.255Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-19T17:00:00.000Z"
+    "nextUpdateAt": "2026-08-19T18:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
@@ -26,9 +26,20 @@
     "nextResetAt": "2026-08-26T04:00:00.000Z",
     "character": "Bufferrari",
     "available": true,
-    "bestKeys": [],
-    "highestKey": 0,
-    "timedDungeons": 0,
+    "bestKeys": [
+      {
+        "dungeon": "The Blinding Vale",
+        "shortName": "BV",
+        "level": 10,
+        "score": 323.3,
+        "upgrades": 1,
+        "clearTimeMs": 1642855,
+        "completedAt": "2026-08-19T15:13:35.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+      }
+    ],
+    "highestKey": 10,
+    "timedDungeons": 1,
     "raidBosses": [
       {
         "raid": "The Venomous Abyss",
@@ -1148,6 +1159,26 @@
       },
       "selectedTalents": [
         {
+          "id": 376179,
+          "name": "Lifeforce Mender",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_dragonrage2.jpg",
+          "rank": 2,
+          "hero": false,
+          "important": false,
+          "row": 2,
+          "column": 13
+        },
+        {
+          "id": 371426,
+          "name": "Life-Giver's Flame",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/item_sparkofragnoros.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 3,
+          "column": 12
+        },
+        {
           "id": 375722,
           "name": "Essence Attunement",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_essenceburststacks.jpg",
@@ -1195,6 +1226,16 @@
           "hero": false,
           "important": false,
           "row": 5,
+          "column": 10
+        },
+        {
+          "id": 1241669,
+          "name": "Dream Simulacrum",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_dragonrage2_green.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 1,
           "column": 10
         },
         {
@@ -1248,16 +1289,6 @@
           "column": 11
         },
         {
-          "id": 381921,
-          "name": "Ouroboros",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_ouroboros.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 11
-        },
-        {
           "id": 373270,
           "name": "Lifebind",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_hoverred.jpg",
@@ -1288,13 +1319,23 @@
           "column": 16
         },
         {
-          "id": 376237,
-          "name": "Nozdormu's Teachings",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_misc_head_dragon_bronze.jpg",
+          "id": 1291636,
+          "name": "Temporal Barrier",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_bronze_01.jpg",
           "rank": 1,
           "hero": false,
           "important": false,
           "row": 5,
+          "column": 16
+        },
+        {
+          "id": 368412,
+          "name": "Time of Need",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_masterylifebinder_bronze.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": true,
+          "row": 3,
           "column": 16
         },
         {
@@ -1306,46 +1347,6 @@
           "important": false,
           "row": 4,
           "column": 15
-        },
-        {
-          "id": 376240,
-          "name": "Timeless Magic",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_artifact_xp05.jpg",
-          "rank": 2,
-          "hero": false,
-          "important": false,
-          "row": 2,
-          "column": 15
-        },
-        {
-          "id": 381922,
-          "name": "Temporal Artificer",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_rewind.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 14
-        },
-        {
-          "id": 1242031,
-          "name": "Twin Echoes",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_ability_evoker_greaterecho.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 1,
-          "column": 14
-        },
-        {
-          "id": 1242745,
-          "name": "Inner Flame",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_infernosblessing.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 13
         },
         {
           "id": 370537,
@@ -1366,6 +1367,26 @@
           "important": false,
           "row": 2,
           "column": 11
+        },
+        {
+          "id": 369990,
+          "name": "Ancient Flame",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_elemental_mote_fire01.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 6,
+          "column": 0
+        },
+        {
+          "id": 370888,
+          "name": "Twin Guardian",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_misc_volatileair.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": true,
+          "row": 2,
+          "column": 4
         },
         {
           "id": 370665,
@@ -1428,6 +1449,16 @@
           "column": 4
         },
         {
+          "id": 372048,
+          "name": "Oppressing Roar",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_oppressingroar.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 3,
+          "column": 2
+        },
+        {
           "id": 376166,
           "name": "Draconic Legacy",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_mail_dracthyrquest_b_02.jpg",
@@ -1436,16 +1467,6 @@
           "important": false,
           "row": 5,
           "column": 3
-        },
-        {
-          "id": 375520,
-          "name": "Innate Magic",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_innatemagic4.jpg",
-          "rank": 2,
-          "hero": false,
-          "important": false,
-          "row": 8,
-          "column": 2
         },
         {
           "id": 363916,
@@ -1458,6 +1479,16 @@
           "column": 3
         },
         {
+          "id": 358385,
+          "name": "Landslide",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_earthen_pillar.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 10,
+          "column": 1
+        },
+        {
           "id": 365585,
           "name": "Expunge",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_fontofmagic_green.jpg",
@@ -1466,16 +1497,6 @@
           "important": false,
           "row": 10,
           "column": 5
-        },
-        {
-          "id": 410352,
-          "name": "Stretch Time",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_timedilation.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 0
         },
         {
           "id": 375510,
@@ -1488,16 +1509,6 @@
           "column": 1
         },
         {
-          "id": 376164,
-          "name": "Instinctive Arcana",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_arcane_studentofmagic.jpg",
-          "rank": 2,
-          "hero": false,
-          "important": false,
-          "row": 6,
-          "column": 1
-        },
-        {
           "id": 386405,
           "name": "Inner Radiance",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_holy_spellwarding.jpg",
@@ -1505,6 +1516,16 @@
           "hero": false,
           "important": false,
           "row": 7,
+          "column": 1
+        },
+        {
+          "id": 369913,
+          "name": "Natural Convergence",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_frost_frostblast.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 9,
           "column": 1
         },
         {
@@ -1568,6 +1589,16 @@
           "column": 5
         },
         {
+          "id": 371032,
+          "name": "Terror of the Skies",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_terroroftheskies.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 1,
+          "column": 1
+        },
+        {
           "id": 369939,
           "name": "Leaping Flames",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_pupilofalexstraza.jpg",
@@ -1578,14 +1609,14 @@
           "column": 1
         },
         {
-          "id": 369459,
-          "name": "Source of Magic",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_blue_01.jpg",
+          "id": 375574,
+          "name": "Foci of Life",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_fire_incinerate.jpg",
           "rank": 1,
           "hero": false,
           "important": false,
           "row": 3,
-          "column": 6
+          "column": 3
         },
         {
           "id": 374227,
@@ -1618,6 +1649,16 @@
           "column": 5
         },
         {
+          "id": 375517,
+          "name": "Extended Flight",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_hover.jpg",
+          "rank": 2,
+          "hero": false,
+          "important": false,
+          "row": 5,
+          "column": 4
+        },
+        {
           "id": 370553,
           "name": "Tip the Scales",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_tipthescales.jpg",
@@ -1625,16 +1666,6 @@
           "hero": false,
           "important": false,
           "row": 6,
-          "column": 3
-        },
-        {
-          "id": 374968,
-          "name": "Time Spiral",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_timespiral.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": true,
-          "row": 1,
           "column": 3
         },
         {
@@ -1646,16 +1677,6 @@
           "important": false,
           "row": 2,
           "column": 3
-        },
-        {
-          "id": 387787,
-          "name": "Regenerative Magic",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_frost_manarecharge.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 4,
-          "column": 0
         },
         {
           "id": 374348,
@@ -1676,16 +1697,6 @@
           "important": false,
           "row": 5,
           "column": 2
-        },
-        {
-          "id": 418101,
-          "name": "Potent Mana",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_magic_managain.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 2,
-          "column": 6
         },
         {
           "id": 445625,
@@ -1788,6 +1799,16 @@
           "column": 5
         },
         {
+          "id": 443177,
+          "name": "Lifespark",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_masterylifebinder_red.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 1,
+          "column": 13
+        },
+        {
           "id": 1264365,
           "name": "Ashes in Motion",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_ability_flameshaperevoker_engulf.jpg",
@@ -1805,6 +1826,16 @@
           "hero": false,
           "important": false,
           "row": 9,
+          "column": 3
+        },
+        {
+          "id": 375443,
+          "name": "Clobbering Sweep",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_racial_tailswipe.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 7,
           "column": 3
         },
         {
@@ -1838,16 +1869,6 @@
           "column": 7
         },
         {
-          "id": 369909,
-          "name": "Protracted Talons",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_azurestrike.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 5,
-          "column": 1
-        },
-        {
           "id": 1256689,
           "name": "Merithra's Blessing",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_giftoftheaspects.jpg",
@@ -1858,13 +1879,13 @@
           "column": 13
         }
       ],
-      "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MzMmxYMbGmZmtBAAwMmxMYMjMzMAAAAzMzkZMzYWmZGAMjZgFwCYGmQ2gNDDgZmxA",
+      "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsMDw2wAAgZGzYGjhZixMAAAgZmZaGzMzMGzAAjZgFwCYGmQ2YsZYGgZGGA",
       "wowheadTalentUrl": "https://www.wowhead.com/talent-calc/evoker/preservation",
       "gear": {
-        "created_at": "2026-08-13T16:25:48.413Z",
-        "updated_at": "2026-08-13T16:25:48.413Z",
-        "source": "s3",
-        "item_level_equipped": 293,
+        "created_at": "2026-08-19T16:32:27.000Z",
+        "updated_at": "2026-08-19T16:32:27.000Z",
+        "source": "db",
+        "item_level_equipped": 293.562,
         "item_level_total": 0,
         "artifact_traits": 0,
         "corruption": {
@@ -2437,7 +2458,8 @@
             "gems": [],
             "gems_detail": [],
             "enchants": [
-              8039
+              8039,
+              8052
             ],
             "enchants_detail": [
               {
@@ -2483,27 +2505,27 @@
         {
           "season": "season-mn-2",
           "scores": {
-            "all": 0,
+            "all": 323.3,
             "dps": 0,
-            "healer": 0,
+            "healer": 323.3,
             "tank": 0,
             "spec_0": 0,
-            "spec_1": 0,
+            "spec_1": 323.3,
             "spec_2": 0,
             "spec_3": 0
           },
           "segments": {
             "all": {
-              "score": 0,
-              "color": "#ffffff"
+              "score": 323.3,
+              "color": "#deffd0"
             },
             "dps": {
               "score": 0,
               "color": "#ffffff"
             },
             "healer": {
-              "score": 0,
-              "color": "#ffffff"
+              "score": 323.3,
+              "color": "#deffd0"
             },
             "tank": {
               "score": 0,
@@ -2514,8 +2536,8 @@
               "color": "#ffffff"
             },
             "spec_1": {
-              "score": 0,
-              "color": "#ffffff"
+              "score": 323.3,
+              "color": "#deffd0"
             },
             "spec_2": {
               "score": 0,
@@ -2577,24 +2599,24 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 0,
-          "region": 0,
-          "realm": 0
+          "world": 226104,
+          "region": 106067,
+          "realm": 1416
         },
         "class": {
-          "world": 0,
-          "region": 0,
-          "realm": 0
+          "world": 7007,
+          "region": 3142,
+          "realm": 38
         },
         "healer": {
-          "world": 0,
-          "region": 0,
-          "realm": 0
+          "world": 47904,
+          "region": 22285,
+          "realm": 313
         },
         "class_healer": {
-          "world": 0,
-          "region": 0,
-          "realm": 0
+          "world": 3460,
+          "region": 1517,
+          "realm": 11
         },
         "dps": {
           "world": 0,
@@ -2612,9 +2634,9 @@
           "realm": 0
         },
         "spec_1468": {
-          "world": 0,
-          "region": 0,
-          "realm": 0
+          "world": 3460,
+          "region": 1517,
+          "realm": 11
         },
         "spec_1473": {
           "world": 0,
@@ -2622,9 +2644,42 @@
           "realm": 0
         }
       },
-      "bestRuns": [],
-      "recentRuns": [],
-      "weeklyHighestRuns": [],
+      "bestRuns": [
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 10,
+          "score": 323.3,
+          "upgrades": 1,
+          "clearTimeMs": 1642855,
+          "completedAt": "2026-08-19T15:13:35.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+        }
+      ],
+      "recentRuns": [
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 10,
+          "score": 323.3,
+          "upgrades": 1,
+          "clearTimeMs": 1642855,
+          "completedAt": "2026-08-19T15:13:35.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+        }
+      ],
+      "weeklyHighestRuns": [
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 10,
+          "score": 323.3,
+          "upgrades": 1,
+          "clearTimeMs": 1642855,
+          "completedAt": "2026-08-19T15:13:35.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+        }
+      ],
       "weeklyRunsAvailable": true,
       "raids": [
         {
@@ -25798,11 +25853,11 @@
   "mythicPlus": {
     "classShares": [
       {
-        "score": 0,
+        "score": 323,
         "label": "Rufer",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 0
+        "percent": 100
       },
       {
         "score": 0,
@@ -25891,11 +25946,11 @@
     ],
     "specShares": [
       {
-        "score": 0,
+        "score": 323,
         "label": "Bewahrung",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 0
+        "percent": 100
       },
       {
         "score": 0,
@@ -26066,7 +26121,7 @@
     },
     "season-mn-2": {
       "bestMythicPlus": {
-        "score": 0,
+        "score": 323,
         "character": "Bufferrari",
         "className": "Rufer",
         "specName": "Bewahrung"
