@@ -302,6 +302,7 @@ const output = {
   realm: config.realm,
   maxLevel: config.maxLevel,
   activeRaidPatch: config.activeRaidPatch,
+  activeSeasonKey: currentSeason,
   trophies: config.trophies,
   characters: characters.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name, "de")),
   featured: {
