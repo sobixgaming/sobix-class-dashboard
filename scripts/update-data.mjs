@@ -261,6 +261,23 @@ for (const character of characters) {
   }
 }
 
+// Keep archive raids bound to their actual season. Raider.IO may expose aggregate
+// or adjacent-season raid slugs in the current payload, so archive data is normalized here.
+seasons["season-mn-2"] ??= { bestMythicPlus: null, raids: {}, highlights: [] };
+const venomousAbyss = seasons["season-mn-2"].raids?.["the-venomous-abyss"] ?? {
+  raid: "The Venomous Abyss", summary: "0/8 M", normalKilled: 0, heroicKilled: 0, mythicKilled: 0, totalBosses: 8, character: "Bufferrari"
+};
+seasons["season-mn-2"].raids = {
+  "the-venomous-abyss": { ...venomousAbyss, raid: "The Venomous Abyss" }
+};
+
+seasons["season-mn-1"] ??= { bestMythicPlus: null, raids: {}, highlights: [] };
+seasons["season-mn-1"].raids = {
+  "the-voidspire": { raid: "The Voidspire", summary: "6/6 M", normalKilled: 6, heroicKilled: 6, mythicKilled: 6, totalBosses: 6, character: "Bufferrari" },
+  "the-dreamrift": { raid: "The Dreamrift", summary: "1/1 M", normalKilled: 1, heroicKilled: 1, mythicKilled: 1, totalBosses: 1, character: "Bufferrari" },
+  "march-on-queldanas": { raid: "March on Quel'Danas", summary: "2/2 M", normalKilled: 2, heroicKilled: 2, mythicKilled: 2, totalBosses: 2, character: "Bufferrari" }
+};
+
 seasons["season-tww-3"] ??= { bestMythicPlus: null, raids: {}, highlights: [] };
 seasons["season-tww-3"].highlights ??= [];
 if (!seasons["season-tww-3"].highlights.some(highlight => highlight.achievement === "Cutting Edge: Dimensius, the All-Devouring")) {
