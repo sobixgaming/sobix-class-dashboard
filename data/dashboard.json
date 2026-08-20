@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T03:14:03.847Z",
+  "generatedAt": "2026-08-20T05:18:40.805Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,17 +18,38 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-20T04:00:00.000Z"
+    "nextUpdateAt": "2026-08-20T06:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
     "resetAt": "2026-08-19T04:00:00.000Z",
     "nextResetAt": "2026-08-26T04:00:00.000Z",
     "character": "Bufferrari",
-    "available": false,
-    "bestKeys": [],
-    "highestKey": 0,
-    "timedDungeons": 0,
+    "available": true,
+    "bestKeys": [
+      {
+        "dungeon": "The Blinding Vale",
+        "shortName": "BV",
+        "level": 10,
+        "score": 323.3,
+        "upgrades": 1,
+        "clearTimeMs": 1642855,
+        "completedAt": "2026-08-19T15:13:35.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+      },
+      {
+        "dungeon": "Altar of Fangs",
+        "shortName": "AOF",
+        "level": 10,
+        "score": 0,
+        "upgrades": 0,
+        "clearTimeMs": 2943778,
+        "completedAt": "2026-08-19T19:58:36.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/416217-10-altar-of-fangs"
+      }
+    ],
+    "highestKey": 10,
+    "timedDungeons": 1,
     "raidBosses": [
       {
         "raid": "The Venomous Abyss",
@@ -309,7 +330,7 @@
           "name": "Taillenschutz des giftverfluchten Adlers",
           "itemLevel": 292,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/7871825.jpg",
+          "icon": null,
           "wowheadUrl": "https://www.wowhead.com/item=277773"
         },
         {
@@ -2621,23 +2642,23 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 309728,
-          "region": 172368,
-          "realm": 2349
+          "world": 327637,
+          "region": 178228,
+          "realm": 2401
         },
         "class": {
-          "world": 9011,
-          "region": 4655,
-          "realm": 58
+          "world": 9531,
+          "region": 4828,
+          "realm": 59
         },
         "healer": {
-          "world": 66146,
-          "region": 36481,
-          "realm": 510
+          "world": 70102,
+          "region": 37796,
+          "realm": 517
         },
         "class_healer": {
-          "world": 4489,
-          "region": 2271,
+          "world": 4739,
+          "region": 2356,
           "realm": 19
         },
         "dps": {
@@ -2656,8 +2677,8 @@
           "realm": 0
         },
         "spec_1468": {
-          "world": 4489,
-          "region": 2271,
+          "world": 4739,
+          "region": 2356,
           "realm": 19
         },
         "spec_1473": {
@@ -2688,9 +2709,51 @@
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/416217-10-altar-of-fangs"
         }
       ],
-      "recentRuns": [],
-      "weeklyHighestRuns": [],
-      "weeklyRunsAvailable": false,
+      "recentRuns": [
+        {
+          "dungeon": "Altar of Fangs",
+          "shortName": "AOF",
+          "level": 10,
+          "score": 0,
+          "upgrades": 0,
+          "clearTimeMs": 2943778,
+          "completedAt": "2026-08-19T19:58:36.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/416217-10-altar-of-fangs"
+        },
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 10,
+          "score": 323.3,
+          "upgrades": 1,
+          "clearTimeMs": 1642855,
+          "completedAt": "2026-08-19T15:13:35.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+        }
+      ],
+      "weeklyHighestRuns": [
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 10,
+          "score": 323.3,
+          "upgrades": 1,
+          "clearTimeMs": 1642855,
+          "completedAt": "2026-08-19T15:13:35.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/288430-10-the-blinding-vale"
+        },
+        {
+          "dungeon": "Altar of Fangs",
+          "shortName": "AOF",
+          "level": 10,
+          "score": 0,
+          "upgrades": 0,
+          "clearTimeMs": 2943778,
+          "completedAt": "2026-08-19T19:58:36.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/416217-10-altar-of-fangs"
+        }
+      ],
+      "weeklyRunsAvailable": true,
       "raids": [
         {
           "slug": "the-tidebound-grotto",
@@ -6616,7 +6679,7 @@
           "name": "Blick des Alnsehers",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/7636702.jpg",
+          "icon": null,
           "wowheadUrl": "https://www.wowhead.com/item=249343"
         },
         {
