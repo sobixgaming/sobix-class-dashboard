@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T16:04:25.444Z",
+  "generatedAt": "2026-08-20T18:00:19.415Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-20T17:00:00.000Z"
+    "nextUpdateAt": "2026-08-20T19:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
@@ -51,6 +51,12 @@
     "highestKey": 10,
     "timedDungeons": 1,
     "raidBosses": [
+      {
+        "raid": "The Venomous Abyss",
+        "difficulties": {
+          "Raid Finder": 0
+        }
+      },
       {
         "raid": "The Venomous Abyss",
         "difficulties": {
@@ -229,6 +235,12 @@
         },
         "Mythic": {
           "__progress": 9
+        }
+      },
+      "The Venomous Abyss": {
+        "Raid Finder": {
+          "Nek'zali the Soulcoiler": 1,
+          "The Twin Fangs": 1
         }
       }
     }
@@ -562,10 +574,6 @@
           },
           {
             "name": "Schuppenkommandant",
-            "rank": 1
-          },
-          {
-            "name": "Massendesintegration",
             "rank": 1
           },
           {
@@ -1101,15 +1109,15 @@
             "rank": 1
           },
           {
+            "name": "Übermannen",
+            "rank": 1
+          },
+          {
             "name": "Meisterschaft über die Lüfte",
             "rank": 1
           },
           {
             "name": "Schrecken der Lüfte",
-            "rank": 1
-          },
-          {
-            "name": "Räumliches Paradoxon",
             "rank": 1
           },
           {
@@ -2642,24 +2650,24 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 382678,
-          "region": 197821,
-          "realm": 2647
+          "world": 394432,
+          "region": 204699,
+          "realm": 2748
         },
         "class": {
-          "world": 10994,
-          "region": 5370,
-          "realm": 67
+          "world": 11281,
+          "region": 5544,
+          "realm": 71
         },
         "healer": {
-          "world": 82554,
-          "region": 42330,
-          "realm": 583
+          "world": 85202,
+          "region": 43923,
+          "realm": 609
         },
         "class_healer": {
-          "world": 5558,
-          "region": 2664,
-          "realm": 24
+          "world": 5728,
+          "region": 2778,
+          "realm": 27
         },
         "dps": {
           "world": 0,
@@ -2677,9 +2685,9 @@
           "realm": 0
         },
         "spec_1468": {
-          "world": 5558,
-          "region": 2664,
-          "realm": 24
+          "world": 5728,
+          "region": 2778,
+          "realm": 27
         },
         "spec_1473": {
           "world": 0,
@@ -3148,6 +3156,26 @@
           ]
         },
         {
+          "name": "The Venomous Abyss",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nek'zali the Soulcoiler",
+                  "kills": 1
+                },
+                {
+                  "name": "The Twin Fangs",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "The Dreamrift",
           "modes": [
             {
@@ -3408,6 +3436,26 @@
               "bosses": [
                 {
                   "name": "Nymrissa Wavecaller",
+                  "kills": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Venomous Abyss",
+          "modes": [
+            {
+              "difficulty": "Raid Finder",
+              "completed": 2,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nek'zali the Soulcoiler",
+                  "kills": 1
+                },
+                {
+                  "name": "The Twin Fangs",
                   "kills": 1
                 }
               ]
@@ -7008,19 +7056,7 @@
             "rank": 1
           },
           {
-            "name": "Lebenszyklus",
-            "rank": 1
-          },
-          {
-            "name": "Zenimpuls",
-            "rank": 1
-          },
-          {
             "name": "Yu'lon die Jadeschlange beschwören",
-            "rank": 1
-          },
-          {
-            "name": "Tiefe Klarheit",
             "rank": 1
           },
           {
@@ -7342,6 +7378,10 @@
             "rank": 1
           },
           {
+            "name": "Druckpunkte",
+            "rank": 1
+          },
+          {
             "name": "Chischutz",
             "rank": 1
           },
@@ -7374,10 +7414,6 @@
             "rank": 1
           },
           {
-            "name": "Verbesserte Berührung des Todes",
-            "rank": 1
-          },
-          {
             "name": "Nebelrufer",
             "rank": 1
           },
@@ -7398,19 +7434,15 @@
             "rank": 1
           },
           {
-            "name": "Flinke Kunst",
-            "rank": 1
-          },
-          {
             "name": "Belebende Klarheit",
             "rank": 1
           },
           {
-            "name": "Jadeinfusion",
+            "name": "Geschwinde Stärkung",
             "rank": 1
           },
           {
-            "name": "Geschwinde Stärkung",
+            "name": "Magiediffusion",
             "rank": 1
           },
           {
@@ -7430,19 +7462,11 @@
             "rank": 1
           },
           {
-            "name": "Mönch",
-            "rank": 1
-          },
-          {
-            "name": "Druckpunkte",
-            "rank": 1
-          },
-          {
-            "name": "Magiediffusion",
-            "rank": 1
-          },
-          {
             "name": "Tödliche Berührung",
+            "rank": 1
+          },
+          {
+            "name": "Mönch",
             "rank": 1
           },
           {
@@ -7454,11 +7478,19 @@
             "rank": 1
           },
           {
+            "name": "Verbesserte Berührung des Todes",
+            "rank": 1
+          },
+          {
             "name": "Frieden und Wohlstand",
             "rank": 1
           },
           {
             "name": "Windlaufen",
+            "rank": 1
+          },
+          {
+            "name": "Chitransfer",
             "rank": 1
           },
           {
@@ -7495,10 +7527,6 @@
           },
           {
             "name": "Hastiges Provozieren",
-            "rank": 1
-          },
-          {
-            "name": "Chitransfer",
             "rank": 1
           },
           {
