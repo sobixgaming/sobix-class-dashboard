@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T21:03:27.305Z",
+  "generatedAt": "2026-08-20T22:59:53.737Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-20T22:00:00.000Z"
+    "nextUpdateAt": "2026-08-20T23:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
@@ -54,13 +54,14 @@
       {
         "raid": "The Venomous Abyss",
         "difficulties": {
-          "Raid Finder": 0
+          "Raid Finder": 0,
+          "Normal": 0
         }
       },
       {
         "raid": "The Venomous Abyss",
         "difficulties": {
-          "Normal": 2,
+          "Normal": 3,
           "Heroic": 0,
           "Mythic": 0
         }
@@ -1894,8 +1895,8 @@
       "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbAAAMjZMYGzIzMDAAAwMzMZmZmxsMzMAYGzALgFwMMhsZYzwAYmZMA",
       "wowheadTalentUrl": "https://www.wowhead.com/talent-calc/evoker/preservation",
       "gear": {
-        "created_at": "2026-08-20T20:57:39.000Z",
-        "updated_at": "2026-08-20T20:57:39.000Z",
+        "created_at": "2026-08-20T21:03:33.000Z",
+        "updated_at": "2026-08-20T21:03:33.000Z",
         "source": "db",
         "item_level_equipped": 293.562,
         "item_level_total": 0,
@@ -2611,24 +2612,24 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 411336,
-          "region": 216154,
-          "realm": 2902
+          "world": 423545,
+          "region": 225037,
+          "realm": 3030
         },
         "class": {
-          "world": 11652,
-          "region": 5789,
-          "realm": 77
+          "world": 11930,
+          "region": 5990,
+          "realm": 79
         },
         "healer": {
-          "world": 89013,
-          "region": 46482,
-          "realm": 648
+          "world": 91801,
+          "region": 48526,
+          "realm": 678
         },
         "class_healer": {
-          "world": 5963,
-          "region": 2925,
-          "realm": 29
+          "world": 6123,
+          "region": 3032,
+          "realm": 30
         },
         "dps": {
           "world": 0,
@@ -2646,9 +2647,9 @@
           "realm": 0
         },
         "spec_1468": {
-          "world": 5963,
-          "region": 2925,
-          "realm": 29
+          "world": 6123,
+          "region": 3032,
+          "realm": 30
         },
         "spec_1473": {
           "world": 0,
@@ -2734,10 +2735,10 @@
         },
         {
           "slug": "the-venomous-abyss",
-          "summary": "2/8 N",
+          "summary": "3/8 N",
           "mythicKilled": 0,
           "heroicKilled": 0,
-          "normalKilled": 2,
+          "normalKilled": 3,
           "totalBosses": 8
         },
         {
@@ -3133,6 +3134,25 @@
                   "kills": 1
                 }
               ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 3,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nek'zali the Soulcoiler",
+                  "kills": 1
+                },
+                {
+                  "name": "Entombed Sentinels",
+                  "kills": 1
+                },
+                {
+                  "name": "Vashnik the Malignant",
+                  "kills": 1
+                }
+              ]
             }
           ]
         },
@@ -3420,6 +3440,25 @@
                   "kills": 1
                 }
               ]
+            },
+            {
+              "difficulty": "Normal",
+              "completed": 3,
+              "total": 8,
+              "bosses": [
+                {
+                  "name": "Nek'zali the Soulcoiler",
+                  "kills": 1
+                },
+                {
+                  "name": "Entombed Sentinels",
+                  "kills": 1
+                },
+                {
+                  "name": "Vashnik the Malignant",
+                  "kills": 1
+                }
+              ]
             }
           ]
         },
@@ -3528,10 +3567,10 @@
           "mythic_bosses_killed": 0
         },
         "the-venomous-abyss": {
-          "summary": "2/8 N",
+          "summary": "3/8 N",
           "expansion_id": 11,
           "total_bosses": 8,
-          "normal_bosses_killed": 2,
+          "normal_bosses_killed": 3,
           "heroic_bosses_killed": 0,
           "mythic_bosses_killed": 0
         },
