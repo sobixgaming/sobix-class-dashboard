@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T11:58:08.046Z",
+  "generatedAt": "2026-08-21T12:07:17.112Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-21T12:00:00.000Z"
+    "nextUpdateAt": "2026-08-21T13:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
@@ -65,16 +65,37 @@
         "raid": "The Venomous Abyss",
         "difficulties": {
           "Raid Finder": 0,
-          "Normal": 0
-        }
-      },
-      {
-        "raid": "The Venomous Abyss",
-        "difficulties": {
           "Normal": 3,
           "Heroic": 0,
           "Mythic": 0
-        }
+        },
+        "bosses": [
+          {
+            "name": "Nek'zali the Soulcoiler",
+            "difficulties": {
+              "Raid Finder": 0,
+              "Normal": 0
+            }
+          },
+          {
+            "name": "The Twin Fangs",
+            "difficulties": {
+              "Raid Finder": 0
+            }
+          },
+          {
+            "name": "Entombed Sentinels",
+            "difficulties": {
+              "Normal": 0
+            }
+          },
+          {
+            "name": "Vashnik the Malignant",
+            "difficulties": {
+              "Normal": 0
+            }
+          }
+        ]
       }
     ],
     "raidBaseline": {
@@ -2632,23 +2653,23 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 375002,
-          "region": 200367,
-          "realm": 2698
+          "world": 375425,
+          "region": 200548,
+          "realm": 2704
         },
         "class": {
-          "world": 10636,
-          "region": 5324,
+          "world": 10645,
+          "region": 5327,
           "realm": 71
         },
         "healer": {
-          "world": 80572,
-          "region": 42785,
+          "world": 80668,
+          "region": 42824,
           "realm": 598
         },
         "class_healer": {
-          "world": 5276,
-          "region": 2589,
+          "world": 5282,
+          "region": 2591,
           "realm": 25
         },
         "dps": {
@@ -2667,8 +2688,8 @@
           "realm": 0
         },
         "spec_1468": {
-          "world": 5276,
-          "region": 2589,
+          "world": 5282,
+          "region": 2591,
           "realm": 25
         },
         "spec_1473": {
@@ -2808,6 +2829,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1590,
                   "name": "Illidan Stormrage",
                   "kills": 14
                 }
@@ -2824,6 +2846,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1651,
                   "name": "Onyxia",
                   "kills": 1
                 }
@@ -2835,6 +2858,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1651,
                   "name": "Onyxia",
                   "kills": 1
                 }
@@ -2851,38 +2875,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2522,
                   "name": "Kazzara, the Hellforged",
                   "kills": 1
                 },
                 {
+                  "id": 2529,
                   "name": "The Amalgamation Chamber",
                   "kills": 1
                 },
                 {
+                  "id": 2530,
                   "name": "The Forgotten Experiments",
                   "kills": 1
                 },
                 {
+                  "id": 2524,
                   "name": "Assault of the Zaqali",
                   "kills": 1
                 },
                 {
+                  "id": 2525,
                   "name": "Rashok, the Elder",
                   "kills": 1
                 },
                 {
+                  "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
                   "kills": 1
                 },
                 {
+                  "id": 2527,
                   "name": "Magmorax",
                   "kills": 1
                 },
                 {
+                  "id": 2523,
                   "name": "Echo of Neltharion",
                   "kills": 1
                 },
                 {
+                  "id": 2520,
                   "name": "Scalecommander Sarkareth",
                   "kills": 1
                 }
@@ -2899,6 +2932,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 2
                 }
@@ -2910,6 +2944,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 2
                 }
@@ -2921,6 +2956,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 7
                 }
@@ -2932,6 +2968,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 9
                 }
@@ -2948,22 +2985,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 2
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 2
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 1
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 }
@@ -2975,26 +3017,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 2
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 2
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 2
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 1
                 }
@@ -3006,26 +3054,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 6
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 5
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 5
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 4
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 4
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 3
                 }
@@ -3037,26 +3091,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 5
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 6
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 4
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 4
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 1
                 }
@@ -3073,10 +3133,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 1
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3088,10 +3150,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 3
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3103,10 +3167,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 1
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3123,6 +3189,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2711,
                   "name": "Rotmire",
                   "kills": 4
                 }
@@ -3134,6 +3201,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2711,
                   "name": "Rotmire",
                   "kills": 4
                 }
@@ -3150,6 +3218,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2849,
                   "name": "Nymrissa Wavecaller",
                   "kills": 1
                 }
@@ -3166,10 +3235,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2887,
                   "name": "The Twin Fangs",
                   "kills": 1
                 }
@@ -3181,14 +3252,17 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2874,
                   "name": "Entombed Sentinels",
                   "kills": 1
                 },
                 {
+                  "id": 2882,
                   "name": "Vashnik the Malignant",
                   "kills": 1
                 }
@@ -3205,6 +3279,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 2
                 }
@@ -3216,6 +3291,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 2
                 }
@@ -3227,6 +3303,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 7
                 }
@@ -3238,6 +3315,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 9
                 }
@@ -3254,22 +3332,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 2
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 2
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 1
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 }
@@ -3281,26 +3364,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 2
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 2
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 2
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 1
                 }
@@ -3312,26 +3401,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 6
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 5
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 5
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 4
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 4
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 3
                 }
@@ -3343,26 +3438,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 5
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 6
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 4
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 4
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 },
                 {
+                  "id": 2738,
                   "name": "Crown of the Cosmos",
                   "kills": 1
                 }
@@ -3379,10 +3480,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 1
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3394,10 +3497,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 3
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3409,10 +3514,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
                   "kills": 1
                 },
                 {
+                  "id": 2740,
                   "name": "Midnight Falls",
                   "kills": 1
                 }
@@ -3429,6 +3536,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2711,
                   "name": "Rotmire",
                   "kills": 4
                 }
@@ -3440,6 +3548,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2711,
                   "name": "Rotmire",
                   "kills": 4
                 }
@@ -3456,6 +3565,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2849,
                   "name": "Nymrissa Wavecaller",
                   "kills": 1
                 }
@@ -3472,10 +3582,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2887,
                   "name": "The Twin Fangs",
                   "kills": 1
                 }
@@ -3487,14 +3599,17 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2874,
                   "name": "Entombed Sentinels",
                   "kills": 1
                 },
                 {
+                  "id": 2882,
                   "name": "Vashnik the Malignant",
                   "kills": 1
                 }
@@ -3511,10 +3626,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2608,
                   "name": "The Silken Court",
                   "kills": 1
                 },
                 {
+                  "id": 2602,
                   "name": "Queen Ansurek",
                   "kills": 1
                 }
@@ -3526,10 +3643,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2607,
                   "name": "Ulgrax the Devourer",
                   "kills": 1
                 },
                 {
+                  "id": 2611,
                   "name": "The Bloodbound Horror",
                   "kills": 1
                 }
@@ -3546,34 +3665,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2684,
                   "name": "Plexus Sentinel",
                   "kills": 2
                 },
                 {
+                  "id": 2686,
                   "name": "Loom'ithar",
                   "kills": 2
                 },
                 {
+                  "id": 2685,
                   "name": "Soulbinder Naazindhri",
                   "kills": 2
                 },
                 {
+                  "id": 2687,
                   "name": "Forgeweaver Araz",
                   "kills": 2
                 },
                 {
+                  "id": 2688,
                   "name": "The Soul Hunters",
                   "kills": 2
                 },
                 {
+                  "id": 2747,
                   "name": "Fractillus",
                   "kills": 3
                 },
                 {
+                  "id": 2690,
                   "name": "Nexus-King Salhadaar",
                   "kills": 3
                 },
                 {
+                  "id": 2691,
                   "name": "Dimensius, the All-Devouring",
                   "kills": 2
                 }
@@ -3585,10 +3712,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2690,
                   "name": "Nexus-King Salhadaar",
                   "kills": 1
                 },
                 {
+                  "id": 2691,
                   "name": "Dimensius, the All-Devouring",
                   "kills": 1
                 }
@@ -9146,26 +9275,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 679,
                   "name": "The Stone Guard",
                   "kills": 20
                 },
                 {
+                  "id": 689,
                   "name": "Feng the Accursed",
                   "kills": 18
                 },
                 {
+                  "id": 682,
                   "name": "Gara'jal the Spiritbinder",
                   "kills": 20
                 },
                 {
+                  "id": 687,
                   "name": "The Spirit Kings",
                   "kills": 16
                 },
                 {
+                  "id": 726,
                   "name": "Elegon",
                   "kills": 14
                 },
                 {
+                  "id": 677,
                   "name": "Will of the Emperor",
                   "kills": 16
                 }
@@ -9177,26 +9312,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 679,
                   "name": "The Stone Guard",
                   "kills": 7
                 },
                 {
+                  "id": 689,
                   "name": "Feng the Accursed",
                   "kills": 7
                 },
                 {
+                  "id": 682,
                   "name": "Gara'jal the Spiritbinder",
                   "kills": 7
                 },
                 {
+                  "id": 687,
                   "name": "The Spirit Kings",
                   "kills": 7
                 },
                 {
+                  "id": 726,
                   "name": "Elegon",
                   "kills": 5
                 },
                 {
+                  "id": 677,
                   "name": "Will of the Emperor",
                   "kills": 6
                 }
@@ -9208,6 +9349,7 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 679,
                   "name": "The Stone Guard",
                   "kills": 1
                 }
@@ -9219,22 +9361,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 679,
                   "name": "The Stone Guard",
                   "kills": 4
                 },
                 {
+                  "id": 689,
                   "name": "Feng the Accursed",
                   "kills": 4
                 },
                 {
+                  "id": 682,
                   "name": "Gara'jal the Spiritbinder",
                   "kills": 4
                 },
                 {
+                  "id": 687,
                   "name": "The Spirit Kings",
                   "kills": 4
                 },
                 {
+                  "id": 726,
                   "name": "Elegon",
                   "kills": 4
                 }
@@ -9251,26 +9398,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 745,
                   "name": "Imperial Vizier Zor'lok",
                   "kills": 8
                 },
                 {
+                  "id": 744,
                   "name": "Blade Lord Ta'yak",
                   "kills": 12
                 },
                 {
+                  "id": 713,
                   "name": "Garalon",
                   "kills": 10
                 },
                 {
+                  "id": 741,
                   "name": "Wind Lord Mel'jarak",
                   "kills": 10
                 },
                 {
+                  "id": 737,
                   "name": "Amber-Shaper Un'sok",
                   "kills": 10
                 },
                 {
+                  "id": 743,
                   "name": "Grand Empress Shek'zeer",
                   "kills": 10
                 }
@@ -9282,18 +9435,22 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 745,
                   "name": "Imperial Vizier Zor'lok",
                   "kills": 3
                 },
                 {
+                  "id": 744,
                   "name": "Blade Lord Ta'yak",
                   "kills": 2
                 },
                 {
+                  "id": 713,
                   "name": "Garalon",
                   "kills": 1
                 },
                 {
+                  "id": 741,
                   "name": "Wind Lord Mel'jarak",
                   "kills": 1
                 }
@@ -9305,26 +9462,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 745,
                   "name": "Imperial Vizier Zor'lok",
                   "kills": 1
                 },
                 {
+                  "id": 744,
                   "name": "Blade Lord Ta'yak",
                   "kills": 1
                 },
                 {
+                  "id": 713,
                   "name": "Garalon",
                   "kills": 1
                 },
                 {
+                  "id": 741,
                   "name": "Wind Lord Mel'jarak",
                   "kills": 1
                 },
                 {
+                  "id": 737,
                   "name": "Amber-Shaper Un'sok",
                   "kills": 1
                 },
                 {
+                  "id": 743,
                   "name": "Grand Empress Shek'zeer",
                   "kills": 1
                 }
@@ -9336,14 +9499,17 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 713,
                   "name": "Garalon",
                   "kills": 1
                 },
                 {
+                  "id": 741,
                   "name": "Wind Lord Mel'jarak",
                   "kills": 1
                 },
                 {
+                  "id": 737,
                   "name": "Amber-Shaper Un'sok",
                   "kills": 1
                 }
@@ -9360,18 +9526,22 @@
               "total": 4,
               "bosses": [
                 {
+                  "id": 683,
                   "name": "Protectors of the Endless",
                   "kills": 22
                 },
                 {
+                  "id": 742,
                   "name": "Tsulong",
                   "kills": 20
                 },
                 {
+                  "id": 729,
                   "name": "Lei Shi",
                   "kills": 22
                 },
                 {
+                  "id": 709,
                   "name": "Sha of Fear",
                   "kills": 24
                 }
@@ -9383,18 +9553,22 @@
               "total": 4,
               "bosses": [
                 {
+                  "id": 683,
                   "name": "Protectors of the Endless",
                   "kills": 6
                 },
                 {
+                  "id": 742,
                   "name": "Tsulong",
                   "kills": 5
                 },
                 {
+                  "id": 729,
                   "name": "Lei Shi",
                   "kills": 5
                 },
                 {
+                  "id": 709,
                   "name": "Sha of Fear",
                   "kills": 3
                 }
@@ -9406,18 +9580,22 @@
               "total": 4,
               "bosses": [
                 {
+                  "id": 683,
                   "name": "Protectors of the Endless",
                   "kills": 1
                 },
                 {
+                  "id": 742,
                   "name": "Tsulong",
                   "kills": 1
                 },
                 {
+                  "id": 729,
                   "name": "Lei Shi",
                   "kills": 1
                 },
                 {
+                  "id": 709,
                   "name": "Sha of Fear",
                   "kills": 1
                 }
@@ -9429,18 +9607,22 @@
               "total": 4,
               "bosses": [
                 {
+                  "id": 683,
                   "name": "Protectors of the Endless",
                   "kills": 1
                 },
                 {
+                  "id": 742,
                   "name": "Tsulong",
                   "kills": 1
                 },
                 {
+                  "id": 729,
                   "name": "Lei Shi",
                   "kills": 1
                 },
                 {
+                  "id": 709,
                   "name": "Sha of Fear",
                   "kills": 1
                 }
@@ -9457,50 +9639,62 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 827,
                   "name": "Jin'rokh the Breaker",
                   "kills": 20
                 },
                 {
+                  "id": 819,
                   "name": "Horridon",
                   "kills": 20
                 },
                 {
+                  "id": 816,
                   "name": "Council of Elders",
                   "kills": 22
                 },
                 {
+                  "id": 825,
                   "name": "Tortos",
                   "kills": 18
                 },
                 {
+                  "id": 821,
                   "name": "Megaera",
                   "kills": 20
                 },
                 {
+                  "id": 828,
                   "name": "Ji-Kun",
                   "kills": 18
                 },
                 {
+                  "id": 818,
                   "name": "Durumu the Forgotten",
                   "kills": 20
                 },
                 {
+                  "id": 820,
                   "name": "Primordius",
                   "kills": 14
                 },
                 {
+                  "id": 824,
                   "name": "Dark Animus",
                   "kills": 12
                 },
                 {
+                  "id": 817,
                   "name": "Iron Qon",
                   "kills": 16
                 },
                 {
+                  "id": 829,
                   "name": "Twin Empyreans",
                   "kills": 18
                 },
                 {
+                  "id": 832,
                   "name": "Lei Shen",
                   "kills": 18
                 }
@@ -9512,14 +9706,17 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 827,
                   "name": "Jin'rokh the Breaker",
                   "kills": 8
                 },
                 {
+                  "id": 819,
                   "name": "Horridon",
                   "kills": 4
                 },
                 {
+                  "id": 816,
                   "name": "Council of Elders",
                   "kills": 4
                 }
@@ -9531,50 +9728,62 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 827,
                   "name": "Jin'rokh the Breaker",
                   "kills": 1
                 },
                 {
+                  "id": 819,
                   "name": "Horridon",
                   "kills": 1
                 },
                 {
+                  "id": 816,
                   "name": "Council of Elders",
                   "kills": 1
                 },
                 {
+                  "id": 825,
                   "name": "Tortos",
                   "kills": 1
                 },
                 {
+                  "id": 821,
                   "name": "Megaera",
                   "kills": 1
                 },
                 {
+                  "id": 828,
                   "name": "Ji-Kun",
                   "kills": 1
                 },
                 {
+                  "id": 818,
                   "name": "Durumu the Forgotten",
                   "kills": 1
                 },
                 {
+                  "id": 820,
                   "name": "Primordius",
                   "kills": 1
                 },
                 {
+                  "id": 824,
                   "name": "Dark Animus",
                   "kills": 1
                 },
                 {
+                  "id": 817,
                   "name": "Iron Qon",
                   "kills": 1
                 },
                 {
+                  "id": 829,
                   "name": "Twin Empyreans",
                   "kills": 1
                 },
                 {
+                  "id": 832,
                   "name": "Lei Shen",
                   "kills": 1
                 }
@@ -9586,54 +9795,67 @@
               "total": 13,
               "bosses": [
                 {
+                  "id": 827,
                   "name": "Jin'rokh the Breaker",
                   "kills": 2
                 },
                 {
+                  "id": 819,
                   "name": "Horridon",
                   "kills": 2
                 },
                 {
+                  "id": 816,
                   "name": "Council of Elders",
                   "kills": 2
                 },
                 {
+                  "id": 825,
                   "name": "Tortos",
                   "kills": 2
                 },
                 {
+                  "id": 821,
                   "name": "Megaera",
                   "kills": 2
                 },
                 {
+                  "id": 828,
                   "name": "Ji-Kun",
                   "kills": 2
                 },
                 {
+                  "id": 818,
                   "name": "Durumu the Forgotten",
                   "kills": 2
                 },
                 {
+                  "id": 820,
                   "name": "Primordius",
                   "kills": 2
                 },
                 {
+                  "id": 824,
                   "name": "Dark Animus",
                   "kills": 2
                 },
                 {
+                  "id": 817,
                   "name": "Iron Qon",
                   "kills": 2
                 },
                 {
+                  "id": 829,
                   "name": "Twin Empyreans",
                   "kills": 2
                 },
                 {
+                  "id": 832,
                   "name": "Lei Shen",
                   "kills": 2
                 },
                 {
+                  "id": 831,
                   "name": "Ra-den",
                   "kills": 2
                 }
@@ -9650,54 +9872,67 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 16
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 18
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 16
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 16
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 10
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 10
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 8
                 },
                 {
+                  "id": 850,
                   "name": "General Nazgrim",
                   "kills": 8
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 10
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 6
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 6
                 },
                 {
+                  "id": 865,
                   "name": "Siegecrafter Blackfuse",
                   "kills": 10
                 },
                 {
+                  "id": 853,
                   "name": "Paragons of the Klaxxi",
                   "kills": 2
                 }
@@ -9709,42 +9944,52 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 12
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 13
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 11
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 11
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 10
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 10
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 7
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 10
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 10
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 9
                 }
@@ -9756,58 +10001,72 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 1
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 1
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 1
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 1
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 1
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 1
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 1
                 },
                 {
+                  "id": 850,
                   "name": "General Nazgrim",
                   "kills": 1
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 1
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 1
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 1
                 },
                 {
+                  "id": 865,
                   "name": "Siegecrafter Blackfuse",
                   "kills": 1
                 },
                 {
+                  "id": 853,
                   "name": "Paragons of the Klaxxi",
                   "kills": 1
                 },
                 {
+                  "id": 869,
                   "name": "Garrosh Hellscream",
                   "kills": 1
                 }
@@ -9819,58 +10078,72 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 21
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 21
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 18
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 19
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 17
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 17
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 14
                 },
                 {
+                  "id": 850,
                   "name": "General Nazgrim",
                   "kills": 12
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 12
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 10
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 8
                 },
                 {
+                  "id": 865,
                   "name": "Siegecrafter Blackfuse",
                   "kills": 7
                 },
                 {
+                  "id": 853,
                   "name": "Paragons of the Klaxxi",
                   "kills": 8
                 },
                 {
+                  "id": 869,
                   "name": "Garrosh Hellscream",
                   "kills": 13
                 }
@@ -9882,42 +10155,52 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 12
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 13
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 11
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 11
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 10
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 10
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 7
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 10
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 10
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 9
                 }
@@ -9929,58 +10212,72 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 852,
                   "name": "Immerseus",
                   "kills": 1
                 },
                 {
+                  "id": 849,
                   "name": "The Fallen Protectors",
                   "kills": 1
                 },
                 {
+                  "id": 866,
                   "name": "Norushen",
                   "kills": 1
                 },
                 {
+                  "id": 867,
                   "name": "Sha of Pride",
                   "kills": 1
                 },
                 {
+                  "id": 868,
                   "name": "Galakras",
                   "kills": 1
                 },
                 {
+                  "id": 864,
                   "name": "Iron Juggernaut",
                   "kills": 1
                 },
                 {
+                  "id": 856,
                   "name": "Kor'kron Dark Shaman",
                   "kills": 1
                 },
                 {
+                  "id": 850,
                   "name": "General Nazgrim",
                   "kills": 1
                 },
                 {
+                  "id": 846,
                   "name": "Malkorok",
                   "kills": 1
                 },
                 {
+                  "id": 870,
                   "name": "Spoils of Pandaria",
                   "kills": 1
                 },
                 {
+                  "id": 851,
                   "name": "Thok the Bloodthirsty",
                   "kills": 1
                 },
                 {
+                  "id": 865,
                   "name": "Siegecrafter Blackfuse",
                   "kills": 1
                 },
                 {
+                  "id": 853,
                   "name": "Paragons of the Klaxxi",
                   "kills": 1
                 },
                 {
+                  "id": 869,
                   "name": "Garrosh Hellscream",
                   "kills": 1
                 }
@@ -9997,10 +10294,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 1529,
                   "name": "Razorgore the Untamed",
                   "kills": 1
                 },
                 {
+                  "id": 1536,
                   "name": "Nefarian",
                   "kills": 1
                 }
@@ -10017,6 +10316,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1566,
                   "name": "Magtheridon",
                   "kills": 2
                 }
@@ -10033,6 +10333,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1581,
                   "name": "Archimonde",
                   "kills": 1
                 }
@@ -10049,6 +10350,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1590,
                   "name": "Illidan Stormrage",
                   "kills": 28
                 }
@@ -10065,6 +10367,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1616,
                   "name": "Sartharion",
                   "kills": 2
                 }
@@ -10081,58 +10384,72 @@
               "total": 14,
               "bosses": [
                 {
+                  "id": 1637,
                   "name": "Flame Leviathan",
                   "kills": 1
                 },
                 {
+                  "id": 1638,
                   "name": "Ignis the Furnace Master",
                   "kills": 1
                 },
                 {
+                  "id": 1639,
                   "name": "Razorscale",
                   "kills": 1
                 },
                 {
+                  "id": 1640,
                   "name": "XT-002 Deconstructor",
                   "kills": 1
                 },
                 {
+                  "id": 1641,
                   "name": "The Assembly of Iron",
                   "kills": 1
                 },
                 {
+                  "id": 1642,
                   "name": "Kologarn",
                   "kills": 1
                 },
                 {
+                  "id": 1643,
                   "name": "Auriaya",
                   "kills": 1
                 },
                 {
+                  "id": 1644,
                   "name": "Hodir",
                   "kills": 1
                 },
                 {
+                  "id": 1645,
                   "name": "Thorim",
                   "kills": 1
                 },
                 {
+                  "id": 1646,
                   "name": "Freya",
                   "kills": 1
                 },
                 {
+                  "id": 1647,
                   "name": "Mimiron",
                   "kills": 1
                 },
                 {
+                  "id": 1648,
                   "name": "General Vezax",
                   "kills": 1
                 },
                 {
+                  "id": 1649,
                   "name": "Yogg-Saron",
                   "kills": 1
                 },
                 {
+                  "id": 1650,
                   "name": "Algalon the Observer",
                   "kills": 1
                 }
@@ -10149,22 +10466,27 @@
               "total": 5,
               "bosses": [
                 {
+                  "id": 1618,
                   "name": "The Northrend Beasts",
                   "kills": 1
                 },
                 {
+                  "id": 1619,
                   "name": "Lord Jaraxxus",
                   "kills": 1
                 },
                 {
+                  "id": 1620,
                   "name": "Champions of the Alliance",
                   "kills": 1
                 },
                 {
+                  "id": 1622,
                   "name": "Twin Val'kyr",
                   "kills": 1
                 },
                 {
+                  "id": 1623,
                   "name": "Anub'arak",
                   "kills": 1
                 }
@@ -10176,22 +10498,27 @@
               "total": 5,
               "bosses": [
                 {
+                  "id": 1618,
                   "name": "The Northrend Beasts",
                   "kills": 1
                 },
                 {
+                  "id": 1619,
                   "name": "Lord Jaraxxus",
                   "kills": 1
                 },
                 {
+                  "id": 1620,
                   "name": "Champions of the Alliance",
                   "kills": 1
                 },
                 {
+                  "id": 1622,
                   "name": "Twin Val'kyr",
                   "kills": 1
                 },
                 {
+                  "id": 1623,
                   "name": "Anub'arak",
                   "kills": 1
                 }
@@ -10208,6 +10535,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1651,
                   "name": "Onyxia",
                   "kills": 1
                 }
@@ -10219,6 +10547,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1651,
                   "name": "Onyxia",
                   "kills": 1
                 }
@@ -10235,50 +10564,62 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 1624,
                   "name": "Lord Marrowgar",
                   "kills": 2
                 },
                 {
+                  "id": 1625,
                   "name": "Lady Deathwhisper",
                   "kills": 2
                 },
                 {
+                  "id": 1627,
                   "name": "Icecrown Gunship Battle",
                   "kills": 2
                 },
                 {
+                  "id": 1628,
                   "name": "Deathbringer Saurfang",
                   "kills": 2
                 },
                 {
+                  "id": 1629,
                   "name": "Festergut",
                   "kills": 2
                 },
                 {
+                  "id": 1630,
                   "name": "Rotface",
                   "kills": 2
                 },
                 {
+                  "id": 1631,
                   "name": "Professor Putricide",
                   "kills": 2
                 },
                 {
+                  "id": 1632,
                   "name": "Blood Prince Council",
                   "kills": 2
                 },
                 {
+                  "id": 1633,
                   "name": "Blood-Queen Lana'thel",
                   "kills": 2
                 },
                 {
+                  "id": 1634,
                   "name": "Valithria Dreamwalker",
                   "kills": 2
                 },
                 {
+                  "id": 1635,
                   "name": "Sindragosa",
                   "kills": 2
                 },
                 {
+                  "id": 1636,
                   "name": "The Lich King",
                   "kills": 1
                 }
@@ -10290,6 +10631,7 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 1624,
                   "name": "Lord Marrowgar",
                   "kills": 1
                 }
@@ -10301,42 +10643,52 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 1624,
                   "name": "Lord Marrowgar",
                   "kills": 1
                 },
                 {
+                  "id": 1625,
                   "name": "Lady Deathwhisper",
                   "kills": 1
                 },
                 {
+                  "id": 1627,
                   "name": "Icecrown Gunship Battle",
                   "kills": 1
                 },
                 {
+                  "id": 1628,
                   "name": "Deathbringer Saurfang",
                   "kills": 1
                 },
                 {
+                  "id": 1629,
                   "name": "Festergut",
                   "kills": 1
                 },
                 {
+                  "id": 1630,
                   "name": "Rotface",
                   "kills": 1
                 },
                 {
+                  "id": 1631,
                   "name": "Professor Putricide",
                   "kills": 1
                 },
                 {
+                  "id": 1632,
                   "name": "Blood Prince Council",
                   "kills": 1
                 },
                 {
+                  "id": 1633,
                   "name": "Blood-Queen Lana'thel",
                   "kills": 1
                 },
                 {
+                  "id": 1634,
                   "name": "Valithria Dreamwalker",
                   "kills": 1
                 }
@@ -10348,50 +10700,62 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 1624,
                   "name": "Lord Marrowgar",
                   "kills": 2
                 },
                 {
+                  "id": 1625,
                   "name": "Lady Deathwhisper",
                   "kills": 2
                 },
                 {
+                  "id": 1627,
                   "name": "Icecrown Gunship Battle",
                   "kills": 2
                 },
                 {
+                  "id": 1628,
                   "name": "Deathbringer Saurfang",
                   "kills": 2
                 },
                 {
+                  "id": 1629,
                   "name": "Festergut",
                   "kills": 2
                 },
                 {
+                  "id": 1630,
                   "name": "Rotface",
                   "kills": 2
                 },
                 {
+                  "id": 1631,
                   "name": "Professor Putricide",
                   "kills": 2
                 },
                 {
+                  "id": 1632,
                   "name": "Blood Prince Council",
                   "kills": 2
                 },
                 {
+                  "id": 1633,
                   "name": "Blood-Queen Lana'thel",
                   "kills": 2
                 },
                 {
+                  "id": 1634,
                   "name": "Valithria Dreamwalker",
                   "kills": 2
                 },
                 {
+                  "id": 1635,
                   "name": "Sindragosa",
                   "kills": 2
                 },
                 {
+                  "id": 1636,
                   "name": "The Lich King",
                   "kills": 2
                 }
@@ -10408,6 +10772,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1652,
                   "name": "Halion",
                   "kills": 1
                 }
@@ -10424,18 +10789,22 @@
               "total": 4,
               "bosses": [
                 {
+                  "id": 156,
                   "name": "Halfus Wyrmbreaker",
                   "kills": 1
                 },
                 {
+                  "id": 157,
                   "name": "Theralion and Valiona",
                   "kills": 1
                 },
                 {
+                  "id": 158,
                   "name": "Ascendant Council",
                   "kills": 1
                 },
                 {
+                  "id": 167,
                   "name": "Cho'gall",
                   "kills": 1
                 }
@@ -10447,22 +10816,27 @@
               "total": 5,
               "bosses": [
                 {
+                  "id": 156,
                   "name": "Halfus Wyrmbreaker",
                   "kills": 1
                 },
                 {
+                  "id": 157,
                   "name": "Theralion and Valiona",
                   "kills": 1
                 },
                 {
+                  "id": 158,
                   "name": "Ascendant Council",
                   "kills": 1
                 },
                 {
+                  "id": 167,
                   "name": "Cho'gall",
                   "kills": 1
                 },
                 {
+                  "id": 168,
                   "name": "Sinestra",
                   "kills": 1
                 }
@@ -10479,26 +10853,32 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 169,
                   "name": "Omnotron Defense System",
                   "kills": 3
                 },
                 {
+                  "id": 170,
                   "name": "Magmaw",
                   "kills": 1
                 },
                 {
+                  "id": 171,
                   "name": "Atramedes",
                   "kills": 1
                 },
                 {
+                  "id": 172,
                   "name": "Chimaeron",
                   "kills": 1
                 },
                 {
+                  "id": 173,
                   "name": "Maloriak",
                   "kills": 1
                 },
                 {
+                  "id": 174,
                   "name": "Nefarian's End",
                   "kills": 1
                 }
@@ -10510,22 +10890,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 169,
                   "name": "Omnotron Defense System",
                   "kills": 1
                 },
                 {
+                  "id": 170,
                   "name": "Magmaw",
                   "kills": 1
                 },
                 {
+                  "id": 171,
                   "name": "Atramedes",
                   "kills": 1
                 },
                 {
+                  "id": 172,
                   "name": "Chimaeron",
                   "kills": 1
                 },
                 {
+                  "id": 173,
                   "name": "Maloriak",
                   "kills": 1
                 }
@@ -10542,10 +10927,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 154,
                   "name": "The Conclave of Wind",
                   "kills": 1
                 },
                 {
+                  "id": 155,
                   "name": "Al'Akir",
                   "kills": 1
                 }
@@ -10562,30 +10949,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 192,
                   "name": "Beth'tilac",
                   "kills": 1
                 },
                 {
+                  "id": 193,
                   "name": "Lord Rhyolith",
                   "kills": 1
                 },
                 {
+                  "id": 194,
                   "name": "Alysrazor",
                   "kills": 1
                 },
                 {
+                  "id": 195,
                   "name": "Shannox",
                   "kills": 1
                 },
                 {
+                  "id": 196,
                   "name": "Baleroc, the Gatekeeper",
                   "kills": 1
                 },
                 {
+                  "id": 197,
                   "name": "Majordomo Staghelm",
                   "kills": 1
                 },
                 {
+                  "id": 198,
                   "name": "Ragnaros",
                   "kills": 1
                 }
@@ -10597,30 +10991,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 192,
                   "name": "Beth'tilac",
                   "kills": 1
                 },
                 {
+                  "id": 193,
                   "name": "Lord Rhyolith",
                   "kills": 1
                 },
                 {
+                  "id": 194,
                   "name": "Alysrazor",
                   "kills": 1
                 },
                 {
+                  "id": 195,
                   "name": "Shannox",
                   "kills": 1
                 },
                 {
+                  "id": 196,
                   "name": "Baleroc, the Gatekeeper",
                   "kills": 1
                 },
                 {
+                  "id": 197,
                   "name": "Majordomo Staghelm",
                   "kills": 1
                 },
                 {
+                  "id": 198,
                   "name": "Ragnaros",
                   "kills": 1
                 }
@@ -10637,34 +11038,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 311,
                   "name": "Morchok",
                   "kills": 2
                 },
                 {
+                  "id": 324,
                   "name": "Warlord Zon'ozz",
                   "kills": 2
                 },
                 {
+                  "id": 325,
                   "name": "Yor'sahj the Unsleeping",
                   "kills": 2
                 },
                 {
+                  "id": 317,
                   "name": "Hagara the Stormbinder",
                   "kills": 2
                 },
                 {
+                  "id": 331,
                   "name": "Ultraxion",
                   "kills": 2
                 },
                 {
+                  "id": 332,
                   "name": "Warmaster Blackhorn",
                   "kills": 2
                 },
                 {
+                  "id": 318,
                   "name": "Spine of Deathwing",
                   "kills": 1
                 },
                 {
+                  "id": 333,
                   "name": "Madness of Deathwing",
                   "kills": 1
                 }
@@ -10681,26 +11090,32 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1128,
                   "name": "Kargath Bladefist",
                   "kills": 4
                 },
                 {
+                  "id": 971,
                   "name": "The Butcher",
                   "kills": 3
                 },
                 {
+                  "id": 1196,
                   "name": "Brackenspore",
                   "kills": 3
                 },
                 {
+                  "id": 1148,
                   "name": "Twin Ogron",
                   "kills": 1
                 },
                 {
+                  "id": 1153,
                   "name": "Ko'ragh",
                   "kills": 2
                 },
                 {
+                  "id": 1197,
                   "name": "Imperator Mar'gok",
                   "kills": 2
                 }
@@ -10712,30 +11127,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1128,
                   "name": "Kargath Bladefist",
                   "kills": 2
                 },
                 {
+                  "id": 971,
                   "name": "The Butcher",
                   "kills": 3
                 },
                 {
+                  "id": 1195,
                   "name": "Tectus",
                   "kills": 2
                 },
                 {
+                  "id": 1196,
                   "name": "Brackenspore",
                   "kills": 3
                 },
                 {
+                  "id": 1148,
                   "name": "Twin Ogron",
                   "kills": 2
                 },
                 {
+                  "id": 1153,
                   "name": "Ko'ragh",
                   "kills": 2
                 },
                 {
+                  "id": 1197,
                   "name": "Imperator Mar'gok",
                   "kills": 1
                 }
@@ -10747,30 +11169,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1128,
                   "name": "Kargath Bladefist",
                   "kills": 5
                 },
                 {
+                  "id": 971,
                   "name": "The Butcher",
                   "kills": 5
                 },
                 {
+                  "id": 1195,
                   "name": "Tectus",
                   "kills": 4
                 },
                 {
+                  "id": 1196,
                   "name": "Brackenspore",
                   "kills": 4
                 },
                 {
+                  "id": 1148,
                   "name": "Twin Ogron",
                   "kills": 2
                 },
                 {
+                  "id": 1153,
                   "name": "Ko'ragh",
                   "kills": 2
                 },
                 {
+                  "id": 1197,
                   "name": "Imperator Mar'gok",
                   "kills": 1
                 }
@@ -10782,6 +11211,7 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1128,
                   "name": "Kargath Bladefist",
                   "kills": 1
                 }
@@ -10798,42 +11228,52 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1202,
                   "name": "Oregorger",
                   "kills": 6
                 },
                 {
+                  "id": 1155,
                   "name": "Hans'gar and Franzok",
                   "kills": 6
                 },
                 {
+                  "id": 1122,
                   "name": "Beastlord Darmac",
                   "kills": 7
                 },
                 {
+                  "id": 1161,
                   "name": "Gruul",
                   "kills": 6
                 },
                 {
+                  "id": 1123,
                   "name": "Flamebender Ka'graz",
                   "kills": 7
                 },
                 {
+                  "id": 1147,
                   "name": "Operator Thogar",
                   "kills": 6
                 },
                 {
+                  "id": 1154,
                   "name": "The Blast Furnace",
                   "kills": 6
                 },
                 {
+                  "id": 1162,
                   "name": "Kromog",
                   "kills": 7
                 },
                 {
+                  "id": 1203,
                   "name": "The Iron Maidens",
                   "kills": 5
                 },
                 {
+                  "id": 959,
                   "name": "Blackhand",
                   "kills": 6
                 }
@@ -10845,18 +11285,22 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1155,
                   "name": "Hans'gar and Franzok",
                   "kills": 2
                 },
                 {
+                  "id": 1161,
                   "name": "Gruul",
                   "kills": 1
                 },
                 {
+                  "id": 1123,
                   "name": "Flamebender Ka'graz",
                   "kills": 1
                 },
                 {
+                  "id": 1162,
                   "name": "Kromog",
                   "kills": 1
                 }
@@ -10868,42 +11312,52 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1202,
                   "name": "Oregorger",
                   "kills": 2
                 },
                 {
+                  "id": 1155,
                   "name": "Hans'gar and Franzok",
                   "kills": 3
                 },
                 {
+                  "id": 1122,
                   "name": "Beastlord Darmac",
                   "kills": 2
                 },
                 {
+                  "id": 1161,
                   "name": "Gruul",
                   "kills": 2
                 },
                 {
+                  "id": 1123,
                   "name": "Flamebender Ka'graz",
                   "kills": 3
                 },
                 {
+                  "id": 1147,
                   "name": "Operator Thogar",
                   "kills": 2
                 },
                 {
+                  "id": 1154,
                   "name": "The Blast Furnace",
                   "kills": 1
                 },
                 {
+                  "id": 1162,
                   "name": "Kromog",
                   "kills": 3
                 },
                 {
+                  "id": 1203,
                   "name": "The Iron Maidens",
                   "kills": 2
                 },
                 {
+                  "id": 959,
                   "name": "Blackhand",
                   "kills": 1
                 }
@@ -10920,38 +11374,47 @@
               "total": 13,
               "bosses": [
                 {
+                  "id": 1426,
                   "name": "Hellfire Assault",
                   "kills": 2
                 },
                 {
+                  "id": 1425,
                   "name": "Iron Reaver",
                   "kills": 2
                 },
                 {
+                  "id": 1392,
                   "name": "Kormrok",
                   "kills": 1
                 },
                 {
+                  "id": 1432,
                   "name": "Hellfire High Council",
                   "kills": 2
                 },
                 {
+                  "id": 1396,
                   "name": "Kilrogg Deadeye",
                   "kills": 1
                 },
                 {
+                  "id": 1372,
                   "name": "Gorefiend",
                   "kills": 1
                 },
                 {
+                  "id": 1391,
                   "name": "Fel Lord Zakuun",
                   "kills": 1
                 },
                 {
+                  "id": 1447,
                   "name": "Xhul'horac",
                   "kills": 1
                 },
                 {
+                  "id": 1438,
                   "name": "Archimonde",
                   "kills": 1
                 }
@@ -10963,54 +11426,67 @@
               "total": 13,
               "bosses": [
                 {
+                  "id": 1426,
                   "name": "Hellfire Assault",
                   "kills": 7
                 },
                 {
+                  "id": 1425,
                   "name": "Iron Reaver",
                   "kills": 8
                 },
                 {
+                  "id": 1392,
                   "name": "Kormrok",
                   "kills": 8
                 },
                 {
+                  "id": 1432,
                   "name": "Hellfire High Council",
                   "kills": 6
                 },
                 {
+                  "id": 1396,
                   "name": "Kilrogg Deadeye",
                   "kills": 6
                 },
                 {
+                  "id": 1372,
                   "name": "Gorefiend",
                   "kills": 5
                 },
                 {
+                  "id": 1433,
                   "name": "Shadow-Lord Iskar",
                   "kills": 2
                 },
                 {
+                  "id": 1427,
                   "name": "Socrethar the Eternal",
                   "kills": 4
                 },
                 {
+                  "id": 1391,
                   "name": "Fel Lord Zakuun",
                   "kills": 2
                 },
                 {
+                  "id": 1447,
                   "name": "Xhul'horac",
                   "kills": 2
                 },
                 {
+                  "id": 1394,
                   "name": "Tyrant Velhari",
                   "kills": 1
                 },
                 {
+                  "id": 1395,
                   "name": "Mannoroth",
                   "kills": 3
                 },
                 {
+                  "id": 1438,
                   "name": "Archimonde",
                   "kills": 2
                 }
@@ -11022,38 +11498,47 @@
               "total": 13,
               "bosses": [
                 {
+                  "id": 1426,
                   "name": "Hellfire Assault",
                   "kills": 2
                 },
                 {
+                  "id": 1425,
                   "name": "Iron Reaver",
                   "kills": 2
                 },
                 {
+                  "id": 1392,
                   "name": "Kormrok",
                   "kills": 1
                 },
                 {
+                  "id": 1432,
                   "name": "Hellfire High Council",
                   "kills": 1
                 },
                 {
+                  "id": 1396,
                   "name": "Kilrogg Deadeye",
                   "kills": 1
                 },
                 {
+                  "id": 1372,
                   "name": "Gorefiend",
                   "kills": 1
                 },
                 {
+                  "id": 1433,
                   "name": "Shadow-Lord Iskar",
                   "kills": 1
                 },
                 {
+                  "id": 1427,
                   "name": "Socrethar the Eternal",
                   "kills": 1
                 },
                 {
+                  "id": 1391,
                   "name": "Fel Lord Zakuun",
                   "kills": 1
                 }
@@ -11070,30 +11555,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1703,
                   "name": "Nythendra",
                   "kills": 3
                 },
                 {
+                  "id": 1738,
                   "name": "Il'gynoth, Heart of Corruption",
                   "kills": 4
                 },
                 {
+                  "id": 1744,
                   "name": "Elerethe Renferal",
                   "kills": 3
                 },
                 {
+                  "id": 1667,
                   "name": "Ursoc",
                   "kills": 3
                 },
                 {
+                  "id": 1704,
                   "name": "Dragons of Nightmare",
                   "kills": 3
                 },
                 {
+                  "id": 1750,
                   "name": "Cenarius",
                   "kills": 3
                 },
                 {
+                  "id": 1726,
                   "name": "Xavius",
                   "kills": 3
                 }
@@ -11105,30 +11597,37 @@
               "total": 7,
               "bosses": [
                 {
+                  "id": 1703,
                   "name": "Nythendra",
                   "kills": 2
                 },
                 {
+                  "id": 1738,
                   "name": "Il'gynoth, Heart of Corruption",
                   "kills": 2
                 },
                 {
+                  "id": 1744,
                   "name": "Elerethe Renferal",
                   "kills": 2
                 },
                 {
+                  "id": 1667,
                   "name": "Ursoc",
                   "kills": 2
                 },
                 {
+                  "id": 1704,
                   "name": "Dragons of Nightmare",
                   "kills": 2
                 },
                 {
+                  "id": 1750,
                   "name": "Cenarius",
                   "kills": 2
                 },
                 {
+                  "id": 1726,
                   "name": "Xavius",
                   "kills": 2
                 }
@@ -11145,10 +11644,12 @@
               "total": 3,
               "bosses": [
                 {
+                  "id": 1819,
                   "name": "Odyn",
                   "kills": 1
                 },
                 {
+                  "id": 1829,
                   "name": "Helya",
                   "kills": 1
                 }
@@ -11165,42 +11666,52 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1706,
                   "name": "Skorpyron",
                   "kills": 1
                 },
                 {
+                  "id": 1725,
                   "name": "Chronomatic Anomaly",
                   "kills": 1
                 },
                 {
+                  "id": 1731,
                   "name": "Trilliax",
                   "kills": 1
                 },
                 {
+                  "id": 1751,
                   "name": "Spellblade Aluriel",
                   "kills": 1
                 },
                 {
+                  "id": 1762,
                   "name": "Tichondrius",
                   "kills": 1
                 },
                 {
+                  "id": 1713,
                   "name": "Krosus",
                   "kills": 1
                 },
                 {
+                  "id": 1761,
                   "name": "High Botanist Tel'arn",
                   "kills": 1
                 },
                 {
+                  "id": 1732,
                   "name": "Star Augur Etraeus",
                   "kills": 1
                 },
                 {
+                  "id": 1743,
                   "name": "Grand Magistrix Elisande",
                   "kills": 1
                 },
                 {
+                  "id": 1737,
                   "name": "Gul'dan",
                   "kills": 1
                 }
@@ -11212,42 +11723,52 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1706,
                   "name": "Skorpyron",
                   "kills": 2
                 },
                 {
+                  "id": 1725,
                   "name": "Chronomatic Anomaly",
                   "kills": 2
                 },
                 {
+                  "id": 1731,
                   "name": "Trilliax",
                   "kills": 2
                 },
                 {
+                  "id": 1751,
                   "name": "Spellblade Aluriel",
                   "kills": 1
                 },
                 {
+                  "id": 1762,
                   "name": "Tichondrius",
                   "kills": 1
                 },
                 {
+                  "id": 1713,
                   "name": "Krosus",
                   "kills": 1
                 },
                 {
+                  "id": 1761,
                   "name": "High Botanist Tel'arn",
                   "kills": 1
                 },
                 {
+                  "id": 1732,
                   "name": "Star Augur Etraeus",
                   "kills": 1
                 },
                 {
+                  "id": 1743,
                   "name": "Grand Magistrix Elisande",
                   "kills": 1
                 },
                 {
+                  "id": 1737,
                   "name": "Gul'dan",
                   "kills": 1
                 }
@@ -11264,38 +11785,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 1862,
                   "name": "Goroth",
                   "kills": 2
                 },
                 {
+                  "id": 1867,
                   "name": "Demonic Inquisition",
                   "kills": 1
                 },
                 {
+                  "id": 1856,
                   "name": "Harjatan",
                   "kills": 2
                 },
                 {
+                  "id": 1903,
                   "name": "Sisters of the Moon",
                   "kills": 1
                 },
                 {
+                  "id": 1861,
                   "name": "Mistress Sassz'ine",
                   "kills": 1
                 },
                 {
+                  "id": 1896,
                   "name": "The Desolate Host",
                   "kills": 1
                 },
                 {
+                  "id": 1897,
                   "name": "Maiden of Vigilance",
                   "kills": 2
                 },
                 {
+                  "id": 1873,
                   "name": "Fallen Avatar",
                   "kills": 2
                 },
                 {
+                  "id": 1898,
                   "name": "Kil'jaeden",
                   "kills": 2
                 }
@@ -11307,38 +11837,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 1862,
                   "name": "Goroth",
                   "kills": 5
                 },
                 {
+                  "id": 1867,
                   "name": "Demonic Inquisition",
                   "kills": 4
                 },
                 {
+                  "id": 1856,
                   "name": "Harjatan",
                   "kills": 5
                 },
                 {
+                  "id": 1903,
                   "name": "Sisters of the Moon",
                   "kills": 4
                 },
                 {
+                  "id": 1861,
                   "name": "Mistress Sassz'ine",
                   "kills": 4
                 },
                 {
+                  "id": 1896,
                   "name": "The Desolate Host",
                   "kills": 3
                 },
                 {
+                  "id": 1897,
                   "name": "Maiden of Vigilance",
                   "kills": 4
                 },
                 {
+                  "id": 1873,
                   "name": "Fallen Avatar",
                   "kills": 4
                 },
                 {
+                  "id": 1898,
                   "name": "Kil'jaeden",
                   "kills": 1
                 }
@@ -11350,22 +11889,27 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 1862,
                   "name": "Goroth",
                   "kills": 2
                 },
                 {
+                  "id": 1867,
                   "name": "Demonic Inquisition",
                   "kills": 2
                 },
                 {
+                  "id": 1856,
                   "name": "Harjatan",
                   "kills": 2
                 },
                 {
+                  "id": 1903,
                   "name": "Sisters of the Moon",
                   "kills": 1
                 },
                 {
+                  "id": 1861,
                   "name": "Mistress Sassz'ine",
                   "kills": 1
                 }
@@ -11382,42 +11926,52 @@
               "total": 11,
               "bosses": [
                 {
+                  "id": 1987,
                   "name": "Felhounds of Sargeras",
                   "kills": 1
                 },
                 {
+                  "id": 1997,
                   "name": "Antoran High Command",
                   "kills": 2
                 },
                 {
+                  "id": 1985,
                   "name": "Portal Keeper Hasabel",
                   "kills": 1
                 },
                 {
+                  "id": 2025,
                   "name": "Eonar the Life-Binder",
                   "kills": 2
                 },
                 {
+                  "id": 2009,
                   "name": "Imonar the Soulhunter",
                   "kills": 1
                 },
                 {
+                  "id": 2004,
                   "name": "Kin'garoth",
                   "kills": 1
                 },
                 {
+                  "id": 1986,
                   "name": "The Coven of Shivarra",
                   "kills": 1
                 },
                 {
+                  "id": 1983,
                   "name": "Varimathras",
                   "kills": 2
                 },
                 {
+                  "id": 1984,
                   "name": "Aggramar",
                   "kills": 1
                 },
                 {
+                  "id": 2031,
                   "name": "Argus the Unmaker",
                   "kills": 1
                 }
@@ -11429,46 +11983,57 @@
               "total": 11,
               "bosses": [
                 {
+                  "id": 1992,
                   "name": "Garothi Worldbreaker",
                   "kills": 19
                 },
                 {
+                  "id": 1987,
                   "name": "Felhounds of Sargeras",
                   "kills": 19
                 },
                 {
+                  "id": 1997,
                   "name": "Antoran High Command",
                   "kills": 20
                 },
                 {
+                  "id": 1985,
                   "name": "Portal Keeper Hasabel",
                   "kills": 18
                 },
                 {
+                  "id": 2025,
                   "name": "Eonar the Life-Binder",
                   "kills": 19
                 },
                 {
+                  "id": 2009,
                   "name": "Imonar the Soulhunter",
                   "kills": 18
                 },
                 {
+                  "id": 2004,
                   "name": "Kin'garoth",
                   "kills": 15
                 },
                 {
+                  "id": 1986,
                   "name": "The Coven of Shivarra",
                   "kills": 11
                 },
                 {
+                  "id": 1983,
                   "name": "Varimathras",
                   "kills": 12
                 },
                 {
+                  "id": 1984,
                   "name": "Aggramar",
                   "kills": 13
                 },
                 {
+                  "id": 2031,
                   "name": "Argus the Unmaker",
                   "kills": 15
                 }
@@ -11480,46 +12045,57 @@
               "total": 11,
               "bosses": [
                 {
+                  "id": 1992,
                   "name": "Garothi Worldbreaker",
                   "kills": 16
                 },
                 {
+                  "id": 1987,
                   "name": "Felhounds of Sargeras",
                   "kills": 17
                 },
                 {
+                  "id": 1997,
                   "name": "Antoran High Command",
                   "kills": 13
                 },
                 {
+                  "id": 1985,
                   "name": "Portal Keeper Hasabel",
                   "kills": 13
                 },
                 {
+                  "id": 2025,
                   "name": "Eonar the Life-Binder",
                   "kills": 16
                 },
                 {
+                  "id": 2009,
                   "name": "Imonar the Soulhunter",
                   "kills": 11
                 },
                 {
+                  "id": 2004,
                   "name": "Kin'garoth",
                   "kills": 9
                 },
                 {
+                  "id": 1986,
                   "name": "The Coven of Shivarra",
                   "kills": 5
                 },
                 {
+                  "id": 1983,
                   "name": "Varimathras",
                   "kills": 10
                 },
                 {
+                  "id": 1984,
                   "name": "Aggramar",
                   "kills": 8
                 },
                 {
+                  "id": 2031,
                   "name": "Argus the Unmaker",
                   "kills": 8
                 }
@@ -11531,46 +12107,57 @@
               "total": 11,
               "bosses": [
                 {
+                  "id": 1992,
                   "name": "Garothi Worldbreaker",
                   "kills": 8
                 },
                 {
+                  "id": 1987,
                   "name": "Felhounds of Sargeras",
                   "kills": 8
                 },
                 {
+                  "id": 1997,
                   "name": "Antoran High Command",
                   "kills": 6
                 },
                 {
+                  "id": 1985,
                   "name": "Portal Keeper Hasabel",
                   "kills": 5
                 },
                 {
+                  "id": 2025,
                   "name": "Eonar the Life-Binder",
                   "kills": 3
                 },
                 {
+                  "id": 2009,
                   "name": "Imonar the Soulhunter",
                   "kills": 4
                 },
                 {
+                  "id": 2004,
                   "name": "Kin'garoth",
                   "kills": 4
                 },
                 {
+                  "id": 1986,
                   "name": "The Coven of Shivarra",
                   "kills": 4
                 },
                 {
+                  "id": 1983,
                   "name": "Varimathras",
                   "kills": 4
                 },
                 {
+                  "id": 1984,
                   "name": "Aggramar",
                   "kills": 5
                 },
                 {
+                  "id": 2031,
                   "name": "Argus the Unmaker",
                   "kills": 5
                 }
@@ -11587,34 +12174,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2168,
                   "name": "Taloc",
                   "kills": 1
                 },
                 {
+                  "id": 2167,
                   "name": "MOTHER",
                   "kills": 1
                 },
                 {
+                  "id": 2146,
                   "name": "Fetid Devourer",
                   "kills": 1
                 },
                 {
+                  "id": 2169,
                   "name": "Zek'voz, Herald of N'Zoth",
                   "kills": 1
                 },
                 {
+                  "id": 2166,
                   "name": "Vectis",
                   "kills": 1
                 },
                 {
+                  "id": 2195,
                   "name": "Zul, Reborn",
                   "kills": 1
                 },
                 {
+                  "id": 2194,
                   "name": "Mythrax the Unraveler",
                   "kills": 1
                 },
                 {
+                  "id": 2147,
                   "name": "G'huun",
                   "kills": 1
                 }
@@ -11626,34 +12221,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2168,
                   "name": "Taloc",
                   "kills": 2
                 },
                 {
+                  "id": 2167,
                   "name": "MOTHER",
                   "kills": 3
                 },
                 {
+                  "id": 2146,
                   "name": "Fetid Devourer",
                   "kills": 3
                 },
                 {
+                  "id": 2169,
                   "name": "Zek'voz, Herald of N'Zoth",
                   "kills": 2
                 },
                 {
+                  "id": 2166,
                   "name": "Vectis",
                   "kills": 2
                 },
                 {
+                  "id": 2195,
                   "name": "Zul, Reborn",
                   "kills": 2
                 },
                 {
+                  "id": 2194,
                   "name": "Mythrax the Unraveler",
                   "kills": 4
                 },
                 {
+                  "id": 2147,
                   "name": "G'huun",
                   "kills": 2
                 }
@@ -11665,34 +12268,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2168,
                   "name": "Taloc",
                   "kills": 8
                 },
                 {
+                  "id": 2167,
                   "name": "MOTHER",
                   "kills": 8
                 },
                 {
+                  "id": 2146,
                   "name": "Fetid Devourer",
                   "kills": 8
                 },
                 {
+                  "id": 2169,
                   "name": "Zek'voz, Herald of N'Zoth",
                   "kills": 8
                 },
                 {
+                  "id": 2166,
                   "name": "Vectis",
                   "kills": 8
                 },
                 {
+                  "id": 2195,
                   "name": "Zul, Reborn",
                   "kills": 3
                 },
                 {
+                  "id": 2194,
                   "name": "Mythrax the Unraveler",
                   "kills": 4
                 },
                 {
+                  "id": 2147,
                   "name": "G'huun",
                   "kills": 3
                 }
@@ -11704,10 +12315,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2168,
                   "name": "Taloc",
                   "kills": 4
                 },
                 {
+                  "id": 2167,
                   "name": "MOTHER",
                   "kills": 3
                 }
@@ -11724,38 +12337,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2333,
                   "name": "Champion of the Light",
                   "kills": 1
                 },
                 {
+                  "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "kills": 1
                 },
                 {
+                  "id": 2341,
                   "name": "Jadefire Masters",
                   "kills": 1
                 },
                 {
+                  "id": 2342,
                   "name": "Opulence",
                   "kills": 2
                 },
                 {
+                  "id": 2330,
                   "name": "Conclave of the Chosen",
                   "kills": 1
                 },
                 {
+                  "id": 2335,
                   "name": "King Rastakhan",
                   "kills": 1
                 },
                 {
+                  "id": 2334,
                   "name": "High Tinker Mekkatorque",
                   "kills": 2
                 },
                 {
+                  "id": 2337,
                   "name": "Stormwall Blockade",
                   "kills": 2
                 },
                 {
+                  "id": 2343,
                   "name": "Lady Jaina Proudmoore",
                   "kills": 1
                 }
@@ -11767,38 +12389,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2333,
                   "name": "Champion of the Light",
                   "kills": 3
                 },
                 {
+                  "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "kills": 2
                 },
                 {
+                  "id": 2341,
                   "name": "Jadefire Masters",
                   "kills": 2
                 },
                 {
+                  "id": 2342,
                   "name": "Opulence",
                   "kills": 2
                 },
                 {
+                  "id": 2330,
                   "name": "Conclave of the Chosen",
                   "kills": 2
                 },
                 {
+                  "id": 2335,
                   "name": "King Rastakhan",
                   "kills": 2
                 },
                 {
+                  "id": 2334,
                   "name": "High Tinker Mekkatorque",
                   "kills": 2
                 },
                 {
+                  "id": 2337,
                   "name": "Stormwall Blockade",
                   "kills": 1
                 },
                 {
+                  "id": 2343,
                   "name": "Lady Jaina Proudmoore",
                   "kills": 2
                 }
@@ -11810,38 +12441,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2333,
                   "name": "Champion of the Light",
                   "kills": 8
                 },
                 {
+                  "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "kills": 9
                 },
                 {
+                  "id": 2341,
                   "name": "Jadefire Masters",
                   "kills": 6
                 },
                 {
+                  "id": 2342,
                   "name": "Opulence",
                   "kills": 7
                 },
                 {
+                  "id": 2330,
                   "name": "Conclave of the Chosen",
                   "kills": 4
                 },
                 {
+                  "id": 2335,
                   "name": "King Rastakhan",
                   "kills": 4
                 },
                 {
+                  "id": 2334,
                   "name": "High Tinker Mekkatorque",
                   "kills": 3
                 },
                 {
+                  "id": 2337,
                   "name": "Stormwall Blockade",
                   "kills": 2
                 },
                 {
+                  "id": 2343,
                   "name": "Lady Jaina Proudmoore",
                   "kills": 2
                 }
@@ -11853,14 +12493,17 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2333,
                   "name": "Champion of the Light",
                   "kills": 7
                 },
                 {
+                  "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "kills": 5
                 },
                 {
+                  "id": 2341,
                   "name": "Jadefire Masters",
                   "kills": 5
                 }
@@ -11877,10 +12520,12 @@
               "total": 2,
               "bosses": [
                 {
+                  "id": 2328,
                   "name": "The Restless Cabal",
                   "kills": 1
                 },
                 {
+                  "id": 2332,
                   "name": "Uu'nat, Harbinger of the Void",
                   "kills": 1
                 }
@@ -11897,26 +12542,32 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2352,
                   "name": "Abyssal Commander Sivara",
                   "kills": 1
                 },
                 {
+                  "id": 2354,
                   "name": "Lady Ashvane",
                   "kills": 2
                 },
                 {
+                  "id": 2351,
                   "name": "Orgozoa",
                   "kills": 1
                 },
                 {
+                  "id": 2359,
                   "name": "The Queen's Court",
                   "kills": 1
                 },
                 {
+                  "id": 2349,
                   "name": "Za'qul, Harbinger of Ny'alotha",
                   "kills": 1
                 },
                 {
+                  "id": 2361,
                   "name": "Queen Azshara",
                   "kills": 1
                 }
@@ -11928,34 +12579,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2352,
                   "name": "Abyssal Commander Sivara",
                   "kills": 4
                 },
                 {
+                  "id": 2347,
                   "name": "Blackwater Behemoth",
                   "kills": 4
                 },
                 {
+                  "id": 2353,
                   "name": "Radiance of Azshara",
                   "kills": 6
                 },
                 {
+                  "id": 2354,
                   "name": "Lady Ashvane",
                   "kills": 5
                 },
                 {
+                  "id": 2351,
                   "name": "Orgozoa",
                   "kills": 3
                 },
                 {
+                  "id": 2359,
                   "name": "The Queen's Court",
                   "kills": 3
                 },
                 {
+                  "id": 2349,
                   "name": "Za'qul, Harbinger of Ny'alotha",
                   "kills": 3
                 },
                 {
+                  "id": 2361,
                   "name": "Queen Azshara",
                   "kills": 1
                 }
@@ -11967,34 +12626,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2352,
                   "name": "Abyssal Commander Sivara",
                   "kills": 13
                 },
                 {
+                  "id": 2347,
                   "name": "Blackwater Behemoth",
                   "kills": 14
                 },
                 {
+                  "id": 2353,
                   "name": "Radiance of Azshara",
                   "kills": 14
                 },
                 {
+                  "id": 2354,
                   "name": "Lady Ashvane",
                   "kills": 14
                 },
                 {
+                  "id": 2351,
                   "name": "Orgozoa",
                   "kills": 14
                 },
                 {
+                  "id": 2359,
                   "name": "The Queen's Court",
                   "kills": 12
                 },
                 {
+                  "id": 2349,
                   "name": "Za'qul, Harbinger of Ny'alotha",
                   "kills": 11
                 },
                 {
+                  "id": 2361,
                   "name": "Queen Azshara",
                   "kills": 11
                 }
@@ -12006,26 +12673,32 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2352,
                   "name": "Abyssal Commander Sivara",
                   "kills": 9
                 },
                 {
+                  "id": 2347,
                   "name": "Blackwater Behemoth",
                   "kills": 8
                 },
                 {
+                  "id": 2353,
                   "name": "Radiance of Azshara",
                   "kills": 10
                 },
                 {
+                  "id": 2354,
                   "name": "Lady Ashvane",
                   "kills": 7
                 },
                 {
+                  "id": 2351,
                   "name": "Orgozoa",
                   "kills": 3
                 },
                 {
+                  "id": 2359,
                   "name": "The Queen's Court",
                   "kills": 2
                 }
@@ -12042,26 +12715,32 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 2368,
                   "name": "Wrathion, the Black Emperor",
                   "kills": 1
                 },
                 {
+                  "id": 2365,
                   "name": "Maut",
                   "kills": 1
                 },
                 {
+                  "id": 2369,
                   "name": "The Prophet Skitra",
                   "kills": 1
                 },
                 {
+                  "id": 2372,
                   "name": "The Hivemind",
                   "kills": 1
                 },
                 {
+                  "id": 2370,
                   "name": "Vexiona",
                   "kills": 1
                 },
                 {
+                  "id": 2364,
                   "name": "Ra-den the Despoiled",
                   "kills": 1
                 }
@@ -12073,50 +12752,62 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 2368,
                   "name": "Wrathion, the Black Emperor",
                   "kills": 11
                 },
                 {
+                  "id": 2365,
                   "name": "Maut",
                   "kills": 10
                 },
                 {
+                  "id": 2369,
                   "name": "The Prophet Skitra",
                   "kills": 12
                 },
                 {
+                  "id": 2377,
                   "name": "Dark Inquisitor Xanesh",
                   "kills": 7
                 },
                 {
+                  "id": 2372,
                   "name": "The Hivemind",
                   "kills": 8
                 },
                 {
+                  "id": 2367,
                   "name": "Shad'har the Insatiable",
                   "kills": 6
                 },
                 {
+                  "id": 2373,
                   "name": "Drest'agath",
                   "kills": 6
                 },
                 {
+                  "id": 2374,
                   "name": "Il'gynoth, Corruption Reborn",
                   "kills": 6
                 },
                 {
+                  "id": 2370,
                   "name": "Vexiona",
                   "kills": 5
                 },
                 {
+                  "id": 2364,
                   "name": "Ra-den the Despoiled",
                   "kills": 8
                 },
                 {
+                  "id": 2366,
                   "name": "Carapace of N'Zoth",
                   "kills": 6
                 },
                 {
+                  "id": 2375,
                   "name": "N'Zoth the Corruptor",
                   "kills": 5
                 }
@@ -12128,18 +12819,22 @@
               "total": 12,
               "bosses": [
                 {
+                  "id": 2368,
                   "name": "Wrathion, the Black Emperor",
                   "kills": 6
                 },
                 {
+                  "id": 2365,
                   "name": "Maut",
                   "kills": 4
                 },
                 {
+                  "id": 2369,
                   "name": "The Prophet Skitra",
                   "kills": 4
                 },
                 {
+                  "id": 2372,
                   "name": "The Hivemind",
                   "kills": 1
                 }
@@ -12156,14 +12851,17 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 2393,
                   "name": "Shriekwing",
                   "kills": 1
                 },
                 {
+                  "id": 2394,
                   "name": "Sludgefist",
                   "kills": 1
                 },
                 {
+                  "id": 2425,
                   "name": "Stone Legion Generals",
                   "kills": 1
                 }
@@ -12175,38 +12873,47 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 2393,
                   "name": "Shriekwing",
                   "kills": 2
                 },
                 {
+                  "id": 2429,
                   "name": "Huntsman Altimor",
                   "kills": 2
                 },
                 {
+                  "id": 2422,
                   "name": "Sun King's Salvation",
                   "kills": 2
                 },
                 {
+                  "id": 2418,
                   "name": "Artificer Xy'mox",
                   "kills": 1
                 },
                 {
+                  "id": 2428,
                   "name": "Hungering Destroyer",
                   "kills": 2
                 },
                 {
+                  "id": 2420,
                   "name": "Lady Inerva Darkvein",
                   "kills": 2
                 },
                 {
+                  "id": 2426,
                   "name": "The Council of Blood",
                   "kills": 1
                 },
                 {
+                  "id": 2394,
                   "name": "Sludgefist",
                   "kills": 1
                 },
                 {
+                  "id": 2425,
                   "name": "Stone Legion Generals",
                   "kills": 1
                 }
@@ -12218,42 +12925,52 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 2393,
                   "name": "Shriekwing",
                   "kills": 2
                 },
                 {
+                  "id": 2429,
                   "name": "Huntsman Altimor",
                   "kills": 2
                 },
                 {
+                  "id": 2422,
                   "name": "Sun King's Salvation",
                   "kills": 3
                 },
                 {
+                  "id": 2418,
                   "name": "Artificer Xy'mox",
                   "kills": 1
                 },
                 {
+                  "id": 2428,
                   "name": "Hungering Destroyer",
                   "kills": 2
                 },
                 {
+                  "id": 2420,
                   "name": "Lady Inerva Darkvein",
                   "kills": 2
                 },
                 {
+                  "id": 2426,
                   "name": "The Council of Blood",
                   "kills": 1
                 },
                 {
+                  "id": 2394,
                   "name": "Sludgefist",
                   "kills": 1
                 },
                 {
+                  "id": 2425,
                   "name": "Stone Legion Generals",
                   "kills": 1
                 },
                 {
+                  "id": 2424,
                   "name": "Sire Denathrius",
                   "kills": 1
                 }
@@ -12270,10 +12987,12 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2500,
                   "name": "Terros",
                   "kills": 1
                 },
                 {
+                  "id": 2482,
                   "name": "Sennarth, the Cold Breath",
                   "kills": 1
                 }
@@ -12290,18 +13009,22 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
                   "kills": 1
                 },
                 {
+                  "id": 2527,
                   "name": "Magmorax",
                   "kills": 1
                 },
                 {
+                  "id": 2523,
                   "name": "Echo of Neltharion",
                   "kills": 1
                 },
                 {
+                  "id": 2520,
                   "name": "Scalecommander Sarkareth",
                   "kills": 1
                 }
@@ -12313,22 +13036,27 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2522,
                   "name": "Kazzara, the Hellforged",
                   "kills": 1
                 },
                 {
+                  "id": 2529,
                   "name": "The Amalgamation Chamber",
                   "kills": 2
                 },
                 {
+                  "id": 2530,
                   "name": "The Forgotten Experiments",
                   "kills": 2
                 },
                 {
+                  "id": 2524,
                   "name": "Assault of the Zaqali",
                   "kills": 1
                 },
                 {
+                  "id": 2525,
                   "name": "Rashok, the Elder",
                   "kills": 1
                 }
@@ -12340,38 +13068,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2522,
                   "name": "Kazzara, the Hellforged",
                   "kills": 5
                 },
                 {
+                  "id": 2529,
                   "name": "The Amalgamation Chamber",
                   "kills": 6
                 },
                 {
+                  "id": 2530,
                   "name": "The Forgotten Experiments",
                   "kills": 6
                 },
                 {
+                  "id": 2524,
                   "name": "Assault of the Zaqali",
                   "kills": 5
                 },
                 {
+                  "id": 2525,
                   "name": "Rashok, the Elder",
                   "kills": 5
                 },
                 {
+                  "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
                   "kills": 4
                 },
                 {
+                  "id": 2527,
                   "name": "Magmorax",
                   "kills": 4
                 },
                 {
+                  "id": 2523,
                   "name": "Echo of Neltharion",
                   "kills": 4
                 },
                 {
+                  "id": 2520,
                   "name": "Scalecommander Sarkareth",
                   "kills": 2
                 }
@@ -12388,38 +13125,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2564,
                   "name": "Gnarlroot",
                   "kills": 2
                 },
                 {
+                  "id": 2554,
                   "name": "Igira the Cruel",
                   "kills": 2
                 },
                 {
+                  "id": 2557,
                   "name": "Volcoross",
                   "kills": 3
                 },
                 {
+                  "id": 2555,
                   "name": "Council of Dreams",
                   "kills": 1
                 },
                 {
+                  "id": 2553,
                   "name": "Larodar, Keeper of the Flame",
                   "kills": 2
                 },
                 {
+                  "id": 2556,
                   "name": "Nymue, Weaver of the Cycle",
                   "kills": 1
                 },
                 {
+                  "id": 2563,
                   "name": "Smolderon",
                   "kills": 2
                 },
                 {
+                  "id": 2565,
                   "name": "Tindral Sageswift, Seer of the Flame",
                   "kills": 2
                 },
                 {
+                  "id": 2519,
                   "name": "Fyrakk the Blazing",
                   "kills": 2
                 }
@@ -12431,18 +13177,22 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2564,
                   "name": "Gnarlroot",
                   "kills": 2
                 },
                 {
+                  "id": 2554,
                   "name": "Igira the Cruel",
                   "kills": 1
                 },
                 {
+                  "id": 2557,
                   "name": "Volcoross",
                   "kills": 1
                 },
                 {
+                  "id": 2553,
                   "name": "Larodar, Keeper of the Flame",
                   "kills": 1
                 }
@@ -12454,38 +13204,47 @@
               "total": 9,
               "bosses": [
                 {
+                  "id": 2564,
                   "name": "Gnarlroot",
                   "kills": 4
                 },
                 {
+                  "id": 2554,
                   "name": "Igira the Cruel",
                   "kills": 3
                 },
                 {
+                  "id": 2557,
                   "name": "Volcoross",
                   "kills": 2
                 },
                 {
+                  "id": 2555,
                   "name": "Council of Dreams",
                   "kills": 1
                 },
                 {
+                  "id": 2553,
                   "name": "Larodar, Keeper of the Flame",
                   "kills": 2
                 },
                 {
+                  "id": 2556,
                   "name": "Nymue, Weaver of the Cycle",
                   "kills": 2
                 },
                 {
+                  "id": 2563,
                   "name": "Smolderon",
                   "kills": 1
                 },
                 {
+                  "id": 2565,
                   "name": "Tindral Sageswift, Seer of the Flame",
                   "kills": 1
                 },
                 {
+                  "id": 2519,
                   "name": "Fyrakk the Blazing",
                   "kills": 1
                 }
@@ -12502,6 +13261,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 1
                 }
@@ -12513,6 +13273,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 3
                 }
@@ -12529,22 +13290,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 1
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 1
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 1
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 }
@@ -12556,14 +13322,17 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 1
                 }
@@ -12580,26 +13349,32 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2874,
                   "name": "Entombed Sentinels",
                   "kills": 1
                 },
                 {
+                  "id": 2894,
                   "name": "The Lost Explorers",
                   "kills": 1
                 },
                 {
+                  "id": 2882,
                   "name": "Vashnik the Malignant",
                   "kills": 1
                 },
                 {
+                  "id": 2871,
                   "name": "Sszorak",
                   "kills": 1
                 },
                 {
+                  "id": 2887,
                   "name": "The Twin Fangs",
                   "kills": 1
                 }
@@ -12616,6 +13391,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 1
                 }
@@ -12627,6 +13403,7 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 2795,
                   "name": "Chimaerus the Undreamt God",
                   "kills": 3
                 }
@@ -12643,22 +13420,27 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 1
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 1
                 },
                 {
+                  "id": 2735,
                   "name": "Vaelgor & Ezzorak",
                   "kills": 1
                 },
                 {
+                  "id": 2737,
                   "name": "Lightblinded Vanguard",
                   "kills": 1
                 }
@@ -12670,14 +13452,17 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 2733,
                   "name": "Imperator Averzian",
                   "kills": 1
                 },
                 {
+                  "id": 2734,
                   "name": "Vorasius",
                   "kills": 2
                 },
                 {
+                  "id": 2736,
                   "name": "Fallen-King Salhadaar",
                   "kills": 1
                 }
@@ -12694,26 +13479,32 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2888,
                   "name": "Nek'zali the Soulcoiler",
                   "kills": 1
                 },
                 {
+                  "id": 2874,
                   "name": "Entombed Sentinels",
                   "kills": 1
                 },
                 {
+                  "id": 2894,
                   "name": "The Lost Explorers",
                   "kills": 1
                 },
                 {
+                  "id": 2882,
                   "name": "Vashnik the Malignant",
                   "kills": 1
                 },
                 {
+                  "id": 2871,
                   "name": "Sszorak",
                   "kills": 1
                 },
                 {
+                  "id": 2887,
                   "name": "The Twin Fangs",
                   "kills": 1
                 }
@@ -12730,6 +13521,7 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2607,
                   "name": "Ulgrax the Devourer",
                   "kills": 1
                 }
@@ -12741,34 +13533,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2607,
                   "name": "Ulgrax the Devourer",
                   "kills": 3
                 },
                 {
+                  "id": 2611,
                   "name": "The Bloodbound Horror",
                   "kills": 3
                 },
                 {
+                  "id": 2599,
                   "name": "Sikran, Captain of the Sureki",
                   "kills": 3
                 },
                 {
+                  "id": 2609,
                   "name": "Rasha'nan",
                   "kills": 3
                 },
                 {
+                  "id": 2612,
                   "name": "Broodtwister Ovi'nax",
                   "kills": 3
                 },
                 {
+                  "id": 2601,
                   "name": "Nexus-Princess Ky'veza",
                   "kills": 3
                 },
                 {
+                  "id": 2608,
                   "name": "The Silken Court",
                   "kills": 2
                 },
                 {
+                  "id": 2602,
                   "name": "Queen Ansurek",
                   "kills": 3
                 }
@@ -12780,18 +13580,22 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2607,
                   "name": "Ulgrax the Devourer",
                   "kills": 2
                 },
                 {
+                  "id": 2611,
                   "name": "The Bloodbound Horror",
                   "kills": 2
                 },
                 {
+                  "id": 2599,
                   "name": "Sikran, Captain of the Sureki",
                   "kills": 2
                 },
                 {
+                  "id": 2609,
                   "name": "Rasha'nan",
                   "kills": 1
                 }
@@ -12808,30 +13612,37 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2684,
                   "name": "Plexus Sentinel",
                   "kills": 1
                 },
                 {
+                  "id": 2686,
                   "name": "Loom'ithar",
                   "kills": 1
                 },
                 {
+                  "id": 2685,
                   "name": "Soulbinder Naazindhri",
                   "kills": 1
                 },
                 {
+                  "id": 2687,
                   "name": "Forgeweaver Araz",
                   "kills": 1
                 },
                 {
+                  "id": 2688,
                   "name": "The Soul Hunters",
                   "kills": 1
                 },
                 {
+                  "id": 2747,
                   "name": "Fractillus",
                   "kills": 1
                 },
                 {
+                  "id": 2690,
                   "name": "Nexus-King Salhadaar",
                   "kills": 1
                 }
@@ -12843,34 +13654,42 @@
               "total": 8,
               "bosses": [
                 {
+                  "id": 2684,
                   "name": "Plexus Sentinel",
                   "kills": 2
                 },
                 {
+                  "id": 2686,
                   "name": "Loom'ithar",
                   "kills": 2
                 },
                 {
+                  "id": 2685,
                   "name": "Soulbinder Naazindhri",
                   "kills": 2
                 },
                 {
+                  "id": 2687,
                   "name": "Forgeweaver Araz",
                   "kills": 1
                 },
                 {
+                  "id": 2688,
                   "name": "The Soul Hunters",
                   "kills": 1
                 },
                 {
+                  "id": 2747,
                   "name": "Fractillus",
                   "kills": 1
                 },
                 {
+                  "id": 2690,
                   "name": "Nexus-King Salhadaar",
                   "kills": 2
                 },
                 {
+                  "id": 2691,
                   "name": "Dimensius, the All-Devouring",
                   "kills": 2
                 }
