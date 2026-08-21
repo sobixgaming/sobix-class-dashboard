@@ -144,7 +144,7 @@ function raidEncounters(value) {
           difficulty: mode.difficulty?.name ?? "Unbekannt",
           completed: Number(mode.progress?.completed_count ?? 0),
           total: Number(mode.progress?.total_count ?? 0),
-          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ name: encounter.encounter?.name ?? "Boss", kills: Number(encounter.completed_count ?? 0) }))
+          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ id: encounter.encounter?.id ?? null, name: encounter.encounter?.name ?? "Boss", kills: Number(encounter.completed_count ?? 0) }))
         }))
       });
     }
@@ -370,14 +370,38 @@ const previousWeek = previous.weeklyProgress;
 const raidBaseline = structuredClone(previousWeek?.resetKey === resetKey ? (previousWeek.raidBaseline ?? {}) : {});
 for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) raidBaseline[raidName] ??= structuredClone(modes);
 const weeklyRaidBosses = [];
-for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) {
-  const configuredName = (config.activeRaidPatch?.raids ?? []).find(name => raidIdentity(name) === raidIdentity(raidName));
-  if (!configuredName) continue;
+for (const configuredName of config.activeRaidPatch?.raids ?? []) {
+  const candidates = Object.entries(currentRaidSnapshot).filter(([raidName]) => raidIdentity(raidName) === raidIdentity(configuredName));
+  if (!candidates.length) continue;
+  const detailed = candidates.find(([, modes]) => Object.values(modes).some(bosses => Object.keys(bosses).some(name => name !== "__progress")));
+  const [detailedName, detailedModes] = detailed ?? candidates[0];
   const difficulties = {};
-  for (const [difficulty, bosses] of Object.entries(modes)) {
-    difficulties[difficulty] = Object.entries(bosses).reduce((sum, [bossName, kills]) => sum + Math.max(0, Number(kills) - Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)), 0);
+  const bosses = new Map();
+
+  for (const [difficulty, currentBosses] of Object.entries(detailedModes)) {
+    let total = 0;
+    for (const [bossName, kills] of Object.entries(currentBosses)) {
+      if (bossName === "__progress") continue;
+      const weeklyKills = Math.max(0, Number(kills) - Number(raidBaseline?.[detailedName]?.[difficulty]?.[bossName] ?? kills));
+      total += weeklyKills;
+      const boss = bosses.get(bossName) ?? { name: bossName, difficulties: {} };
+      boss.difficulties[difficulty] = weeklyKills;
+      bosses.set(bossName, boss);
+    }
+    difficulties[difficulty] = total;
   }
-  weeklyRaidBosses.push({ raid: configuredName, difficulties });
+
+  // Raider.IO supplies the reliable weekly total while Blizzard supplies the boss names.
+  // Merge the aggregate fallback without creating a second visual raid entry.
+  for (const [raidName, modes] of candidates) {
+    if (raidName === detailedName) continue;
+    for (const [difficulty, currentBosses] of Object.entries(modes)) {
+      const aggregate = Object.entries(currentBosses).reduce((sum, [bossName, kills]) => sum + Math.max(0, Number(kills) - Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)), 0);
+      difficulties[difficulty] = Math.max(Number(difficulties[difficulty] ?? 0), aggregate);
+    }
+  }
+
+  weeklyRaidBosses.push({ raid: configuredName, difficulties, bosses: [...bosses.values()] });
 }
 const weeklyProgress = {
   resetKey,
