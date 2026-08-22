@@ -141,9 +141,14 @@ async function bossDetails(value, authHeaders) {
   const ids = [...new Set([...rosters.values()].flat().map(encounter => encounter.id).filter(Boolean))];
   const portraits = await Promise.all(ids.map(async id => {
     const journal = await optionalJson(`https://${config.region}.api.blizzard.com/data/wow/journal-encounter/${id}?namespace=static-${config.region}&locale=en_GB`, authHeaders);
-    const displayUrl = journal?.creatures?.[0]?.creature_display?.key?.href;
-    const media = displayUrl ? await optionalJson(displayUrl, authHeaders) : null;
-    return [id, asset(media, "zoom") ?? asset(media, "main") ?? asset(media, "icon")];
+    let portrait = null;
+    for (const creature of journal?.creatures ?? []) {
+      const displayUrl = creature.creature_display?.key?.href;
+      const media = displayUrl ? await optionalJson(displayUrl, authHeaders) : null;
+      portrait = asset(media, "zoom") ?? asset(media, "main") ?? asset(media, "icon");
+      if (portrait) break;
+    }
+    return [id, portrait];
   }));
   return { portraits: new Map(portraits), rosters };
 }
