@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T10:53:13.916Z",
+  "generatedAt": "2026-08-22T11:42:53.318Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-08-22T11:00:00.000Z"
+    "nextUpdateAt": "2026-08-22T12:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-08-19T04:00:00.000Z",
@@ -27,6 +27,16 @@
     "character": "Bufferrari",
     "available": true,
     "bestKeys": [
+      {
+        "dungeon": "Murder Row",
+        "shortName": "MR",
+        "level": 12,
+        "score": 369.7,
+        "upgrades": 1,
+        "clearTimeMs": 1786444,
+        "completedAt": "2026-08-22T11:32:08.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/1931024-12-murder-row"
+      },
       {
         "dungeon": "Den of Nalorakk",
         "shortName": "DON",
@@ -66,20 +76,10 @@
         "clearTimeMs": 2943778,
         "completedAt": "2026-08-19T19:58:36.000Z",
         "url": "https://raider.io/mythic-plus-runs/season-mn-2/416217-10-altar-of-fangs"
-      },
-      {
-        "dungeon": "Voidscar Arena",
-        "shortName": "VSA",
-        "level": 7,
-        "score": 275,
-        "upgrades": 3,
-        "clearTimeMs": 1069470,
-        "completedAt": "2026-08-22T09:33:39.000Z",
-        "url": "https://raider.io/mythic-plus-runs/season-mn-2/1870067-7-voidscar-arena"
       }
     ],
-    "highestKey": 11,
-    "timedDungeons": 4,
+    "highestKey": 12,
+    "timedDungeons": 5,
     "raidBosses": [
       {
         "raid": "The Venomous Abyss",
@@ -1986,8 +1986,8 @@
       "talentImportCode": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZAPgZGmBGGjZaMzMNjx2MmZmZmZmZGwMzMGzMLzMDMwYwGsMGN2GQmBBbYGMzghB",
       "wowheadTalentUrl": "https://www.wowhead.com/talent-calc/evoker/preservation",
       "gear": {
-        "created_at": "2026-08-22T10:52:58.000Z",
-        "updated_at": "2026-08-22T10:52:58.000Z",
+        "created_at": "2026-08-22T11:32:10.000Z",
+        "updated_at": "2026-08-22T11:32:10.000Z",
         "source": "db",
         "item_level_equipped": 293.562,
         "item_level_total": 0,
@@ -2609,39 +2609,39 @@
         {
           "season": "season-mn-2",
           "scores": {
-            "all": 1257.5,
-            "dps": 612.1,
+            "all": 1627.2,
+            "dps": 981.7,
             "healer": 645.4,
             "tank": 0,
-            "spec_0": 612.1,
+            "spec_0": 981.7,
             "spec_1": 645.4,
             "spec_2": 0,
             "spec_3": 0
           },
           "segments": {
             "all": {
-              "score": 1257.5,
-              "color": "#54dc61"
+              "score": 1627.2,
+              "color": "#5fb297"
             },
             "dps": {
-              "score": 612.1,
-              "color": "#adff94"
+              "score": 981.7,
+              "color": "#1eff00"
             },
             "healer": {
               "score": 645.4,
-              "color": "#a7ff8d"
+              "color": "#aaff90"
             },
             "tank": {
               "score": 0,
               "color": "#ffffff"
             },
             "spec_0": {
-              "score": 612.1,
-              "color": "#adff94"
+              "score": 981.7,
+              "color": "#1eff00"
             },
             "spec_1": {
               "score": 645.4,
-              "color": "#a7ff8d"
+              "color": "#aaff90"
             },
             "spec_2": {
               "score": 0,
@@ -2703,43 +2703,43 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 492731,
-          "region": 182577,
-          "realm": 2511
+          "world": 400067,
+          "region": 152272,
+          "realm": 2085
         },
         "class": {
-          "world": 11450,
-          "region": 4794,
-          "realm": 62
+          "world": 9332,
+          "region": 4018,
+          "realm": 56
         },
         "healer": {
-          "world": 147781,
-          "region": 52477,
-          "realm": 741
+          "world": 148664,
+          "region": 52675,
+          "realm": 744
         },
         "class_healer": {
-          "world": 8486,
-          "region": 3122,
+          "world": 8536,
+          "region": 3131,
           "realm": 33
         },
         "dps": {
-          "world": 432918,
-          "region": 153935,
-          "realm": 2052
+          "world": 350092,
+          "region": 127613,
+          "realm": 1725
         },
         "class_dps": {
-          "world": 8794,
-          "region": 3915,
-          "realm": 59
+          "world": 7002,
+          "region": 3183,
+          "realm": 51
         },
         "spec_1467": {
-          "world": 7057,
-          "region": 3070,
-          "realm": 47
+          "world": 5580,
+          "region": 2463,
+          "realm": 40
         },
         "spec_1468": {
-          "world": 8486,
-          "region": 3122,
+          "world": 8536,
+          "region": 3131,
           "realm": 33
         },
         "spec_1473": {
@@ -2749,6 +2749,16 @@
         }
       },
       "bestRuns": [
+        {
+          "dungeon": "Murder Row",
+          "shortName": "MR",
+          "level": 12,
+          "score": 369.7,
+          "upgrades": 1,
+          "clearTimeMs": 1786444,
+          "completedAt": "2026-08-22T11:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/1931024-12-murder-row"
+        },
         {
           "dungeon": "Den of Nalorakk",
           "shortName": "DON",
@@ -2791,6 +2801,16 @@
         }
       ],
       "recentRuns": [
+        {
+          "dungeon": "Murder Row",
+          "shortName": "MR",
+          "level": 12,
+          "score": 369.7,
+          "upgrades": 1,
+          "clearTimeMs": 1786444,
+          "completedAt": "2026-08-22T11:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/1931024-12-murder-row"
+        },
         {
           "dungeon": "Den of Nalorakk",
           "shortName": "DON",
@@ -2843,6 +2863,16 @@
         }
       ],
       "weeklyHighestRuns": [
+        {
+          "dungeon": "Murder Row",
+          "shortName": "MR",
+          "level": 12,
+          "score": 369.7,
+          "upgrades": 1,
+          "clearTimeMs": 1786444,
+          "completedAt": "2026-08-22T11:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/1931024-12-murder-row"
+        },
         {
           "dungeon": "Den of Nalorakk",
           "shortName": "DON",
@@ -26978,7 +27008,7 @@
   "mythicPlus": {
     "classShares": [
       {
-        "score": 1258,
+        "score": 1627,
         "label": "Rufer",
         "className": "Rufer",
         "character": "Bufferrari",
@@ -27071,7 +27101,7 @@
     ],
     "specShares": [
       {
-        "score": 1258,
+        "score": 1627,
         "label": "Bewahrung",
         "className": "Rufer",
         "character": "Bufferrari",
@@ -27246,7 +27276,7 @@
     },
     "season-mn-2": {
       "bestMythicPlus": {
-        "score": 1258,
+        "score": 1627,
         "character": "Bufferrari",
         "className": "Rufer",
         "specName": "Bewahrung"
