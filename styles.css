@@ -123,7 +123,7 @@ main section{padding:68px 0;border-bottom:1px solid var(--line)}
 .podium-card.rank-1,.podium-card.rank-2,.podium-card.rank-3{min-height:180px;order:initial}
 .crest-stage{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(circle,color-mix(in srgb,var(--class) 26%,#111722),#080c13 68%)}
 .crest-stage{justify-content:end;padding-right:24px}
-.crest-stage>img{width:92px;height:92px;object-fit:cover;border-radius:50%;filter:drop-shadow(0 12px 20px #000);image-rendering:auto}
+.crest-stage>img{width:104px;height:104px;object-fit:cover;object-position:center 18%;border:2px solid color-mix(in srgb,var(--class) 48%,#dce7f5);border-radius:50%;background:#080d15;box-shadow:inset 0 0 18px #000,0 12px 24px #000,0 0 16px color-mix(in srgb,var(--class) 25%,transparent);image-rendering:auto}
 .portrait-fallback{display:grid;place-items:center;width:92px;height:92px;border-radius:50%;font-size:46px;font-weight:900;color:var(--class);background:#111a28}
 .podium-card::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,13,.98) 0,rgba(5,8,13,.8) 48%,transparent 82%)}
 .medal{position:absolute;z-index:2;top:16px;left:16px;padding:7px 11px;border-radius:999px;background:rgba(5,8,13,.8);backdrop-filter:blur(10px);font-size:10px;font-weight:900;letter-spacing:.12em}
