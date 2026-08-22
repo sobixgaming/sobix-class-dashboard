@@ -54,10 +54,11 @@ const ranked=[...roster].sort((a,b)=>currentScore(b)-currentScore(a)).slice(0,3)
 document.querySelector("#podium").innerHTML=ranked.map((character,index)=>{
   const rank=index+1;
   const [label,icon]=medals[rank];
-  const image=character.classIcon;
+  const image=character.media?.inset||character.media?.avatar||character.media?.render||character.classIcon;
+  const imageFallback=character.classIcon||fallbackSvg;
   return `<article class="podium-card rank-${rank}" style="--class:${color(character)}">
     <div class="medal"><span>${icon}</span>${label}</div>
-    <div class="crest-stage">${image?`<img src="${esc(image)}" alt="${esc(character.className)}-Wappen" loading="lazy">`:`<div class="portrait-fallback">${esc(character.className?.[0])}</div>`}</div>
+    <div class="crest-stage">${image?`<img src="${esc(image)}" alt="${esc(character.name)} – ${esc(character.className)}" loading="lazy" onerror="this.onerror=null;this.src='${esc(imageFallback)}'">`:`<div class="portrait-fallback">${esc(character.className?.[0])}</div>`}</div>
     <div class="podium-copy"><h3>${esc(character.name)}</h3><p>${esc(character.className)} · ${esc(character.specName)}</p><div><strong>${formatNumber(currentScore(character))}</strong> M+</div></div>
   </article>`;
 }).join("");
