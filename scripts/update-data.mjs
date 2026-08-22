@@ -134,18 +134,21 @@ async function classIcon(classId, authHeaders) {
   return classMediaCache.get(classId);
 }
 
-async function bossPortraits(value, authHeaders) {
-  const ids = [...new Set((value?.expansions ?? []).flatMap(expansion => (expansion.instances ?? []).flatMap(instance => (instance.modes ?? []).flatMap(mode => (mode.progress?.encounters ?? []).map(encounter => encounter.encounter?.id).filter(Boolean)))))];
+async function bossDetails(value, authHeaders) {
+  const instanceIds = [...new Set((value?.expansions ?? []).flatMap(expansion => (expansion.instances ?? []).map(instance => instance.instance?.id).filter(Boolean)))];
+  const journals = await Promise.all(instanceIds.map(async id => [id, await optionalJson(`https://${config.region}.api.blizzard.com/data/wow/journal-instance/${id}?namespace=static-${config.region}&locale=en_GB`, authHeaders)]));
+  const rosters = new Map(journals.map(([id, journal]) => [id, (journal?.encounters ?? []).map(encounter => ({ id: encounter.id, name: encounter.name }))]));
+  const ids = [...new Set([...rosters.values()].flat().map(encounter => encounter.id).filter(Boolean))];
   const portraits = await Promise.all(ids.map(async id => {
     const journal = await optionalJson(`https://${config.region}.api.blizzard.com/data/wow/journal-encounter/${id}?namespace=static-${config.region}&locale=en_GB`, authHeaders);
     const displayUrl = journal?.creatures?.[0]?.creature_display?.key?.href;
     const media = displayUrl ? await optionalJson(displayUrl, authHeaders) : null;
     return [id, asset(media, "zoom") ?? asset(media, "main") ?? asset(media, "icon")];
   }));
-  return new Map(portraits);
+  return { portraits: new Map(portraits), rosters };
 }
 
-function raidEncounters(value, portraits = new Map()) {
+function raidEncounters(value, details = { portraits: new Map(), rosters: new Map() }) {
   const raids = [];
   for (const expansion of value?.expansions ?? []) {
     for (const instance of expansion.instances ?? []) {
@@ -155,7 +158,10 @@ function raidEncounters(value, portraits = new Map()) {
           difficulty: mode.difficulty?.name ?? "Unbekannt",
           completed: Number(mode.progress?.completed_count ?? 0),
           total: Number(mode.progress?.total_count ?? 0),
-          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ id: encounter.encounter?.id ?? null, name: encounter.encounter?.name ?? "Boss", image: portraits.get(encounter.encounter?.id) ?? null, kills: Number(encounter.completed_count ?? 0) }))
+          bosses: (details.rosters.get(instance.instance?.id)?.length ? details.rosters.get(instance.instance.id) : (mode.progress?.encounters ?? []).map(encounter => encounter.encounter)).map(encounter => {
+            const progress = (mode.progress?.encounters ?? []).find(entry => entry.encounter?.id === encounter.id);
+            return { id: encounter.id ?? null, name: encounter.name ?? "Boss", image: details.portraits.get(encounter.id) ?? null, kills: Number(progress?.completed_count ?? 0) };
+          })
         }))
       });
     }
@@ -211,7 +217,7 @@ async function loadCharacter(entry) {
       wowheadUrl: item.item?.id ? `https://www.wowhead.com/item=${item.item.id}` : null
     };
   }));
-  const encounterPortraits = entry.featured ? await bossPortraits(encounterData, authHeaders) : new Map();
+  const encounterDetails = entry.featured ? await bossDetails(encounterData, authHeaders) : { portraits: new Map(), rosters: new Map() };
 
   const raids = Object.entries(rio.raid_progression ?? {}).map(([slug, raid]) => ({
     slug,
@@ -252,7 +258,7 @@ async function loadCharacter(entry) {
     weeklyHighestRuns: (weeklyRio?.mythic_plus_weekly_highest_level_runs ?? []).map(mapRun),
     weeklyRunsAvailable: Boolean(weeklyRio),
     raids,
-    raidEncounters: raidEncounters(encounterData, encounterPortraits),
+    raidEncounters: raidEncounters(encounterData, encounterDetails),
     raidProgression: rio.raid_progression ?? {}
   };
 }
@@ -412,6 +418,12 @@ for (const configuredName of config.activeRaidPatch?.raids ?? []) {
     for (const [difficulty, currentBosses] of Object.entries(modes)) {
       const aggregate = Object.entries(currentBosses).reduce((sum, [bossName, kills]) => sum + Math.max(0, Number(kills) - Number(raidBaseline?.[raidName]?.[difficulty]?.[bossName] ?? kills)), 0);
       difficulties[difficulty] = Math.max(Number(difficulties[difficulty] ?? 0), aggregate);
+      const assigned = [...bosses.values()].reduce((sum, boss) => sum + Number(boss.difficulties?.[difficulty] ?? 0), 0);
+      const missing = Math.max(0, aggregate - assigned);
+      if (missing > 0) {
+        const killedBosses = Object.entries(detailedModes[difficulty] ?? {}).filter(([, kills]) => Number(kills) > 0).map(([bossName]) => bosses.get(bossName)).filter(Boolean);
+        for (const boss of killedBosses.slice(0, missing)) boss.difficulties[difficulty] = Math.max(1, Number(boss.difficulties[difficulty] ?? 0));
+      }
     }
   }
 
