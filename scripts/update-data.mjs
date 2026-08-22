@@ -134,7 +134,18 @@ async function classIcon(classId, authHeaders) {
   return classMediaCache.get(classId);
 }
 
-function raidEncounters(value) {
+async function bossPortraits(value, authHeaders) {
+  const ids = [...new Set((value?.expansions ?? []).flatMap(expansion => (expansion.instances ?? []).flatMap(instance => (instance.modes ?? []).flatMap(mode => (mode.progress?.encounters ?? []).map(encounter => encounter.encounter?.id).filter(Boolean)))))];
+  const portraits = await Promise.all(ids.map(async id => {
+    const journal = await optionalJson(`https://${config.region}.api.blizzard.com/data/wow/journal-encounter/${id}?namespace=static-${config.region}&locale=en_GB`, authHeaders);
+    const displayUrl = journal?.creatures?.[0]?.creature_display?.key?.href;
+    const media = displayUrl ? await optionalJson(displayUrl, authHeaders) : null;
+    return [id, asset(media, "zoom") ?? asset(media, "main") ?? asset(media, "icon")];
+  }));
+  return new Map(portraits);
+}
+
+function raidEncounters(value, portraits = new Map()) {
   const raids = [];
   for (const expansion of value?.expansions ?? []) {
     for (const instance of expansion.instances ?? []) {
@@ -144,7 +155,7 @@ function raidEncounters(value) {
           difficulty: mode.difficulty?.name ?? "Unbekannt",
           completed: Number(mode.progress?.completed_count ?? 0),
           total: Number(mode.progress?.total_count ?? 0),
-          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ id: encounter.encounter?.id ?? null, name: encounter.encounter?.name ?? "Boss", kills: Number(encounter.completed_count ?? 0) }))
+          bosses: (mode.progress?.encounters ?? []).map(encounter => ({ id: encounter.encounter?.id ?? null, name: encounter.encounter?.name ?? "Boss", image: portraits.get(encounter.encounter?.id) ?? null, kills: Number(encounter.completed_count ?? 0) }))
         }))
       });
     }
@@ -200,6 +211,7 @@ async function loadCharacter(entry) {
       wowheadUrl: item.item?.id ? `https://www.wowhead.com/item=${item.item.id}` : null
     };
   }));
+  const encounterPortraits = entry.featured ? await bossPortraits(encounterData, authHeaders) : new Map();
 
   const raids = Object.entries(rio.raid_progression ?? {}).map(([slug, raid]) => ({
     slug,
@@ -240,7 +252,7 @@ async function loadCharacter(entry) {
     weeklyHighestRuns: (weeklyRio?.mythic_plus_weekly_highest_level_runs ?? []).map(mapRun),
     weeklyRunsAvailable: Boolean(weeklyRio),
     raids,
-    raidEncounters: raidEncounters(encounterData),
+    raidEncounters: raidEncounters(encounterData, encounterPortraits),
     raidProgression: rio.raid_progression ?? {}
   };
 }
@@ -366,6 +378,7 @@ function raidKillSnapshot(character) {
   return snapshot;
 }
 const currentRaidSnapshot = raidKillSnapshot(featuredMain);
+const currentBossDetails = new Map((featuredMain?.raidEncounters ?? []).flatMap(raid => (raid.modes ?? []).flatMap(mode => (mode.bosses ?? []).map(boss => [boss.name, boss]))));
 const previousWeek = previous.weeklyProgress;
 const raidBaseline = structuredClone(previousWeek?.resetKey === resetKey ? (previousWeek.raidBaseline ?? {}) : {});
 for (const [raidName, modes] of Object.entries(currentRaidSnapshot)) raidBaseline[raidName] ??= structuredClone(modes);
@@ -384,7 +397,8 @@ for (const configuredName of config.activeRaidPatch?.raids ?? []) {
       if (bossName === "__progress") continue;
       const weeklyKills = Math.max(0, Number(kills) - Number(raidBaseline?.[detailedName]?.[difficulty]?.[bossName] ?? kills));
       total += weeklyKills;
-      const boss = bosses.get(bossName) ?? { name: bossName, difficulties: {} };
+      const detail = currentBossDetails.get(bossName);
+      const boss = bosses.get(bossName) ?? { id: detail?.id ?? null, name: bossName, image: detail?.image ?? null, difficulties: {} };
       boss.difficulties[difficulty] = weeklyKills;
       bosses.set(bossName, boss);
     }
