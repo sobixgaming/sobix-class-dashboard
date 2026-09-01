@@ -6,7 +6,7 @@ document.addEventListener("error",event=>{const image=event.target;if(!(image in
 
 let data;
 try{
-  const response=await fetch("data/dashboard.json",{cache:"no-store"});
+  const response=await fetch(`data/dashboard.json?fresh=${Date.now()}`,{cache:"no-store",headers:{"Cache-Control":"no-cache"}});
   if(!response.ok)throw new Error(`Dashboard-Daten konnten nicht geladen werden (HTTP ${response.status}).`);
   data=await response.json();
 }catch(error){
