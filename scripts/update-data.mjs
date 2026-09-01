@@ -447,6 +447,15 @@ const weeklyProgress = {
   raidBaseline
 };
 
+const itemLevelHistory = previous.activeSeasonKey === currentSeason ? structuredClone(previous.itemLevelHistory ?? {}) : {};
+const historyTimestamp = new Date().toISOString();
+for (const character of characters) {
+  const points = Array.isArray(itemLevelHistory[character.name]) ? itemLevelHistory[character.name].filter(point => Number.isFinite(Number(point.value))) : [];
+  const currentValue = Number(character.itemLevel ?? 0);
+  if (currentValue > 0 && Number(points.at(-1)?.value) !== currentValue) points.push({ at: historyTimestamp, value: currentValue });
+  itemLevelHistory[character.name] = points.slice(-100);
+}
+
 const output = {
   generatedAt: new Date().toISOString(),
   region: config.region,
@@ -460,6 +469,7 @@ const output = {
     nextUpdateAt: new Date(Math.ceil(Date.now() / (60 * 60 * 1000)) * 60 * 60 * 1000).toISOString()
   },
   weeklyProgress,
+  itemLevelHistory,
   trophies: config.trophies,
   characters: characters.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name, "de")),
   featured: {
