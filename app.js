@@ -119,21 +119,23 @@ function equipmentBlock(character){
 }
 
 function itemLevelChart(character){
-  const windowEnd=new Date(data.generatedAt||Date.now()).getTime(),windowStart=windowEnd-28*86400000;
-  const points=(data.itemLevelHistory?.[character.name]||[]).filter(point=>Number.isFinite(Number(point.value))&&new Date(point.at).getTime()>=windowStart).sort((a,b)=>new Date(a.at)-new Date(b.at));
-  if(!points.length)return `<div class="itemlevel-history empty">Der Itemlevel-Verlauf startet mit der nächsten Datenaktualisierung.</div>`;
-  const width=640,height=170,padX=34,padTop=20,padBottom=30,values=points.map(point=>Number(point.value));
+  const allPoints=(data.itemLevelHistory?.[character.name]||[]).filter(point=>Number.isFinite(Number(point.value))).sort((a,b)=>new Date(a.at)-new Date(b.at));
+  if(!allPoints.length)return `<div class="itemlevel-history empty">Der Itemlevel-Verlauf startet mit der nächsten Datenaktualisierung.</div>`;
+  const currentDay=new Date(data.generatedAt||Date.now());currentDay.setUTCHours(12,0,0,0);
+  const dayTimes=Array.from({length:14},(_,index)=>currentDay.getTime()-(13-index)*86400000);
+  const points=dayTimes.map(time=>{const known=[...allPoints].reverse().find(point=>new Date(point.at).getTime()<time+12*60*60*1000)??allPoints[0];return {at:new Date(time).toISOString(),value:Number(known.value)}});
+  const width=640,height=205,padX=38,padTop=22,padBottom=55,values=points.map(point=>Number(point.value));
   const rawMin=Math.min(...values),rawMax=Math.max(...values),range=Math.max(4,rawMax-rawMin),min=Math.floor(rawMin-range*.18),max=Math.ceil(rawMax+range*.18);
-  const x=point=>padX+(Math.max(windowStart,Math.min(windowEnd,new Date(point.at).getTime()))-windowStart)*(width-padX*2)/(windowEnd-windowStart);
+  const x=index=>padX+index*(width-padX*2)/(points.length-1);
   const y=value=>padTop+(max-value)*(height-padTop-padBottom)/(max-min||1);
-  const coords=points.map(point=>`${x(point).toFixed(1)},${y(Number(point.value)).toFixed(1)}`).join(" ");
-  const area=`${x(points[0])},${height-padBottom} ${coords} ${x(points.at(-1))},${height-padBottom}`;
+  const coords=points.map((point,index)=>`${x(index).toFixed(1)},${y(Number(point.value)).toFixed(1)}`).join(" ");
+  const area=`${x(0)},${height-padBottom} ${coords} ${x(points.length-1)},${height-padBottom}`;
   const first=points[0],last=points.at(-1),growth=Number(last.value)-Number(first.value),date=value=>new Intl.DateTimeFormat("de-DE",{day:"2-digit",month:"2-digit"}).format(new Date(value));
+  const fullDate=value=>new Intl.DateTimeFormat("de-DE",{day:"2-digit",month:"2-digit",year:"numeric"}).format(new Date(value));
   const grid=[min,Math.round((min+max)/2),max].map(value=>`<g><line x1="${padX}" y1="${y(value)}" x2="${width-padX}" y2="${y(value)}"></line><text x="4" y="${y(value)+4}">${esc(value)}</text></g>`).join("");
-  const weekGrid=Array.from({length:5},(_,index)=>{const time=windowStart+index*7*86400000,pos=padX+index*(width-padX*2)/4;return `<g class="week-grid"><line x1="${pos}" y1="${padTop}" x2="${pos}" y2="${height-padBottom}"></line><text x="${pos}" y="${height-7}">${esc(date(time))}</text></g>`}).join("");
-  const dots=points.map(point=>`<circle cx="${x(point)}" cy="${y(Number(point.value))}" r="4.5"><title>${esc(date(point.at))}: Itemlevel ${esc(point.value)}</title></circle>`).join("");
-  const graph=points.length>1?`<polygon points="${area}"></polygon><polyline points="${coords}"></polyline>`:"";
-  return `<section class="itemlevel-history"><header><div><span>GEGENSTANDSSTUFEN-VERLAUF</span><strong>Letzte 4 Wochen</strong></div><b class="${growth>0?"positive":""}">${growth>0?"+":""}${esc(growth)} Itemlevel</b></header><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Itemlevel-Verlauf der letzten vier Wochen von ${esc(first.value)} auf ${esc(last.value)}">${grid}${weekGrid}${graph}${dots}</svg><footer><span>Erster Messwert <b>${esc(first.value)}</b></span><span>Aktuell <b>${esc(last.value)}</b></span></footer></section>`;
+  const dayGrid=points.map((point,index)=>`<g class="day-grid"><line x1="${x(index)}" y1="${padTop}" x2="${x(index)}" y2="${height-padBottom}"></line><text transform="translate(${x(index)-2} ${height-38}) rotate(-52)">${esc(date(point.at))}</text></g>`).join("");
+  const dots=points.map((point,index)=>{const cx=x(index),cy=y(point.value),tx=cx>width-165?cx-148:cx+10,ty=Math.max(3,cy-43);return `<g class="chart-point" tabindex="0" role="button" aria-label="${esc(fullDate(point.at))}: Itemlevel ${esc(point.value)}"><circle class="hit-area" cx="${cx}" cy="${cy}" r="14"></circle><circle cx="${cx}" cy="${cy}" r="4.5"></circle><g class="chart-tooltip" transform="translate(${tx} ${ty})"><rect width="138" height="38" rx="7"></rect><text class="tooltip-date" x="9" y="15">${esc(fullDate(point.at))}</text><text class="tooltip-value" x="9" y="30">Itemlevel ${esc(point.value)}</text></g></g>`}).join("");
+  return `<section class="itemlevel-history"><header><div><span>GEGENSTANDSSTUFEN-VERLAUF</span><strong>Letzte 14 Tage</strong></div><b class="${growth>0?"positive":""}">${growth>0?"+":""}${esc(growth)} Itemlevel</b></header><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Itemlevel-Verlauf der letzten 14 Tage von ${esc(first.value)} auf ${esc(last.value)}">${grid}${dayGrid}<polygon points="${area}"></polygon><polyline points="${coords}"></polyline>${dots}</svg><footer><span>Vor 14 Tagen <b>${esc(first.value)}</b></span><span>Heute <b>${esc(last.value)}</b></span></footer></section>`;
 }
 
 function talentBlock(character){
