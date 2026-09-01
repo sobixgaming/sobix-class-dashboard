@@ -118,6 +118,21 @@ function equipmentBlock(character){
   </a>`).join("");
 }
 
+function itemLevelChart(character){
+  const points=(data.itemLevelHistory?.[character.name]||[]).filter(point=>Number.isFinite(Number(point.value)));
+  if(!points.length)return `<div class="itemlevel-history empty">Der Itemlevel-Verlauf startet mit der nächsten Datenaktualisierung.</div>`;
+  const width=640,height=170,padX=34,padTop=20,padBottom=30,values=points.map(point=>Number(point.value));
+  const rawMin=Math.min(...values),rawMax=Math.max(...values),range=Math.max(4,rawMax-rawMin),min=Math.floor(rawMin-range*.18),max=Math.ceil(rawMax+range*.18);
+  const x=index=>points.length===1?width/2:padX+index*(width-padX*2)/(points.length-1);
+  const y=value=>padTop+(max-value)*(height-padTop-padBottom)/(max-min||1);
+  const coords=points.map((point,index)=>`${x(index).toFixed(1)},${y(Number(point.value)).toFixed(1)}`).join(" ");
+  const area=`${padX},${height-padBottom} ${coords} ${points.length===1?width-padX:x(points.length-1)},${height-padBottom}`;
+  const first=points[0],last=points.at(-1),growth=Number(last.value)-Number(first.value),date=value=>new Intl.DateTimeFormat("de-DE",{day:"2-digit",month:"2-digit"}).format(new Date(value));
+  const grid=[min,Math.round((min+max)/2),max].map(value=>`<g><line x1="${padX}" y1="${y(value)}" x2="${width-padX}" y2="${y(value)}"></line><text x="4" y="${y(value)+4}">${esc(value)}</text></g>`).join("");
+  const dots=points.map((point,index)=>`<circle cx="${x(index)}" cy="${y(Number(point.value))}" r="4"><title>${esc(date(point.at))}: Itemlevel ${esc(point.value)}</title></circle>`).join("");
+  return `<section class="itemlevel-history"><header><div><span>GEGENSTANDSSTUFEN-VERLAUF</span><strong>Season-Zuwachs</strong></div><b class="${growth>0?"positive":""}">${growth>0?"+":""}${esc(growth)} Itemlevel</b></header><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Itemlevel-Verlauf von ${esc(first.value)} auf ${esc(last.value)}">${grid}<polygon points="${area}"></polygon><polyline points="${coords}"></polyline>${dots}<text class="date-label" x="${padX}" y="${height-7}">${esc(date(first.at))}</text><text class="date-label end" x="${width-padX}" y="${height-7}">${esc(date(last.at))}</text></svg><footer><span>Start <b>${esc(first.value)}</b></span><span>Aktuell <b>${esc(last.value)}</b></span></footer></section>`;
+}
+
 function talentBlock(character){
   const selected=character.selectedTalents||[];
   const importCode=character.talentImportCode;
@@ -137,7 +152,7 @@ document.querySelector("#featured").innerHTML=primary.map((character,index)=>{
       <div><h4>Talent-Build</h4>${talentBlock(character)}</div>
       <div class="raid-section"><h4>Raidfortschritt · Patch ${esc(data.activeRaidPatch?.patch||"12.0")}</h4>${raidBlock(character)}</div>
       <div><h4>Beste Mythic+-Runs</h4>${runBlock(character)}</div>
-      <div><h4>Ausrüstung</h4><div class="equipment-grid">${equipmentBlock(character)}</div></div>
+      <div><h4>Ausrüstung</h4><div class="equipment-grid">${equipmentBlock(character)}</div>${itemLevelChart(character)}</div>
       <div class="profile-links"><a href="${esc(character.armoryUrl)}" target="_blank" rel="noreferrer">World of Warcraft Arsenal ↗</a><a href="${esc(character.profileUrl||character.armoryUrl)}" target="_blank" rel="noreferrer">Raider.IO ↗</a></div>
     </div>
   </article>`;
