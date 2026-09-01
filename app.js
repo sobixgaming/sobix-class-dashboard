@@ -119,18 +119,21 @@ function equipmentBlock(character){
 }
 
 function itemLevelChart(character){
-  const points=(data.itemLevelHistory?.[character.name]||[]).filter(point=>Number.isFinite(Number(point.value)));
+  const windowEnd=new Date(data.generatedAt||Date.now()).getTime(),windowStart=windowEnd-28*86400000;
+  const points=(data.itemLevelHistory?.[character.name]||[]).filter(point=>Number.isFinite(Number(point.value))&&new Date(point.at).getTime()>=windowStart).sort((a,b)=>new Date(a.at)-new Date(b.at));
   if(!points.length)return `<div class="itemlevel-history empty">Der Itemlevel-Verlauf startet mit der nächsten Datenaktualisierung.</div>`;
   const width=640,height=170,padX=34,padTop=20,padBottom=30,values=points.map(point=>Number(point.value));
   const rawMin=Math.min(...values),rawMax=Math.max(...values),range=Math.max(4,rawMax-rawMin),min=Math.floor(rawMin-range*.18),max=Math.ceil(rawMax+range*.18);
-  const x=index=>points.length===1?width/2:padX+index*(width-padX*2)/(points.length-1);
+  const x=point=>padX+(Math.max(windowStart,Math.min(windowEnd,new Date(point.at).getTime()))-windowStart)*(width-padX*2)/(windowEnd-windowStart);
   const y=value=>padTop+(max-value)*(height-padTop-padBottom)/(max-min||1);
-  const coords=points.map((point,index)=>`${x(index).toFixed(1)},${y(Number(point.value)).toFixed(1)}`).join(" ");
-  const area=`${padX},${height-padBottom} ${coords} ${points.length===1?width-padX:x(points.length-1)},${height-padBottom}`;
+  const coords=points.map(point=>`${x(point).toFixed(1)},${y(Number(point.value)).toFixed(1)}`).join(" ");
+  const area=`${x(points[0])},${height-padBottom} ${coords} ${x(points.at(-1))},${height-padBottom}`;
   const first=points[0],last=points.at(-1),growth=Number(last.value)-Number(first.value),date=value=>new Intl.DateTimeFormat("de-DE",{day:"2-digit",month:"2-digit"}).format(new Date(value));
   const grid=[min,Math.round((min+max)/2),max].map(value=>`<g><line x1="${padX}" y1="${y(value)}" x2="${width-padX}" y2="${y(value)}"></line><text x="4" y="${y(value)+4}">${esc(value)}</text></g>`).join("");
-  const dots=points.map((point,index)=>`<circle cx="${x(index)}" cy="${y(Number(point.value))}" r="4"><title>${esc(date(point.at))}: Itemlevel ${esc(point.value)}</title></circle>`).join("");
-  return `<section class="itemlevel-history"><header><div><span>GEGENSTANDSSTUFEN-VERLAUF</span><strong>Season-Zuwachs</strong></div><b class="${growth>0?"positive":""}">${growth>0?"+":""}${esc(growth)} Itemlevel</b></header><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Itemlevel-Verlauf von ${esc(first.value)} auf ${esc(last.value)}">${grid}<polygon points="${area}"></polygon><polyline points="${coords}"></polyline>${dots}<text class="date-label" x="${padX}" y="${height-7}">${esc(date(first.at))}</text><text class="date-label end" x="${width-padX}" y="${height-7}">${esc(date(last.at))}</text></svg><footer><span>Start <b>${esc(first.value)}</b></span><span>Aktuell <b>${esc(last.value)}</b></span></footer></section>`;
+  const weekGrid=Array.from({length:5},(_,index)=>{const time=windowStart+index*7*86400000,pos=padX+index*(width-padX*2)/4;return `<g class="week-grid"><line x1="${pos}" y1="${padTop}" x2="${pos}" y2="${height-padBottom}"></line><text x="${pos}" y="${height-7}">${esc(date(time))}</text></g>`}).join("");
+  const dots=points.map(point=>`<circle cx="${x(point)}" cy="${y(Number(point.value))}" r="4.5"><title>${esc(date(point.at))}: Itemlevel ${esc(point.value)}</title></circle>`).join("");
+  const graph=points.length>1?`<polygon points="${area}"></polygon><polyline points="${coords}"></polyline>`:"";
+  return `<section class="itemlevel-history"><header><div><span>GEGENSTANDSSTUFEN-VERLAUF</span><strong>Letzte 4 Wochen</strong></div><b class="${growth>0?"positive":""}">${growth>0?"+":""}${esc(growth)} Itemlevel</b></header><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Itemlevel-Verlauf der letzten vier Wochen von ${esc(first.value)} auf ${esc(last.value)}">${grid}${weekGrid}${graph}${dots}</svg><footer><span>Erster Messwert <b>${esc(first.value)}</b></span><span>Aktuell <b>${esc(last.value)}</b></span></footer></section>`;
 }
 
 function talentBlock(character){
