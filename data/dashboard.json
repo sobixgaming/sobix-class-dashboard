@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T00:42:30.390Z",
+  "generatedAt": "2026-10-19T05:36:59.272Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-10-19T01:00:00.000Z"
+    "nextUpdateAt": "2026-10-19T06:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-10-14T04:00:00.000Z",
@@ -58,6 +58,16 @@
         "url": "https://raider.io/mythic-plus-runs/season-mn-2/21488081-17-den-of-nalorakk"
       },
       {
+        "dungeon": "Ruby Life Pools",
+        "shortName": "RLP",
+        "level": 17,
+        "score": 440.4,
+        "upgrades": 1,
+        "clearTimeMs": 1659875,
+        "completedAt": "2026-10-18T19:23:08.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/21516438-17-ruby-life-pools"
+      },
+      {
         "dungeon": "Murder Row",
         "shortName": "MR",
         "level": 15,
@@ -66,20 +76,10 @@
         "clearTimeMs": 1616106,
         "completedAt": "2026-10-17T21:08:24.000Z",
         "url": "https://raider.io/mythic-plus-runs/season-mn-2/21240343-15-murder-row"
-      },
-      {
-        "dungeon": "Murder Row",
-        "shortName": "MR",
-        "level": 15,
-        "score": 416.9,
-        "upgrades": 1,
-        "clearTimeMs": 1663126,
-        "completedAt": "2026-10-14T19:50:44.000Z",
-        "url": "https://raider.io/mythic-plus-runs/season-mn-2/20726255-15-murder-row"
       }
     ],
     "highestKey": 17,
-    "timedDungeons": 5,
+    "timedDungeons": 6,
     "raidBosses": [
       {
         "raid": "The Venomous Abyss",
@@ -749,7 +749,7 @@
       "level": 90,
       "className": "Todesritter",
       "classId": 6,
-      "classIcon": null,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/135771.jpg",
       "specName": "Blut",
       "faction": "Horde",
       "itemLevel": 259,
@@ -2193,11 +2193,881 @@
         "inset": null,
         "render": "https://render.worldofwarcraft.com/eu/character/eredar/108/172105068-main-raw.png"
       },
-      "equipment": [],
+      "equipment": [
+        {
+          "id": 271501,
+          "slot": "Kopf",
+          "name": "Magmaformer des verhängnisvollen Echos",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/7789849.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=271501"
+        },
+        {
+          "id": 268265,
+          "slot": "Hals",
+          "name": "Reliquiar des Aqirfluches",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/7866590.jpg",
+          "wowheadUrl": "https://www.wowhead.com/item=268265"
+        },
+        {
+          "id": 271499,
+          "slot": "Schulter",
+          "name": "Entzweite Gipfel des verhängnisvollen Echos",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=271499"
+        },
+        {
+          "id": 89193,
+          "slot": "Hemd",
+          "name": "Kunstvolles Mitgliedshemd",
+          "itemLevel": 1,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=89193"
+        },
+        {
+          "id": 271876,
+          "slot": "Brust",
+          "name": "Schreckenszahnkürass der Erwachten",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=271876"
+        },
+        {
+          "id": 268254,
+          "slot": "Taille",
+          "name": "Schlangenmixturgürtel",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=268254"
+        },
+        {
+          "id": 271500,
+          "slot": "Beine",
+          "name": "Irdene Säulen der Katastrophe",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=271500"
+        },
+        {
+          "id": 244577,
+          "slot": "Füße",
+          "name": "Messerkrallen des Weltenwanderers",
+          "itemLevel": 331,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=244577"
+        },
+        {
+          "id": 244584,
+          "slot": "Handgelenk",
+          "name": "Plattenarmschienen des Weltenwanderers",
+          "itemLevel": 331,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=244584"
+        },
+        {
+          "id": 271502,
+          "slot": "Hände",
+          "name": "Ebenholzgroßhörner des verhängnisvollen Echos",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=271502"
+        },
+        {
+          "id": 273792,
+          "slot": "Ring 1",
+          "name": "Band des Kriegsherrn der Amani",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=273792"
+        },
+        {
+          "id": 268252,
+          "slot": "Ring 2",
+          "name": "Klauenring des Eliterohlings",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=268252"
+        },
+        {
+          "id": 270164,
+          "slot": "Schmuckstück 1",
+          "name": "Gebbos bodenlose Tasche",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=270164"
+        },
+        {
+          "id": 270162,
+          "slot": "Schmuckstück 2",
+          "name": "Ritualgefäß des Seelenwinders",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=270162"
+        },
+        {
+          "id": 251190,
+          "slot": "Rücken",
+          "name": "Blutdornburnus",
+          "itemLevel": 321,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=251190"
+        },
+        {
+          "id": 271092,
+          "slot": "Waffenhand",
+          "name": "Jan'thrazet, der Seelenfang",
+          "itemLevel": 334,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=271092"
+        },
+        {
+          "id": 245769,
+          "slot": "Schildhand",
+          "name": "Laterne von Aln'hara",
+          "itemLevel": 331,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=245769"
+        },
+        {
+          "id": 43348,
+          "slot": "Wappenrock",
+          "name": "Wappenrock des Entdeckers",
+          "itemLevel": 1,
+          "quality": "Episch",
+          "icon": null,
+          "wowheadUrl": "https://www.wowhead.com/item=43348"
+        }
+      ],
       "talentGroups": {
-        "hero": [],
-        "specialization": [],
-        "class": [],
+        "hero": [
+          {
+            "name": "Bahnbrecher",
+            "rank": 1
+          },
+          {
+            "name": "Asche in Bewegung",
+            "rank": 1
+          },
+          {
+            "name": "Erweiterte Lungen",
+            "rank": 1
+          },
+          {
+            "name": "Essenzbrunnen",
+            "rank": 1
+          },
+          {
+            "name": "Verbindung der Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Brennendes Adrenalin",
+            "rank": 1
+          },
+          {
+            "name": "Fulminantes Gebrüll",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingsflamme",
+            "rank": 1
+          },
+          {
+            "name": "Titanische Präzision",
+            "rank": 1
+          },
+          {
+            "name": "Tief ausatmen",
+            "rank": 1
+          },
+          {
+            "name": "Lebensglut",
+            "rank": 1
+          },
+          {
+            "name": "Feuerstrom",
+            "rank": 1
+          },
+          {
+            "name": "Flamme verschlingen",
+            "rank": 1
+          },
+          {
+            "name": "Flammenformer",
+            "rank": 1
+          },
+          {
+            "name": "Form der Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Vermächtnis der Lebensbinderin",
+            "rank": 1
+          },
+          {
+            "name": "Macht des Schwarzen Drachenschwarms",
+            "rank": 1
+          },
+          {
+            "name": "Bombardements",
+            "rank": 1
+          },
+          {
+            "name": "Ansturm",
+            "rank": 1
+          },
+          {
+            "name": "Geschwader befehligen",
+            "rank": 1
+          },
+          {
+            "name": "Rüstungsschmelze",
+            "rank": 1
+          },
+          {
+            "name": "Flügelführer",
+            "rank": 1
+          },
+          {
+            "name": "Unerbittliche Belagerung",
+            "rank": 1
+          },
+          {
+            "name": "Konzentrierte Macht",
+            "rank": 1
+          },
+          {
+            "name": "Gehärtete Schuppen",
+            "rank": 1
+          },
+          {
+            "name": "Umgeleitete Macht",
+            "rank": 1
+          },
+          {
+            "name": "Wirbelströmung",
+            "rank": 1
+          },
+          {
+            "name": "Veredelte Essenz",
+            "rank": 1
+          },
+          {
+            "name": "Geschmeidigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Schuppenkommandant",
+            "rank": 1
+          },
+          {
+            "name": "Erweiterter Kampf",
+            "rank": 1
+          },
+          {
+            "name": "Flinker Flieger",
+            "rank": 1
+          }
+        ],
+        "specialization": [
+          {
+            "name": "Neutralisierende Hülle",
+            "rank": 1
+          },
+          {
+            "name": "Geißelnde Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Unbeschwerter Flug",
+            "rank": 1
+          },
+          {
+            "name": "Echo",
+            "rank": 1
+          },
+          {
+            "name": "Traumatem",
+            "rank": 1
+          },
+          {
+            "name": "Umkehrung",
+            "rank": 1
+          },
+          {
+            "name": "Temporalkomprimierung",
+            "rank": 1
+          },
+          {
+            "name": "Essenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Zurückspulen",
+            "rank": 1
+          },
+          {
+            "name": "Essenzeinstimmung",
+            "rank": 1
+          },
+          {
+            "name": "Zeitverschiebung",
+            "rank": 1
+          },
+          {
+            "name": "Schwirrende Setzlinge",
+            "rank": 1
+          },
+          {
+            "name": "Goldene Stunde",
+            "rank": 1
+          },
+          {
+            "name": "Zeitanomalie",
+            "rank": 1
+          },
+          {
+            "name": "Euphorisierende Explosion",
+            "rank": 1
+          },
+          {
+            "name": "Feld der Träume",
+            "rank": 1
+          },
+          {
+            "name": "Herr über die Zeit",
+            "rank": 1
+          },
+          {
+            "name": "Nozdormus Lehren",
+            "rank": 1
+          },
+          {
+            "name": "Ruf von Ysera",
+            "rank": 1
+          },
+          {
+            "name": "Stasis",
+            "rank": 1
+          },
+          {
+            "name": "Schonfrist",
+            "rank": 1
+          },
+          {
+            "name": "Flamme des Lebensspenders",
+            "rank": 1
+          },
+          {
+            "name": "Innere Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Energieschlaufe",
+            "rank": 1
+          },
+          {
+            "name": "Erneuernder Atem",
+            "rank": 1
+          },
+          {
+            "name": "Zeitlose Magie",
+            "rank": 1
+          },
+          {
+            "name": "Geschenk des Titanen",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingsechos",
+            "rank": 1
+          },
+          {
+            "name": "Merithras Segen",
+            "rank": 1
+          },
+          {
+            "name": "Bewahrung",
+            "rank": 1
+          },
+          {
+            "name": "Lebensbindung",
+            "rank": 1
+          },
+          {
+            "name": "Unerschütterlich",
+            "rank": 1
+          },
+          {
+            "name": "Klarheit im Geist",
+            "rank": 1
+          },
+          {
+            "name": "Traumrausch",
+            "rank": 1
+          },
+          {
+            "name": "Lebenskraftheiler",
+            "rank": 1
+          },
+          {
+            "name": "Traumsimulakrum",
+            "rank": 1
+          },
+          {
+            "name": "Lebensfunke",
+            "rank": 1
+          },
+          {
+            "name": "Temporalkonstrukteur",
+            "rank": 1
+          },
+          {
+            "name": "Obsidianeifer",
+            "rank": 1
+          },
+          {
+            "name": "Scheiterhaufen",
+            "rank": 1
+          },
+          {
+            "name": "Rubinessenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Azuressenzexplosion",
+            "rank": 1
+          },
+          {
+            "name": "Verwüsten",
+            "rank": 1
+          },
+          {
+            "name": "Unterdrücken",
+            "rank": 1
+          },
+          {
+            "name": "Ewigkeitswoge",
+            "rank": 1
+          },
+          {
+            "name": "Drachenwut",
+            "rank": 1
+          },
+          {
+            "name": "Arkane Intensität",
+            "rank": 1
+          },
+          {
+            "name": "Animosität",
+            "rank": 1
+          },
+          {
+            "name": "Hitzewelle",
+            "rank": 1
+          },
+          {
+            "name": "Gerichtete Aggression",
+            "rank": 1
+          },
+          {
+            "name": "Spanne der Ewigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Ereignishorizont",
+            "rank": 1
+          },
+          {
+            "name": "Katalysieren",
+            "rank": 1
+          },
+          {
+            "name": "Tyrannei",
+            "rank": 1
+          },
+          {
+            "name": "Zerschmetternde Sterne",
+            "rank": 1
+          },
+          {
+            "name": "Feuriger Schub",
+            "rank": 1
+          },
+          {
+            "name": "Onyxvermächtnis",
+            "rank": 1
+          },
+          {
+            "name": "Dominanz des Spruchwirkers",
+            "rank": 1
+          },
+          {
+            "name": "Bevorstehende Zerstörung",
+            "rank": 1
+          },
+          {
+            "name": "Titanischer Zorn",
+            "rank": 1
+          },
+          {
+            "name": "Azurschnelligkeit",
+            "rank": 1
+          },
+          {
+            "name": "Machtzuwachs",
+            "rank": 1
+          },
+          {
+            "name": "Luftangriff",
+            "rank": 1
+          },
+          {
+            "name": "Kausalität",
+            "rank": 1
+          },
+          {
+            "name": "Schillern",
+            "rank": 1
+          },
+          {
+            "name": "Aufsteigender Zorn",
+            "rank": 1
+          },
+          {
+            "name": "Verheerung",
+            "rank": 1
+          },
+          {
+            "name": "Instabilität",
+            "rank": 1
+          },
+          {
+            "name": "Teilen und herrschen",
+            "rank": 1
+          },
+          {
+            "name": "Schwarzmacht",
+            "rank": 1
+          },
+          {
+            "name": "Eruption",
+            "rank": 1
+          },
+          {
+            "name": "Abprallender Pyroklast",
+            "rank": 1
+          },
+          {
+            "name": "Schüler von Alexstrasza",
+            "rank": 1
+          },
+          {
+            "name": "Emporstoßen",
+            "rank": 1
+          },
+          {
+            "name": "Atem der Äonen",
+            "rank": 1
+          },
+          {
+            "name": "Trotz dem Schicksal",
+            "rank": 1
+          },
+          {
+            "name": "Zündungsrausch",
+            "rank": 1
+          },
+          {
+            "name": "Kraftnexus",
+            "rank": 1
+          },
+          {
+            "name": "Vulkanismus",
+            "rank": 1
+          },
+          {
+            "name": "Verbesserter Trotz dem Schicksal",
+            "rank": 1
+          },
+          {
+            "name": "Sengende Schuppen",
+            "rank": 1
+          },
+          {
+            "name": "Voraussicht",
+            "rank": 1
+          },
+          {
+            "name": "Tektonischer Lokus",
+            "rank": 1
+          },
+          {
+            "name": "Regeneratives Chitin",
+            "rank": 1
+          },
+          {
+            "name": "Dynamische Verschiebung",
+            "rank": 1
+          },
+          {
+            "name": "Schicksalsspiegel",
+            "rank": 1
+          },
+          {
+            "name": "Angesammelte Macht",
+            "rank": 1
+          },
+          {
+            "name": "Anachronismus",
+            "rank": 1
+          },
+          {
+            "name": "Zuwachs",
+            "rank": 1
+          },
+          {
+            "name": "Zeitsprung",
+            "rank": 1
+          },
+          {
+            "name": "Segen des Infernos",
+            "rank": 1
+          },
+          {
+            "name": "Bebende Erde",
+            "rank": 1
+          },
+          {
+            "name": "Zukunftsplanung",
+            "rank": 1
+          },
+          {
+            "name": "Verflochtene Fäden",
+            "rank": 1
+          },
+          {
+            "name": "Mächtiges Inferno",
+            "rank": 1
+          },
+          {
+            "name": "Duplikat",
+            "rank": 1
+          },
+          {
+            "name": "Verstärkung",
+            "rank": 1
+          },
+          {
+            "name": "Chronoschutz",
+            "rank": 1
+          },
+          {
+            "name": "Weyrnstein verschenken",
+            "rank": 1
+          },
+          {
+            "name": "Drakonische Einstimmungen",
+            "rank": 1
+          }
+        ],
+        "class": [
+          {
+            "name": "Obsidianschuppen",
+            "rank": 1
+          },
+          {
+            "name": "Entgiften",
+            "rank": 1
+          },
+          {
+            "name": "Schwere Flügelschläge",
+            "rank": 1
+          },
+          {
+            "name": "Tiefgrüne Umarmung",
+            "rank": 1
+          },
+          {
+            "name": "Angeborene Magie",
+            "rank": 1
+          },
+          {
+            "name": "Obsidianbollwerk",
+            "rank": 1
+          },
+          {
+            "name": "Scharlachrote Anpassung",
+            "rank": 1
+          },
+          {
+            "name": "Inneres Strahlen",
+            "rank": 1
+          },
+          {
+            "name": "Kauterisierende Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Instinktives Arkana",
+            "rank": 1
+          },
+          {
+            "name": "Zeitdruck",
+            "rank": 1
+          },
+          {
+            "name": "Auf den Traum eingestimmt",
+            "rank": 1
+          },
+          {
+            "name": "Ausgefahrene Krallen",
+            "rank": 1
+          },
+          {
+            "name": "Angeborene Widerstandsfähigkeit",
+            "rank": 1
+          },
+          {
+            "name": "Drakonisches Vermächtnis",
+            "rank": 1
+          },
+          {
+            "name": "Ergiebige Blüte",
+            "rank": 1
+          },
+          {
+            "name": "Regenerative Magie",
+            "rank": 1
+          },
+          {
+            "name": "Schmelzofen",
+            "rank": 1
+          },
+          {
+            "name": "Überschwang",
+            "rank": 1
+          },
+          {
+            "name": "Erneuernde Flammen",
+            "rank": 1
+          },
+          {
+            "name": "Allheilmittel",
+            "rank": 1
+          },
+          {
+            "name": "Zunichte machen",
+            "rank": 1
+          },
+          {
+            "name": "Fokusse des Lebens",
+            "rank": 1
+          },
+          {
+            "name": "Retten",
+            "rank": 1
+          },
+          {
+            "name": "Üppiges Wachstum",
+            "rank": 1
+          },
+          {
+            "name": "Quell der Magie",
+            "rank": 1
+          },
+          {
+            "name": "Springende Flammen",
+            "rank": 1
+          },
+          {
+            "name": "Meisterschaft über die Lüfte",
+            "rank": 1
+          },
+          {
+            "name": "Mächtiges Mana",
+            "rank": 1
+          },
+          {
+            "name": "Zeitspirale",
+            "rank": 1
+          },
+          {
+            "name": "Zephyr",
+            "rank": 1
+          },
+          {
+            "name": "Rufer",
+            "rank": 1
+          },
+          {
+            "name": "Erdrutsch",
+            "rank": 1
+          },
+          {
+            "name": "Natürliche Konvergenz",
+            "rank": 1
+          },
+          {
+            "name": "Entflammt",
+            "rank": 1
+          },
+          {
+            "name": "Uralte Flamme",
+            "rank": 1
+          },
+          {
+            "name": "Tyrannisierendes Brüllen",
+            "rank": 1
+          },
+          {
+            "name": "Übermannen",
+            "rank": 1
+          },
+          {
+            "name": "Zeit dehnen",
+            "rank": 1
+          },
+          {
+            "name": "Umhauender Feger",
+            "rank": 1
+          },
+          {
+            "name": "Verlängerter Flug",
+            "rank": 1
+          },
+          {
+            "name": "Schrecken der Lüfte",
+            "rank": 1
+          },
+          {
+            "name": "Zwillingswächter",
+            "rank": 1
+          },
+          {
+            "name": "Schlafwandeln",
+            "rank": 1
+          }
+        ],
         "other": []
       },
       "selectedTalents": [
@@ -2292,16 +3162,6 @@
           "column": 10
         },
         {
-          "id": 377100,
-          "name": "Exhilarating Burst",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_essenceburst3.jpg",
-          "rank": 2,
-          "hero": false,
-          "important": false,
-          "row": 5,
-          "column": 11
-        },
-        {
           "id": 359793,
           "name": "Fluttering Seedlings",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_herbalism_70_yserallineseed.jpg",
@@ -2350,6 +3210,16 @@
           "important": false,
           "row": 6,
           "column": 14
+        },
+        {
+          "id": 385696,
+          "name": "Flow State",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_timespiral.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 5,
+          "column": 15
         },
         {
           "id": 373861,
@@ -2482,6 +3352,26 @@
           "column": 4
         },
         {
+          "id": 374346,
+          "name": "Overawe",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_oppressingroar2.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 2,
+          "column": 2
+        },
+        {
+          "id": 372048,
+          "name": "Oppressing Roar",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_oppressingroar.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 3,
+          "column": 2
+        },
+        {
           "id": 376166,
           "name": "Draconic Legacy",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_helm_mail_dracthyrquest_b_02.jpg",
@@ -2522,16 +3412,6 @@
           "column": 5
         },
         {
-          "id": 410352,
-          "name": "Stretch Time",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_timedilation.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 0
-        },
-        {
           "id": 375510,
           "name": "Blast Furnace",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_firebreath.jpg",
@@ -2539,6 +3419,16 @@
           "hero": false,
           "important": false,
           "row": 4,
+          "column": 1
+        },
+        {
+          "id": 376164,
+          "name": "Instinctive Arcana",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_arcane_studentofmagic.jpg",
+          "rank": 2,
+          "hero": false,
+          "important": false,
+          "row": 6,
           "column": 1
         },
         {
@@ -2622,16 +3512,6 @@
           "column": 5
         },
         {
-          "id": 371032,
-          "name": "Terror of the Skies",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_terroroftheskies.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 1,
-          "column": 1
-        },
-        {
           "id": 369939,
           "name": "Leaping Flames",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_pupilofalexstraza.jpg",
@@ -2640,16 +3520,6 @@
           "important": false,
           "row": 2,
           "column": 1
-        },
-        {
-          "id": 375574,
-          "name": "Foci of Life",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_fire_incinerate.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 3,
-          "column": 3
         },
         {
           "id": 374227,
@@ -2682,16 +3552,6 @@
           "column": 5
         },
         {
-          "id": 375517,
-          "name": "Extended Flight",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_hover.jpg",
-          "rank": 2,
-          "hero": false,
-          "important": false,
-          "row": 5,
-          "column": 4
-        },
-        {
           "id": 370553,
           "name": "Tip the Scales",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_tipthescales.jpg",
@@ -2720,6 +3580,16 @@
           "important": false,
           "row": 2,
           "column": 3
+        },
+        {
+          "id": 387787,
+          "name": "Regenerative Magic",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_frost_manarecharge.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 4,
+          "column": 0
         },
         {
           "id": 374348,
@@ -2842,6 +3712,16 @@
           "column": 5
         },
         {
+          "id": 443264,
+          "name": "Titan's Gift",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/spell_fireresistancetotem_01.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 1,
+          "column": 12
+        },
+        {
           "id": 443177,
           "name": "Lifespark",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_masterylifebinder_red.jpg",
@@ -2869,16 +3749,6 @@
           "hero": false,
           "important": false,
           "row": 9,
-          "column": 3
-        },
-        {
-          "id": 375443,
-          "name": "Clobbering Sweep",
-          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_racial_tailswipe.jpg",
-          "rank": 1,
-          "hero": false,
-          "important": false,
-          "row": 7,
           "column": 3
         },
         {
@@ -2912,6 +3782,16 @@
           "column": 7
         },
         {
+          "id": 369909,
+          "name": "Protracted Talons",
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_azurestrike.jpg",
+          "rank": 1,
+          "hero": false,
+          "important": false,
+          "row": 5,
+          "column": 1
+        },
+        {
           "id": 1256689,
           "name": "Merithra's Blessing",
           "icon": "https://render.worldofwarcraft.com/eu/icons/56/ability_evoker_giftoftheaspects.jpg",
@@ -2922,7 +3802,7 @@
           "column": 13
         }
       ],
-      "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYGzghZyMmBAAAMzMTzYmZmZbMDAMmBWAbgZYCZjxmhZAmZYA",
+      "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGzYYMPwsZGw2wAAAzYGzMjhZiZmBAAAMzMTGmZMbzMDAMmBWAbgZYCZzM2MMAmZGD",
       "wowheadTalentUrl": "https://www.wowhead.com/talent-calc/evoker/preservation",
       "gear": {
         "created_at": "2026-10-18T18:11:33.756Z",
@@ -3612,27 +4492,27 @@
         {
           "season": "season-mn-2",
           "scores": {
-            "all": 3379.1,
+            "all": 3408.5,
             "dps": 2126.5,
-            "healer": 3379.1,
+            "healer": 3408.5,
             "tank": 0,
             "spec_0": 2126.5,
-            "spec_1": 3379.1,
+            "spec_1": 3408.5,
             "spec_2": 0,
             "spec_3": 0
           },
           "segments": {
             "all": {
-              "score": 3379.1,
-              "color": "#ae38e3"
+              "score": 3408.5,
+              "color": "#ae39e2"
             },
             "dps": {
               "score": 2126.5,
               "color": "#1eff00"
             },
             "healer": {
-              "score": 3379.1,
-              "color": "#ae38e3"
+              "score": 3408.5,
+              "color": "#ae39e2"
             },
             "tank": {
               "score": 0,
@@ -3643,8 +4523,8 @@
               "color": "#1eff00"
             },
             "spec_1": {
-              "score": 3379.1,
-              "color": "#ae38e3"
+              "score": 3408.5,
+              "color": "#ae39e2"
             },
             "spec_2": {
               "score": 0,
@@ -3706,43 +4586,43 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 268241,
-          "region": 81856,
-          "realm": 1083
+          "world": 245372,
+          "region": 74351,
+          "realm": 985
         },
         "class": {
-          "world": 1999,
-          "region": 779,
-          "realm": 10
+          "world": 1728,
+          "region": 670,
+          "realm": 8
         },
         "healer": {
-          "world": 53513,
-          "region": 16240,
-          "realm": 207
+          "world": 48874,
+          "region": 14719,
+          "realm": 189
         },
         "class_healer": {
-          "world": 1214,
-          "region": 396,
+          "world": 1072,
+          "region": 358,
           "realm": 4
         },
         "dps": {
-          "world": 1114227,
-          "region": 352946,
-          "realm": 4624
+          "world": 1115256,
+          "region": 353130,
+          "realm": 4627
         },
         "class_dps": {
-          "world": 16988,
-          "region": 6937,
+          "world": 17004,
+          "region": 6938,
           "realm": 98
         },
         "spec_1467": {
-          "world": 13900,
-          "region": 5528,
+          "world": 13918,
+          "region": 5531,
           "realm": 80
         },
         "spec_1468": {
-          "world": 1214,
-          "region": 396,
+          "world": 1072,
+          "region": 358,
           "realm": 4
         },
         "spec_1473": {
@@ -3783,6 +4663,16 @@
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/21488081-17-den-of-nalorakk"
         },
         {
+          "dungeon": "Ruby Life Pools",
+          "shortName": "RLP",
+          "level": 17,
+          "score": 440.4,
+          "upgrades": 1,
+          "clearTimeMs": 1659875,
+          "completedAt": "2026-10-18T19:23:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/21516438-17-ruby-life-pools"
+        },
+        {
           "dungeon": "Murder Row",
           "shortName": "MR",
           "level": 15,
@@ -3813,16 +4703,6 @@
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/13245913-15-the-blinding-vale"
         },
         {
-          "dungeon": "Ruby Life Pools",
-          "shortName": "RLP",
-          "level": 15,
-          "score": 411,
-          "upgrades": 1,
-          "clearTimeMs": 1633501,
-          "completedAt": "2026-09-16T08:21:54.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/12742176-15-ruby-life-pools"
-        },
-        {
           "dungeon": "Voidscar Arena",
           "shortName": "VSA",
           "level": 14,
@@ -3843,6 +4723,16 @@
           "clearTimeMs": 1890863,
           "completedAt": "2026-10-18T21:22:49.000Z",
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/21488081-17-den-of-nalorakk"
+        },
+        {
+          "dungeon": "Ruby Life Pools",
+          "shortName": "RLP",
+          "level": 17,
+          "score": 440.4,
+          "upgrades": 1,
+          "clearTimeMs": 1659875,
+          "completedAt": "2026-10-18T19:23:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/21516438-17-ruby-life-pools"
         },
         {
           "dungeon": "Temple of Sethraliss",
@@ -3923,19 +4813,19 @@
           "clearTimeMs": 1323388,
           "completedAt": "2026-10-13T19:57:53.000Z",
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/20531578-12-kings-rest"
-        },
-        {
-          "dungeon": "Altar of Fangs",
-          "shortName": "AOF",
-          "level": 12,
-          "score": 375.8,
-          "upgrades": 2,
-          "clearTimeMs": 1281402,
-          "completedAt": "2026-10-11T19:21:00.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/20044025-12-altar-of-fangs"
         }
       ],
       "weeklyHighestRuns": [
+        {
+          "dungeon": "Ruby Life Pools",
+          "shortName": "RLP",
+          "level": 17,
+          "score": 440.4,
+          "upgrades": 1,
+          "clearTimeMs": 1659875,
+          "completedAt": "2026-10-18T19:23:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/21516438-17-ruby-life-pools"
+        },
         {
           "dungeon": "Temple of Sethraliss",
           "shortName": "TOS",
@@ -6875,43 +7765,43 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 2208666,
-          "region": 713299,
-          "realm": 9199
+          "world": 2210219,
+          "region": 713563,
+          "realm": 9201
         },
         "class": {
-          "world": 120373,
-          "region": 43296,
+          "world": 120486,
+          "region": 43314,
           "realm": 572
         },
         "tank": {
-          "world": 562176,
-          "region": 181078,
+          "world": 562584,
+          "region": 181146,
           "realm": 2382
         },
         "class_tank": {
-          "world": 55864,
-          "region": 20176,
+          "world": 55908,
+          "region": 20183,
           "realm": 278
         },
         "dps": {
-          "world": 2065186,
-          "region": 651337,
-          "realm": 8168
+          "world": 2066572,
+          "region": 651557,
+          "realm": 8171
         },
         "class_dps": {
-          "world": 131673,
-          "region": 44878,
-          "realm": 555
+          "world": 131755,
+          "region": 44896,
+          "realm": 556
         },
         "spec_577": {
-          "world": 91627,
-          "region": 29267,
-          "realm": 351
+          "world": 91695,
+          "region": 29277,
+          "realm": 352
         },
         "spec_581": {
-          "world": 55864,
-          "region": 20176,
+          "world": 55908,
+          "region": 20183,
           "realm": 278
         },
         "spec_1480": {
@@ -8546,7 +9436,7 @@
       "level": 90,
       "className": "Priester",
       "classId": 5,
-      "classIcon": null,
+      "classIcon": "https://render.worldofwarcraft.com/eu/icons/56/626004.jpg",
       "specName": "Disziplin",
       "faction": "Allianz",
       "itemLevel": 246,
@@ -12630,23 +13520,23 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 2022173,
-          "region": 650344,
-          "realm": 8439
+          "world": 2023689,
+          "region": 650605,
+          "realm": 8442
         },
         "class": {
-          "world": 90700,
-          "region": 34260,
+          "world": 90764,
+          "region": 34272,
           "realm": 445
         },
         "tank": {
-          "world": 467026,
-          "region": 150477,
+          "world": 467376,
+          "region": 150545,
           "realm": 1972
         },
         "class_tank": {
-          "world": 30669,
-          "region": 11691,
+          "world": 30687,
+          "region": 11692,
           "realm": 162
         },
         "healer": {
@@ -12670,8 +13560,8 @@
           "realm": 0
         },
         "spec_268": {
-          "world": 30669,
-          "region": 11691,
+          "world": 30687,
+          "region": 11692,
           "realm": 162
         },
         "spec_270": {
@@ -12925,7 +13815,7 @@
                 {
                   "id": 677,
                   "name": "Will of the Emperor",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41391.jpg",
+                  "image": null,
                   "kills": 16
                 }
               ]
@@ -12968,7 +13858,7 @@
                 {
                   "id": 677,
                   "name": "Will of the Emperor",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41391.jpg",
+                  "image": null,
                   "kills": 6
                 }
               ]
@@ -13011,7 +13901,7 @@
                 {
                   "id": 677,
                   "name": "Will of the Emperor",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41391.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -13054,7 +13944,7 @@
                 {
                   "id": 677,
                   "name": "Will of the Emperor",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41391.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -13267,7 +14157,7 @@
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
+                  "image": null,
                   "kills": 24
                 }
               ]
@@ -13298,7 +14188,7 @@
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -13329,7 +14219,7 @@
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -13360,7 +14250,7 @@
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -13384,13 +14274,13 @@
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
+                  "image": null,
                   "kills": 20
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
+                  "image": null,
                   "kills": 22
                 },
                 {
@@ -13402,7 +14292,7 @@
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
+                  "image": null,
                   "kills": 20
                 },
                 {
@@ -13414,7 +14304,7 @@
                 {
                   "id": 818,
                   "name": "Durumu the Forgotten",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47189.jpg",
+                  "image": null,
                   "kills": 20
                 },
                 {
@@ -13426,7 +14316,7 @@
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
+                  "image": null,
                   "kills": 12
                 },
                 {
@@ -13438,13 +14328,13 @@
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
+                  "image": null,
                   "kills": 18
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
+                  "image": null,
                   "kills": 18
                 },
                 {
@@ -13469,13 +14359,13 @@
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
@@ -13487,7 +14377,7 @@
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13499,7 +14389,7 @@
                 {
                   "id": 818,
                   "name": "Durumu the Forgotten",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47189.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13511,7 +14401,7 @@
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13523,13 +14413,13 @@
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13554,13 +14444,13 @@
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13572,7 +14462,7 @@
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13584,7 +14474,7 @@
                 {
                   "id": 818,
                   "name": "Durumu the Forgotten",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47189.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13596,7 +14486,7 @@
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13608,13 +14498,13 @@
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13639,13 +14529,13 @@
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13657,7 +14547,7 @@
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13669,7 +14559,7 @@
                 {
                   "id": 818,
                   "name": "Durumu the Forgotten",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47189.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13681,7 +14571,7 @@
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13693,13 +14583,13 @@
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13723,7 +14613,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 16
                 },
                 {
@@ -13735,7 +14625,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 16
                 },
                 {
@@ -13753,7 +14643,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13765,13 +14655,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 8
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 8
                 },
                 {
@@ -13783,7 +14673,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 6
                 },
                 {
@@ -13795,13 +14685,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 10
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -13820,7 +14710,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 12
                 },
                 {
@@ -13832,7 +14722,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 11
                 },
                 {
@@ -13850,7 +14740,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13862,13 +14752,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 7
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13880,7 +14770,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 10
                 },
                 {
@@ -13892,13 +14782,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13917,7 +14807,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13929,7 +14819,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13947,7 +14837,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -13959,13 +14849,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13977,7 +14867,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -13989,13 +14879,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14014,7 +14904,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 21
                 },
                 {
@@ -14026,7 +14916,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 18
                 },
                 {
@@ -14044,7 +14934,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14056,13 +14946,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 14
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 12
                 },
                 {
@@ -14074,7 +14964,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 10
                 },
                 {
@@ -14086,13 +14976,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 7
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 8
                 },
                 {
@@ -14111,7 +15001,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 12
                 },
                 {
@@ -14123,7 +15013,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 11
                 },
                 {
@@ -14141,7 +15031,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14153,13 +15043,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 7
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14171,7 +15061,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 10
                 },
                 {
@@ -14183,13 +15073,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14208,7 +15098,7 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14220,7 +15110,7 @@
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14238,7 +15128,7 @@
                 {
                   "id": 881,
                   "name": "Galakras",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14250,13 +15140,13 @@
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14268,7 +15158,7 @@
                 {
                   "id": 870,
                   "name": "Spoils of Pandaria",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51173.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14280,13 +15170,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48674.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14310,7 +15200,7 @@
                 {
                   "id": 1529,
                   "name": "Razorgore the Untamed",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-10115.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14334,19 +15224,19 @@
                 {
                   "id": 1533,
                   "name": "Ebonroc",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-6377.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1534,
                   "name": "Flamegor",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-6377.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1535,
                   "name": "Chromaggus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-14367.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14370,7 +15260,7 @@
                 {
                   "id": 1566,
                   "name": "Magtheridon",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-18527.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -14388,7 +15278,7 @@
                 {
                   "id": 1577,
                   "name": "Rage Winterchill",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-17444.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14412,7 +15302,7 @@
                 {
                   "id": 1581,
                   "name": "Archimonde",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-20939.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -14430,7 +15320,7 @@
                 {
                   "id": 1582,
                   "name": "High Warlord Naj'entus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21174.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14496,7 +15386,7 @@
                 {
                   "id": 1616,
                   "name": "Sartharion",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-27039.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -14568,7 +15458,7 @@
                 {
                   "id": 1646,
                   "name": "Freya",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-29176.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -14622,13 +15512,13 @@
                 {
                   "id": 1620,
                   "name": "Champions of the Alliance",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-29780.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 1621,
                   "name": "Champions of the Horde",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-29782.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -14665,13 +15555,13 @@
                 {
                   "id": 1620,
                   "name": "Champions of the Alliance",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-29780.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 1621,
                   "name": "Champions of the Horde",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-29782.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -15107,7 +15997,7 @@
                 {
                   "id": 158,
                   "name": "Ascendant Council",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-34825.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -15144,7 +16034,7 @@
                 {
                   "id": 158,
                   "name": "Ascendant Council",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-34825.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -28139,25 +29029,25 @@
   "mythicPlus": {
     "classShares": [
       {
-        "score": 3379,
+        "score": 3409,
         "label": "Rufer",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 56.2
+        "percent": 56.4
       },
       {
         "score": 1545,
         "label": "Mönch",
         "className": "Mönch",
         "character": "Liezen",
-        "percent": 25.7
+        "percent": 25.6
       },
       {
         "score": 1089,
         "label": "Dämonenjäger",
         "className": "Dämonenjäger",
         "character": "Gotdilf",
-        "percent": 18.1
+        "percent": 18
       },
       {
         "score": 0,
@@ -28225,25 +29115,25 @@
     ],
     "specShares": [
       {
-        "score": 3379,
+        "score": 3409,
         "label": "Bewahrung",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 56.2
+        "percent": 56.4
       },
       {
         "score": 1545,
         "label": "Braumeister",
         "className": "Mönch",
         "character": "Liezen",
-        "percent": 25.7
+        "percent": 25.6
       },
       {
         "score": 1089,
         "label": "Rachsucht",
         "className": "Dämonenjäger",
         "character": "Gotdilf",
-        "percent": 18.1
+        "percent": 18
       },
       {
         "score": 0,
@@ -28393,7 +29283,7 @@
     },
     "season-mn-2": {
       "bestMythicPlus": {
-        "score": 3379,
+        "score": 3409,
         "character": "Bufferrari",
         "className": "Rufer",
         "specName": "Bewahrung"
