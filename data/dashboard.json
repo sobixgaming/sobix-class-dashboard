@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T21:13:26.315Z",
+  "generatedAt": "2026-11-07T01:31:45.275Z",
   "region": "eu",
   "realm": "eredar",
   "maxLevel": 90,
@@ -18,7 +18,7 @@
     "raiderIO": {
       "online": true
     },
-    "nextUpdateAt": "2026-11-06T22:00:00.000Z"
+    "nextUpdateAt": "2026-11-07T02:00:00.000Z"
   },
   "weeklyProgress": {
     "resetKey": "2026-11-04T05:00:00.000Z",
@@ -51,25 +51,35 @@
         "dungeon": "Altar of Fangs",
         "shortName": "AOF",
         "level": 17,
+        "score": 444.3,
+        "upgrades": 1,
+        "clearTimeMs": 1591608,
+        "completedAt": "2026-11-06T22:41:52.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/24956331-17-altar-of-fangs"
+      },
+      {
+        "dungeon": "Den of Nalorakk",
+        "shortName": "DON",
+        "level": 17,
+        "score": 443.8,
+        "upgrades": 1,
+        "clearTimeMs": 1723442,
+        "completedAt": "2026-11-06T21:56:33.000Z",
+        "url": "https://raider.io/mythic-plus-runs/season-mn-2/24953820-17-den-of-nalorakk"
+      },
+      {
+        "dungeon": "Altar of Fangs",
+        "shortName": "AOF",
+        "level": 17,
         "score": 443.7,
         "upgrades": 1,
         "clearTimeMs": 1622031,
         "completedAt": "2026-11-05T21:13:54.000Z",
         "url": "https://raider.io/mythic-plus-runs/season-mn-2/24847593-17-altar-of-fangs"
-      },
-      {
-        "dungeon": "Kings' Rest",
-        "shortName": "KR",
-        "level": 11,
-        "score": 348.1,
-        "upgrades": 2,
-        "clearTimeMs": 1288983,
-        "completedAt": "2026-11-04T10:00:18.000Z",
-        "url": "https://raider.io/mythic-plus-runs/season-mn-2/24650749-11-kings-rest"
       }
     ],
     "highestKey": 18,
-    "timedDungeons": 3,
+    "timedDungeons": 5,
     "raidBosses": [
       {
         "raid": "The Venomous Abyss",
@@ -94,7 +104,7 @@
           {
             "id": 2874,
             "name": "Entombed Sentinels",
-            "image": null,
+            "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
             "difficulties": {
               "Raid Finder": 0,
               "Normal": 0,
@@ -3876,10 +3886,10 @@
       "talentImportCode": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGzYYMPwsZGw2wAAAzYGzMjhZiZmBAAAMzMTzwMzMGzAAjZgFwGYGmQ2MjNDDgZGGA",
       "wowheadTalentUrl": "https://www.wowhead.com/talent-calc/evoker/preservation",
       "gear": {
-        "created_at": "2026-11-05T01:12:24.208Z",
-        "updated_at": "2026-11-05T01:12:24.208Z",
-        "source": "s3",
-        "item_level_equipped": 333,
+        "created_at": "2026-11-06T22:58:25.000Z",
+        "updated_at": "2026-11-06T22:58:25.000Z",
+        "source": "db",
+        "item_level_equipped": 333.938,
         "item_level_total": 0,
         "artifact_traits": 0,
         "corruption": {
@@ -4275,12 +4285,11 @@
             "enchants": [],
             "enchants_detail": [],
             "bonuses": [
-              13334,
-              6652,
-              14049,
+              12854,
+              13335,
               13691,
-              13697,
-              12854
+              6652,
+              13697
             ]
           },
           "legs": {
@@ -4514,7 +4523,8 @@
             "gems": [],
             "gems_detail": [],
             "enchants": [
-              8689
+              8689,
+              8052
             ],
             "enchants_detail": [
               {
@@ -4560,39 +4570,39 @@
         {
           "season": "season-mn-2",
           "scores": {
-            "all": 3525.7,
-            "dps": 2126.5,
-            "healer": 3525.7,
+            "all": 3561.4,
+            "dps": 2195.6,
+            "healer": 3558.1,
             "tank": 0,
-            "spec_0": 2126.5,
-            "spec_1": 3525.7,
+            "spec_0": 2195.6,
+            "spec_1": 3558.1,
             "spec_2": 0,
             "spec_3": 0
           },
           "segments": {
             "all": {
-              "score": 3525.7,
-              "color": "#b73cd8"
+              "score": 3561.4,
+              "color": "#bb3ed2"
             },
             "dps": {
-              "score": 2126.5,
-              "color": "#32ff19"
+              "score": 2195.6,
+              "color": "#1eff00"
             },
             "healer": {
-              "score": 3525.7,
-              "color": "#b73cd8"
+              "score": 3558.1,
+              "color": "#bb3ed2"
             },
             "tank": {
               "score": 0,
               "color": "#ffffff"
             },
             "spec_0": {
-              "score": 2126.5,
-              "color": "#32ff19"
+              "score": 2195.6,
+              "color": "#1eff00"
             },
             "spec_1": {
-              "score": 3525.7,
-              "color": "#b73cd8"
+              "score": 3558.1,
+              "color": "#bb3ed2"
             },
             "spec_2": {
               "score": 0,
@@ -4654,43 +4664,43 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 238922,
-          "region": 66268,
-          "realm": 905
+          "world": 209520,
+          "region": 56591,
+          "realm": 789
         },
         "class": {
-          "world": 1496,
-          "region": 589,
-          "realm": 9
+          "world": 1249,
+          "region": 487,
+          "realm": 8
         },
         "healer": {
-          "world": 47150,
-          "region": 12995,
-          "realm": 177
+          "world": 41795,
+          "region": 11265,
+          "realm": 157
         },
         "class_healer": {
-          "world": 898,
-          "region": 278,
+          "world": 768,
+          "region": 235,
           "realm": 4
         },
         "dps": {
-          "world": 1220563,
-          "region": 382415,
-          "realm": 5004
+          "world": 1193285,
+          "region": 373590,
+          "realm": 4904
         },
         "class_dps": {
-          "world": 18524,
-          "region": 7481,
-          "realm": 107
+          "world": 17919,
+          "region": 7257,
+          "realm": 105
         },
         "spec_1467": {
-          "world": 14953,
-          "region": 5882,
-          "realm": 85
+          "world": 14460,
+          "region": 5700,
+          "realm": 84
         },
         "spec_1468": {
-          "world": 898,
-          "region": 278,
+          "world": 768,
+          "region": 235,
           "realm": 4
         },
         "spec_1473": {
@@ -4734,11 +4744,31 @@
           "dungeon": "Altar of Fangs",
           "shortName": "AOF",
           "level": 17,
-          "score": 443.7,
+          "score": 444.3,
           "upgrades": 1,
-          "clearTimeMs": 1622031,
-          "completedAt": "2026-11-05T21:13:54.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24847593-17-altar-of-fangs"
+          "clearTimeMs": 1591608,
+          "completedAt": "2026-11-06T22:41:52.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24956331-17-altar-of-fangs"
+        },
+        {
+          "dungeon": "Den of Nalorakk",
+          "shortName": "DON",
+          "level": 17,
+          "score": 443.8,
+          "upgrades": 1,
+          "clearTimeMs": 1723442,
+          "completedAt": "2026-11-06T21:56:33.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24953820-17-den-of-nalorakk"
+        },
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 17,
+          "score": 443.5,
+          "upgrades": 1,
+          "clearTimeMs": 1630678,
+          "completedAt": "2026-11-06T23:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24958950-17-the-blinding-vale"
         },
         {
           "dungeon": "Kings' Rest",
@@ -4751,16 +4781,6 @@
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/21246524-17-kings-rest"
         },
         {
-          "dungeon": "Den of Nalorakk",
-          "shortName": "DON",
-          "level": 17,
-          "score": 440.6,
-          "upgrades": 1,
-          "clearTimeMs": 1890863,
-          "completedAt": "2026-10-18T21:22:49.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/21488081-17-den-of-nalorakk"
-        },
-        {
           "dungeon": "Ruby Life Pools",
           "shortName": "RLP",
           "level": 17,
@@ -4769,19 +4789,39 @@
           "clearTimeMs": 1659875,
           "completedAt": "2026-10-18T19:23:08.000Z",
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/21516438-17-ruby-life-pools"
-        },
-        {
-          "dungeon": "The Blinding Vale",
-          "shortName": "BV",
-          "level": 15,
-          "score": 411.7,
-          "upgrades": 1,
-          "clearTimeMs": 1717974,
-          "completedAt": "2026-09-17T22:23:38.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/13245913-15-the-blinding-vale"
         }
       ],
       "recentRuns": [
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 17,
+          "score": 443.5,
+          "upgrades": 1,
+          "clearTimeMs": 1630678,
+          "completedAt": "2026-11-06T23:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24958950-17-the-blinding-vale"
+        },
+        {
+          "dungeon": "Altar of Fangs",
+          "shortName": "AOF",
+          "level": 17,
+          "score": 444.3,
+          "upgrades": 1,
+          "clearTimeMs": 1591608,
+          "completedAt": "2026-11-06T22:41:52.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24956331-17-altar-of-fangs"
+        },
+        {
+          "dungeon": "Den of Nalorakk",
+          "shortName": "DON",
+          "level": 17,
+          "score": 443.8,
+          "upgrades": 1,
+          "clearTimeMs": 1723442,
+          "completedAt": "2026-11-06T21:56:33.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24953820-17-den-of-nalorakk"
+        },
         {
           "dungeon": "Voidscar Arena",
           "shortName": "VSA",
@@ -4851,36 +4891,6 @@
           "clearTimeMs": 1530788,
           "completedAt": "2026-11-03T20:46:26.000Z",
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/24587157-16-altar-of-fangs"
-        },
-        {
-          "dungeon": "Temple of Sethraliss",
-          "shortName": "TOS",
-          "level": 15,
-          "score": 418.9,
-          "upgrades": 2,
-          "clearTimeMs": 1461901,
-          "completedAt": "2026-11-03T20:10:09.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24583544-15-temple-of-sethraliss"
-        },
-        {
-          "dungeon": "Voidscar Arena",
-          "shortName": "VSA",
-          "level": 17,
-          "score": 440.6,
-          "upgrades": 1,
-          "clearTimeMs": 1772801,
-          "completedAt": "2026-10-30T22:12:26.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/23895881-17-voidscar-arena"
-        },
-        {
-          "dungeon": "Altar of Fangs",
-          "shortName": "AOF",
-          "level": 12,
-          "score": 380,
-          "upgrades": 3,
-          "clearTimeMs": 1058472,
-          "completedAt": "2026-10-30T21:03:45.000Z",
-          "url": "https://raider.io/mythic-plus-runs/season-mn-2/23891098-12-altar-of-fangs"
         }
       ],
       "weeklyHighestRuns": [
@@ -4908,11 +4918,41 @@
           "dungeon": "Altar of Fangs",
           "shortName": "AOF",
           "level": 17,
+          "score": 444.3,
+          "upgrades": 1,
+          "clearTimeMs": 1591608,
+          "completedAt": "2026-11-06T22:41:52.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24956331-17-altar-of-fangs"
+        },
+        {
+          "dungeon": "Altar of Fangs",
+          "shortName": "AOF",
+          "level": 17,
           "score": 443.7,
           "upgrades": 1,
           "clearTimeMs": 1622031,
           "completedAt": "2026-11-05T21:13:54.000Z",
           "url": "https://raider.io/mythic-plus-runs/season-mn-2/24847593-17-altar-of-fangs"
+        },
+        {
+          "dungeon": "The Blinding Vale",
+          "shortName": "BV",
+          "level": 17,
+          "score": 443.5,
+          "upgrades": 1,
+          "clearTimeMs": 1630678,
+          "completedAt": "2026-11-06T23:32:08.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24958950-17-the-blinding-vale"
+        },
+        {
+          "dungeon": "Den of Nalorakk",
+          "shortName": "DON",
+          "level": 17,
+          "score": 443.8,
+          "upgrades": 1,
+          "clearTimeMs": 1723442,
+          "completedAt": "2026-11-06T21:56:33.000Z",
+          "url": "https://raider.io/mythic-plus-runs/season-mn-2/24953820-17-den-of-nalorakk"
         },
         {
           "dungeon": "Kings' Rest",
@@ -4980,55 +5020,55 @@
                 {
                   "id": 1582,
                   "name": "High Warlord Naj'entus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21174.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1583,
                   "name": "Supremus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21145.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1584,
                   "name": "Shade of Akama",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21357.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1585,
                   "name": "Teron Gorefiend",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21262.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1586,
                   "name": "Gurtogg Bloodboil",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21443.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1587,
                   "name": "Reliquary of Souls",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21483.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1588,
                   "name": "Mother Shahraz",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21252.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1589,
                   "name": "The Illidari Council",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21416.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 1590,
                   "name": "Illidan Stormrage",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-21135.jpg",
+                  "image": null,
                   "kills": 14
                 }
               ]
@@ -5046,7 +5086,7 @@
                 {
                   "id": 1651,
                   "name": "Onyxia",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-8570.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -5059,7 +5099,7 @@
                 {
                   "id": 1651,
                   "name": "Onyxia",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-8570.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -5077,37 +5117,37 @@
                 {
                   "id": 2522,
                   "name": "Kazzara, the Hellforged",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111505.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2529,
                   "name": "The Amalgamation Chamber",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111850.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2530,
                   "name": "The Forgotten Experiments",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111623.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2524,
                   "name": "Assault of the Zaqali",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111276.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2525,
                   "name": "Rashok, the Elder",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-112109.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111477.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111635.jpg",
                   "kills": 1
                 },
                 {
@@ -5119,13 +5159,13 @@
                 {
                   "id": 2523,
                   "name": "Echo of Neltharion",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111794.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2520,
                   "name": "Scalecommander Sarkareth",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111664.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111768.jpg",
                   "kills": 1
                 }
               ]
@@ -5143,7 +5183,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -5156,7 +5196,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -5169,7 +5209,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 7
                 }
               ]
@@ -5182,7 +5222,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 9
                 }
               ]
@@ -5200,37 +5240,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 2
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -5243,37 +5283,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 2
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -5286,37 +5326,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 6
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 5
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -5329,37 +5369,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 6
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -5377,7 +5417,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -5396,7 +5436,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 3
                 },
                 {
@@ -5415,7 +5455,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -5520,7 +5560,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 1
                 },
                 {
@@ -5575,7 +5615,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 3
                 },
                 {
@@ -5630,7 +5670,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 6
                 },
                 {
@@ -5685,7 +5725,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 2
                 },
                 {
@@ -5770,7 +5810,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -5783,7 +5823,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -5796,7 +5836,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 7
                 }
               ]
@@ -5809,7 +5849,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 9
                 }
               ]
@@ -5827,37 +5867,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 2
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -5870,37 +5910,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 2
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -5913,37 +5953,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 6
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 5
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -5956,37 +5996,37 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-137457.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2734,
                   "name": "Vorasius",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131605.jpg",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128548.jpg",
                   "kills": 6
                 },
                 {
                   "id": 2736,
                   "name": "Fallen-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131634.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2735,
                   "name": "Vaelgor & Ezzorak",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131632.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
                   "id": 2737,
                   "name": "Lightblinded Vanguard",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-131523.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -6004,7 +6044,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -6023,7 +6063,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 3
                 },
                 {
@@ -6042,7 +6082,7 @@
                 {
                   "id": 2739,
                   "name": "Belo'ren, Child of Al'ar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-130007.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -6147,7 +6187,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 1
                 },
                 {
@@ -6202,7 +6242,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 3
                 },
                 {
@@ -6257,7 +6297,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 6
                 },
                 {
@@ -6312,7 +6352,7 @@
                 {
                   "id": 2874,
                   "name": "Entombed Sentinels",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-143437.jpg",
                   "kills": 2
                 },
                 {
@@ -6397,7 +6437,7 @@
                 {
                   "id": 2607,
                   "name": "Ulgrax the Devourer",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-115708.jpg",
                   "kills": 0
                 },
                 {
@@ -6421,25 +6461,25 @@
                 {
                   "id": 2612,
                   "name": "Broodtwister Ovi'nax",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118963.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2601,
                   "name": "Nexus-Princess Ky'veza",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-117946.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2608,
                   "name": "The Silken Court",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118997.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2602,
                   "name": "Queen Ansurek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118481.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -6452,7 +6492,7 @@
                 {
                   "id": 2607,
                   "name": "Ulgrax the Devourer",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-115708.jpg",
                   "kills": 1
                 },
                 {
@@ -6476,25 +6516,25 @@
                 {
                   "id": 2612,
                   "name": "Broodtwister Ovi'nax",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118963.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2601,
                   "name": "Nexus-Princess Ky'veza",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-117946.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2608,
                   "name": "The Silken Court",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118997.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2602,
                   "name": "Queen Ansurek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-118481.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -6512,37 +6552,37 @@
                 {
                   "id": 2684,
                   "name": "Plexus Sentinel",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127837.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2686,
                   "name": "Loom'ithar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128577.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2685,
                   "name": "Soulbinder Naazindhri",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128319.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2687,
                   "name": "Forgeweaver Araz",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127526.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2688,
                   "name": "The Soul Hunters",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127562.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2747,
                   "name": "Fractillus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127984.jpg",
+                  "image": null,
                   "kills": 3
                 },
                 {
@@ -6567,37 +6607,37 @@
                 {
                   "id": 2684,
                   "name": "Plexus Sentinel",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127837.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2686,
                   "name": "Loom'ithar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128577.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2685,
                   "name": "Soulbinder Naazindhri",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128319.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2687,
                   "name": "Forgeweaver Araz",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127526.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2688,
                   "name": "The Soul Hunters",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127562.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2747,
                   "name": "Fractillus",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-127984.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -8067,43 +8107,43 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 2372544,
-          "region": 760776,
-          "realm": 9807
+          "world": 2373251,
+          "region": 761209,
+          "realm": 9812
         },
         "class": {
-          "world": 129943,
-          "region": 46403,
-          "realm": 610
+          "world": 129995,
+          "region": 46436,
+          "realm": 611
         },
         "tank": {
-          "world": 606758,
-          "region": 193938,
-          "realm": 2548
+          "world": 606945,
+          "region": 194055,
+          "realm": 2550
         },
         "class_tank": {
-          "world": 60483,
-          "region": 21607,
+          "world": 60503,
+          "region": 21622,
           "realm": 296
         },
         "dps": {
-          "world": 2222611,
-          "region": 697548,
-          "realm": 8706
+          "world": 2223291,
+          "region": 697962,
+          "realm": 8711
         },
         "class_dps": {
-          "world": 141799,
-          "region": 48198,
+          "world": 141853,
+          "region": 48235,
           "realm": 600
         },
         "spec_577": {
-          "world": 99047,
-          "region": 31575,
+          "world": 99084,
+          "region": 31601,
           "realm": 382
         },
         "spec_581": {
-          "world": 60483,
-          "region": 21607,
+          "world": 60503,
+          "region": 21622,
           "realm": 296
         },
         "spec_1480": {
@@ -11429,7 +11469,7 @@
           "name": "Herz des Windes",
           "itemLevel": 285,
           "quality": "Episch",
-          "icon": null,
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/4644003.jpg",
           "wowheadUrl": "https://www.wowhead.com/item=250256"
         },
         {
@@ -11438,7 +11478,7 @@
           "name": "Blutdornburnus",
           "itemLevel": 311,
           "quality": "Episch",
-          "icon": null,
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/7259233.jpg",
           "wowheadUrl": "https://www.wowhead.com/item=251190"
         },
         {
@@ -11447,7 +11487,7 @@
           "name": "Spaten des königlichen Läuterers",
           "itemLevel": 328,
           "quality": "Episch",
-          "icon": null,
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/1722659.jpg",
           "wowheadUrl": "https://www.wowhead.com/item=159642"
         },
         {
@@ -11456,7 +11496,7 @@
           "name": "Wohlbekannter Gildenwappenrock",
           "itemLevel": 1,
           "quality": "Episch",
-          "icon": null,
+          "icon": "https://render.worldofwarcraft.com/eu/icons/56/514261.jpg",
           "wowheadUrl": "https://www.wowhead.com/item=69210"
         }
       ],
@@ -13832,23 +13872,23 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 2178612,
-          "region": 695160,
-          "realm": 9018
+          "world": 2179271,
+          "region": 695575,
+          "realm": 9026
         },
         "class": {
-          "world": 97603,
-          "region": 36357,
-          "realm": 471
+          "world": 97636,
+          "region": 36379,
+          "realm": 472
         },
         "tank": {
-          "world": 507276,
-          "region": 162184,
-          "realm": 2119
+          "world": 507436,
+          "region": 162288,
+          "realm": 2120
         },
         "class_tank": {
-          "world": 33284,
-          "region": 12561,
+          "world": 33295,
+          "region": 12567,
           "realm": 174
         },
         "healer": {
@@ -13872,8 +13912,8 @@
           "realm": 0
         },
         "spec_268": {
-          "world": 33284,
-          "region": 12561,
+          "world": 33295,
+          "region": 12567,
           "realm": 174
         },
         "spec_270": {
@@ -14185,6 +14225,36 @@
                   "name": "The Stone Guard",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 689,
+                  "name": "Feng the Accursed",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 682,
+                  "name": "Gara'jal the Spiritbinder",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 687,
+                  "name": "The Spirit Kings",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 726,
+                  "name": "Elegon",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 677,
+                  "name": "Will of the Emperor",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -14222,6 +14292,12 @@
                   "name": "Elegon",
                   "image": null,
                   "kills": 4
+                },
+                {
+                  "id": 677,
+                  "name": "Will of the Emperor",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -14244,31 +14320,31 @@
                 {
                   "id": 744,
                   "name": "Blade Lord Ta'yak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43141.jpg",
                   "kills": 12
                 },
                 {
                   "id": 713,
                   "name": "Garalon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42368.jpg",
                   "kills": 10
                 },
                 {
                   "id": 741,
                   "name": "Wind Lord Mel'jarak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42645.jpg",
                   "kills": 10
                 },
                 {
                   "id": 737,
                   "name": "Amber-Shaper Un'sok",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43126.jpg",
                   "kills": 10
                 },
                 {
                   "id": 743,
                   "name": "Grand Empress Shek'zeer",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42730.jpg",
                   "kills": 10
                 }
               ]
@@ -14287,20 +14363,32 @@
                 {
                   "id": 744,
                   "name": "Blade Lord Ta'yak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43141.jpg",
                   "kills": 2
                 },
                 {
                   "id": 713,
                   "name": "Garalon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42368.jpg",
                   "kills": 1
                 },
                 {
                   "id": 741,
                   "name": "Wind Lord Mel'jarak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42645.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 737,
+                  "name": "Amber-Shaper Un'sok",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43126.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 743,
+                  "name": "Grand Empress Shek'zeer",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42730.jpg",
+                  "kills": 0
                 }
               ]
             },
@@ -14318,31 +14406,31 @@
                 {
                   "id": 744,
                   "name": "Blade Lord Ta'yak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43141.jpg",
                   "kills": 1
                 },
                 {
                   "id": 713,
                   "name": "Garalon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42368.jpg",
                   "kills": 1
                 },
                 {
                   "id": 741,
                   "name": "Wind Lord Mel'jarak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42645.jpg",
                   "kills": 1
                 },
                 {
                   "id": 737,
                   "name": "Amber-Shaper Un'sok",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43126.jpg",
                   "kills": 1
                 },
                 {
                   "id": 743,
                   "name": "Grand Empress Shek'zeer",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42730.jpg",
                   "kills": 1
                 }
               ]
@@ -14353,22 +14441,40 @@
               "total": 6,
               "bosses": [
                 {
+                  "id": 745,
+                  "name": "Imperial Vizier Zor'lok",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 744,
+                  "name": "Blade Lord Ta'yak",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43141.jpg",
+                  "kills": 0
+                },
+                {
                   "id": 713,
                   "name": "Garalon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42368.jpg",
                   "kills": 1
                 },
                 {
                   "id": 741,
                   "name": "Wind Lord Mel'jarak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42645.jpg",
                   "kills": 1
                 },
                 {
                   "id": 737,
                   "name": "Amber-Shaper Un'sok",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-43126.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 743,
+                  "name": "Grand Empress Shek'zeer",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42730.jpg",
+                  "kills": 0
                 }
               ]
             }
@@ -14385,25 +14491,25 @@
                 {
                   "id": 683,
                   "name": "Protectors of the Endless",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41503.jpg",
                   "kills": 22
                 },
                 {
                   "id": 742,
                   "name": "Tsulong",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42532.jpg",
                   "kills": 20
                 },
                 {
                   "id": 729,
                   "name": "Lei Shi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42811.jpg",
                   "kills": 22
                 },
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
                   "kills": 24
                 }
               ]
@@ -14416,25 +14522,25 @@
                 {
                   "id": 683,
                   "name": "Protectors of the Endless",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41503.jpg",
                   "kills": 6
                 },
                 {
                   "id": 742,
                   "name": "Tsulong",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42532.jpg",
                   "kills": 5
                 },
                 {
                   "id": 729,
                   "name": "Lei Shi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42811.jpg",
                   "kills": 5
                 },
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
                   "kills": 3
                 }
               ]
@@ -14447,25 +14553,25 @@
                 {
                   "id": 683,
                   "name": "Protectors of the Endless",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41503.jpg",
                   "kills": 1
                 },
                 {
                   "id": 742,
                   "name": "Tsulong",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42532.jpg",
                   "kills": 1
                 },
                 {
                   "id": 729,
                   "name": "Lei Shi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42811.jpg",
                   "kills": 1
                 },
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
                   "kills": 1
                 }
               ]
@@ -14478,25 +14584,25 @@
                 {
                   "id": 683,
                   "name": "Protectors of the Endless",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-41503.jpg",
                   "kills": 1
                 },
                 {
                   "id": 742,
                   "name": "Tsulong",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42532.jpg",
                   "kills": 1
                 },
                 {
                   "id": 729,
                   "name": "Lei Shi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-42811.jpg",
                   "kills": 1
                 },
                 {
                   "id": 709,
                   "name": "Sha of Fear",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-45065.jpg",
                   "kills": 1
                 }
               ]
@@ -14514,31 +14620,31 @@
                 {
                   "id": 827,
                   "name": "Jin'rokh the Breaker",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47552.jpg",
                   "kills": 20
                 },
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
                   "kills": 20
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
                   "kills": 22
                 },
                 {
                   "id": 825,
                   "name": "Tortos",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46559.jpg",
                   "kills": 18
                 },
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
                   "kills": 20
                 },
                 {
@@ -14556,32 +14662,38 @@
                 {
                   "id": 820,
                   "name": "Primordius",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47009.jpg",
                   "kills": 14
                 },
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
                   "kills": 12
                 },
                 {
                   "id": 817,
                   "name": "Iron Qon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46627.jpg",
                   "kills": 16
                 },
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
                   "kills": 18
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
                   "kills": 18
+                },
+                {
+                  "id": 831,
+                  "name": "Ra-den",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47739.jpg",
+                  "kills": 0
                 }
               ]
             },
@@ -14593,20 +14705,80 @@
                 {
                   "id": 827,
                   "name": "Jin'rokh the Breaker",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47552.jpg",
                   "kills": 8
                 },
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
                   "kills": 4
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
                   "kills": 4
+                },
+                {
+                  "id": 825,
+                  "name": "Tortos",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46559.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 821,
+                  "name": "Megaera",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 828,
+                  "name": "Ji-Kun",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 818,
+                  "name": "Durumu the Forgotten",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 820,
+                  "name": "Primordius",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47009.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 824,
+                  "name": "Dark Animus",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 817,
+                  "name": "Iron Qon",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46627.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 829,
+                  "name": "Twin Empyreans",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 832,
+                  "name": "Lei Shen",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 831,
+                  "name": "Ra-den",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47739.jpg",
+                  "kills": 0
                 }
               ]
             },
@@ -14618,31 +14790,31 @@
                 {
                   "id": 827,
                   "name": "Jin'rokh the Breaker",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47552.jpg",
                   "kills": 1
                 },
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
                   "kills": 1
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
                   "kills": 1
                 },
                 {
                   "id": 825,
                   "name": "Tortos",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46559.jpg",
                   "kills": 1
                 },
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
                   "kills": 1
                 },
                 {
@@ -14660,32 +14832,38 @@
                 {
                   "id": 820,
                   "name": "Primordius",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47009.jpg",
                   "kills": 1
                 },
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
                   "kills": 1
                 },
                 {
                   "id": 817,
                   "name": "Iron Qon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46627.jpg",
                   "kills": 1
                 },
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
                   "kills": 1
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 831,
+                  "name": "Ra-den",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47739.jpg",
+                  "kills": 0
                 }
               ]
             },
@@ -14697,31 +14875,31 @@
                 {
                   "id": 827,
                   "name": "Jin'rokh the Breaker",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47552.jpg",
                   "kills": 2
                 },
                 {
                   "id": 819,
                   "name": "Horridon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47325.jpg",
                   "kills": 2
                 },
                 {
                   "id": 816,
                   "name": "Council of Elders",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47229.jpg",
                   "kills": 2
                 },
                 {
                   "id": 825,
                   "name": "Tortos",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46559.jpg",
                   "kills": 2
                 },
                 {
                   "id": 821,
                   "name": "Megaera",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47414.jpg",
                   "kills": 2
                 },
                 {
@@ -14739,37 +14917,37 @@
                 {
                   "id": 820,
                   "name": "Primordius",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47009.jpg",
                   "kills": 2
                 },
                 {
                   "id": 824,
                   "name": "Dark Animus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47527.jpg",
                   "kills": 2
                 },
                 {
                   "id": 817,
                   "name": "Iron Qon",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46627.jpg",
                   "kills": 2
                 },
                 {
                   "id": 829,
                   "name": "Twin Empyreans",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46975.jpg",
                   "kills": 2
                 },
                 {
                   "id": 832,
                   "name": "Lei Shen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-46770.jpg",
                   "kills": 2
                 },
                 {
                   "id": 831,
                   "name": "Ra-den",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-47739.jpg",
                   "kills": 2
                 }
               ]
@@ -14787,19 +14965,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 16
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 18
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 16
                 },
                 {
@@ -14811,25 +14989,31 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 10
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 10
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 8
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
                   "kills": 8
                 },
                 {
@@ -14853,14 +15037,20 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
                   "kills": 10
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
                   "kills": 2
+                },
+                {
+                  "id": 869,
+                  "name": "Garrosh Hellscream",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -14872,19 +15062,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 12
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 13
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 11
                 },
                 {
@@ -14896,20 +15086,32 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 10
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 10
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 7
+                },
+                {
+                  "id": 850,
+                  "name": "General Nazgrim",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 846,
@@ -14928,6 +15130,24 @@
                   "name": "Thok the Bloodthirsty",
                   "image": null,
                   "kills": 9
+                },
+                {
+                  "id": 865,
+                  "name": "Siegecrafter Blackfuse",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 853,
+                  "name": "Paragons of the Klaxxi",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 869,
+                  "name": "Garrosh Hellscream",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -14939,19 +15159,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 1
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 1
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 1
                 },
                 {
@@ -14963,25 +15183,31 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 1
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 1
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
                   "kills": 1
                 },
                 {
@@ -15005,13 +15231,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
                   "kills": 1
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
                   "kills": 1
                 },
                 {
@@ -15030,19 +15256,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 21
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 21
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 18
                 },
                 {
@@ -15054,25 +15280,31 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 17
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 17
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 14
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
                   "kills": 12
                 },
                 {
@@ -15096,13 +15328,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
                   "kills": 7
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
                   "kills": 8
                 },
                 {
@@ -15121,19 +15353,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 12
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 13
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 11
                 },
                 {
@@ -15145,20 +15377,32 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 10
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 10
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 7
+                },
+                {
+                  "id": 850,
+                  "name": "General Nazgrim",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 846,
@@ -15177,6 +15421,24 @@
                   "name": "Thok the Bloodthirsty",
                   "image": null,
                   "kills": 9
+                },
+                {
+                  "id": 865,
+                  "name": "Siegecrafter Blackfuse",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 853,
+                  "name": "Paragons of the Klaxxi",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 869,
+                  "name": "Garrosh Hellscream",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -15188,19 +15450,19 @@
                 {
                   "id": 852,
                   "name": "Immerseus",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49056.jpg",
                   "kills": 1
                 },
                 {
                   "id": 849,
                   "name": "The Fallen Protectors",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48918.jpg",
                   "kills": 1
                 },
                 {
                   "id": 866,
                   "name": "Norushen",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48860.jpg",
                   "kills": 1
                 },
                 {
@@ -15212,25 +15474,31 @@
                 {
                   "id": 868,
                   "name": "Galakras",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 881,
+                  "name": "Galakras",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49337.jpg",
+                  "kills": 0
                 },
                 {
                   "id": 864,
                   "name": "Iron Juggernaut",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49844.jpg",
                   "kills": 1
                 },
                 {
                   "id": 856,
                   "name": "Kor'kron Dark Shaman",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-49176.jpg",
                   "kills": 1
                 },
                 {
                   "id": 850,
                   "name": "General Nazgrim",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48995.jpg",
                   "kills": 1
                 },
                 {
@@ -15254,13 +15522,13 @@
                 {
                   "id": 865,
                   "name": "Siegecrafter Blackfuse",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-51657.jpg",
                   "kills": 1
                 },
                 {
                   "id": 853,
                   "name": "Paragons of the Klaxxi",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-48676.jpg",
                   "kills": 1
                 },
                 {
@@ -15284,8 +15552,44 @@
                 {
                   "id": 1529,
                   "name": "Razorgore the Untamed",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-10115.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 1530,
+                  "name": "Vaelastrasz the Corrupt",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-13992.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 1531,
+                  "name": "Broodlord Lashlayer",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-14308.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 1532,
+                  "name": "Firemaw",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-6377.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 1533,
+                  "name": "Ebonroc",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-6377.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 1534,
+                  "name": "Flamegor",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1535,
+                  "name": "Chromaggus",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1536,
@@ -15324,6 +15628,30 @@
               "total": 1,
               "bosses": [
                 {
+                  "id": 1577,
+                  "name": "Rage Winterchill",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1578,
+                  "name": "Anetheron",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1579,
+                  "name": "Kaz'rogal",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1580,
+                  "name": "Azgalor",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 1581,
                   "name": "Archimonde",
                   "image": null,
@@ -15341,6 +15669,54 @@
               "completed": 1,
               "total": 1,
               "bosses": [
+                {
+                  "id": 1582,
+                  "name": "High Warlord Naj'entus",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1583,
+                  "name": "Supremus",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1584,
+                  "name": "Shade of Akama",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1585,
+                  "name": "Teron Gorefiend",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1586,
+                  "name": "Gurtogg Bloodboil",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1587,
+                  "name": "Reliquary of Souls",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1588,
+                  "name": "Mother Shahraz",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1589,
+                  "name": "The Illidari Council",
+                  "image": null,
+                  "kills": 0
+                },
                 {
                   "id": 1590,
                   "name": "Illidan Stormrage",
@@ -15492,6 +15868,12 @@
                   "kills": 1
                 },
                 {
+                  "id": 1621,
+                  "name": "Champions of the Horde",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 1622,
                   "name": "Twin Val'kyr",
                   "image": null,
@@ -15527,6 +15909,12 @@
                   "name": "Champions of the Alliance",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1621,
+                  "name": "Champions of the Horde",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1622,
@@ -15594,6 +15982,12 @@
                   "name": "Lady Deathwhisper",
                   "image": null,
                   "kills": 2
+                },
+                {
+                  "id": 1626,
+                  "name": "Icecrown Gunship Battle",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1627,
@@ -15667,6 +16061,78 @@
                   "name": "Lord Marrowgar",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1625,
+                  "name": "Lady Deathwhisper",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1626,
+                  "name": "Icecrown Gunship Battle",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1627,
+                  "name": "Icecrown Gunship Battle",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1628,
+                  "name": "Deathbringer Saurfang",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1629,
+                  "name": "Festergut",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1630,
+                  "name": "Rotface",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1631,
+                  "name": "Professor Putricide",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1632,
+                  "name": "Blood Prince Council",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1633,
+                  "name": "Blood-Queen Lana'thel",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1634,
+                  "name": "Valithria Dreamwalker",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1635,
+                  "name": "Sindragosa",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1636,
+                  "name": "The Lich King",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -15686,6 +16152,12 @@
                   "name": "Lady Deathwhisper",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1626,
+                  "name": "Icecrown Gunship Battle",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1627,
@@ -15734,6 +16206,18 @@
                   "name": "Valithria Dreamwalker",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1635,
+                  "name": "Sindragosa",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1636,
+                  "name": "The Lich King",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -15753,6 +16237,12 @@
                   "name": "Lady Deathwhisper",
                   "image": null,
                   "kills": 2
+                },
+                {
+                  "id": 1626,
+                  "name": "Icecrown Gunship Battle",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1627,
@@ -15867,6 +16357,12 @@
                   "name": "Cho'gall",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 168,
+                  "name": "Sinestra",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -15920,37 +16416,37 @@
                 {
                   "id": 169,
                   "name": "Omnotron Defense System",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-32685.jpg",
                   "kills": 3
                 },
                 {
                   "id": 170,
                   "name": "Magmaw",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-37993.jpg",
                   "kills": 1
                 },
                 {
                   "id": 171,
                   "name": "Atramedes",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-34547.jpg",
                   "kills": 1
                 },
                 {
                   "id": 172,
                   "name": "Chimaeron",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-33308.jpg",
                   "kills": 1
                 },
                 {
                   "id": 173,
                   "name": "Maloriak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-33186.jpg",
                   "kills": 1
                 },
                 {
                   "id": 174,
                   "name": "Nefarian's End",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-32716.jpg",
                   "kills": 1
                 }
               ]
@@ -15963,32 +16459,38 @@
                 {
                   "id": 169,
                   "name": "Omnotron Defense System",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-32685.jpg",
                   "kills": 1
                 },
                 {
                   "id": 170,
                   "name": "Magmaw",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-37993.jpg",
                   "kills": 1
                 },
                 {
                   "id": 171,
                   "name": "Atramedes",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-34547.jpg",
                   "kills": 1
                 },
                 {
                   "id": 172,
                   "name": "Chimaeron",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-33308.jpg",
                   "kills": 1
                 },
                 {
                   "id": 173,
                   "name": "Maloriak",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-33186.jpg",
                   "kills": 1
+                },
+                {
+                  "id": 174,
+                  "name": "Nefarian's End",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-32716.jpg",
+                  "kills": 0
                 }
               ]
             }
@@ -16005,13 +16507,13 @@
                 {
                   "id": 154,
                   "name": "The Conclave of Wind",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-35233.jpg",
                   "kills": 1
                 },
                 {
                   "id": 155,
                   "name": "Al'Akir",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-35248.jpg",
                   "kills": 1
                 }
               ]
@@ -16035,7 +16537,7 @@
                 {
                   "id": 193,
                   "name": "Lord Rhyolith",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-38414.jpg",
                   "kills": 1
                 },
                 {
@@ -16053,13 +16555,13 @@
                 {
                   "id": 196,
                   "name": "Baleroc, the Gatekeeper",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-38621.jpg",
                   "kills": 1
                 },
                 {
                   "id": 197,
                   "name": "Majordomo Staghelm",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-37953.jpg",
                   "kills": 1
                 },
                 {
@@ -16084,7 +16586,7 @@
                 {
                   "id": 193,
                   "name": "Lord Rhyolith",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-38414.jpg",
                   "kills": 1
                 },
                 {
@@ -16102,13 +16604,13 @@
                 {
                   "id": 196,
                   "name": "Baleroc, the Gatekeeper",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-38621.jpg",
                   "kills": 1
                 },
                 {
                   "id": 197,
                   "name": "Majordomo Staghelm",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-37953.jpg",
                   "kills": 1
                 },
                 {
@@ -16138,19 +16640,19 @@
                 {
                   "id": 324,
                   "name": "Warlord Zon'ozz",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-39138.jpg",
                   "kills": 2
                 },
                 {
                   "id": 325,
                   "name": "Yor'sahj the Unsleeping",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-39101.jpg",
                   "kills": 2
                 },
                 {
                   "id": 317,
                   "name": "Hagara the Stormbinder",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-39318.jpg",
                   "kills": 2
                 },
                 {
@@ -16168,13 +16670,13 @@
                 {
                   "id": 318,
                   "name": "Spine of Deathwing",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-35268.jpg",
                   "kills": 1
                 },
                 {
                   "id": 333,
                   "name": "Madness of Deathwing",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-40087.jpg",
                   "kills": 1
                 }
               ]
@@ -16202,9 +16704,15 @@
                   "kills": 3
                 },
                 {
+                  "id": 1195,
+                  "name": "Tectus",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 1196,
                   "name": "Brackenspore",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-58539.jpg",
                   "kills": 3
                 },
                 {
@@ -16253,7 +16761,7 @@
                 {
                   "id": 1196,
                   "name": "Brackenspore",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-58539.jpg",
                   "kills": 3
                 },
                 {
@@ -16302,7 +16810,7 @@
                 {
                   "id": 1196,
                   "name": "Brackenspore",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-58539.jpg",
                   "kills": 4
                 },
                 {
@@ -16335,6 +16843,42 @@
                   "name": "Kargath Bladefist",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 971,
+                  "name": "The Butcher",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1195,
+                  "name": "Tectus",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1196,
+                  "name": "Brackenspore",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-58539.jpg",
+                  "kills": 0
+                },
+                {
+                  "id": 1148,
+                  "name": "Twin Ogron",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1153,
+                  "name": "Ko'ragh",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1197,
+                  "name": "Imperator Mar'gok",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -16387,7 +16931,7 @@
                 {
                   "id": 1154,
                   "name": "The Blast Furnace",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-53477.jpg",
                   "kills": 6
                 },
                 {
@@ -16416,10 +16960,22 @@
               "total": 10,
               "bosses": [
                 {
+                  "id": 1202,
+                  "name": "Oregorger",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 1155,
                   "name": "Hans'gar and Franzok",
                   "image": null,
                   "kills": 2
+                },
+                {
+                  "id": 1122,
+                  "name": "Beastlord Darmac",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1161,
@@ -16434,10 +16990,34 @@
                   "kills": 1
                 },
                 {
+                  "id": 1147,
+                  "name": "Operator Thogar",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1154,
+                  "name": "The Blast Furnace",
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-53477.jpg",
+                  "kills": 0
+                },
+                {
                   "id": 1162,
                   "name": "Kromog",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1203,
+                  "name": "The Iron Maidens",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 959,
+                  "name": "Blackhand",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -16485,7 +17065,7 @@
                 {
                   "id": 1154,
                   "name": "The Blast Furnace",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-53477.jpg",
                   "kills": 1
                 },
                 {
@@ -16555,6 +17135,18 @@
                   "kills": 1
                 },
                 {
+                  "id": 1433,
+                  "name": "Shadow-Lord Iskar",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1427,
+                  "name": "Socrethar the Eternal",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 1391,
                   "name": "Fel Lord Zakuun",
                   "image": null,
@@ -16565,6 +17157,18 @@
                   "name": "Xhul'horac",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1394,
+                  "name": "Tyrant Velhari",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1395,
+                  "name": "Mannoroth",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1438,
@@ -16717,6 +17321,30 @@
                   "name": "Fel Lord Zakuun",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1447,
+                  "name": "Xhul'horac",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1394,
+                  "name": "Tyrant Velhari",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1395,
+                  "name": "Mannoroth",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1438,
+                  "name": "Archimonde",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -16739,7 +17367,7 @@
                 {
                   "id": 1738,
                   "name": "Il'gynoth, Heart of Corruption",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-69925.jpg",
                   "kills": 4
                 },
                 {
@@ -16788,7 +17416,7 @@
                 {
                   "id": 1738,
                   "name": "Il'gynoth, Heart of Corruption",
-                  "image": null,
+                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-69925.jpg",
                   "kills": 2
                 },
                 {
@@ -16838,6 +17466,12 @@
                   "name": "Odyn",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1830,
+                  "name": "Guarm",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 1829,
@@ -17147,6 +17781,30 @@
                   "name": "Mistress Sassz'ine",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 1896,
+                  "name": "The Desolate Host",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1897,
+                  "name": "Maiden of Vigilance",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1873,
+                  "name": "Fallen Avatar",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 1898,
+                  "name": "Kil'jaeden",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -17160,6 +17818,12 @@
               "completed": 10,
               "total": 11,
               "bosses": [
+                {
+                  "id": 1992,
+                  "name": "Garothi Worldbreaker",
+                  "image": null,
+                  "kills": 0
+                },
                 {
                   "id": 1987,
                   "name": "Felhounds of Sargeras",
@@ -17627,6 +18291,42 @@
                   "name": "MOTHER",
                   "image": null,
                   "kills": 3
+                },
+                {
+                  "id": 2146,
+                  "name": "Fetid Devourer",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2169,
+                  "name": "Zek'voz, Herald of N'Zoth",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2166,
+                  "name": "Vectis",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2195,
+                  "name": "Zul, Reborn",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2194,
+                  "name": "Mythrax the Unraveler",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2147,
+                  "name": "G'huun",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -17647,10 +18347,28 @@
                   "kills": 1
                 },
                 {
+                  "id": 2344,
+                  "name": "Champion of the Light",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2340,
+                  "name": "Grong, the Revenant",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2323,
+                  "name": "Jadefire Masters",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 2341,
@@ -17708,10 +18426,28 @@
                   "kills": 3
                 },
                 {
+                  "id": 2344,
+                  "name": "Champion of the Light",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "image": null,
                   "kills": 2
+                },
+                {
+                  "id": 2340,
+                  "name": "Grong, the Revenant",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2323,
+                  "name": "Jadefire Masters",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 2341,
@@ -17769,10 +18505,28 @@
                   "kills": 8
                 },
                 {
+                  "id": 2344,
+                  "name": "Champion of the Light",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "image": null,
                   "kills": 9
+                },
+                {
+                  "id": 2340,
+                  "name": "Grong, the Revenant",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2323,
+                  "name": "Jadefire Masters",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 2341,
@@ -17830,16 +18584,70 @@
                   "kills": 7
                 },
                 {
+                  "id": 2344,
+                  "name": "Champion of the Light",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2325,
                   "name": "Grong, the Jungle Lord",
                   "image": null,
                   "kills": 5
                 },
                 {
+                  "id": 2340,
+                  "name": "Grong, the Revenant",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2323,
+                  "name": "Jadefire Masters",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2341,
                   "name": "Jadefire Masters",
                   "image": null,
                   "kills": 5
+                },
+                {
+                  "id": 2342,
+                  "name": "Opulence",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2330,
+                  "name": "Conclave of the Chosen",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2335,
+                  "name": "King Rastakhan",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2334,
+                  "name": "High Tinker Mekkatorque",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2337,
+                  "name": "Stormwall Blockade",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2343,
+                  "name": "Lady Jaina Proudmoore",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -17882,6 +18690,18 @@
                   "name": "Abyssal Commander Sivara",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2347,
+                  "name": "Blackwater Behemoth",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2353,
+                  "name": "Radiance of Azshara",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 2354,
@@ -18065,6 +18885,18 @@
                   "name": "The Queen's Court",
                   "image": null,
                   "kills": 2
+                },
+                {
+                  "id": 2349,
+                  "name": "Za'qul, Harbinger of Ny'alotha",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2361,
+                  "name": "Queen Azshara",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -18097,10 +18929,34 @@
                   "kills": 1
                 },
                 {
+                  "id": 2377,
+                  "name": "Dark Inquisitor Xanesh",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2372,
                   "name": "The Hivemind",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2367,
+                  "name": "Shad'har the Insatiable",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2373,
+                  "name": "Drest'agath",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2374,
+                  "name": "Il'gynoth, Corruption Reborn",
+                  "image": null,
+                  "kills": 0
                 },
                 {
                   "id": 2370,
@@ -18113,6 +18969,18 @@
                   "name": "Ra-den the Despoiled",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2366,
+                  "name": "Carapace of N'Zoth",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2375,
+                  "name": "N'Zoth the Corruptor",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -18219,10 +19087,58 @@
                   "kills": 4
                 },
                 {
+                  "id": 2377,
+                  "name": "Dark Inquisitor Xanesh",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2372,
                   "name": "The Hivemind",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2367,
+                  "name": "Shad'har the Insatiable",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2373,
+                  "name": "Drest'agath",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2374,
+                  "name": "Il'gynoth, Corruption Reborn",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2370,
+                  "name": "Vexiona",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2364,
+                  "name": "Ra-den the Despoiled",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2366,
+                  "name": "Carapace of N'Zoth",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2375,
+                  "name": "N'Zoth the Corruptor",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             }
@@ -18243,6 +19159,42 @@
                   "kills": 1
                 },
                 {
+                  "id": 2429,
+                  "name": "Huntsman Altimor",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2422,
+                  "name": "Sun King's Salvation",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2418,
+                  "name": "Artificer Xy'mox",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2428,
+                  "name": "Hungering Destroyer",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2420,
+                  "name": "Lady Inerva Darkvein",
+                  "image": null,
+                  "kills": 0
+                },
+                {
+                  "id": 2426,
+                  "name": "The Council of Blood",
+                  "image": null,
+                  "kills": 0
+                },
+                {
                   "id": 2394,
                   "name": "Sludgefist",
                   "image": null,
@@ -18253,6 +19205,12 @@
                   "name": "Stone Legion Generals",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2424,
+                  "name": "Sire Denathrius",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -18314,6 +19272,12 @@
                   "name": "Stone Legion Generals",
                   "image": null,
                   "kills": 1
+                },
+                {
+                  "id": 2424,
+                  "name": "Sire Denathrius",
+                  "image": null,
+                  "kills": 0
                 }
               ]
             },
@@ -18397,7 +19361,7 @@
                 {
                   "id": 2480,
                   "name": "Eranog",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-105614.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -18427,19 +19391,19 @@
                 {
                   "id": 2491,
                   "name": "Kurog Grimtotem",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-109236.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2493,
                   "name": "Broodkeeper Diurna",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-107423.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2499,
                   "name": "Raszageth the Storm-Eater",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-102868.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -18463,7 +19427,7 @@
                 {
                   "id": 2529,
                   "name": "The Amalgamation Chamber",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111850.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -18475,19 +19439,19 @@
                 {
                   "id": 2524,
                   "name": "Assault of the Zaqali",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111276.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2525,
                   "name": "Rashok, the Elder",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-112109.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
                   "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111477.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -18524,7 +19488,7 @@
                 {
                   "id": 2529,
                   "name": "The Amalgamation Chamber",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111850.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -18536,19 +19500,19 @@
                 {
                   "id": 2524,
                   "name": "Assault of the Zaqali",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111276.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2525,
                   "name": "Rashok, the Elder",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-112109.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
                   "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111477.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -18585,7 +19549,7 @@
                 {
                   "id": 2529,
                   "name": "The Amalgamation Chamber",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111850.jpg",
+                  "image": null,
                   "kills": 6
                 },
                 {
@@ -18597,19 +19561,19 @@
                 {
                   "id": 2524,
                   "name": "Assault of the Zaqali",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111276.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2525,
                   "name": "Rashok, the Elder",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-112109.jpg",
+                  "image": null,
                   "kills": 5
                 },
                 {
                   "id": 2532,
                   "name": "The Vigilant Steward, Zskarn",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-111477.jpg",
+                  "image": null,
                   "kills": 4
                 },
                 {
@@ -18687,7 +19651,7 @@
                 {
                   "id": 2565,
                   "name": "Tindral Sageswift, Seer of the Flame",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-114072.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -18748,7 +19712,7 @@
                 {
                   "id": 2565,
                   "name": "Tindral Sageswift, Seer of the Flame",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-114072.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -18809,7 +19773,7 @@
                 {
                   "id": 2565,
                   "name": "Tindral Sageswift, Seer of the Flame",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-114072.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -18833,7 +19797,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -18846,7 +19810,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -18864,7 +19828,7 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-75493.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -18894,7 +19858,7 @@
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -18907,7 +19871,7 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-75493.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -18937,7 +19901,7 @@
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -19003,19 +19967,19 @@
                 {
                   "id": 2887,
                   "name": "The Twin Fangs",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-146494.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2883,
                   "name": "The Coiled Altar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-146558.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2895,
                   "name": "Ula'tek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-142993.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -19033,7 +19997,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 1
                 }
               ]
@@ -19046,7 +20010,7 @@
                 {
                   "id": 2795,
                   "name": "Chimaerus the Undreamt God",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136680.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -19064,7 +20028,7 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-75493.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19094,7 +20058,7 @@
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -19107,7 +20071,7 @@
                 {
                   "id": 2733,
                   "name": "Imperator Averzian",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-75493.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19137,7 +20101,7 @@
                 {
                   "id": 2738,
                   "name": "Crown of the Cosmos",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-136883.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -19203,19 +20167,19 @@
                 {
                   "id": 2887,
                   "name": "The Twin Fangs",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-146494.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2883,
                   "name": "The Coiled Altar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-146558.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
                   "id": 2895,
                   "name": "Ula'tek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-142993.jpg",
+                  "image": null,
                   "kills": 2
                 }
               ]
@@ -19233,7 +20197,7 @@
                 {
                   "id": 2607,
                   "name": "Ulgrax the Devourer",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-117772.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19257,7 +20221,7 @@
                 {
                   "id": 2612,
                   "name": "Broodtwister Ovi'nax",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119696.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -19275,7 +20239,7 @@
                 {
                   "id": 2602,
                   "name": "Queen Ansurek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119373.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -19288,7 +20252,7 @@
                 {
                   "id": 2607,
                   "name": "Ulgrax the Devourer",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-117772.jpg",
+                  "image": null,
                   "kills": 3
                 },
                 {
@@ -19312,7 +20276,7 @@
                 {
                   "id": 2612,
                   "name": "Broodtwister Ovi'nax",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119696.jpg",
+                  "image": null,
                   "kills": 3
                 },
                 {
@@ -19330,7 +20294,7 @@
                 {
                   "id": 2602,
                   "name": "Queen Ansurek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119373.jpg",
+                  "image": null,
                   "kills": 3
                 }
               ]
@@ -19343,7 +20307,7 @@
                 {
                   "id": 2607,
                   "name": "Ulgrax the Devourer",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-117772.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -19367,7 +20331,7 @@
                 {
                   "id": 2612,
                   "name": "Broodtwister Ovi'nax",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119696.jpg",
+                  "image": null,
                   "kills": 0
                 },
                 {
@@ -19385,7 +20349,7 @@
                 {
                   "id": 2602,
                   "name": "Queen Ansurek",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-119373.jpg",
+                  "image": null,
                   "kills": 0
                 }
               ]
@@ -19421,7 +20385,7 @@
                 {
                   "id": 2687,
                   "name": "Forgeweaver Araz",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128111.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19439,7 +20403,7 @@
                 {
                   "id": 2690,
                   "name": "Nexus-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128327.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19476,7 +20440,7 @@
                 {
                   "id": 2687,
                   "name": "Forgeweaver Araz",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128111.jpg",
+                  "image": null,
                   "kills": 1
                 },
                 {
@@ -19494,7 +20458,7 @@
                 {
                   "id": 2690,
                   "name": "Nexus-King Salhadaar",
-                  "image": "https://render.worldofwarcraft.com/eu/npcs/zoom/creature-display-128327.jpg",
+                  "image": null,
                   "kills": 2
                 },
                 {
@@ -22715,58 +23679,58 @@
       ],
       "mythicPlusRanks": {
         "overall": {
-          "world": 1438896,
-          "region": 438638,
-          "realm": 5944
+          "world": 1439484,
+          "region": 438997,
+          "realm": 5945
         },
         "class": {
-          "world": 240206,
-          "region": 67318,
+          "world": 240281,
+          "region": 67374,
           "realm": 912
         },
         "tank": {
-          "world": 669609,
-          "region": 214300,
-          "realm": 2822
+          "world": 669827,
+          "region": 214429,
+          "realm": 2823
         },
         "class_tank": {
-          "world": 152572,
-          "region": 48910,
+          "world": 152618,
+          "region": 48937,
           "realm": 666
         },
         "healer": {
-          "world": 447385,
-          "region": 139384,
+          "world": 447501,
+          "region": 139442,
           "realm": 1870
         },
         "class_healer": {
-          "world": 125564,
-          "region": 36440,
+          "world": 125582,
+          "region": 36447,
           "realm": 529
         },
         "dps": {
-          "world": 1798349,
-          "region": 566832,
-          "realm": 7189
+          "world": 1798949,
+          "region": 567195,
+          "realm": 7193
         },
         "class_dps": {
-          "world": 206279,
-          "region": 54465,
+          "world": 206341,
+          "region": 54505,
           "realm": 623
         },
         "spec_65": {
-          "world": 125564,
-          "region": 36440,
+          "world": 125582,
+          "region": 36447,
           "realm": 529
         },
         "spec_66": {
-          "world": 152571,
-          "region": 48910,
+          "world": 152617,
+          "region": 48937,
           "realm": 666
         },
         "spec_70": {
-          "world": 206279,
-          "region": 54465,
+          "world": 206341,
+          "region": 54505,
           "realm": 623
         }
       },
@@ -28542,32 +29506,32 @@
   "mythicPlus": {
     "classShares": [
       {
-        "score": 3526,
+        "score": 3561,
         "label": "Rufer",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 39.7
+        "percent": 40
       },
       {
         "score": 2713,
         "label": "Paladin",
         "className": "Paladin",
         "character": "Sunhappens",
-        "percent": 30.6
+        "percent": 30.5
       },
       {
         "score": 1545,
         "label": "Mönch",
         "className": "Mönch",
         "character": "Liezen",
-        "percent": 17.4
+        "percent": 17.3
       },
       {
         "score": 1089,
         "label": "Dämonenjäger",
         "className": "Dämonenjäger",
         "character": "Gotdilf",
-        "percent": 12.3
+        "percent": 12.2
       },
       {
         "score": 0,
@@ -28628,32 +29592,32 @@
     ],
     "specShares": [
       {
-        "score": 3526,
+        "score": 3561,
         "label": "Bewahrung",
         "className": "Rufer",
         "character": "Bufferrari",
-        "percent": 39.7
+        "percent": 40
       },
       {
         "score": 2713,
         "label": "Schutz",
         "className": "Paladin",
         "character": "Sunhappens",
-        "percent": 30.6
+        "percent": 30.5
       },
       {
         "score": 1545,
         "label": "Braumeister",
         "className": "Mönch",
         "character": "Liezen",
-        "percent": 17.4
+        "percent": 17.3
       },
       {
         "score": 1089,
         "label": "Rachsucht",
         "className": "Dämonenjäger",
         "character": "Gotdilf",
-        "percent": 12.3
+        "percent": 12.2
       },
       {
         "score": 0,
@@ -28796,7 +29760,7 @@
     },
     "season-mn-2": {
       "bestMythicPlus": {
-        "score": 3526,
+        "score": 3561,
         "character": "Bufferrari",
         "className": "Rufer",
         "specName": "Bewahrung"
